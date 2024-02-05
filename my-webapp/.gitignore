@@ -1,0 +1,29 @@
+# 依赖目录
+/vendor/
+/node_modules/
+
+# 环境变量文件
+.env
+
+# Laravel特定
+/public/storage
+/storage/*.key
+/vendor/
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# 编辑器目录和文件
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 其他
+/.phpunit.result.cache
+Homestead.json
+Homestead.yaml
