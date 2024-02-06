@@ -1,7 +1,4 @@
 {
-  // 使用 IntelliSense 了解相关属性。 
-  // 悬停以查看现有属性的描述。
-  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
@@ -36,7 +33,7 @@
         "localhost:0"
       ],
       "program": "",
-      "cwd": "${workspaceRoot}",
+      "cwd": "/Users/gregyoungforever/Documents/ISEP2023-2024/APP Info/APP-Informatique/my-webapp/backend/public",
       "port": 9003,
       "serverReadyAction": {
         "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
