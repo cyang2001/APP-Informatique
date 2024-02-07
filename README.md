@@ -35,9 +35,7 @@ Laravel est un framework back-end écrit en PHP qui suit le modèle d'architectu
 
 - **`vendor`** : Bibliothèques tierces installées via Composer.
 
-## Front-end - Backbone.js
-
-Backbone.js est une bibliothèque JavaScript légère pour le développement d'applications monopages (SPA). Elle fournit des modèles (`Models`), des collections (`Collections`), des vues (`Views`) et des routeurs (`Routers`) pour organiser le code.
+## Front-end
 
 - **`dist`** : Contient les fichiers construits, comme les fichiers JavaScript et CSS fusionnés et minifiés.
 
