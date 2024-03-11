@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="8A6zc9eSVUqw2W_pLJHb" name="第 1 页">
-        <mxGraphModel dx="810" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="938" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -85,7 +85,7 @@
                         <mxPoint x="149.6300000000001" y="682" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="52" value="Envoie mail confirmation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="11">
+                <mxCell id="52" value="Envoyer mail confirmation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="11">
                     <mxGeometry x="86" y="692" width="130" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="Client" style="swimlane;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
@@ -97,10 +97,10 @@
                 <mxCell id="60" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="10">
                     <mxGeometry x="40" y="98.75" width="140" height="47.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Clique sur sign up" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="10" vertex="1">
-                    <mxGeometry x="65" y="107.5" width="100" height="30" as="geometry"/>
+                <mxCell id="13" value="Cliquer sur sign up" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="10" vertex="1">
+                    <mxGeometry x="57" y="107.5" width="105" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="Entre information personnelles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="10" vertex="1">
+                <mxCell id="24" value="Entrer information personnelles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="10" vertex="1">
                     <mxGeometry x="55" y="187" width="110" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="10">
