@@ -71,9 +71,8 @@
 }
 
 .titre{
-    top: 0;
     color: white;
-    margin-top: 5px;
+    margin-top:25px;
     margin-left: 45%;
 }
 
@@ -83,7 +82,7 @@
     bottom: 93%;
     right: 0;
     left: 0;
-    top: 0;
+    right: 0;
 }
 
 .logo_ambisound{
