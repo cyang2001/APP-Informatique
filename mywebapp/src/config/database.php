@@ -1,7 +1,7 @@
 <?php
 $host = '127.0.0.1';  
-$db   = 'my_database';  
-$user = 'gregyoungforever';      
+$db   = 'APP';  
+$user = 'root';      
 $pass = '123456';  
 $charset = 'utf8mb4';
 
@@ -13,8 +13,8 @@ $options = [
 ];
 
 try {
-     $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (\PDOException $e) {
-     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 ?>
