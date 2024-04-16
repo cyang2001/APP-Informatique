@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var password = document.getElementById('password').value;
         var confirmPassword = document.getElementById('confirm-password').value;
         var email = document.getElementById('email').value;
-
+        var name = document.getElementById('name').value;
         if (password !== confirmPassword) {
             alert("Les mots de passe ne correspondent pas.");
             return false;
@@ -15,10 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         const formData = new FormData(form);
-        console.log(password);
-        console.log(confirmPassword);
-        console.log(email);
-        fetch('../src/controllers/registerController.php', {
+        fetch('/register', {
             method: 'POST',
             body: formData  
         })
