@@ -1,25 +1,43 @@
-$request = $_SERVER['REQUEST_URI'];
+<?php
+require_once __DIR__ . '/../src/models/users.php';
+require_once __DIR__ .'/./router/router.php';
+require_once __DIR__ .'/../src/config/logger.php';
+$logger = new Logger('../logs/index.log');
+$router = new Router();
+$action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
+require_once __DIR__ . '/../src/controllers/RegisterController.php';
+require_once __DIR__ . '/../src/controllers/LoginController.php';
 
-switch ($request) {
-    case '/register' :
-        require __DIR__ . '/src/controllers/RegisterController.php';
-        $controller = new RegisterController();
-        if ($method == 'POST') {
-            $controller->register();
+
+
+
+
+switch($action) {
+    case 'register':
+        if ($method == 'GET') {
+            $logger->log('GET /register');
+            $router->get('/register', function(){
+                $registerController = new RegisterController();
+                $registerController->register();
+            });
+        } elseif ($method == 'POST') {
+            $logger->log('POST /register');
+            $router->post('/register', function(){
+                $registerController = new RegisterController();
+                $registerController->register();
+            });
         }
         break;
-    case '/login' :
-        require __DIR__ . '/src/controllers/LoginController.php';
-        $controller = new LoginController();
-        if ($method == 'POST') {
-            $controller->login();
-        }
+    case 'login':
+        $logger->log('GET /login');
+        $router->get('/login', function(){
+            $loginController = new LoginController();
+            $loginController->login();
+        });
         break;
-    // add more 
     default:
-        // default response
-        header("HTTP/1.0 404 Not Found");
-        // add a not found page
+        $logger->log('action not found: '.$action);
+        echo json_encode(["message" => "404", "status" => "error"]);
         break;
 }

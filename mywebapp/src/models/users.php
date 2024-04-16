@@ -1,9 +1,12 @@
 <?php
+require_once __DIR__ . '/../config/logger.php';
+require_once __DIR__ . '/../config/database.php';
 class User {
     private $pdo;
-
-    public function __construct($pdo) {
-        $this->pdo = $pdo;
+    private $logger;
+    public function __construct() {
+        $this->pdo = Database::getInstance()->getConnection();
+        $this->logger = new Logger('../../logs/user.log');
     }
 
     public function register($name, $password, $email) {
@@ -13,12 +16,14 @@ class User {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
         if ($stmt->fetch()) {
+            $this->logger->log("Email already exists: {$email}");
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
         $sql = "INSERT INTO users (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$name, $passwordHashed, $email]);
+        $this->logger->log("User registered: {$email} - {$name}");
         return ['success' => true, 'userId' => $this->pdo->lastInsertId()];
     }
 
@@ -45,4 +50,3 @@ class User {
         return ['success' => true];
     }
 }
-?>

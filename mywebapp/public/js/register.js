@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         const formData = new FormData(form);
-        fetch('/register', {
+        fetch('index.php?action=register', {
             method: 'POST',
             body: formData  
         })
