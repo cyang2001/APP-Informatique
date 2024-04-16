@@ -6,8 +6,9 @@ class User {
         $this->pdo = $pdo;
     }
 
-    public function register($name, $passwordHashed, $email) {
+    public function register($name, $password, $email) {
         // Check if email already exists
+        $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
         $sql = "SELECT * FROM users WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
@@ -18,17 +19,16 @@ class User {
         $sql = "INSERT INTO users (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$name, $passwordHashed, $email]);
-        return $this->pdo->lastInsertId(); 
+        return ['success' => true, 'userId' => $this->pdo->lastInsertId()];
     }
 
-    public function login($email, $passwordHashed) {
-        // Check if email and password match
-        $sql = "SELECT * FROM users WHERE EMAIL = ? AND PASSWORD_HASH = ?";
+    
+    public function login($email, $password) {
+        $sql = "SELECT * FROM users WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$email, $passwordHashed]);
-        // If user exists, return user data
+        $stmt->execute([$email]);
         $user = $stmt->fetch();
-        if ($user) {
+        if ($user && password_verify($password, $user['PASSWORD_HASH'])) {
             return ['success' => true, 'user' => $user];
         }
         return ['success' => false, 'message' => 'Invalid email or password'];
