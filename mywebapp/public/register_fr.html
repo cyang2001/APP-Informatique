@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S'inscrire</title>
     <link rel="stylesheet" type="text/css" href="css/register.css">
+
   </head>
   <body>
     <h1>S'inscrire</h1>
-    <img src="source/ambisound.png" alt="logo" class="logo">
+    <img src="./source/ambisound.png" alt="logo" class="logo">
     <div class="form-container">
       <form id="register-form">
-        <input type="email" id="E-mail" placeholder="E-mail" required>
+        <input type="email" id="email" placeholder="E-mail" required>
         <br>
         <input type="text" id="userName" placeholder="Nom d'utilisateur" required>
         <br>
@@ -19,11 +20,11 @@
         <br>
         <input type="password" id="confirm-password" placeholder="Confirmer le mot de passe" required>
         <br>
+        <button class="btn" type="submit">S'inscrire</button>
       </form>
-      <button class="btn" type="button">S'inscrire</button>
     </div>
     <p>Vous avez déjà un compte? <a href="login_fr.html">Se connecter</a></p>
     <br>
-  <script src="./js/submitForm.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
