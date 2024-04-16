@@ -38,6 +38,33 @@ main {
 }
 
 .conteneur {
-    display : flex;
-    flex-direction : row;
+    display : grid;
+    grid-template-columns: 200px 1000px 200px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+.one{
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start:2 ;
+    grid-row-end:3;
+}
+.two{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+}
+
+.three{
+    grid-column-start:2 ;
+    grid-column-end:3;
+    grid-row-start:4 ;
+    grid-row-end:5 ;
+}
+
+.four{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:5 ;
+    grid-row-end:6 ;
 }
