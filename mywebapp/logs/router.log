@@ -1,3 +1,7 @@
-[2024-04-16 18:54:05] - POST patternStr: /register
-[2024-04-16 18:54:05] - POST pattern: ~^/register$~
-[2024-04-16 18:54:05] - register: POST /register
+[2024-04-16 19:10:11] - Register: POST /register
+[2024-04-16 19:10:11] - Dispatching request: POST
+[2024-04-16 19:10:11] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-04-16 19:10:11] - Handling URI: 
+[2024-04-16 19:10:11] - Checking pattern: ~^/register$~
+[2024-04-16 19:10:11] - Pattern not matched: ~^/register$~
+[2024-04-16 19:10:11] - No matching route found for URI: 

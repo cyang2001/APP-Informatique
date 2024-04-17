@@ -41,3 +41,4 @@ switch($action) {
         echo json_encode(["message" => "404", "status" => "error"]);
         break;
 }
+$router->dispatch();

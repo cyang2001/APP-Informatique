@@ -10,56 +10,67 @@ class Router{
     }
 
     public function get($patternStr, $fn){
-        $this->logger->log('GET patternStr: '.$patternStr);
         $pattern = $this->routerTemplateToReg($patternStr);
-        $this->logger->log('GET pattern: '.$pattern);
         $this->register('GET', $patternStr, $pattern, $fn);
     }
 
     public function post($patternStr, $fn) {
-        $this->logger->log('POST patternStr: '.$patternStr);
         $pattern = $this->routerTemplateToReg($patternStr);
-        $this->logger->log('POST pattern: '.$pattern);
         $this->register('POST', $patternStr, $pattern, $fn);
     }
 
     public function register($method, $patternStr, $pattern, $fn) {
-
         $this->routerMap[$method][] = array(
             'pattern' => $pattern,
             'patternStr' => $patternStr,
             'callback' => $fn
         );
-        $this->logger->log('register: '.$method.' '.$patternStr);
+        $this->logger->log('Register: '.$method.' '.$patternStr);
     }
 
     public function dispatch(){
         $requestMethod = $_SERVER['REQUEST_METHOD'];
-        $routerArr = $this->routerMap[$requestMethod];
-        $this->handleUri($routerArr);
-        $this->logger->log('dispatch: '.$requestMethod);
+        $this->logger->log('Dispatching request: '.$requestMethod);
+        if (isset($this->routerMap[$requestMethod])) {
+            $routerArr = $this->routerMap[$requestMethod];
+            $this->handleUri($routerArr);
+        } else {
+            $this->logger->log('No routes registered for method: '.$requestMethod);
+        }
     }
 
     private function handleUri($routerArr) {
         $uri = $this->getCurrentUri();
+        $this->logger->log('Handling URI: '.$uri);
+    
         foreach($routerArr as $v) {
+            $this->logger->log('Checking pattern: '.$v['pattern']);
             $matchRes = preg_match_all($v['pattern'], $uri, $matches, PREG_OFFSET_CAPTURE);
+    
             if($matchRes) {
-                $this->logger->log('handleUri: '.$v['patternStr']);
+                $this->logger->log('Pattern matched: '.$v['pattern']);
                 $matches = array_slice($matches, 1);
                 $callbackParam = array_map(function ($item,$index) {
                     return $item[0][0];
                 },$matches,array_keys($matches));
                 $fn = $v['callback'];
-            } 
+            } else {
+                $this->logger->log('Pattern not matched: '.$v['pattern']);
+            }
         }
-        call_user_func_array($fn, $callbackParam);
+    
+        if(isset($fn)) {
+            $this->logger->log('Calling callback function');
+            call_user_func_array($fn, $callbackParam);
+        } else {
+            $this->logger->log('No matching route found for URI: '.$uri);
+        }
     }
 
     private function getCurrentUri() {
         $uri = $_SERVER['REQUEST_URI'];
+        $this->logger->log('Current URI: '.$uri);
         $scriptNameArr = explode('/', $_SERVER['SCRIPT_NAME']);
-        $this->logger->log('getCurrentUri: '.$uri);
         foreach($scriptNameArr as $v) {
             if($v !== '') {
                 $uri = str_replace('/'.$v,'',$uri);
