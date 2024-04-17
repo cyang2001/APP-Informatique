@@ -110,3 +110,11 @@
 [2024-04-17 22:28:08] - Pattern matched: ~^/register$~
 [2024-04-17 22:28:08] - Matches: [[["\/register",0]]]
 [2024-04-17 22:28:08] - Calling callback function
+[2024-04-17 23:21:48] - Register: POST /register
+[2024-04-17 23:21:48] - Dispatching request: POST
+[2024-04-17 23:21:48] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-04-17 23:21:48] - Handling URI: /register
+[2024-04-17 23:21:48] - Checking pattern: ~^/register$~
+[2024-04-17 23:21:48] - Pattern matched: ~^/register$~
+[2024-04-17 23:21:48] - Matches: [[["\/register",0]]]
+[2024-04-17 23:21:48] - Calling callback function
