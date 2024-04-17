@@ -12,7 +12,7 @@ class User {
     public function register($name, $password, $email) {
         // Check if email already exists
         $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "SELECT * FROM users WHERE EMAIL = ?";
+        $sql = "SELECT * FROM USER WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
         if ($stmt->fetch()) {
@@ -20,7 +20,7 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO users (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$name, $passwordHashed, $email]);
         $this->logger->log("User registered: {$email} - {$name}");
@@ -29,7 +29,7 @@ class User {
 
     
     public function login($email, $password) {
-        $sql = "SELECT * FROM users WHERE EMAIL = ?";
+        $sql = "SELECT * FROM USER WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
         $user = $stmt->fetch();
@@ -44,7 +44,7 @@ class User {
         // ask master GPT!
     }
     public function renewPassword($email, $passwordHashed) {
-        $sql = "UPDATE users SET PASSWORD_HASH = ? WHERE EMAIL = ?";
+        $sql = "UPDATE USER SET PASSWORD_HASH = ? WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$passwordHashed, $email]);
         return ['success' => true];

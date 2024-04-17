@@ -43,17 +43,20 @@ class Router{
         $uri = $this->getCurrentUri();
         $this->logger->log('Handling URI: '.$uri);
     
+        $callbackParam = []; // Initialize $callbackParam variable
+    
         foreach($routerArr as $v) {
             $this->logger->log('Checking pattern: '.$v['pattern']);
             $matchRes = preg_match_all($v['pattern'], $uri, $matches, PREG_OFFSET_CAPTURE);
     
             if($matchRes) {
                 $this->logger->log('Pattern matched: '.$v['pattern']);
-                $matches = array_slice($matches, 1);
-                $callbackParam = array_map(function ($item,$index) {
-                    return $item[0][0];
-                },$matches,array_keys($matches));
+                $this->logger->log('Matches: '.json_encode($matches));
+                $callbackParam = array_map(function ($item) {
+                    return $item[0]; // Accessing the matched string directly
+                }, $matches[0]);
                 $fn = $v['callback'];
+                break; // Exit the loop after the first match
             } else {
                 $this->logger->log('Pattern not matched: '.$v['pattern']);
             }
@@ -66,6 +69,8 @@ class Router{
             $this->logger->log('No matching route found for URI: '.$uri);
         }
     }
+    
+    
 
     private function getCurrentUri() {
         $uri = $_SERVER['REQUEST_URI'];
@@ -76,10 +81,12 @@ class Router{
                 $uri = str_replace('/'.$v,'',$uri);
             }
         }
-        $uriArr = explode('?',$uri);
-        return $uriArr[0];
+        $uriArr = explode('?action=',$uri);
+        if ($uriArr[1] !== '/') {
+            $uriArr[1] = '/'.$uriArr[1];
+        }
+        return $uriArr[1];
     }
-
     private function routerTemplateToReg($patternStr) {
         $txt = preg_replace('~{\w*}~','(\w*)',$patternStr);
         return '~^'.$txt.'$~';

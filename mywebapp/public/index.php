@@ -23,7 +23,8 @@ switch($action) {
             });
         } elseif ($method == 'POST') {
             $logger->log('POST /register');
-            $router->post('/register', function(){
+            $router->post('/register', function() use ($logger){
+                $logger->log('calling');
                 $registerController = new RegisterController();
                 $registerController->register();
             });

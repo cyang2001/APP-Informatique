@@ -10,10 +10,12 @@ class RegisterController{
     public function __construct(){
 
         $this->users = new User();
-        $this->logger = new Logger('../../logs/register.log');
+        $this->logger = new Logger('../logs/register.log'); 
+        $this->logger->log('RegisterController initialized');
     }
 
     function register(){
+        $this->logger->log('Registering user');
         $userName = $_POST['name'];
         $userPassword = $_POST['password'];
         $userEmail = $_POST['email'];
