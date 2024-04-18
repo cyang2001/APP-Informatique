@@ -6,7 +6,7 @@ class User {
     private $logger;
     public function __construct() {
         $this->pdo = Database::getInstance()->getConnection();
-        $this->logger = new Logger('../../logs/user.log');
+        $this->logger = new Logger('../logs/user.log');
     }
 
     public function register($name, $password, $email) {
