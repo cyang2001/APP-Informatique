@@ -1,0 +1,8 @@
+[2024-04-18 20:56:02] - Register: POST /register
+[2024-04-18 20:56:02] - Dispatching request: POST
+[2024-04-18 20:56:02] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-04-18 20:56:02] - Handling URI: /register
+[2024-04-18 20:56:02] - Checking pattern: ~^/register$~
+[2024-04-18 20:56:02] - Pattern matched: ~^/register$~
+[2024-04-18 20:56:02] - Matches: [[["\/register",0]]]
+[2024-04-18 20:56:02] - Calling callback function
