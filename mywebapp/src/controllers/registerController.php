@@ -33,6 +33,7 @@ class RegisterController {
 
         $registrationResult = $this->users->register($userName, $userPassword, $userEmail);
         if ($registrationResult['success']) {
+            http_response_code(200);
             $this->logger->log("User registered: {$userEmail} - {$userName}");
             $response = [
                 'success' => true,
