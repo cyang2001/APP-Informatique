@@ -12,6 +12,12 @@ class LoginController {
         $userEmail = $_POST['email'];
         $userPassword = $_POST['password'];
         $response = $this->users->login($userEmail, $userPassword);
-        echo json_encode($response);
+        if ($response['success']) {
+            echo json_encode($response);
+            return;
+        } else {
+            http_response_code(400);
+            echo json_encode($response);
+        }
     }
 }

@@ -31,11 +31,19 @@ switch($action) {
         }
         break;
     case 'login':
-        $logger->log('GET /login');
-        $router->get('/login', function(){
-            $loginController = new LoginController();
-            $loginController->login();
-        });
+        if ($method == 'GET') {
+            $logger->log('GET /login');
+            $router->get('/login', function(){
+                $loginController = new LoginController();
+                $loginController->login();
+            });
+        } elseif ($method == 'POST') {
+            $logger->log('POST /login');
+            $router->post('/login', function(){
+                $loginController = new LoginController();
+                $loginController->login();
+            });
+        }
         break;
     default:
         $logger->log('action not found: '.$action);
