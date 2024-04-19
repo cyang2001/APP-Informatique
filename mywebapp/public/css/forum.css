@@ -1,4 +1,4 @@
-body, h1, h2, h3, p, ul, li {
+body, h1, h2, h3, p {
     margin: 0; 
     padding: 0; 
 }
@@ -11,60 +11,88 @@ body {
 }
 
 header {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1 ;
+    grid-row-end: 2 ;
+
+
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-}
 
-ul {
-    list-style: none;
-}
+    margin-top: 100px ;
+    margin:10px;
+    padding:10px;
+    border-radius: 10px;
 
-ul li {
-    text align center;
-    display: inline;
-    margin-right: 10px;
-}
+    text-align: center;
+    align-content: center; 
 
+
+
+
+
+    
+}
 main {
-    padding: 20px;
+    grid-column-start:2;
+    /*grid-column-end:;*/
+    grid-row-start:2 ;
+    grid-row-end:3 ;
+
+    margin-bottom: 100px;
+
 }
 
-.forum {
-    background-color: #fff;
+.div {
+    background-color: aqua;
+    margin: 10px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+
 .conteneur {
     display : grid;
-    grid-template-columns: 200px 1000px 200px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 20% 55% 20%;
+    grid-template-rows: 100px 50px 100px 100px 100px 100px;
+    gap :20px;
 }
 .one{
+    background-color: aqua;
+    border-radius:5px;
     grid-column-start:2 ;
     grid-column-end:3 ;
-    grid-row-start:2 ;
-    grid-row-end:3;
+    grid-row-start:3 ;
+    grid-row-end:4;
+
+    margin: 10px;
 }
 .two{
     grid-column-start:2;
     grid-column-end:3;
-    grid-row-start:3 ;
-    grid-row-end:4 ;
+    grid-row-start:4 ;
+    grid-row-end:5 ;
+
+    margin: 10px;
 }
 
 .three{
     grid-column-start:2 ;
     grid-column-end:3;
-    grid-row-start:4 ;
-    grid-row-end:5 ;
+    grid-row-start:5 ;
+    grid-row-end:6 ;
+
+    margin: 10px;
+
 }
 
 .four{
     grid-column-start:2;
     grid-column-end:3;
-    grid-row-start:5 ;
-    grid-row-end:6 ;
+    grid-row-start:6 ;
+    grid-row-end:7 ;
+
+    margin: 10px;
 }
