@@ -17,7 +17,8 @@ switch($action) {
     case 'register':
         if ($method == 'GET') {
             $logger->log('GET /register');
-            $router->get('/register', function(){
+            $router->get('/register', function() use($logger){
+                $logger->log('GET /register');
                 $registerController = new RegisterController();
                 $registerController->register();
             });
@@ -31,11 +32,19 @@ switch($action) {
         }
         break;
     case 'login':
-        $logger->log('GET /login');
-        $router->get('/login', function(){
-            $loginController = new LoginController();
-            $loginController->login();
-        });
+        if ($method == 'GET') {
+            $logger->log('GET /login');
+            $router->get('/login', function(){
+                $loginController = new LoginController();
+                $loginController->login();
+            });
+        } elseif ($method == 'POST') {
+            $logger->log('POST /login');
+            $router->post('/login', function(){
+                $loginController = new LoginController();
+                $loginController->login();
+            });
+        }
         break;
     default:
         $logger->log('action not found: '.$action);

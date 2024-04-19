@@ -33,10 +33,13 @@ class User {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
         $user = $stmt->fetch();
+        if (!$user) {
+            return ['success' => false, 'message' => 'Email not found'];
+        }
         if ($user && password_verify($password, $user['PASSWORD_HASH'])) {
             return ['success' => true, 'user' => $user];
         }
-        return ['success' => false, 'message' => 'Invalid email or password'];
+        return ['success' => false, 'message' => 'Invalid password'];
     }
     // We have to add a function that verifies if the email exists in the database by sending code to the email address
     public function verifyEmail() {
