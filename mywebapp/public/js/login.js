@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // delete alert if needs to be removed
                 alert('Connexion réussie!');
                 // redirect to home page
-                window.location.href = '../homePage.html';
+                window.location.replace = '/public/homePage.html';
             } else {
                 alert('Erreur: ' + data.message);
                 // display error message
