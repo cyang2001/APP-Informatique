@@ -1,2 +1,2 @@
 ./.vscode
-./mywebapp/logs/*
+/mywebapp/logs/*
