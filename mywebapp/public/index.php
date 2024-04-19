@@ -17,7 +17,8 @@ switch($action) {
     case 'register':
         if ($method == 'GET') {
             $logger->log('GET /register');
-            $router->get('/register', function(){
+            $router->get('/register', function() use($logger){
+                $logger->log('GET /register');
                 $registerController = new RegisterController();
                 $registerController->register();
             });
