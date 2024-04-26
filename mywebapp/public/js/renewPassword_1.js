@@ -1,34 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('register-form');
+    const form = document.getElementById('renewPassword1-form');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // prevent the form from submitting
-        var password = document.getElementById('password').value;
-        var confirmPassword = document.getElementById('confirm-password').value;
         var email = document.getElementById('email').value;
-        var name = document.getElementById('name').value;
-
-        if (password !== confirmPassword) {
-            alert("Les mots de passe ne correspondent pas.");
-            return false;
-        }
+        var password = document.getElementById('code').value;
 
         const formData = new FormData(form);
-        fetch('index.php?action=register', {
+        fetch('index.php?action=renewPassword1', {
             method: 'POST',
-            body: formData  
+            body: formData
         })
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.json();  
+            return response.json();
         })
         .then(data => {
             if (data.success) {
-                alert('Inscription réussie!');
-                window.location.href = 'login_fr.html';
-                // redirect to login page or home page
+                // delete alert if needs to be removed
+                alert('Vérification réussie!');
+                // redirect to home page
+                window.location.href = 'renewPassword_2.html';
             } else {
                 alert('Erreur: ' + data.message);
                 // display error message

@@ -42,11 +42,16 @@ class User {
         return ['success' => false, 'message' => 'Invalid password'];
     }
     // We have to add a function that verifies if the email exists in the database by sending code to the email address
-    public function verifyEmail() {
+    public function verifyEmail($code) {
         // i dont know how to do this part
         // ask master GPT!
+        if ($code == '1234') {
+            return ['success' => true];
+        }
+        // only for test
     }
-    public function renewPassword($email, $passwordHashed) {
+    public function renewPassword($email, $password) {
+        $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
         $sql = "UPDATE USER SET PASSWORD_HASH = ? WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$passwordHashed, $email]);
