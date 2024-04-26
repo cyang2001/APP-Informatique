@@ -46,6 +46,21 @@ switch($action) {
             });
         }
         break;
+    case 'renewPassword2':
+        if ($method == 'GET') {
+            $logger->log('GET /renewPassword');
+            $router->get('/renewPassword', function(){
+                $renewPasswordController = new renewPasswordController();
+                $renewPasswordController->renewPassword();
+            });
+        } elseif ($method == 'POST') {
+            $logger->log('POST /renewPassword');
+            $router->post('/renewPassword', function(){
+                $renewPasswordController = new renewPasswordController();
+                $renewPasswordController->renewPassword();
+            });
+        }
+        break;
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
