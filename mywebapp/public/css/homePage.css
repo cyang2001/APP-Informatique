@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+
+.head-content{
+    display: flex;
+    flex-direction: row;
+    background-color: #0D2C51;
+}
+
+.header {
+    /* background-color: #00a7ff;*/
+    background-color: #0D2C51;
+    padding-bottom: 3px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
+
+.logo{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.barre{
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.profil{
+    width: 100%;
+}
+.uk{
+    width: 100%;
+
+}
+.notif{
+    width: 100%;
+}
+
+.notif-button{
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: transparent;
+}
+.lang-button{
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: transparent;
+    margin-right: 21px;
+}
+.profil-button{
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.head-right{
+    display: flex;
+    width: 15%;
+    padding: 20px;
+    justify-content: end;
+}
+
+.head-left{
+    align-items: flex-start;
+    margin-left: 98px;
+    width: 15%;
+}
+
+.head-mid{
+    width: 70%;
+}
+
+.h1title{
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+}
+
+body{
+    background-color: white;
+}
+
+.main{
+
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 150px;
+    margin-left: 350px;
+    margin-right: 50px;
+    overflow: auto;
+
+}
+
+.footer{
+    background-color: #0D2C51;
+    padding-top: 3px;
+    margin-top: 50px;
+    font-family: Calibri, sans-serif;
+    margin-left: 300px;
+    font-size: 20px;
+}
+
+.footcontent{
+    background-color: #0D2C51;
+    color: white;
+}
+
+nav{
+    margin-top: -37px;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: #134074;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    margin-left: -40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+a{
+    font-family: "Source Code Pro",sans-serif;
+    font-size: 25px;
+    color:#829DB6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.t{
+    font-family: "Century Gothic",sans-serif;
+    font-size: 35px;
+    color:white;
+    margin-left: -40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.accueil{
+    margin-top: 40px;
+}
+
+section {
+    display: block;
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    margin-top: -25px;
+}
+
+.frame {
+    width: 1000px;
+    height: 1000px;
+    border: 3px solid black;
+    background: red;
+    margin: auto;
+    padding: 15px 25px;
+}
+
+.h2title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Century Gothic", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+}
+
+.gallerie2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item {
+    width: 50%;
+}
