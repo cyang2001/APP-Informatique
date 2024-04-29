@@ -46,16 +46,30 @@ switch($action) {
             });
         }
         break;
+    case 'renewPassword1':
+        if ($method == 'GET') {
+            $logger->log('GET /renewPassword1');
+            $router->get('/renewPassword1', function(){
+                $renewPasswordController = new renewPasswordController();
+                $renewPasswordController->verification();
+            });
+        } elseif ($method == 'POST') {
+            $logger->log('POST /renewPassword1');
+            $router->post('/renewPassword1', function(){
+                $renewPasswordController = new renewPasswordController();
+                $renewPasswordController->verification();
+            });
+        }
     case 'renewPassword2':
         if ($method == 'GET') {
-            $logger->log('GET /renewPassword');
-            $router->get('/renewPassword', function(){
+            $logger->log('GET /renewPassword2');
+            $router->get('/renewPassword2', function(){
                 $renewPasswordController = new renewPasswordController();
                 $renewPasswordController->renewPassword();
             });
         } elseif ($method == 'POST') {
-            $logger->log('POST /renewPassword');
-            $router->post('/renewPassword', function(){
+            $logger->log('POST /renewPassword2');
+            $router->post('/renewPassword2', function(){
                 $renewPasswordController = new renewPasswordController();
                 $renewPasswordController->renewPassword();
             });
