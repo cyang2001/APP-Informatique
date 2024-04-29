@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // delete alert if needs to be removed
                 alert('Vérification réussie!');
                 // redirect to home page
-                window.location.href = 'renewPassword_2.html';
+                window.location.href = 'renewPassword_fr_2.html';
             } else {
                 alert('Erreur: ' + data.message);
                 // display error message

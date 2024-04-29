@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../src/models/users.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
+require_once __DIR__ .'/../src/controllers/renewPasswordController.php';
 $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
