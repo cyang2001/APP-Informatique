@@ -34,9 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 // display error message
             }
         })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Erreur: Vérifiez la console pour plus de détails');
-        });
     });
 });
