@@ -181,3 +181,11 @@
 [2024-04-29 21:36:55] - Pattern matched: ~^/login$~
 [2024-04-29 21:36:55] - Matches: [[["\/login",0]]]
 [2024-04-29 21:36:55] - Calling callback function
+[2024-04-29 21:39:52] - Register: POST /login
+[2024-04-29 21:39:52] - Dispatching request: POST
+[2024-04-29 21:39:52] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-04-29 21:39:52] - Handling URI: /login
+[2024-04-29 21:39:52] - Checking pattern: ~^/login$~
+[2024-04-29 21:39:52] - Pattern matched: ~^/login$~
+[2024-04-29 21:39:52] - Matches: [[["\/login",0]]]
+[2024-04-29 21:39:52] - Calling callback function

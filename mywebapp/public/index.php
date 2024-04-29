@@ -76,6 +76,15 @@ switch($action) {
             });
         }
         break;
+    case 'showDatabase':
+        if ($method == 'GET') {
+            $logger->log('GET /showDatabase');
+            $router->get('/showDatabase', function(){
+                $showDatabaseController = new showDatabaseController();
+                $showDatabaseController->showDatabase();
+            });
+        }
+        break;
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
