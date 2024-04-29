@@ -184,21 +184,41 @@ section {
 * {
     box-sizing: border-box;
 }
+
+
+.item {
+    width: 50%;
+}
+
 .flex-container {
     display: flex;
 }
+.flex-container > div {
+    padding: 20px;
+    margin: 10px;
+    font-family: Calibri, sans-serif;
+    font-size: 30px;
+    display: flex;
+}
 
+.gallerie {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
 .gallerie2 {
     max-width: 100%;
     height: auto;
 }
-
-.flex-container > div {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-size: 30px;
+.gallerie3 {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
 }
 
-.item {
-    width: 50%;
+.texte{
+    font-size: 30px;
+    font-family: Calibri, sans-serif;
 }
