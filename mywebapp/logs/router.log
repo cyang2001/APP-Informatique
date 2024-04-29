@@ -1,9 +1,0 @@
-[2024-04-29 12:50:07] - Register: POST /renewPassword1
-[2024-04-29 12:50:07] - Register: POST /renewPassword2
-[2024-04-29 12:50:07] - Dispatching request: POST
-[2024-04-29 12:50:07] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
-[2024-04-29 12:50:07] - Handling URI: /renewPassword1
-[2024-04-29 12:50:07] - Checking pattern: ~^/renewPassword1$~
-[2024-04-29 12:50:07] - Pattern matched: ~^/renewPassword1$~
-[2024-04-29 12:50:07] - Matches: [[["\/renewPassword1",0]]]
-[2024-04-29 12:50:07] - Calling callback function
