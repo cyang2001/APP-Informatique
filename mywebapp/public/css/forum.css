@@ -10,13 +10,12 @@ body {
     color: #333;
 }
 
-header {
-    grid-column-start:2;
-    grid-column-end:3;
-    grid-row-start:1 ;
-    grid-row-end: 2 ;
+.conteneur{
+    margin: 0;
+    padding: 0;
 
-
+}
+.titre {
     background-color: #333;
     color: #fff;
 
@@ -26,14 +25,10 @@ header {
     border-radius: 10px;
 
     text-align: center;
-    align-content: center; 
-
-
-
-
-
-    
+    align-content: center;     
 }
+
+
 main {
     grid-column-start:2;
     /*grid-column-end:;*/
@@ -44,8 +39,8 @@ main {
 
 }
 
-.div {
-    background-color: aqua;
+div {
+    box: shadow 3px;;
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
@@ -53,14 +48,7 @@ main {
 }
 
 
-.conteneur {
-    display : grid;
-    grid-template-columns: 20% 55% 20%;
-    grid-template-rows: 100px 50px 100px 100px 100px 100px;
-    gap :20px;
-}
 .one{
-    background-color: aqua;
     border-radius:5px;
     grid-column-start:2 ;
     grid-column-end:3 ;
