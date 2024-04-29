@@ -1,0 +1,79 @@
+[2024-04-29 12:50:07] - Register: POST /renewPassword1
+[2024-04-29 12:50:07] - Register: POST /renewPassword2
+[2024-04-29 12:50:07] - Dispatching request: POST
+[2024-04-29 12:50:07] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 12:50:07] - Handling URI: /renewPassword1
+[2024-04-29 12:50:07] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 12:50:07] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 12:50:07] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 12:50:07] - Calling callback function
+[2024-04-29 13:42:16] - Register: POST /renewPassword1
+[2024-04-29 13:42:16] - Register: POST /renewPassword2
+[2024-04-29 13:42:16] - Dispatching request: POST
+[2024-04-29 13:42:16] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:42:16] - Handling URI: /renewPassword1
+[2024-04-29 13:42:16] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:42:16] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:42:16] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:42:16] - Calling callback function
+[2024-04-29 13:45:43] - Register: POST /renewPassword1
+[2024-04-29 13:45:43] - Register: POST /renewPassword2
+[2024-04-29 13:45:43] - Dispatching request: POST
+[2024-04-29 13:45:43] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:45:43] - Handling URI: /renewPassword1
+[2024-04-29 13:45:43] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:45:43] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:45:43] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:45:43] - Calling callback function
+[2024-04-29 13:46:36] - Register: POST /renewPassword1
+[2024-04-29 13:46:36] - Register: POST /renewPassword2
+[2024-04-29 13:46:36] - Dispatching request: POST
+[2024-04-29 13:46:36] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:46:36] - Handling URI: /renewPassword1
+[2024-04-29 13:46:36] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:46:36] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:46:36] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:46:36] - Calling callback function
+[2024-04-29 13:46:50] - Register: POST /renewPassword1
+[2024-04-29 13:46:50] - Register: POST /renewPassword2
+[2024-04-29 13:46:50] - Dispatching request: POST
+[2024-04-29 13:46:50] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:46:50] - Handling URI: /renewPassword1
+[2024-04-29 13:46:50] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:46:50] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:46:50] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:46:50] - Calling callback function
+[2024-04-29 13:54:34] - Register: POST /renewPassword1
+[2024-04-29 13:54:34] - Register: POST /renewPassword2
+[2024-04-29 13:54:34] - Dispatching request: POST
+[2024-04-29 13:54:34] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:54:34] - Handling URI: /renewPassword1
+[2024-04-29 13:54:34] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:54:34] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:54:34] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:54:34] - Calling callback function
+[2024-04-29 13:59:32] - Register: POST /renewPassword1
+[2024-04-29 13:59:32] - Register: POST /renewPassword2
+[2024-04-29 13:59:32] - Dispatching request: POST
+[2024-04-29 13:59:32] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword1
+[2024-04-29 13:59:32] - Handling URI: /renewPassword1
+[2024-04-29 13:59:32] - Checking pattern: ~^/renewPassword1$~
+[2024-04-29 13:59:32] - Pattern matched: ~^/renewPassword1$~
+[2024-04-29 13:59:32] - Matches: [[["\/renewPassword1",0]]]
+[2024-04-29 13:59:32] - Calling callback function
+[2024-04-29 13:59:40] - Register: POST /renewPassword2
+[2024-04-29 13:59:40] - Dispatching request: POST
+[2024-04-29 13:59:40] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=renewPassword2
+[2024-04-29 13:59:40] - Handling URI: /renewPassword2
+[2024-04-29 13:59:40] - Checking pattern: ~^/renewPassword2$~
+[2024-04-29 13:59:40] - Pattern matched: ~^/renewPassword2$~
+[2024-04-29 13:59:40] - Matches: [[["\/renewPassword2",0]]]
+[2024-04-29 13:59:40] - Calling callback function
+[2024-04-29 13:59:49] - Register: POST /login
+[2024-04-29 13:59:49] - Dispatching request: POST
+[2024-04-29 13:59:49] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-04-29 13:59:49] - Handling URI: /login
+[2024-04-29 13:59:49] - Checking pattern: ~^/login$~
+[2024-04-29 13:59:49] - Pattern matched: ~^/login$~
+[2024-04-29 13:59:49] - Matches: [[["\/login",0]]]
+[2024-04-29 13:59:49] - Calling callback function
