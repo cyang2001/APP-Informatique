@@ -12,6 +12,7 @@ class User {
     public function register($name, $password, $email) {
         // Check if email already exists
         $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
+        $idAccessLevel = 0;
         $sql = "SELECT * FROM USER WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
@@ -20,9 +21,9 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$name, $passwordHashed, $email]);
+        $stmt->execute([$name, $passwordHashed, $email, $idAccessLevel]);
         $this->logger->log("User registered: {$email} - {$name}");
         return ['success' => true, 'userId' => $this->pdo->lastInsertId()];
     }

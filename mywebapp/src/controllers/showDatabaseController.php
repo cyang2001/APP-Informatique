@@ -11,11 +11,20 @@ class showDatabaseController {
         $this->pdo = Database::getInstance()->getConnection();
     }
     function showDatabase() {
+        ob_start();
         $this->logger->log('showDatabaseController.showDatabase() called');
-        $sql = "SELECT * FROM USER";
+        $sql = "SELECT ID_USER, NAME, EMAIL, ID_ACCESS_LEVEL, TICKET FROM USER";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchAll();
-        echo json_encode($result);
+        if ($stmt->execute()) {
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $this->logger->log('Database query success');
+            $this->logger->log(json_encode($result));
+            ob_clean();
+            echo json_encode($result);
+        } else {
+            echo json_encode(['error' => 'Database query failed']);
+        }
     }
+    
+    
 }
