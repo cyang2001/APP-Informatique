@@ -88,7 +88,7 @@
     height: 0;
 }
 
-.header{
+header{
     opacity: 90%;
     background-color: #0D2C51;
     height: 80px;
@@ -104,7 +104,7 @@
     text-align: center;
 }
 
-.main{
+main{
     margin-top: 80px;
     font-size: 25px ;
 }
@@ -114,17 +114,54 @@
 }
 
 
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.grid-item.add-button {
+    background-color: lightgray;
+    color: black;
+    order:9999;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
 
 
 
 
 
-
-
-
-
-
-.footer{
+footer{
     height: 80px;
     background-color: #0D2C51;
 }
