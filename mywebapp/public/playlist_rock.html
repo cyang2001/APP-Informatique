@@ -12,6 +12,7 @@
             checkbox.checked = !checkbox.checked;
         }
     </script>
+    <script src="js/playlist.js"></script>
     
     
     <div class="hamburger-menu">
@@ -42,6 +43,7 @@
         </header>
         <main>
             <div class="main">
+              
 
                 <div class="section1">
 
@@ -58,44 +60,129 @@
                   
                 </div>
 
+                <div class="affichage">
+                  <div class="titreM">
+                  <div id="musicInfo">
+                    <p id="musicTitle">Titre de la musique</p>
+                    <p id="musicArtist">Nom de l'artiste</p>
+                  </div>
+                  </div>
+                  
+                    
+                  <audio id="audioPlayer" controls></audio>
 
-                <div class="loader">
+                  <img class="next" src="source/next.png" width="25" height="25">
+                
+                  <img class="ale" src="source/aleatoire.png" width="25" height="25" onclick="playRandomMusic()">
+
+                  
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique1.mp3', 'I Can\'t Stop', 'Punch Deck')">
                     <div class="song">
-                      <p class="name">Musique 1</p>
-                      <p class="artist">Artiste</p>
+                      <p class="name">I Can't Stop</p>
+                      <p class="artist">Punch Deck</p>
                     </div>
                     <div class="numero">
                         <p class="num">1</p>
                         <img src="source/play.png" class="hidden-img">
                     </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
                    
                 </div>
+                
 
-                <div class="loader">
+                <div class="loader" onclick="playMusic('source/Musique2.mp3', 'Night', 'Cloudkicker')">
                     <div class="song">
-                      <p class="name">Musique 2</p>
-                      <p class="artist">Artiste</p>
+                      <p class="name">Night</p>
+                      <p class="artist">Cloudkicker</p>
                     </div>
                     <div class="numero">
                         <p class="num">2</p>
                         <img src="source/play.png" class="hidden-img">
                     </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                    </div>
+                    
                    
                 </div>
-                <div class="loader">
+                <div class="loader" onclick="playMusic('source/Musique3.mp3', 'In Closing', 'Days Past')">
                     <div class="song">
-                      <p class="name">Musique 3</p>
-                      <p class="artist">Artiste</p>
+                      <p class="name">In Closing</p>
+                      <p class="artist">Days Past</p>
                     </div>
                     <div class="numero">
                         <p class="num">3</p>
                         <img src="source/play.png" class="hidden-img">
                     </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                      </div>
                    
                 </div>
 
+                <div class="loader" onclick="playMusic('source/Musique4.mp3', 'Jacked It Up', 'Josh Shapiro')">
+                  <div class="song">
+                    <p class="name">Jacked It Up</p>
+                    <p class="artist">Josh Shapiro</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">4</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique5.mp3', 'No Love', 'Shearer')">
+                  <div class="song">
+                    <p class="name">No Love</p>
+                    <p class="artist">Shearer</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">5</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
               </div>
-                
+              
               </div>
             
         </main>

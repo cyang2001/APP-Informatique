@@ -1,2 +1,3 @@
 ./.vscode
 /mywebapp/logs/*
+./mywebapp/createDatabase.sql
