@@ -119,6 +119,16 @@ header{
       padding-bottom: 20px;
   }
 
+  .retour {
+    padding-left: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .retour:hover {
+    transform: scale(1.1);
+  }
+
   .type {
       display: flex;
       flex-direction: row;
@@ -126,6 +136,7 @@ header{
       padding-left: 1em;
       padding-right: 1em;
       padding-top: 70px;
+      padding-bottom: 70px;
       transform: rotate(180deg);
       justify-content: right;
       border-radius: 10px;
@@ -142,6 +153,16 @@ header{
       .titreM{
         width: 150px;
       }
+
+      .next {
+        padding-left: 20px; 
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      .next:hover {
+        transform: scale(1.1);
+    }
 
       .ale {
         padding-left: 20px;    
@@ -187,6 +208,10 @@ header{
       font-weight: bold;
       align-self: center;
       }
+
+      .active-title {
+        color: #134074;  
+    }
       
       
       .albumcover {
@@ -215,6 +240,12 @@ header{
       
       .artist {
       font-size: 16px;
+      }
+
+      .temps{
+        transform: rotate(180deg);
+        margin-right: auto;
+        font-size: 20px;
       }
 
       .numero  {
@@ -268,9 +299,9 @@ header{
       }
       
       .load {
-        width: 2px;
+        width: 3px;
         height: 33px;
-        background-color: #0D2C51;
+        background-color: #134074;
         animation: 1s move6 infinite;
         border-radius: 5px;
         margin: 0.1em;

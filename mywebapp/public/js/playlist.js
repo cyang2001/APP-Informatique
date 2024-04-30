@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const audioPlayer = document.getElementById('audioPlayer');
     const loaders = document.querySelectorAll('.loader');
     const randomIcon = document.querySelector('.ale');
+    const nextIcon = document.querySelector('.next'); 
     const musicTitle = document.getElementById('musicTitle');
     const musicArtist = document.getElementById('musicArtist');
-    
-    let currentTrackIndex = 0; // Moved inside to avoid scope issues
+
+    let currentTrackIndex = -1; 
+    let isShuffleMode = false; 
 
     const tracks = [
         { source: "source/Musique1.mp3", title: "I Can't Stop", artist: "Punch Deck" },
@@ -13,13 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
         { source: "source/Musique3.mp3", title: "In Closing", artist: "Days Past" },
         { source: "source/Musique4.mp3", title: "Jacked It Up", artist: "Josh Shapiro" },
         { source: "source/Musique5.mp3", title: "No Love", artist: "Shearer" },
+        { source: "source/Musique6.mp3", title: "Waiting For Nothing", artist: "The Fisherman" },
+        { source: "source/Musique7.mp3", title: "Insane", artist: "b_Shake" },
     ];
 
-    // Initialize first track
-    playMusic(tracks[currentTrackIndex].source, tracks[currentTrackIndex].title, tracks[currentTrackIndex].artist);
-
+    
     loaders.forEach(function(loader, index) {
         loader.addEventListener('click', function() {
+            isShuffleMode = false; 
             if (currentTrackIndex === index && !audioPlayer.paused) {
                 audioPlayer.pause();
                 updateLoaderDisplay(index, false);
@@ -29,26 +32,35 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    randomIcon.addEventListener('click', playRandomMusic);
+    randomIcon.addEventListener('click', function() {
+        isShuffleMode = true; 
+        playRandomMusic();
+    });
 
-    audioPlayer.addEventListener('ended', playNextTrack);
+    nextIcon.addEventListener('click', playNextTrack); 
+
+    audioPlayer.addEventListener('ended', function() {
+        if (isShuffleMode) {
+            playRandomMusic();
+        } else {
+            playNextTrack();
+        }
+    });
 
     function playMusic(source, title, artist) {
-        audioPlayer.src = source;
+        if (audioPlayer.src !== new URL(source, window.location.href).href) {
+            audioPlayer.src = source;
+        }
         audioPlayer.play();
         musicTitle.textContent = title;
         musicArtist.textContent = artist;
-        updateActiveLoader(currentTrackIndex); // Ensure UI update when playing
+        updateActiveLoader(currentTrackIndex);
+        updateTitleColor();
     }
 
     function playTrack(index) {
-        if (currentTrackIndex !== index || audioPlayer.paused) {
-            currentTrackIndex = index;
-            playMusic(tracks[index].source, tracks[index].title, tracks[index].artist);
-        } else {
-            audioPlayer.play();
-            updateLoaderDisplay(index, true);
-        }
+        currentTrackIndex = index;
+        playMusic(tracks[index].source, tracks[index].title, tracks[index].artist);
     }
 
     function playRandomMusic() {
@@ -60,7 +72,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function playNextTrack() {
-        currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+        if (!isShuffleMode) {
+            currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+        } else {
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * tracks.length);
+            } while (randomIndex === currentTrackIndex);
+            currentTrackIndex = randomIndex;
+        }
         playTrack(currentTrackIndex);
     }
 
@@ -80,6 +100,15 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             numero.style.display = 'block';
             loading.style.display = 'none';
+        }
+    }
+
+    function updateTitleColor() {
+        const allTitles = document.querySelectorAll('.name'); 
+        allTitles.forEach(title => title.classList.remove('active-title')); 
+        const activeTitle = loaders[currentTrackIndex].querySelector('.name'); 
+        if (activeTitle) {
+            activeTitle.classList.add('active-title');
         }
     }
 });
