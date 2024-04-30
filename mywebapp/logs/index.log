@@ -1,34 +1,13 @@
-[2024-04-29 12:50:07] - POST /renewPassword1
-[2024-04-29 12:50:07] - POST /renewPassword2
-[2024-04-29 13:42:16] - POST /renewPassword1
-[2024-04-29 13:42:16] - POST /renewPassword2
-[2024-04-29 13:45:43] - POST /renewPassword1
-[2024-04-29 13:45:43] - POST /renewPassword2
-[2024-04-29 13:46:36] - POST /renewPassword1
-[2024-04-29 13:46:36] - POST /renewPassword2
-[2024-04-29 13:46:50] - POST /renewPassword1
-[2024-04-29 13:46:50] - POST /renewPassword2
-[2024-04-29 13:54:34] - POST /renewPassword1
-[2024-04-29 13:54:34] - POST /renewPassword2
-[2024-04-29 13:59:32] - POST /renewPassword1
-[2024-04-29 13:59:32] - POST /renewPassword2
-[2024-04-29 13:59:40] - POST /renewPassword2
-[2024-04-29 13:59:49] - POST /login
-[2024-04-29 21:33:30] - POST /login
-[2024-04-29 21:33:44] - POST /login
-[2024-04-29 21:33:48] - POST /login
-[2024-04-29 21:33:56] - POST /login
-[2024-04-29 21:34:28] - POST /login
-[2024-04-29 21:34:49] - POST /login
-[2024-04-29 21:34:58] - POST /login
-[2024-04-29 21:35:19] - POST /login
-[2024-04-29 21:35:33] - POST /register
-[2024-04-29 21:35:33] - calling
-[2024-04-29 21:35:44] - POST /login
-[2024-04-29 21:35:48] - POST /login
-[2024-04-29 21:36:48] - POST /register
-[2024-04-29 21:36:48] - calling
-[2024-04-29 21:36:55] - POST /login
-[2024-04-29 21:39:52] - POST /login
-[2024-04-29 21:46:43] - POST /login
-[2024-04-30 09:39:09] - POST /login
+
+[2024-04-30 10:01:41] - GET /showDatabase
+[2024-04-30 10:03:44] - GET /showDatabase
+[2024-04-30 10:04:19] - GET /showDatabase
+[2024-04-30 10:05:34] - GET /showDatabase
+[2024-04-30 10:05:47] - GET /showDatabase
+[2024-04-30 10:18:14] - GET /showDatabase
+[2024-04-30 10:19:30] - GET /showDatabase
+[2024-04-30 10:19:49] - GET /showDatabase
+[2024-04-30 10:20:18] - GET /showDatabase
+[2024-04-30 10:21:49] - GET /showDatabase
+[2024-04-30 10:30:31] - GET /showDatabase
+[2024-04-30 10:36:17] - GET /showDatabase

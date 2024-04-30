@@ -9,6 +9,7 @@ $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
+require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 
 
 
