@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { source: "source/Musique5.mp3", title: "No Love", artist: "Shearer" },
         { source: "source/Musique6.mp3", title: "Waiting For Nothing", artist: "The Fisherman" },
         { source: "source/Musique7.mp3", title: "Insane", artist: "b_Shake" },
+        { source: "source/Musique8.mp3", title: "Overthinking", artist: "RYYZN" },
+        { source: "source/Musique9.mp3", title: "Star Swimming", artist: "Props" },
     ];
 
     loaders.forEach(function(loader, index) {
