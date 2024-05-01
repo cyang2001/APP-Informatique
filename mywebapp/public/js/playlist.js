@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const audioPlayer = document.getElementById('audioPlayer');
     const loaders = document.querySelectorAll('.loader');
     const randomIcon = document.querySelector('.ale');
-    const nextIcon = document.querySelector('.next'); 
+    const nextIcon = document.querySelector('.next');
     const musicTitle = document.getElementById('musicTitle');
     const musicArtist = document.getElementById('musicArtist');
 
-    let currentTrackIndex = -1; 
-    let isShuffleMode = false; 
+    let currentTrackIndex = -1;
+    let isShuffleMode = false;
 
     const tracks = [
         { source: "source/Musique1.mp3", title: "I Can't Stop", artist: "Punch Deck" },
@@ -19,10 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         { source: "source/Musique7.mp3", title: "Insane", artist: "b_Shake" },
     ];
 
-    
     loaders.forEach(function(loader, index) {
         loader.addEventListener('click', function() {
-            isShuffleMode = false; 
+            isShuffleMode = false;
             if (currentTrackIndex === index && !audioPlayer.paused) {
                 audioPlayer.pause();
                 updateLoaderDisplay(index, false);
@@ -33,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     randomIcon.addEventListener('click', function() {
-        isShuffleMode = true; 
+        isShuffleMode = true;
         playRandomMusic();
     });
 
-    nextIcon.addEventListener('click', playNextTrack); 
+    nextIcon.addEventListener('click', playNextTrack);
 
     audioPlayer.addEventListener('ended', function() {
         if (isShuffleMode) {
@@ -45,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             playNextTrack();
         }
+    });
+
+    audioPlayer.addEventListener('play', function() {
+        updateLoaderDisplay(currentTrackIndex, true);  // Activer l'animation
+    });
+
+    audioPlayer.addEventListener('pause', function() {
+        updateLoaderDisplay(currentTrackIndex, false);  // Désactiver l'animation
     });
 
     function playMusic(source, title, artist) {
@@ -104,11 +111,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateTitleColor() {
-        const allTitles = document.querySelectorAll('.name'); 
-        allTitles.forEach(title => title.classList.remove('active-title')); 
-        const activeTitle = loaders[currentTrackIndex].querySelector('.name'); 
+        const allTitles = document.querySelectorAll('.name'); // Suppose que .name est la classe des titres dans chaque loader
+        allTitles.forEach(title => title.classList.remove('active-title')); // Retirer la classe active de tous les titres
+        const activeTitle = loaders[currentTrackIndex].querySelector('.name'); // Trouver le titre dans le loader actif
         if (activeTitle) {
-            activeTitle.classList.add('active-title');
+            activeTitle.classList.add('active-title'); // Ajouter la classe active au titre de la piste jouée
         }
     }
 });
