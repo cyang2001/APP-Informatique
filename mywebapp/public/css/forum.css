@@ -4,6 +4,20 @@ body {
     padding: 0;
 }
 
+.header{
+    opacity: 90%;
+    background-color: #0D2C51;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.footer{
+    height: 80px;
+    background-color: #0D2C51;
+}
+
 div {
     box: shadow 3px;;
     margin: 10px;
