@@ -13,6 +13,13 @@ body {
     width: 100%;
 }
 
+.page_title{
+    color:white;
+    padding-top: 20px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+}
+
 .footer{
     height: 80px;
     background-color: #0D2C51;
