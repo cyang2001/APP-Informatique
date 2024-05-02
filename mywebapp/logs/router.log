@@ -1,0 +1,112 @@
+[2024-05-02 21:35:07] - Register: GET /logout
+[2024-05-02 21:35:07] - Dispatching request: GET
+[2024-05-02 21:35:07] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:35:07] - Handling URI: /logout
+[2024-05-02 21:35:07] - Checking pattern: ~^/logout$~
+[2024-05-02 21:35:07] - Pattern matched: ~^/logout$~
+[2024-05-02 21:35:07] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:35:07] - Calling callback function
+[2024-05-02 21:35:26] - Register: GET /getUserInfo
+[2024-05-02 21:35:26] - Dispatching request: GET
+[2024-05-02 21:35:26] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-02 21:35:26] - Handling URI: /getUserInfo
+[2024-05-02 21:35:26] - Checking pattern: ~^/getUserInfo$~
+[2024-05-02 21:35:26] - Pattern matched: ~^/getUserInfo$~
+[2024-05-02 21:35:26] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-02 21:35:26] - Calling callback function
+[2024-05-02 21:41:01] - Register: GET /logout
+[2024-05-02 21:41:01] - Dispatching request: GET
+[2024-05-02 21:41:01] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:41:01] - Handling URI: /logout
+[2024-05-02 21:41:01] - Checking pattern: ~^/logout$~
+[2024-05-02 21:41:01] - Pattern matched: ~^/logout$~
+[2024-05-02 21:41:01] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:41:01] - Calling callback function
+[2024-05-02 21:41:04] - Register: GET /getUserInfo
+[2024-05-02 21:41:04] - Dispatching request: GET
+[2024-05-02 21:41:04] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-02 21:41:04] - Handling URI: /getUserInfo
+[2024-05-02 21:41:04] - Checking pattern: ~^/getUserInfo$~
+[2024-05-02 21:41:04] - Pattern matched: ~^/getUserInfo$~
+[2024-05-02 21:41:04] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-02 21:41:04] - Calling callback function
+[2024-05-02 21:41:16] - Register: GET /logout
+[2024-05-02 21:41:16] - Dispatching request: GET
+[2024-05-02 21:41:16] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:41:16] - Handling URI: /logout
+[2024-05-02 21:41:16] - Checking pattern: ~^/logout$~
+[2024-05-02 21:41:16] - Pattern matched: ~^/logout$~
+[2024-05-02 21:41:16] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:41:16] - Calling callback function
+[2024-05-02 21:41:21] - Register: POST /register
+[2024-05-02 21:41:21] - Dispatching request: POST
+[2024-05-02 21:41:21] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-05-02 21:41:21] - Handling URI: /register
+[2024-05-02 21:41:21] - Checking pattern: ~^/register$~
+[2024-05-02 21:41:21] - Pattern matched: ~^/register$~
+[2024-05-02 21:41:21] - Matches: [[["\/register",0]]]
+[2024-05-02 21:41:21] - Calling callback function
+[2024-05-02 21:43:36] - Register: GET /getUserInfo
+[2024-05-02 21:43:36] - Dispatching request: GET
+[2024-05-02 21:43:36] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-02 21:43:36] - Handling URI: /getUserInfo
+[2024-05-02 21:43:36] - Checking pattern: ~^/getUserInfo$~
+[2024-05-02 21:43:36] - Pattern matched: ~^/getUserInfo$~
+[2024-05-02 21:43:36] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-02 21:43:36] - Calling callback function
+[2024-05-02 21:43:49] - Register: GET /logout
+[2024-05-02 21:43:49] - Dispatching request: GET
+[2024-05-02 21:43:49] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:43:49] - Handling URI: /logout
+[2024-05-02 21:43:49] - Checking pattern: ~^/logout$~
+[2024-05-02 21:43:49] - Pattern matched: ~^/logout$~
+[2024-05-02 21:43:49] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:43:49] - Calling callback function
+[2024-05-02 21:43:56] - Register: POST /register
+[2024-05-02 21:43:56] - Dispatching request: POST
+[2024-05-02 21:43:56] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-05-02 21:43:56] - Handling URI: /register
+[2024-05-02 21:43:56] - Checking pattern: ~^/register$~
+[2024-05-02 21:43:56] - Pattern matched: ~^/register$~
+[2024-05-02 21:43:56] - Matches: [[["\/register",0]]]
+[2024-05-02 21:43:56] - Calling callback function
+[2024-05-02 21:44:07] - Register: POST /login
+[2024-05-02 21:44:07] - Dispatching request: POST
+[2024-05-02 21:44:07] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-02 21:44:07] - Handling URI: /login
+[2024-05-02 21:44:07] - Checking pattern: ~^/login$~
+[2024-05-02 21:44:07] - Pattern matched: ~^/login$~
+[2024-05-02 21:44:07] - Matches: [[["\/login",0]]]
+[2024-05-02 21:44:07] - Calling callback function
+[2024-05-02 21:44:08] - Register: GET /getUserInfo
+[2024-05-02 21:44:08] - Dispatching request: GET
+[2024-05-02 21:44:08] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-02 21:44:08] - Handling URI: /getUserInfo
+[2024-05-02 21:44:08] - Checking pattern: ~^/getUserInfo$~
+[2024-05-02 21:44:08] - Pattern matched: ~^/getUserInfo$~
+[2024-05-02 21:44:08] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-02 21:44:08] - Calling callback function
+[2024-05-02 21:44:13] - Register: GET /logout
+[2024-05-02 21:44:13] - Dispatching request: GET
+[2024-05-02 21:44:13] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:44:13] - Handling URI: /logout
+[2024-05-02 21:44:13] - Checking pattern: ~^/logout$~
+[2024-05-02 21:44:13] - Pattern matched: ~^/logout$~
+[2024-05-02 21:44:13] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:44:13] - Calling callback function
+[2024-05-02 21:44:13] - Register: GET /logout
+[2024-05-02 21:44:13] - Dispatching request: GET
+[2024-05-02 21:44:13] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-05-02 21:44:13] - Handling URI: /logout
+[2024-05-02 21:44:13] - Checking pattern: ~^/logout$~
+[2024-05-02 21:44:13] - Pattern matched: ~^/logout$~
+[2024-05-02 21:44:13] - Matches: [[["\/logout",0]]]
+[2024-05-02 21:44:13] - Calling callback function
+[2024-05-02 21:44:13] - Register: GET /getUserInfo
+[2024-05-02 21:44:13] - Dispatching request: GET
+[2024-05-02 21:44:13] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-02 21:44:13] - Handling URI: /getUserInfo
+[2024-05-02 21:44:13] - Checking pattern: ~^/getUserInfo$~
+[2024-05-02 21:44:13] - Pattern matched: ~^/getUserInfo$~
+[2024-05-02 21:44:13] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-02 21:44:13] - Calling callback function
