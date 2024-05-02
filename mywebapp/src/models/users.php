@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/logger.php';
 require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../tools/uuidGenerator.php';
+require_once __DIR__ . '/../tools/UUIDGenerator.php';
 class User {
     private $pdo;
     private $logger;
@@ -23,7 +23,7 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO USER (ID_USER,NAME_USER, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO USER (ID_USER, NAME_USER, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idUser, $name, $passwordHashed, $email, $idAccessLevel]);
         $this->logger->log("User registered: {$email} - {$name} - {$idUser}");
