@@ -146,9 +146,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); 
+    padding: 10px; 
     font-family: "Century Gothic", sans-serif;
     color: white;
     text-align: center;
+    z-index: 10;
 }
 
 * {
@@ -194,4 +197,32 @@ body{
     font-family: Calibri, sans-serif;
     margin-left: 50px;
     margin-right: 50px;
+}
+.gallery-container {
+    position: relative;
+    width: 100%; 
+    height: 500px; 
+    background-image: url('../source/pgw.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.gallery-container::before, .gallery-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15%; 
+    height: 100%;
+    background: inherit;
+    background-position: 50% 0; 
+    filter: blur(8px);
+}
+
+.gallery-container::before {
+    left: 0;
+}
+
+.gallery-container::after {
+    right: 0;
 }
