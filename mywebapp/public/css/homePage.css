@@ -97,6 +97,18 @@
     width: 100%;
 }
 
+.profil {
+    max-width: 5%;
+    height: auto;
+    position: fixed;
+    top: 5px;
+    left: 93%;
+    cursor: pointer;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+}
+
 .page_title{
     color:white;
     padding-top: 20px;
