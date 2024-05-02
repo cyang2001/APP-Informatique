@@ -48,7 +48,7 @@
 
     <div class="grid-container" id="gridContainer">
         <!-- Grille vide pour afficher les éléments ajoutés -->
-        <button class="grid-item add-button" onclick="toggleFormulaire();">Ajouter Événement</button>
+        <button class="grid-item add-button" onclick="toggleFormulaire();"> <b>+</b></button>
 
     </div>
     <div class="dropdown">
@@ -62,13 +62,15 @@
                 <input type="time" id="heure" name="heure"><br><br>
                 <label for="adresse">Adresse:</label>
                 <input type="text" id="adresse" name="adresse"><br><br>
-                <label for="description">Description:</label><br>
-                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+                <label for="illustration">Illustration</label><br>
+                <input type="file" id="illustration" name="illustration"><br><br>
                 <button type="button" onclick="ajouterElement();cacherFormulaire();">OK</button>
             </form>
         </div>
     </div>
     <script src="js/events.js"></script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </main>
 

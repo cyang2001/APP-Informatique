@@ -8,7 +8,7 @@ $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
-
+require_once __DIR__ . '/../src/controllers/MeetingController.php';
 
 
 
@@ -43,6 +43,24 @@ switch($action) {
             $router->post('/login', function(){
                 $loginController = new LoginController();
                 $loginController->login();
+            });
+        }
+        break;
+    case 'ajouterEvenement':
+        if ($method == 'POST') {
+            $logger->log('POST /ajouterEvenement');
+            $router->post('/ajouterEvenement', function() {
+                $meetingController = new MeetingController();
+                $meetingController->ajouterEvenement();
+            });
+        }
+        break;
+    case 'supprimerEvenement':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /supprimerEvenement');
+            $router->delete('/supprimerEvenement', function() {
+                $meetingController = new MeetingController();
+                $meetingController->supprimerEvenement();
             });
         }
         break;
