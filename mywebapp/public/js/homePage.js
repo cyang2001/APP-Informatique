@@ -3,9 +3,14 @@ window.onload = function() {
         method: 'GET'
         })
         .then(response => response.json())
+        .then(text => {
+            console.log(text);  // 打印响应的文本内容
+            return JSON.parse(text);  // 尝试解析 JSON
+        })
         .then(data => {
             const menu = document.querySelector('.menu-deroulant div');
             menu.innerHTML = '';
+            
             if (data.email) {
                 menu.innerHTML = '<a href="#" id="logout">Se déconnecter</a>';
                 document.getElementById('logout').addEventListener('click', function(event) {

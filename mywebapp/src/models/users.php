@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/logger.php';
 require_once __DIR__ . '/../config/database.php';
-require_once __DIR__ . '/../config/uuidGenerator.php';
+require_once __DIR__ . '/../tools/uuidGenerator.php';
 class User {
     private $pdo;
     private $logger;
