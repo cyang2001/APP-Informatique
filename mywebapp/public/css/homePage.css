@@ -114,36 +114,46 @@ body{
 }
 
 .main {
-
     font-family: Arial, sans-serif;
     color: black;
     font-size: 24px;
     text-align: justify;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 80px;
     overflow: auto;
 }
 
-.h2title {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.partie1 {
+    position: relative;
+    background-image: url("../source/pgw.jpg");
+    opacity: 0.85;
+    margin: 0;
+}
+
+.h1Title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "Century Gothic", sans-serif;
+    color: white;
+    text-align: center;
 }
 
 * {
     box-sizing: border-box;
 }
 
-
 .item {
     width: 50%;
+    align-items: center;
 }
 
 .flex-container {
     display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
 }
+
 .flex-container > div {
     padding: 20px;
     margin: 10px;
@@ -153,8 +163,6 @@ body{
 }
 
 .gallerie {
-    display: block;
-    margin: auto;
     max-width: 100%;
     height: auto;
 }
@@ -172,4 +180,6 @@ body{
 .texte{
     font-size: 30px;
     font-family: Calibri, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
