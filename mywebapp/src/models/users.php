@@ -12,6 +12,7 @@ class User {
     public function register($name, $password, $email) {
         // Check if email already exists
         $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
+        $idAccessLevel = 0;
         $sql = "SELECT * FROM USER WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
@@ -20,9 +21,9 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$name, $passwordHashed, $email]);
+        $stmt->execute([$name, $passwordHashed, $email, $idAccessLevel]);
         $this->logger->log("User registered: {$email} - {$name}");
         return ['success' => true, 'userId' => $this->pdo->lastInsertId()];
     }
@@ -42,11 +43,16 @@ class User {
         return ['success' => false, 'message' => 'Invalid password'];
     }
     // We have to add a function that verifies if the email exists in the database by sending code to the email address
-    public function verifyEmail() {
+    public function verifyEmail($code) {
         // i dont know how to do this part
         // ask master GPT!
+        if ($code == '1234') {
+            return ['success' => true];
+        }
+        // only for test
     }
-    public function renewPassword($email, $passwordHashed) {
+    public function renewPassword($email, $password) {
+        $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
         $sql = "UPDATE USER SET PASSWORD_HASH = ? WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$passwordHashed, $email]);
