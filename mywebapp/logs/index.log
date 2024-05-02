@@ -14,3 +14,15 @@
 [2024-05-02 21:44:13] - GET /logout
 [2024-05-02 21:44:13] - GET /logout
 [2024-05-02 21:44:13] - GET /getUserInfo
+[2024-05-02 21:52:50] - GET /getUserInfo
+[2024-05-02 21:52:53] - GET /logout
+[2024-05-02 21:52:58] - POST /register
+[2024-05-02 21:52:58] - calling
+[2024-05-02 21:53:55] - GET /getUserInfo
+[2024-05-02 21:53:57] - GET /logout
+[2024-05-02 21:54:02] - POST /register
+[2024-05-02 21:54:02] - calling
+[2024-05-02 21:54:21] - GET /getUserInfo
+[2024-05-02 21:54:24] - GET /logout
+[2024-05-02 21:54:29] - POST /register
+[2024-05-02 21:54:29] - calling
