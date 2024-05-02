@@ -9,6 +9,43 @@
 
     <body>
 
+        <script>
+            function handleMenuButtonClick() {
+              var checkbox = document.getElementById('menu_toggle');
+              checkbox.checked = !checkbox.checked;
+            }
+        </script>
+          
+          
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" onclick="handleMenuButtonClick()">
+              <span></span>
+            </label>
+          
+            <ul class="menu_box">
+              <li><p class="menu_title"><b>Ambisound</b></p></li>
+              <li><a class="menu_item" href="#">Accueil</a></li>
+              <li><a class="menu_item" href="#">Informations</a></li>
+              <li><a class="menu_item" href="#">FAQ</a></li>
+              <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+              <li><a class="menu_item" href="#">Forum</a></li>
+              <li><a class="menu_item" href="#">Événements</a></li>
+              <li><a class="menu_item" href="#">Lieux</a></li>
+              <li><a class="menu_item" href="#">Billetterie</a></li>
+              <li><a class="menu_item" href="#">Playlists</a></li>
+              <li><a class="menu_item" href="#">Capteurs</a></li>
+            </ul>
+        </div>
+
+        <header class="header">
+
+            <h1 class="page_title">
+              Forum
+            </h1>
+          
+        </header>
+
         <div class="conteneur">
 
             <div class="sous-titre">
@@ -24,7 +61,8 @@
                 </div>
                 <div class="partie_post">
                     <div class="post-titre">
-                        Titre
+                        Titre 3
+                    
                     </div>
                     <div class="post-description">
                         Lorem ipsum dolor sit amet. Quo delectus omnis ad sapiente recusandae eos fugiat molestiae vel minima error. Sed error animi quo molestiae perferendis non maiores aliquid qui magnam autem. Et consectetur esse vel saepe deserunt qui temporibus omnis et soluta minima.
@@ -46,6 +84,10 @@ Ut fugit aspernatur sit neque optio in veniam quibusdam.
                 <img class="post_fichier" src="../source/ambisound.png" alt="fichier_post3">
             </div>
         </div>
+
+        <footer class="footer">
+
+        </footer>
 
     </body>
 
