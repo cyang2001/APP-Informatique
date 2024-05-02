@@ -16,8 +16,9 @@ class LoginController {
             echo json_encode($response);
             session_start();
             $_SESSION['user'] = [
+                'id' => $response['user']['ID_USER'],
                 'email' => $userEmail,
-                'name' => $response['user']['NAME'],
+                'name' => $response['user']['NAME_USER'],
             ];
             return;
         } else {
