@@ -9,6 +9,7 @@ $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
+require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
@@ -49,6 +50,21 @@ switch($action) {
             });
         }
         break;
+    case 'ajouterEvenement':
+        if ($method == 'POST') {
+            $logger->log('POST /ajouterEvenement');
+            $router->post('/ajouterEvenement', function() {
+                $meetingController = new MeetingController();
+                $meetingController->ajouterEvenement();
+            });
+        }
+        break;
+    case 'supprimerEvenement':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /supprimerEvenement');
+            $router->delete('/supprimerEvenement', function() {
+                $meetingController = new MeetingController();
+                $meetingController->supprimerEvenement();
     case 'renewPassword1':
         if ($method == 'GET') {
             $logger->log('GET /renewPassword1');
