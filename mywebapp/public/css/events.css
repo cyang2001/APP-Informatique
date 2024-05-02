@@ -117,22 +117,28 @@ main{
 .grid-container {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
 .grid-item {
     font-family: Calibri,sans-serif;
-    color: white;
+    color: #242b33;
     font-size: 17px;
     height: 300px;
     width: 300px;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
     border-radius: 5px;
     margin: 10px;
     text-align: center;
     position: relative;
+}
+
+.event-text{
+    margin-top: 200px;
 }
 
 .grid-item.add-button {
@@ -161,17 +167,9 @@ main{
     top: 5px;
     right: 5px;
     cursor: pointer;
-    color: white;
+    color: darkred;
 }
 
-.event-text{
-
-    margin: 100px;
-}
-
-.text-p{
-    background-color: #242b33;
-}
 
 
 .dropdown {

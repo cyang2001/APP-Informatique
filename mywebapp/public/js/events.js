@@ -34,51 +34,61 @@ function ajouterElement() {
     var jour = date.getDate();
 
     var gridContainer = document.getElementById("gridContainer");
+    // Si nous ajoutons un nouvel élément
     var gridItem = document.createElement("div");
     gridItem.classList.add("grid-item");
     gridItem.style.backgroundImage = "url('" + illustrationURL + "')"; // Définir l'image de fond
     gridItem.innerHTML = `
-    <div class="event-text">
-        <p class="text-p"><b><${nom}/b></p>
-        <p class="text-p"><b>${jour}</b> ${moisArray[mois - 1]} ${annee}</p>
-        <p class="text-p"><strong>à</strong> ${heure}</p>
-        <p class="text-p"><b>${adresse}</b></p>
-    </div>
-    <button class="delete-button" onclick="supprimerElement(this.parentNode)"><b>×</b></button>
-  `;
-    gridContainer.appendChild(gridItem);
+        <div class="event-text">
+        <p><b><strong></strong>${nom}</b></p>
+        <p><b><strong></strong>${jour} ${moisArray[mois - 1]} ${annee}</b></p>
+        <p><b><strong>à </strong>${heure}</b></p>
+        <p><b><strong></strong>${adresse}</b></p>
+        </div>
+        <button class="delete-button" onclick="supprimerElement(this.parentNode)"><b>×</b></button>
+        `;
+        gridContainer.appendChild(gridItem);
 
-    // Nettoyer les champs du formulaire
-    document.getElementById("nom").value = "";
-    document.getElementById("date").value = "";
-    document.getElementById("heure").value = "";
-    document.getElementById("adresse").value = "";
-    document.getElementById("illustration").value = ""; // Assurez-vous de réinitialiser la valeur du champ de fichier
+        // Nettoyer les champs du formulaire
+        document.getElementById("nom").value = "";
+        document.getElementById("date").value = "";
+        document.getElementById("heure").value = "";
+        document.getElementById("adresse").value = "";
+        document.getElementById("illustration").value = "";
 
-    // Cacher le formulaire une fois l'élément ajouté
-    toggleFormulaire();
+        // Cacher le formulaire une fois l'élément ajouté
+        toggleFormulaire();
 
-    fetch('/index.php?action=ajouterEvenement', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ nom, date, heure, adresse, description }),
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erreur lors de l\'ajout de l\'événement');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Traitez la réponse si nécessaire
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Erreur:', error);
+        // Rediriger l'utilisateur lorsqu'il clique sur l'élément ajouté
+        gridItem.addEventListener('click', function() {
+        window.location.href = 'billetterie.html';
         });
+
+        // Effectuer l'ajout de l'événement via une requête AJAX
+        fetch('/index.php?action=ajouterEvenement', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ nom, date, heure, adresse, description }),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors de l\'ajout de l\'événement');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Traitez la réponse si nécessaire
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+            });
+
+
 }
+
 
 
 
@@ -91,4 +101,7 @@ function supprimerElement(gridItem) {
     gridContainer.removeChild(gridItem);
 
 }
+
+
+
 
