@@ -39,5 +39,5 @@ class Database {
     private function __clone() { }
 
     // Prevent from being unserialized 
-    private function __wakeup() { }
+    public function __wakeup() { }
 }

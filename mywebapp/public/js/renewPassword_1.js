@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('login-form');
+    const form = document.getElementById('renewPassword1-form');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // prevent the form from submitting
         var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
+        var password = document.getElementById('code').value;
 
         const formData = new FormData(form);
-        fetch('index.php?action=login', {
+        fetch('index.php?action=renewPassword1', {
             method: 'POST',
             body: formData
         })
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data.success) {
                 // delete alert if needs to be removed
-                alert('Connexion réussie!');
+                alert('Vérification réussie!');
                 // redirect to home page
-                window.location.href = 'homePage.html';
+                window.location.href = 'renewPassword_fr_2.html';
             } else {
                 alert('Erreur: ' + data.message);
                 // display error message
