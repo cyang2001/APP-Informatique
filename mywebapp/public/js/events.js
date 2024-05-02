@@ -59,12 +59,15 @@ function ajouterElement() {
         // Cacher le formulaire une fois l'élément ajouté
         toggleFormulaire();
 
-        // Rediriger l'utilisateur lorsqu'il clique sur l'élément ajouté
-        gridItem.addEventListener('click', function() {
-        window.location.href = 'billetterie.html';
-        });
+    // Rediriger l'utilisateur lorsqu'il clique sur l'élément ajouté
+    gridItem.addEventListener('click', function(event) {
+        if (event.target.classList.contains('grid-item')) {
+            window.location.href = 'billetterie.html';
+        }
+    });
 
-        // Effectuer l'ajout de l'événement via une requête AJAX
+
+    // Effectuer l'ajout de l'événement via une requête AJAX
         fetch('/index.php?action=ajouterEvenement', {
             method: 'POST',
             headers: {
