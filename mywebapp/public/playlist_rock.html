@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Playlists Rock</title>
+        <link rel="stylesheet" type="text/css" href="css\playlist_rock.css" />
+    </head>
+    <body>
+      <script>
+        function handleMenuButtonClick() {
+            var checkbox = document.getElementById('menu_toggle');
+            checkbox.checked = !checkbox.checked;
+        }
+    </script>
+    <script src="js/playlist.js"></script>
+    
+    
+    <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" onclick="handleMenuButtonClick()">
+            <span></span>
+        </label>
+    
+        <ul class="menu_box">
+            <li><p class="menu_title"><b>Ambisound</b></p></li>
+            <li><a class="menu_item" href="#">Accueil</a></li>
+            <li><a class="menu_item" href="#">Informations</a></li>
+            <li><a class="menu_item" href="#">FAQ</a></li>
+            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+            <li><a class="menu_item" href="#">Forum</a></li>
+            <li><a class="menu_item" href="#">Événements</a></li>
+            <li><a class="menu_item" href="#">Lieux</a></li>
+            <li><a class="menu_item" href="#">Billetterie</a></li>
+            <li><a class="menu_item" href="#">Playlists</a></li>
+            <li><a class="menu_item" href="#">Capteurs</a></li>
+        </ul>
+    </div>
+        <header >
+          <h1 class="page_title">
+            Playlists
+          </h1>
+            
+        </header>
+        <main>
+            <div class="main">
+          
+                <div class="section1">
+
+                <a href="playlist.html">
+                <img src="source/retour.png" width="50" height="50" class="retour">
+                </a>
+
+                <div class="type">
+                  <div class="song">
+                    <p class="name">Playlist Rock</p>
+                    <p class="artist">Embarquez pour un voyage électrique avec cette playlist rock explosive !</p>
+                    <p>Riffs légendaires et énergie brute vous attendent pour réveiller le rebelle en vous. À fond les décibels !</p>
+                  </div>
+                  <div class="albumcover">
+                    <img class="album" src="source/rock.jpg" height="250" width="250">
+
+                  </div>
+                  
+                </div>
+
+                <div class="affichage">
+                  <div class="titreM">
+                  <div id="musicInfo">
+                    <p id="musicTitle">Titre de la musique</p>
+                    <p id="musicArtist">Nom de l'artiste</p>
+                  </div>
+                  </div>
+                  
+                    
+                  <audio id="audioPlayer" controls></audio>
+
+                  <img class="next" src="source/next.png" width="25" height="25">
+                
+                  <img class="ale" src="source/aleatoire.png" width="25" height="25" onclick="playRandomMusic()">
+
+                  
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique1.mp3', 'I Can\'t Stop', 'Punch Deck')">
+                    <div class="temps">
+                      <p>4:33</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">I Can't Stop</p>
+                      <p class="artist">Punch Deck</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">1</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+                   
+                </div>
+                
+
+                <div class="loader" onclick="playMusic('source/Musique2.mp3', 'Night', 'Cloudkicker')">
+                  <div class="temps">
+                    <p>2:18</p>
+                  </div> 
+                    <div class="song">
+                      <p class="name">Night</p>
+                      <p class="artist">Cloudkicker</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">2</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="loader" onclick="playMusic('source/Musique3.mp3', 'In Closing', 'Days Past')">
+                  <div class="temps">
+                    <p>5:57</p>
+                  </div>
+                    <div class="song">
+                      <p class="name">In Closing</p>
+                      <p class="artist">Days Past</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">3</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                      </div>
+                   
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique4.mp3', 'Jacked It Up', 'Josh Shapiro')">
+                  <div class="temps">
+                    <p>2:56</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">Jacked It Up</p>
+                    <p class="artist">Josh Shapiro</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">4</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique5.mp3', 'No Love', 'Shearer')">
+                  <div class="temps">
+                    <p>3:28</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">No Love</p>
+                    <p class="artist">Shearer</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">5</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique6.mp3', 'Waiting For Nothing', 'The Fisherman')">
+                  <div class="temps">
+                    <p>3:29</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Waiting For Nothing</p>
+                    <p class="artist">The Fisherman</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">6</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique7.mp3', 'Insane', 'b_Shake')">
+                  <div class="temps">
+                    <p>5:43</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Insane</p>
+                    <p class="artist">b_Shake</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">7</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                  
+                
+              </div>
+              
+              </div>
+            
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+
