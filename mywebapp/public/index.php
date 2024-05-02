@@ -10,7 +10,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
-
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/logout.php';
 
 
 
@@ -83,6 +84,24 @@ switch($action) {
             $router->get('/showDatabase', function(){
                 $showDatabaseController = new showDatabaseController();
                 $showDatabaseController->showDatabase();
+            });
+        }
+        break;
+    case 'getUserInfo':
+        if ($method == 'GET') {
+            $logger->log('GET /getUserInfo');
+            $router->get('/getUserInfo', function(){
+                $getUserInfo = new getUserInfo();
+                $getUserInfo->getUserInfo();
+            });
+        }
+        break;
+    case 'logout':
+        if ($method == 'GET') {
+            $logger->log('GET /logout');
+            $router->get('/logout', function(){
+                $logoutController = new logoutController();
+                $logoutController->logout();
             });
         }
         break;
