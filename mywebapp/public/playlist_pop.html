@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Playlists Pop</title>
+        <link rel="stylesheet" type="text/css" href="css\playlist_rock.css" />
+    </head>
+    <body>
+      <script>
+        function handleMenuButtonClick() {
+            var checkbox = document.getElementById('menu_toggle');
+            checkbox.checked = !checkbox.checked;
+        }
+    </script>
+    <script src="js/playlist_pop.js"></script>
+    
+    
+    <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" onclick="handleMenuButtonClick()">
+            <span></span>
+        </label>
+    
+        <ul class="menu_box">
+            <li><p class="menu_title"><b>Ambisound</b></p></li>
+            <li><a class="menu_item" href="#">Accueil</a></li>
+            <li><a class="menu_item" href="#">Informations</a></li>
+            <li><a class="menu_item" href="#">FAQ</a></li>
+            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+            <li><a class="menu_item" href="#">Forum</a></li>
+            <li><a class="menu_item" href="#">Événements</a></li>
+            <li><a class="menu_item" href="#">Lieux</a></li>
+            <li><a class="menu_item" href="#">Billetterie</a></li>
+            <li><a class="menu_item" href="#">Playlists</a></li>
+            <li><a class="menu_item" href="#">Capteurs</a></li>
+        </ul>
+    </div>
+        <header >
+          <h1 class="page_title">
+            Playlists
+          </h1>
+            
+        </header>
+        <main>
+            <div class="main">
+          
+                <div class="section1">
+
+                <a href="playlist.html">
+                <img src="source/retour.png" width="50" height="50" class="retour">
+                </a>
+
+                <div class="type">
+                  <div class="song">
+                    <p class="name">Playlist Pop</p>
+                    <p class="artist">Vibrez au rythme de cette playlist pop, où hits actuels et classiques intemporels se rencontrent pour colorer votre journée de mélodies irrésistibles. <br>
+                        Parfait pour dynamiser n'importe quel moment !</p>
+                  </div>
+                  <div class="albumcover">
+                    <img class="album" src="source/pop.png" height="250" width="250">
+
+                  </div>
+                  
+                </div>
+
+                <div class="affichage">
+                  <div class="titreM">
+                  <div id="musicInfo">
+                    <p id="musicTitle">Titre de la musique</p>
+                    <p id="musicArtist">Nom de l'artiste</p>
+                  </div>
+                  </div>
+                  
+                    
+                  <audio id="audioPlayer" controls></audio>
+
+                  <img class="next" src="source/next.png" width="25" height="25">
+                
+                  <img class="ale" src="source/aleatoire.png" width="25" height="25" onclick="playRandomMusic()">
+
+                  
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique8.mp3', 'Overthinking', 'RYYZN')">
+                    <div class="temps">
+                      <p>2:54</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">Overthinking</p>
+                      <p class="artist">RYYZN</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">1</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+                   
+                </div>
+                
+
+                <div class="loader" onclick="playMusic('source/Musique9.mp3', 'Star Swimming', 'Props')">
+                  <div class="temps">
+                    <p>3:28</p>
+                  </div> 
+                    <div class="song">
+                      <p class="name">Star Swimming</p>
+                      <p class="artist">Propsr</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">2</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="loader" onclick="playMusic('source/Musique10.mp3', 'Lover', 'Square A Saw')">
+                  <div class="temps">
+                    <p>3:14</p>
+                  </div>
+                    <div class="song">
+                      <p class="name">Lover</p>
+                      <p class="artist">Square A Saw</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">3</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                      </div>
+                   
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique11.mp3', 'New Beginning', 'Forrest Keller')">
+                  <div class="temps">
+                    <p>3:00</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">New Beginning</p>
+                    <p class="artist">Forrest Keller</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">4</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique12.mp3', 'Not Kings', 'Candy Says')">
+                  <div class="temps">
+                    <p>3:33</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">Not Kings</p>
+                    <p class="artist">Candy Says</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">5</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique13.mp3', 'Bad Love', 'Niwel')">
+                  <div class="temps">
+                    <p>3:34</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Bad Love</p>
+                    <p class="artist">Niwel</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">6</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique14.mp3', 'Wizard Girl', 'Wherestoday')">
+                  <div class="temps">
+                    <p>4:22</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Wizard Girl</p>
+                    <p class="artist">Wherestoday</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">7</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique15.mp3', 'Daybreak feat Henk', 'Jens East')">
+                    <div class="temps">
+                      <p>4:42</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">Daybreak feat Henk</p>
+                      <p class="artist">Jens East</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">8</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+  
+                  </div>
+
+                  <div class="loader" onclick="playMusic('source/Musique16.mp3', 'Feel Sorry', 'A Virtual Friend')">
+                    <div class="temps">
+                      <p>4:00</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">Feel Sorry</p>
+                      <p class="artist">A Virtual Friend</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">9</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+  
+                  </div>
+
+
+                  <div class="loader" onclick="playMusic('source/Musique17.mp3', 'Go', 'Tomh')">
+                    <div class="temps">
+                      <p>3:08</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">Go</p>
+                      <p class="artist">Tomh</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">10</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+  
+                  </div>
+
+                  
+                
+              </div>
+              
+              </div>
+            
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+

@@ -7,7 +7,7 @@ class Database {
         $host = '127.0.0.1';
         $db   = 'APP';
         $user = 'root';
-        $pass = '123456';
+        $pass = 'root';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
