@@ -1,3 +1,5 @@
 ./.vscode
 /mywebapp/logs/*
 ./mywebapp/createDatabase.sql
+./mywebapp/public/testForum
+./mywebapp/logs/*

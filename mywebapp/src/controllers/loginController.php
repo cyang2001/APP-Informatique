@@ -14,6 +14,11 @@ class LoginController {
         $response = $this->users->login($userEmail, $userPassword);
         if ($response['success']) {
             echo json_encode($response);
+            session_start();
+            $_SESSION['user'] = [
+                'email' => $userEmail,
+                'name' => $response['user']['NAME'],
+            ];
             return;
         } else {
             http_response_code(400);

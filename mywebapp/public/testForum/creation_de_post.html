@@ -3,11 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forum</title>
-        <link rel="stylesheet" href="./css/forum.css">
+        <title>Creer un post</title>
+        <link rel="stylesheet" href="../css/forum.css">
     </head>
-
-    
 
     <body>
 
@@ -49,25 +47,39 @@
         </header>
 
         <div class="conteneur">
+
+            <div class="sous-titre">
+                <h2>Créer ton post</h2>
+            </div> 
             
-            <div class="forum">
+            <form action="get">
+                <div class="creation_de_post">
+                    <div class="creation_de_post_titre">
+                        <label for="Titre">Titre</label>
+                        <input type="text" nom="Titre" placeholder="Ajouter un titre" required>
+                    </div>
 
-                <div class="sous-titre">
-                    <h2>Nos Forum</h2>
-                </div>
+                    <div class="creation_de_post_description">
+                        <label for="description1">Description</label>
+                        <textarea name="description1" cols="133" rows="10" placeholder ="Ajouter une description" required></textarea>
+                    </div>
 
-                <div class="section-post">
-                    <div class="block" id="one"><a href="./testForum/Discussion_generale.html">Discussion générale</a></div>
-                    <div class="block" id="two"><a href="./testForum/Aide_et_support.html">Aide et support</a></div>
-                    <div class="block" id="three"><a href="./testForum/Partage_de_projets.html">Partage de projets</a></div>
-                    <div class="block" id="four"><a href="./testForum/Plainte.html">Plainte</a></div>
-                </div>
-            </div>
+                    <div class="creation_de_post_fichier">
+                        <label for="Ajouter_un_fichier">Ajouter un fichier</label>
+                        <input type="file" nom="Ajouter_un_fichier">
+                    </div>
+
+                    <div class="creation_de_post_submit_bouton">
+                        <input type="submit" value="Envoyer" accesskey="">
+                    </div>
+
+                </div> 
+            </form>
         </div>
+
         <footer class="footer">
 
         </footer>
-
 
     </body>
 
