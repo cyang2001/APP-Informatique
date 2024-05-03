@@ -9,12 +9,12 @@ class LoginController {
     }
 
     function login() {
+        session_start();
         $userEmail = $_POST['email'];
         $userPassword = $_POST['password'];
         $response = $this->users->login($userEmail, $userPassword);
         if ($response['success']) {
             echo json_encode($response);
-            session_start();
             $_SESSION['user'] = [
                 'id' => $response['user']['ID_USER'],
                 'email' => $userEmail,

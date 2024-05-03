@@ -7,9 +7,10 @@ class logoutController {
     }
     function logout() {
         session_start();
-        session_destroy();
+        $_SESSION = array();
         header('Content-Type: application/json');
         echo json_encode(array('message' => 'Logged out successfully'));
+        session_destroy();
         $this->logger->log('Logged out successfully');
     }
 }

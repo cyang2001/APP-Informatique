@@ -1,28 +1,8 @@
-[2024-05-02 21:35:07] - GET /logout
-[2024-05-02 21:35:26] - GET /getUserInfo
-[2024-05-02 21:41:01] - GET /logout
-[2024-05-02 21:41:04] - GET /getUserInfo
-[2024-05-02 21:41:16] - GET /logout
-[2024-05-02 21:41:21] - POST /register
-[2024-05-02 21:41:21] - calling
-[2024-05-02 21:43:36] - GET /getUserInfo
-[2024-05-02 21:43:49] - GET /logout
-[2024-05-02 21:43:56] - POST /register
-[2024-05-02 21:43:56] - calling
-[2024-05-02 21:44:07] - POST /login
-[2024-05-02 21:44:08] - GET /getUserInfo
-[2024-05-02 21:44:13] - GET /logout
-[2024-05-02 21:44:13] - GET /logout
-[2024-05-02 21:44:13] - GET /getUserInfo
-[2024-05-02 21:52:50] - GET /getUserInfo
-[2024-05-02 21:52:53] - GET /logout
-[2024-05-02 21:52:58] - POST /register
-[2024-05-02 21:52:58] - calling
-[2024-05-02 21:53:55] - GET /getUserInfo
-[2024-05-02 21:53:57] - GET /logout
-[2024-05-02 21:54:02] - POST /register
-[2024-05-02 21:54:02] - calling
-[2024-05-02 21:54:21] - GET /getUserInfo
-[2024-05-02 21:54:24] - GET /logout
-[2024-05-02 21:54:29] - POST /register
-[2024-05-02 21:54:29] - calling
+[2024-05-02 23:56:47] - GET /getUserInfo
+[2024-05-02 23:56:55] - POST /login
+[2024-05-02 23:56:58] - GET /getUserInfo
+[2024-05-02 23:57:27] - POST /addMeeting
+[2024-05-03 00:03:15] - GET /getUserInfo
+[2024-05-03 00:03:52] - POST /addMeeting
+[2024-05-03 00:04:58] - GET /getUserInfo
+[2024-05-03 00:11:38] - GET /getUserInfo

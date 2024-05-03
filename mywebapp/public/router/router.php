@@ -18,7 +18,14 @@ class Router{
         $pattern = $this->routerTemplateToReg($patternStr);
         $this->register('POST', $patternStr, $pattern, $fn);
     }
-
+    public function put($patternStr, $fn) {
+        $pattern = $this->routerTemplateToReg($patternStr);
+        $this->register('PUT', $patternStr, $pattern, $fn);
+    }
+    public function delete($patternStr, $fn) {
+        $pattern = $this->routerTemplateToReg($patternStr);
+        $this->register('DELETE', $patternStr, $pattern, $fn);
+    }
     public function register($method, $patternStr, $pattern, $fn) {
         $this->routerMap[$method][] = array(
             'pattern' => $pattern,
