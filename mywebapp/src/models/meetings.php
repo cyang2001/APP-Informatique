@@ -12,7 +12,7 @@ class Meetings {
 
     public function addMeeting($name, $date, $time, $address, $description, $idOrganizer) {
         $idMeeting = UUIDGenerator::generate();
-        $sql = "INSERT INTO meetings (ID_MEETING, NAME_MEETING, DATE_MEETING, HOUR_MEETING, ADDRESS, MEEING_DESCRTIPTION, ID_ORGANIZER) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO meetings (ID_MEETING, NAME_MEETING, DATE_MEETING, HOUR_MEETING, ADDRESS, MEETING_DESCRIPTION, ID_ORGANIZER) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idMeeting, $name, $date, $time, $address, $description, $idOrganizer]);
         $this->logger->log("Meeting added: {$idMeeting}-{$name} - {$date} - {$time} - {$address} - {$description}");

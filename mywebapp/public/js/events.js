@@ -24,6 +24,7 @@ function ajouterElement() {
     var dateString = document.getElementById("date").value;
     var heure = document.getElementById("heure").value;
     var adresse = document.getElementById("adresse").value;
+    var description = document.getElementById("description").value;
     var illustrationFile = document.getElementById("illustration").files[0]; // Récupère le fichier d'illustration
     var illustrationURL = URL.createObjectURL(illustrationFile); // Crée une URL objet à partir du fichier
 
@@ -44,6 +45,7 @@ function ajouterElement() {
         <p><b><strong></strong>${jour} ${moisArray[mois - 1]} ${annee}</b></p>
         <p><b><strong>à </strong>${heure}</b></p>
         <p><b><strong></strong>${adresse}</b></p>
+        <p><b><strong></strong>${description}</b></p>
         </div>
         <button class="delete-button" onclick="supprimerElement(this.parentNode)"><b>×</b></button>
         `;
@@ -74,8 +76,7 @@ function ajouterElement() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ nom, date, heure, adresse, description }),
-        })
-            .then(response => {
+        }).then(response => {
                 if (!response.ok) {
                     throw new Error('Erreur lors de l\'ajout de l\'événement');
                 }
