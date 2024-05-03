@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../src/models/meetings.php';
 require_once __DIR__ . '/../src/models/users.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
@@ -50,21 +51,26 @@ switch($action) {
             });
         }
         break;
-    case 'ajouterEvenement':
+    case 'addMeeting':
         if ($method == 'POST') {
-            $logger->log('POST /ajouterEvenement');
-            $router->post('/ajouterEvenement', function() {
+            $logger->log('POST /addMeeting');
+            $router->post('/addMeeting', function() {
                 $meetingController = new MeetingController();
                 $meetingController->ajouterEvenement();
             });
         }
         break;
-    case 'supprimerEvenement':
+    case 'deleteMeeting':
         if ($method == 'DELETE') {
-            $logger->log('DELETE /supprimerEvenement');
-            $router->delete('/supprimerEvenement', function() {
+            $logger->log('DELETE /deleteMeeting');
+            $router->delete('/deleteMeeting', function() {
                 $meetingController = new MeetingController();
-                $meetingController->supprimerEvenement();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idMeeting = $data['idMeeting'];
+                $meetingController->supprimerEvenement($idMeeting);
+            });
+        }
+        break;
     case 'renewPassword1':
         if ($method == 'GET') {
             $logger->log('GET /renewPassword1');

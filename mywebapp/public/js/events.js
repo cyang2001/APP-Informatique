@@ -55,7 +55,7 @@ function ajouterElement() {
         document.getElementById("heure").value = "";
         document.getElementById("adresse").value = "";
         document.getElementById("illustration").value = "";
-
+        document.getElementById("description").value = "";
         // Cacher le formulaire une fois l'élément ajouté
         toggleFormulaire();
 
@@ -68,7 +68,7 @@ function ajouterElement() {
 
 
     // Effectuer l'ajout de l'événement via une requête AJAX
-        fetch('/index.php?action=ajouterEvenement', {
+        fetch('index.php?action=addMeeting', { // english !!!!!!!!!!!!!!! pas ajouterEvenement!!!!!!!!! et puis il n y a pas /
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -82,8 +82,7 @@ function ajouterElement() {
                 return response.json();
             })
             .then(data => {
-                // Traitez la réponse si nécessaire
-                console.log(data);
+                gridContainer.setAttribute('ID_MEETING', data.idMeeting);
             })
             .catch(error => {
                 console.error('Erreur:', error);
@@ -101,6 +100,22 @@ var moisArray = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet
 
 function supprimerElement(gridItem) {
     var gridContainer = document.getElementById("gridContainer");
+    fetch('index.php?action=deleteMeeting', { // english !!!!!!!!!!!!!!! pas supprimerEvenement!!!!!!!!! et puis il n y a pas / 
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ idMeeting: gridItem.getAttribute('ID_MEETING') }),
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur lors de la suppression de l\'événement');
+            }
+            return response.json();
+        })
+        .catch(error => {
+            console.error('Erreur:', error);
+        });
     gridContainer.removeChild(gridItem);
 
 }

@@ -16,7 +16,8 @@ window.onload = function() {
                 fetch('index.php?action=logout', {
                     method: 'GET'
                 })
-                .then(() => location.reload());
+                .then(() => location.reload())
+                .catch(error => console.error('Error on logout:', error));
             });
         } else {
             menu.innerHTML = '<a href="./login_fr.html">Se connecter</a><a href="./register_fr.html">S\'inscrire</a>';
@@ -25,10 +26,4 @@ window.onload = function() {
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
-}
-
-window.addEventListener('beforeunload', function(event) {
-    fetch('index.php?action=logout', {
-        method: 'GET'
-    }).catch(error => console.error('Error on logout:', error));
-});
+};

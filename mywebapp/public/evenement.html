@@ -23,15 +23,15 @@
 
     <ul class="menu_box">
         <li><p class="menu_title"><b>Ambisound</b></p></li>
-        <li><a class="menu_item" href="#">Accueil</a></li>
+        <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
         <li><a class="menu_item" href="#">Informations</a></li>
-        <li><a class="menu_item" href="#">FAQ</a></li>
+        <li><a class="menu_item" href="./faq.html">FAQ</a></li>
         <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-        <li><a class="menu_item" href="#">Forum</a></li>
+        <li><a class="menu_item" href="./forum.html">Forum</a></li>
         <li><a class="menu_item" href="#">Événements</a></li>
         <li><a class="menu_item" href="#">Lieux</a></li>
         <li><a class="menu_item" href="#">Billetterie</a></li>
-        <li><a class="menu_item" href="#">Playlists</a></li>
+        <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
         <li><a class="menu_item" href="#">Capteurs</a></li>
     </ul>
 </div>
@@ -46,13 +46,13 @@
 
 <main>
 
-    <div class="grid-container" id="gridContainer">
+    <div class="grid-container" id="gridContainer" ID_MEETING="0">
         <!-- Grille vide pour afficher les éléments ajoutés -->
         <button class="grid-item add-button" onclick="toggleFormulaire();"> <b>+</b></button>
 
     </div>
     <div class="dropdown">
-        <div class="dropdown-content" id="myDropdown">
+        <div class="dropdown-content" id="myDropdown" >
             <form id="myForm">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom"><br><br>
@@ -62,6 +62,8 @@
                 <input type="time" id="heure" name="heure"><br><br>
                 <label for="adresse">Adresse:</label>
                 <input type="text" id="adresse" name="adresse"><br><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description"><br><br>
                 <label for="illustration">Illustration</label><br>
                 <input type="file" id="illustration" name="illustration"><br><br>
                 <button type="button" onclick="ajouterElement();cacherFormulaire();">OK</button>
