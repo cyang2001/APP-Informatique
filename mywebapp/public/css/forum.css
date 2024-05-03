@@ -22,6 +22,10 @@ a{
     transition: color ease-out;
     transition-duration: 0.25s;
 }
+
+.menu_item:hover {
+    color :#0D2C51;
+}
 a:hover{
     color: #CFD8DC;
 }
