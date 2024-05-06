@@ -25,5 +25,5 @@ class Meetings {
         $stmt->execute([$idMeeting]);
         $this->logger->log("Meeting deleted: {$idMeeting}");
         return ['success' => true];
-    }
+    } 
 }
