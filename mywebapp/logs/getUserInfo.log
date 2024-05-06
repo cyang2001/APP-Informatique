@@ -71,3 +71,33 @@
 [2024-05-03 10:58:21] - getUserInfo constructor initialized
 [2024-05-03 10:58:21] - User info retrieved
 [2024-05-03 10:58:21] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-04 03:00:14] - getUserInfo constructor initialized
+[2024-05-04 03:00:14] - Unauthorized
+[2024-05-04 15:36:29] - getUserInfo constructor initialized
+[2024-05-04 15:36:29] - Unauthorized
+[2024-05-04 22:13:09] - getUserInfo constructor initialized
+[2024-05-04 22:13:09] - Unauthorized
+[2024-05-06 09:17:26] - getUserInfo constructor initialized
+[2024-05-06 09:17:26] - Unauthorized
+[2024-05-06 10:30:24] - getUserInfo constructor initialized
+[2024-05-06 10:30:24] - Unauthorized
+[2024-05-06 11:36:57] - getUserInfo constructor initialized
+[2024-05-06 11:36:57] - User info retrieved
+[2024-05-06 11:36:57] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-06 11:38:02] - getUserInfo constructor initialized
+[2024-05-06 11:38:02] - User info retrieved
+[2024-05-06 11:38:02] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-06 11:56:09] - getUserInfo constructor initialized
+[2024-05-06 11:56:09] - User info retrieved
+[2024-05-06 11:56:09] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-06 11:56:56] - getUserInfo constructor initialized
+[2024-05-06 11:56:56] - User info retrieved
+[2024-05-06 11:56:56] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-06 11:58:13] - getUserInfo constructor initialized
+[2024-05-06 11:58:13] - User info retrieved
+[2024-05-06 11:58:13] - {"id":19975090,"email":"ccc@cc.com","name":"cc"}
+[2024-05-06 11:58:53] - getUserInfo constructor initialized
+[2024-05-06 11:58:53] - Unauthorized
+[2024-05-06 11:59:44] - getUserInfo constructor initialized
+[2024-05-06 11:59:44] - User info retrieved
+[2024-05-06 11:59:44] - {"id":33367110,"email":"cc@cc.com","name":"cc"}
