@@ -1,18 +1,29 @@
 document.getElementById('playlistForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const formData = new FormData(); // Créer ici pour inclure les fichiers
+    const formData = new FormData();
     const name = document.getElementById('name').value;
     const description = document.getElementById('description').value;
     const cover = document.getElementById('cover').files[0];
+    const title = document.getElementById('title').value;
+    const artist = document.getElementById('artist').value;
+    const genre = document.getElementById('genre').value;
+    const music = document.getElementById('music').files[0];
     
+    // Ajout des données de la playlist au formData
     formData.append('name', name);
     formData.append('description', description);
     formData.append('cover', cover);
+    formData.append('title', title);
+    formData.append('artist', artist);
+    formData.append('genre', genre);
+    formData.append('music', music);
 
+    // Traitement des images
     const coverUrl = URL.createObjectURL(cover);
+    const musicUrl = URL.createObjectURL(music);
 
-    // Affichage de la playlist dans la liste sur la page
+    // Ajout des infos de playlist au DOM
     const playlistList = document.getElementById('playlistList');
     const li = document.createElement('li');
     li.innerHTML = `
@@ -22,25 +33,31 @@ document.getElementById('playlistForm').addEventListener('submit', function(even
     `;
     playlistList.appendChild(li);
 
-    // Envoie des données au serveur
-    fetch('index.php?action=addPlaylist', {
+    // Ajout des musiques au DOM
+    const musicList = document.getElementById('musicList');
+    const musicLi = document.createElement('li');
+    musicLi.innerHTML = `
+        <h3>${title}</h3>
+        <p>${artist} - ${genre}</p>
+        <audio controls src="${musicUrl}"></audio>
+    `;
+    musicList.appendChild(musicLi);
+
+    // Envoie des données au serveur pour la playlist et la musique
+    fetch('index.php?action=addPlaylistAndMusic', {
         method: 'POST',
         body: formData
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erreur lors de l\'ajout de la playlist');
-        }
-        return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
-        console.log("Playlist ajoutée avec succès", data);
-        // Mettre à jour l'UI ou afficher un message de succès
+        console.log("Ajout avec succès", data);
+        alert('Playlist et musique ajoutées avec succès!');
+        document.getElementById('playlistForm').reset(); // Réinitialiser après confirmation
     })
     .catch(error => {
         console.error('Erreur:', error);
     });
 
-    // Réinitialiser le formulaire après l'ajout
-    document.getElementById('playlistForm').reset();
+      // Réinitialiser le formulaire après l'ajout
+      document.getElementById('playlistForm').reset();
 });

@@ -27,12 +27,37 @@
                         <label for="cover">Photo de couverture:</label>
                         <input type="file" id="cover" name="cover" accept="image/*" required>
                     </div>
+
+                    <div>
+                        <h3>Ajouter une musique</h3>
+                        <div>
+                            <label for="title">Titre de la musique:</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        <div>
+                            <label for="artist">Artiste:</label>
+                            <input type="text" id="artist" name="artist" required>
+                        </div>
+                        <div>
+                            <label for="genre">Genre:</label>
+                            <input type="text" id="genre" name="genre" required>
+                        </div>
+                        <div>
+                            <label for="music">Musique :</label>
+                            <input type="file" id="music" name="music" required>
+                        </div>
+                    </div>
                     <button type="submit">Créer Playlist</button>
                 </form>
 
                 <div id="playlistContainer">
                     <h2>Playlists Créées</h2>
                     <ul id="playlistList"></ul>
+                </div>
+
+                <div id="musicContainer">
+                    <h2>Musiques Ajoutées</h2>
+                    <ul id="musicList"></ul>
                 </div>
           
                 
