@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../src/models/playlist.php';
 require_once __DIR__ . '/../src/models/meetings.php';
 require_once __DIR__ . '/../src/models/users.php';
 require_once __DIR__ .'/./router/router.php';
@@ -14,6 +15,9 @@ require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
+require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
+
+
 
 
 
@@ -127,6 +131,51 @@ switch($action) {
             });
         }
         break;
+
+    case 'createPlaylist':
+        if ($method == 'POST') {
+            $logger->log('POST /createPlaylist');
+            $router->post('/createPlaylist', function() {
+                $createPlaylistController = new CreatePlaylistController();
+                $createPlaylistController->ajouterPlaylist();
+            });
+        }
+        break;
+
+    case 'deletePlaylist':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /deletePlaylist');
+            $router->delete('/deletePlaylist', function() {
+                $deletePlaylistController = new DeletePlaylistController();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idPlaylist = $data['idPlaylist'];
+                $deletePlaylistController->supprimerPlaylist($idPlaylist);
+            });
+        }
+        break;
+    
+    case 'addMusic':
+        if ($method == 'POST') {
+            $logger->log('POST /addMusic');
+            $router->post('/addMusic', function() {
+                $addMusicController = new AddMusicController();
+                $addMusicController->ajouterMusic();
+            });
+        }
+        break;
+
+    case 'deleteMusic':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /deleteMusic');
+            $router->delete('/deleteMusic', function() {
+                $deleteMusicController = new DeleteMusicController();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idMusic = $data['idMusic'];
+                $deleteMusicController->supprimerMusic($idMusic);
+            });
+        }
+        break;
+
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);

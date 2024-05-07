@@ -11,8 +11,16 @@ class Playlist {
         $idPlaylist = UUIDGenerator::generate();
         $sql = "INSERT INTO playlist (ID_PLAY_LIST, NAME_PLAY_LIST, PLAY_LIST_DESCRIPTION, IMAGE_URL_PLAY_LIST, ID_ORGANIZER) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$idMeeting, $name, $date, $time, $address, $description, $idOrganizer]);
-        $this->logger->log("Meeting added: {$idMeeting}-{$name} - {$date} - {$time} - {$address} - {$description}");
-        return ['success' => true, 'idMeeting' => $idMeeting];
+        $stmt->execute([$idPlaylist, $name, $description, $imageUrl, $idOrganizer]);
+        $this->logger->log("Playlist added: {$idPlaylist}-{$name} - {$description} - {$imageUrl}");
+        return ['success' => true, 'idPlaylist' => $idPlaylist];
     }
+
+    public function deletePlaylist($idPlaylist) {
+        $sql = "DELETE FROM playlist WHERE ID_PLAY_LIST = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$idPlaylist]);
+        $this->logger->log("Playlist deleted: {$idPlaylist}");
+        return ['success' => true];
+    } 
 }

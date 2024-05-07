@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Playlist</title>
+        <link rel="stylesheet" type="text/css" href="css\createPlaylist.css" />
+    </head>
+    <body>
+    
+        <header >
+         
+            
+        </header>
+        <main>
+            <div class="main">
+
+                <form id="playlistForm">
+                    <div>
+                        <label for="name">Nom de la playlist:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <div>
+                        <label for="cover">Photo de couverture:</label>
+                        <input type="file" id="cover" name="cover" accept="image/*" required>
+                    </div>
+
+                     <div id="songsContainer">
+                    <h2>Ajouter des morceaux</h2>
+                    <button type="button" id="addSongBtn">Ajouter un morceau</button>
+                    </div>
+                    <button type="submit">Créer Playlist</button>
+                </form>
+
+                <div id="playlistContainer">
+                    <h2>Playlists Créées</h2>
+                    <ul id="playlistList"></ul>
+                </div>
+          
+                
+              
+            </div>
+            
+        </main>
+        <footer>
+
+        </footer>
+        <script src="js/createPlaylist.js"></script>
+    </body>
+</html>
+
