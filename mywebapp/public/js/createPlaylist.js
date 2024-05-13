@@ -53,6 +53,21 @@ document.getElementById('playlistForm').addEventListener('submit', function(even
         console.log("Ajout avec succès", data);
         alert('Playlist et musique ajoutées avec succès!');
         document.getElementById('playlistForm').reset(); // Réinitialiser après confirmation
+
+        // Enregistrement des informations de la playlist dans le localStorage
+        const playlistData = {
+            name: name,
+            description: description,
+            coverUrl: coverUrl,
+            musicTitle: title,
+            musicArtist: artist,
+            musicGenre: genre,
+            musicUrl: musicUrl
+        };
+        localStorage.setItem('newPlaylistData', JSON.stringify(playlistData));
+
+         // Redirection vers la page de playlist
+         window.location.href = 'playlist.html';
     })
     .catch(error => {
         console.error('Erreur:', error);

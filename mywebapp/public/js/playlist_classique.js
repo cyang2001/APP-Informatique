@@ -10,15 +10,20 @@ document.addEventListener("DOMContentLoaded", function() {
     let isShuffleMode = false;
 
     const tracks = [
-        { source: "source/Musique1.mp3", title: "I Can't Stop", artist: "Punch Deck" },
-        { source: "source/Musique2.mp3", title: "Night", artist: "Cloudkicker" },
-        { source: "source/Musique3.mp3", title: "In Closing", artist: "Days Past" },
-        { source: "source/Musique4.mp3", title: "Jacked It Up", artist: "Josh Shapiro" },
-        { source: "source/Musique5.mp3", title: "No Love", artist: "Shearer" },
-        { source: "source/Musique6.mp3", title: "Waiting For Nothing", artist: "The Fisherman" },
-        { source: "source/Musique7.mp3", title: "Insane", artist: "b_Shake" },
-        { source: "source/Musique8.mp3", title: "Overthinking", artist: "RYYZN" },
-        { source: "source/Musique9.mp3", title: "Star Swimming", artist: "Props" },
+        { source: "source/Musique18.mp3", title: "Quiet Tree", artist: "Thoribass" },
+        { source: "source/Musique19.mp3", title: "Saying Goodbye In The Rain", artist: "Jelsonic" },
+        { source: "source/Musique20.mp3", title: "Crime Time", artist: "Leonard Richter" },
+        { source: "source/Musique21.mp3", title: "The return", artist: "Alexander Nakarada" },
+        { source: "source/Musique22.mp3", title: "Canon in D Major", artist: "Kevin in MacLeod" },
+        { source: "source/Musique23.mp3", title: "Éteinte", artist: "Lacrymosa Industry" },
+        { source: "source/Musique24.mp3", title: "Clair Obscur", artist: "Hicham Chahidi" },
+        { source: "source/Musique25.mp3", title: "Dance of the Sun", artist: "Hicham Chahidi" },
+        { source: "source/Musique26.mp3", title: "Tendresse", artist: "Hicham Chahidi" },
+        { source: "source/Musique27.mp3", title: "Mineral", artist: "Hicham Chahidi" },
+        { source: "source/Musique28.mp3", title: "Forest", artist: "Hicham Chahidi" },
+        { source: "source/Musique29.mp3", title: "Genval", artist: "Hicham Chahidi" },
+        { source: "source/Musique30.mp3", title: "Angello", artist: "Hicham Chahidi" },
+        { source: "source/Musique31.mp3", title: "Rouge", artist: "Hicham Chahidi" },
     ];
 
     loaders.forEach(function(loader, index) {
