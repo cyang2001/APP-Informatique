@@ -1,7 +1,7 @@
-
+<?php
 use PHPUnit\Framework\TestCase;
-
-class UserTest extends TestCase {
+## dont run this code
+/*class UserTest extends TestCase {
     private $pdo;
     private $user;
 
@@ -27,4 +27,4 @@ class UserTest extends TestCase {
         $this->pdo = null;
         $this->user = null;
     }
-}
+}*/

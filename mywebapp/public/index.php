@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../src/models/meetings.php';
 require_once __DIR__ . '/../src/models/users.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
@@ -9,8 +10,10 @@ $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
+require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
-
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/logout.php';
 
 
 
@@ -45,6 +48,26 @@ switch($action) {
             $router->post('/login', function(){
                 $loginController = new LoginController();
                 $loginController->login();
+            });
+        }
+        break;
+    case 'addMeeting':
+        if ($method == 'POST') {
+            $logger->log('POST /addMeeting');
+            $router->post('/addMeeting', function() {
+                $meetingController = new MeetingController();
+                $meetingController->ajouterEvenement();
+            });
+        }
+        break;
+    case 'deleteMeeting':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /deleteMeeting');
+            $router->delete('/deleteMeeting', function() {
+                $meetingController = new MeetingController();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idMeeting = $data['idMeeting'];
+                $meetingController->supprimerEvenement($idMeeting);
             });
         }
         break;
@@ -83,6 +106,24 @@ switch($action) {
             $router->get('/showDatabase', function(){
                 $showDatabaseController = new showDatabaseController();
                 $showDatabaseController->showDatabase();
+            });
+        }
+        break;
+    case 'getUserInfo':
+        if ($method == 'GET') {
+            $logger->log('GET /getUserInfo');
+            $router->get('/getUserInfo', function(){
+                $getUserInfo = new getUserInfo();
+                $getUserInfo->getUserInfo();
+            });
+        }
+        break;
+    case 'logout':
+        if ($method == 'GET') {
+            $logger->log('GET /logout');
+            $router->get('/logout', function(){
+                $logoutController = new logoutController();
+                $logoutController->logout();
             });
         }
         break;
