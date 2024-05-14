@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/logger.php';
 require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../tools/UUIDGenerator.php';
 class User {
     private $pdo;
     private $logger;
@@ -13,6 +14,7 @@ class User {
         // Check if email already exists
         $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
         $idAccessLevel = 0;
+        $idUser = UUIDGenerator::generate();
         $sql = "SELECT * FROM USER WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
@@ -21,11 +23,11 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO USER (NAME, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO USER (ID_USER, NAME_USER, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$name, $passwordHashed, $email, $idAccessLevel]);
-        $this->logger->log("User registered: {$email} - {$name}");
-        return ['success' => true, 'userId' => $this->pdo->lastInsertId()];
+        $stmt->execute([$idUser, $name, $passwordHashed, $email, $idAccessLevel]);
+        $this->logger->log("User registered: {$email} - {$name} - {$idUser}");
+        return ['success' => true, 'userId' => $idUser];
     }
 
     
@@ -56,6 +58,45 @@ class User {
         $sql = "UPDATE USER SET PASSWORD_HASH = ? WHERE EMAIL = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$passwordHashed, $email]);
+        return ['success' => true];
+    }
+
+    public function getUser($userId) {
+        $sql = "SELECT * FROM USER WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$userId]);
+        return $stmt->fetch();
+    }
+
+    public function getUsers() {
+        $sql = "SELECT * FROM USER";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+    
+    public function deleteUser($userId) {
+        $sql = "DELETE FROM USER WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$userId]);
+        $userName = $this->getUser($userId)['NAME_USER'];
+        $this->logger->log("User deleted: {$userId} - {$userName}");
+        return ['success' => true];
+    }
+
+    public function updateUserName($userId, $userName) {
+        $sql = "UPDATE USER SET NAME_USER = ? WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$userName, $userId]);
+        $this->logger->log("User name updated: {$userId} - {$userName}");
+        return ['success' => true];
+    }
+
+    public function updateUserEmail($userId, $email) {
+        $sql = "UPDATE USER SET EMAIL = ? WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$email, $userId]);
+        $this->logger->log("User email updated: {$userId} - {$email}");
         return ['success' => true];
     }
 }
