@@ -12,8 +12,8 @@ async function getResponse(url, options, target_lang, elements, k) {
     }
 }
 
-document.getElementById('fr').addEventListener('click', function() {
-    const target_lang = 'fr';
+document.getElementById('fr').addEventListener('click', function() { //ToDo changer le elementId 'fr' par l'id du bouton de traduction
+    const target_lang = 'fr'; // ToDo changer la target langue en fonction des besoins
     let elementsToTranslate = [];
 
     // Gather all elements that need translation
