@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forum</title>
-        <link rel="stylesheet" href="css\forum.css">
+        <link rel="stylesheet" href="..\..\public\css\forum.css">
+                                                ./css/forum.css
         <script src="./js/forum.js"></script>
     </head>
 
@@ -59,7 +60,7 @@
                 </div>
 
                 <div class="section-post">
-                    <div class="block" id="one"><a href="./testForum/Discussion_generale.html">Discussion générale</a></div>
+                    <div class="block" id="one"><a href="..\..\public\testForum\Discussion_generale.html">Discussion générale</a></div>
                     <div class="block" id="two"><a href="./testForum/Aide_et_support.html">Aide et support</a></div>
                     <div class="block" id="three"><a href="./testForum/Partage_de_projets.html">Partage de projets</a></div>
                     <div class="block" id="four"><a href="./testForum/Plainte.html">Plainte</a></div>
