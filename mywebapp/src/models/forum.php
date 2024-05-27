@@ -18,6 +18,13 @@ class Forum {
         return ['success' => true, 'idPost' => $idPost]
     }
 
+    public function addPost($idPost) {
+        $sql = "INSERT INTO forum (ID_POST)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$idPost]);
+        $this->logger->log ("Post added: {$idPost}");
+        return ['success' => true, 'idPost' => $idPost]
+    }
 
     
 }
