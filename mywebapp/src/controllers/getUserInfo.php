@@ -13,7 +13,7 @@ class getUserInfo {
         $this->logger->log('User info retrieved');
         $this->logger->log(json_encode($_SESSION['user']));
     } else {
-        echo json_encode(array('message' => 'Unauthorized'));
+        echo json_encode(array('message' => 'Unafuthorized'));
         $this->logger->log('Unauthorized');
     }
     }
