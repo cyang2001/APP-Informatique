@@ -14,64 +14,8 @@
     checkbox.checked = !checkbox.checked;
   }
 
-  function handleUserMenuClick() {
-    var userMenu = document.querySelector('.user-menu-box');
-    userMenu.classList.toggle('show');
-  }
-
-  const translations = {
-    title: "A M B I S O U N D   E N   A N G L A I S",
-    headerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.",
-    slides: [
-      {
-        title: "Slide 1",
-        content: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim."
-      },
-      // Ajoutez les autres traductions de slides ici
-    ],
-    footerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in."
-  };
-
-  function translateToEnglish() {
-    document.querySelector("#title h1").textContent = translations.title;
-    document.querySelector("#title p").textContent = translations.headerText;
-
-    const slides = document.querySelectorAll(".slide .title");
-    translations.slides.forEach((slide, index) => {
-      if (slides[index]) {
-        slides[index].querySelector("h1").textContent = slide.title;
-        slides[index].querySelector("p").textContent = slide.content;
-      }
-    });
-
-    document.querySelector("footer").textContent = translations.footerText;
-  }
-
-
 </script>
 
-
-
-<div class="hamburger-menu">
-  <input id="menu_toggle" type="checkbox" />
-  <label class="menu_btn" onclick="handleMenuButtonClick()">
-    <span></span>
-  </label>
-
-  <ul class="menu_box">
-    <li><p class="menu_title"><b>Ambisound</b></p></li>
-    <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
-    <li><a class="menu_item" href="#">Informations</a></li>
-    <li><a class="menu_item" href="./faq.html">FAQ</a></li>
-    <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-    <li><a class="menu_item" href="./forum.html">Forum</a></li>
-    <li><a class="menu_item" href="./evenement.html">Événements</a></li>
-    <li><a class="menu_item" href="#">Lieux</a></li>
-    <li><a class="menu_item" href="#">Billetterie</a></li>
-    <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
-    <li><a class="menu_item" href="#">Capteurs</a></li>
-  </ul>
-</div>
 
 
 <header>
@@ -109,12 +53,6 @@
   </div>
 
   <div>
-
-    <div class="menu-deroulant">
-      <span><img class="profil" src="source/profil-removebg-preview.png"></span>
-      <div>
-        
-
     <div class="bouton2">
       <span><img class="prof-home" src="source/user(1).png"></span>
       <div class="menu-deroulant">
@@ -128,9 +66,7 @@
       <span><img class="drap-home" src="source/united-kingdom.png"></span>
     </div>
   </div>
-
 </header>
-
 
 
 <div id="title" class="slide header">
@@ -192,12 +128,6 @@
 </div>
 
 <footer>
-  Lorem ipsum dolor sit amet <br>
-  Lorem ipsum dolor sit amet <br>
-  Lorem ipsum dolor sit amet <br>
-  Lorem ipsum dolor sit amet <br>
-  Lorem ipsum dolor sit amet <br>
-  Lorem ipsum dolor sit amet <br>
   Lorem ipsum dolor sit amet <br>
   Lorem ipsum dolor sit amet <br>
   Lorem ipsum dolor sit amet <br>
