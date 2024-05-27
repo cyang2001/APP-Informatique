@@ -5,7 +5,7 @@ class ForumController {
 
     }
     function add() {
-
+        
     }
     function create() {
     }
