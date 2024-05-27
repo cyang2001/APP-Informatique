@@ -14,6 +14,8 @@ require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/forumController.php';
 
 
 
@@ -125,6 +127,16 @@ switch($action) {
                 $logoutController = new logoutController();
                 $logoutController->logout();
             });
+        }
+        break;
+
+    case 'forum':
+        if ($method == 'POST') {
+            $logger->log('POST /forum');
+            $router->post('/forum', function(){
+                $forumController = new ForumController();
+                $forumController->create();
+            });    
         }
         break;
     default:
