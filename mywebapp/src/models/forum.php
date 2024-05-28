@@ -10,12 +10,12 @@ class Forum {
         $this->logger = new Logger('../logs/forum.log');
     }
     //fonction pour créer les posts et les ajouter a la base de donnée
-    public function createPost($title, $description, $fileURL, $userName, $category) {
+    public function createPost($idCreator, $title, $description, $fileURL, $category, $userName) {
         $idPost = UUIDGenerator::generate();
-        $sql = "INSERT INTO forum (ID_POST, TITLE_POST, DESCRIPTION_POST, FILE_POST, USER_NAME_POST, CATEGORY_POST) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO forum (ID_FORUM, ID_CREATOR, NAME_CATEGORY, FORUM_TITRE, FORUM_DISCRIPTION, FORUM_URL_FICHIER, CREATOR_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$idPost, $title, $description, $fileURL, $userName, $category]);
-        $this->logger->log ("Post added: {$idPost} - {$title} - {$description} - {$fileURL} - {$userName} - {$category}");
+        $stmt->execute([$idPost, $idCreator, $category, $title, $description, $fileURL, $userName]);
+        $this->logger->log ("Post added: {$idPost} - {$title} - {$description} - {$fileURL} - {$category} - {$userName}");
         return ['success' => true, 'idPost' => $idPost];
     }
     //fonction pour recupérer les posts dans la bases de données
