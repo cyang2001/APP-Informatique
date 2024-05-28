@@ -27,7 +27,6 @@ class Forum {
         return ['success' => true, 'idPost' => $idPost]
     }
 
-
     //fonction pour ajouter les posts sur la page
     public function addPost($idPost) {
         $sql = "INSERT INTO forum (ID_POST)";
