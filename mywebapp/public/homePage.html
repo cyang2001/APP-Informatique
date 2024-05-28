@@ -1,79 +1,137 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/homePage.css">
-  <title>Accueil</title>
+  <title></title>
 </head>
-<body class="body">
 
+
+<body>
 <script>
   function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;
   }
+
 </script>
 
 
-<div class="hamburger-menu">
-  <input id="menu_toggle" type="checkbox" />
-  <label class="menu_btn" onclick="handleMenuButtonClick()">
-    <span></span>
-  </label>
 
-  <ul class="menu_box">
-    <li><p class="menu_title"><b>Ambisound</b></p></li>
-    <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
-    <li><a class="menu_item" href="#">Informations</a></li>
-    <li><a class="menu_item" href="./faq.html">FAQ</a></li>
-    <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-    <li><a class="menu_item" href="./forum.html">Forum</a></li>
-    <li><a class="menu_item" href="./evenement.html">Événements</a></li>
-    <li><a class="menu_item" href="#">Lieux</a></li>
-    <li><a class="menu_item" href="#">Billetterie</a></li>
-    <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
-    <li><a class="menu_item" href="#">Capteurs</a></li>
-  </ul>
-</div>
+<header>
 
-<header class="header">
+  <div class="hamburger-menu">
+    <input id="menu_toggle" type="checkbox" />
+    <label class="menu_btn" onclick="handleMenuButtonClick()">
+      <span></span>
+    </label>
 
-  <h1 class="page_title">
-    Accueil
-  </h1>
+    <ul class="menu_box">
+      <li><p class="menu_title"><b>Ambisound</b></p></li>
+      <li><a class="menu_item" href="#">Accueil</a></li>
+      <li><a class="menu_item" href="#">Informations</a></li>
+      <li><a class="menu_item" href="#">FAQ</a></li>
+      <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+      <li><a class="menu_item" href="./testForum/creation_de_post.html">Forum</a></li>
+      <li><a class="menu_item" href="#">Événements</a></li>
+      <li><a class="menu_item" href="#">Lieux</a></li>
+      <li><a class="menu_item" href="#">Billetterie</a></li>
+      <li><a class="menu_item" href="#">Playlists</a></li>
+      <li><a class="menu_item" href="#">Capteurs</a></li>
+    </ul>
+  </div>
+
+  <div class="barre-home">
+    <a class="bouton-home" href="#slide1">Slide 1</a>
+    <a class="bouton-home" href="#slide2">Slide 2</a>
+    <a class="bouton-home" href="#slide3">Slide 3</a>
+    <a class="bouton-home" href="#slide4">Slide 4</a>
+    <a class="bouton-home" href="#slide5">Slide 5</a>
+    <a class="bouton-home" href="#slide6">Slide 6</a>
+    <a class="bouton-home" href="#slide7">Slide 7</a>
+    <a class="bouton-home" href="#slide8">Slide 8</a>
+  </div>
+
   <div>
-    <div class="menu-deroulant">
-      <span><img class="profil" src="source/profil-removebg-preview.png"></span>
-      <div>
-        
+    <div class="bouton2">
+      <span><img class="prof-home" src="source/user(1).png"></span>
+      <div class="menu-deroulant">
+        <a href="#">Se connecter</a>
+        <a href="#">S'inscrire</a>
+
       </div>
     </div>
-  </div>
 
+    <div class="bouton1">
+      <span><img class="drap-home" src="source/united-kingdom.png"></span>
+    </div>
+  </div>
 </header>
 
-<main>
-  <div class="banniere">
-    <img src="source/banniere.png">
-      <div class="titre">
-          <h1>Ambisound</h1>
-      </div>
-  </div>
-  <div class="contenue">
-    <section class="section1">
-      <p>Les événements en intérieur, tels que la Japan Expo ou la Paris Games Week, sont des manifestations culturelle d'envergure qui rassemblent des passionnés de divers horizons.</p>
-    </section>
 
-  
-    <section class="section2">
-      <img src="source/Japan-Expo_1.jpg" width="550" height="400">
-    </section>
-  </div>
-</main>
-<script src="js/homePage.js"></script>
-<footer class="footer">
+<div id="title" class="slide header">
+  <h1>A M B I S O U N D</h1>
+  <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+</div>
 
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>Slide 1</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>Slide 2</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide4" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide5" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide6" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+
+<div id="slide7" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide8" class="slidee header">
+</div>
+
+<footer>
+  <a class="CGU" href="cgu.html">CGU</a>
 </footer>
 
 </body>
+
+
 </html>

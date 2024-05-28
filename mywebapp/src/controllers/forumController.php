@@ -1,5 +1,7 @@
 <?php 
-
+require_once __DIR__ . '/../config/logger.php';
+require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../models/forum.php';
 class ForumController {
     private $pdo;
     private $logger;
@@ -11,7 +13,6 @@ class ForumController {
         $this->logger->log('forumController initialized');
     }
 
-    }
     public function createPost(){
         session_start();
         $this->logger->log('createPost called');
@@ -21,7 +22,8 @@ class ForumController {
             echo json_encode(['error' => 'Données manquantes']);
             return;
     }
- 
+    }
+}
 
 
 

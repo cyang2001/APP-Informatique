@@ -1,14 +1,15 @@
-
 document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form'); 
+    if (!form) {
+        console.error("Form element not found!");
+        return;
+    }
 
-    console.log("test")
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // prevent the form from submitting
-        var titre = document.getElementById('titre').value;
-        var description = document.getElementById('description').value;
 
         const formData = new FormData(form);
-        fetch('index.php?action=forum', {
+        fetch('../index.php?action=forum', {
             method: 'POST',
             body: formData
         })
@@ -18,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return response.json();
         })
-        
+        .then(data => {
+            console.log(data); 
+        })
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
     });
 });
