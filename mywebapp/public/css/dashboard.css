@@ -27,7 +27,7 @@ html {
     left: 0 !important;
 }
 .menu_btn {
-    margin-top: -15px;
+    margin-top: 5px;
     position: sticky;
     top: 0;
     left: 24px;
@@ -113,7 +113,8 @@ header{
 h2{
     padding-top: 10px;
     font-size: 40px;
-    color: black;
+    color: white;
+    text-align: center;
 }
 
 
@@ -123,6 +124,22 @@ h2{
 
 
 
+
+.bouton2 {
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: -40px;
+}
+
+.bouton2 div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
+}
 
 .menu-deroulant{
     left: -100px;
@@ -154,7 +171,7 @@ div div a {
     float: right;
     position: relative;
     display: inline-block;
-    margin-top: -55px;
+    margin-top: -40px;
     margin-right: 25px;
 }
 
@@ -206,7 +223,7 @@ div div a {
 }
 
 body {
-    font-size: 30px;
+    background-color: white;
     margin:0;
     padding:0;
     perspective: 1px;
@@ -214,13 +231,14 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
 }
 
-.CGU-body{
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: justify;
+.dash-titre{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Century Gothic";
+    color: white;
 }
 
 footer{
@@ -228,6 +246,7 @@ footer{
     height: 230px;
     background-color: #0D2C51;
 }
+
 
 .CGU{
     text-decoration: none;
@@ -238,8 +257,3 @@ footer{
     color: aqua;
 }
 
-.cgu-titre{
-    font-family: "Century Gothic";
-    color: white;
-    text-align: center;
-}
