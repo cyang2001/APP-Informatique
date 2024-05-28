@@ -16,7 +16,7 @@ class Forum {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idPost, $title, $description, $file, $userName, $category]);
         $this->logger->log ("Post added: {$idPost} - {$title} - {$description} - {$file} - {$userName} - {$category}");
-        return ['success' => true, 'idPost' => $idPost]
+        return ['success' => true, 'idPost' => $idPost];
     }
     //fonction pour recupérer les posts dans la bases de données
     public function getPost($idPost) {
@@ -24,7 +24,7 @@ class Forum {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idPost]);
         $this->logger->log ("Post added: {$idPost}");
-        return ['success' => true, 'idPost' => $idPost]
+        return ['success' => true, 'idPost' => $idPost];
     }
 
 
@@ -34,7 +34,7 @@ class Forum {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idPost]);
         $this->logger->log ("Post added: {$idPost}");
-        return ['success' => true, 'idPost' => $idPost]
+        return ['success' => true, 'idPost' => $idPost];
     }
 
     

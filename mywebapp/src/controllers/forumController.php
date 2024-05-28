@@ -11,7 +11,6 @@ class ForumController {
         $this->logger->log('forumController initialized');
     }
 
-    }
     public function createPost(){
         session_start();
         $this->logger->log('createPost called');
@@ -21,7 +20,8 @@ class ForumController {
             echo json_encode(['error' => 'Données manquantes']);
             return;
     }
- 
+    }
+}
 
 
 
