@@ -578,3 +578,19 @@
 [2024-05-28 14:07:16] - No routes registered for method: POST
 [2024-05-28 14:07:43] - Dispatching request: POST
 [2024-05-28 14:07:43] - No routes registered for method: POST
+[2024-05-28 14:09:50] - Register: POST /login
+[2024-05-28 14:09:50] - Dispatching request: POST
+[2024-05-28 14:09:50] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-28 14:09:50] - Handling URI: /login
+[2024-05-28 14:09:50] - Checking pattern: ~^/login$~
+[2024-05-28 14:09:50] - Pattern matched: ~^/login$~
+[2024-05-28 14:09:50] - Matches: [[["\/login",0]]]
+[2024-05-28 14:09:50] - Calling callback function
+[2024-05-28 14:09:58] - Register: POST /forum
+[2024-05-28 14:09:58] - Dispatching request: POST
+[2024-05-28 14:09:58] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=forum
+[2024-05-28 14:09:58] - Handling URI: /forum
+[2024-05-28 14:09:58] - Checking pattern: ~^/forum$~
+[2024-05-28 14:09:58] - Pattern matched: ~^/forum$~
+[2024-05-28 14:09:58] - Matches: [[["\/forum",0]]]
+[2024-05-28 14:09:58] - Calling callback function

@@ -73,3 +73,5 @@
 [2024-05-28 14:07:06] - calling
 [2024-05-28 14:07:16] - action not found: login
 [2024-05-28 14:07:43] - action not found: login
+[2024-05-28 14:09:50] - POST /login
+[2024-05-28 14:09:58] - POST /forum

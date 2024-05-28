@@ -18,10 +18,18 @@ class ForumController {
         $this->logger->log('createPost called');
         $data = json_decode(file_get_contents('php://input'), true);
         $idOrganizer = $_SESSION['user']['id'];
-        if (!isset($data['title'], $data['description'], $data['file'], $data['userName'], $data['category'])) {
-            echo json_encode(['error' => 'Données manquantes']);
-            return;
-    }
+        $userName = $_SESSION['user']['name'];
+        $category = NAN;
+        $forumURL = '';
+        // ToDo ajouter file
+        // ToDo vérifier si les données sont présentes
+        #if (!isset($data['title'], $data['description'])) {
+        #    echo json_encode(['error' => 'Données manquantes']);
+        #    return;
+
+        // ToDo ajouter les donnes à la base de données
+        // ToDo oublier pas le category
+        $this->forum->createPost($data['title'], $data['description'], $forumURL, $userName, $category);
     }
 }
 
