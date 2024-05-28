@@ -526,3 +526,19 @@
 [2024-05-06 12:00:30] - Pattern matched: ~^/addMeeting$~
 [2024-05-06 12:00:30] - Matches: [[["\/addMeeting",0]]]
 [2024-05-06 12:00:30] - Calling callback function
+[2024-05-06 15:12:11] - Register: GET /getUserInfo
+[2024-05-06 15:12:11] - Dispatching request: GET
+[2024-05-06 15:12:11] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-06 15:12:11] - Handling URI: /getUserInfo
+[2024-05-06 15:12:11] - Checking pattern: ~^/getUserInfo$~
+[2024-05-06 15:12:11] - Pattern matched: ~^/getUserInfo$~
+[2024-05-06 15:12:11] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-06 15:12:11] - Calling callback function
+[2024-05-06 15:12:12] - Register: GET /getUserInfo
+[2024-05-06 15:12:12] - Dispatching request: GET
+[2024-05-06 15:12:12] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-06 15:12:12] - Handling URI: /getUserInfo
+[2024-05-06 15:12:12] - Checking pattern: ~^/getUserInfo$~
+[2024-05-06 15:12:12] - Pattern matched: ~^/getUserInfo$~
+[2024-05-06 15:12:12] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-06 15:12:12] - Calling callback function
