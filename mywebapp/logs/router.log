@@ -542,3 +542,39 @@
 [2024-05-06 15:12:12] - Pattern matched: ~^/getUserInfo$~
 [2024-05-06 15:12:12] - Matches: [[["\/getUserInfo",0]]]
 [2024-05-06 15:12:12] - Calling callback function
+[2024-05-28 13:59:53] - Register: POST /forum
+[2024-05-28 13:59:53] - Dispatching request: POST
+[2024-05-28 13:59:53] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=forum
+[2024-05-28 13:59:53] - Handling URI: /forum
+[2024-05-28 13:59:53] - Checking pattern: ~^/forum$~
+[2024-05-28 13:59:53] - Pattern matched: ~^/forum$~
+[2024-05-28 13:59:53] - Matches: [[["\/forum",0]]]
+[2024-05-28 13:59:53] - Calling callback function
+[2024-05-28 14:00:34] - Register: POST /forum
+[2024-05-28 14:00:34] - Dispatching request: POST
+[2024-05-28 14:00:34] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=forum
+[2024-05-28 14:00:34] - Handling URI: /forum
+[2024-05-28 14:00:34] - Checking pattern: ~^/forum$~
+[2024-05-28 14:00:34] - Pattern matched: ~^/forum$~
+[2024-05-28 14:00:34] - Matches: [[["\/forum",0]]]
+[2024-05-28 14:00:34] - Calling callback function
+[2024-05-28 14:01:53] - Register: POST /forum
+[2024-05-28 14:01:53] - Dispatching request: POST
+[2024-05-28 14:01:53] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=forum
+[2024-05-28 14:01:53] - Handling URI: /forum
+[2024-05-28 14:01:53] - Checking pattern: ~^/forum$~
+[2024-05-28 14:01:53] - Pattern matched: ~^/forum$~
+[2024-05-28 14:01:53] - Matches: [[["\/forum",0]]]
+[2024-05-28 14:01:53] - Calling callback function
+[2024-05-28 14:07:06] - Register: POST /register
+[2024-05-28 14:07:06] - Dispatching request: POST
+[2024-05-28 14:07:06] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=register
+[2024-05-28 14:07:06] - Handling URI: /register
+[2024-05-28 14:07:06] - Checking pattern: ~^/register$~
+[2024-05-28 14:07:06] - Pattern matched: ~^/register$~
+[2024-05-28 14:07:06] - Matches: [[["\/register",0]]]
+[2024-05-28 14:07:06] - Calling callback function
+[2024-05-28 14:07:16] - Dispatching request: POST
+[2024-05-28 14:07:16] - No routes registered for method: POST
+[2024-05-28 14:07:43] - Dispatching request: POST
+[2024-05-28 14:07:43] - No routes registered for method: POST

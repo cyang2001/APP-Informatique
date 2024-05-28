@@ -135,7 +135,7 @@ switch($action) {
             $logger->log('POST /forum');
             $router->post('/forum', function(){
                 $forumController = new ForumController();
-                $forumController->create();
+                $forumController->createPost();
             });    
         }
         break;

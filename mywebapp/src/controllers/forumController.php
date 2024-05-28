@@ -1,5 +1,7 @@
 <?php 
-
+require_once __DIR__ . '/../config/logger.php';
+require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../models/forum.php';
 class ForumController {
     private $pdo;
     private $logger;
