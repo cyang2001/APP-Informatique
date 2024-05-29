@@ -3,41 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/homePage.css">
-  <title></title>
+  <title>Home Page</title>
 </head>
-
-
 <body>
 <script>
   function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;
   }
+  document.addEventListener('DOMContentLoaded', function() {
+  fetch('index.php?action=getPages')
+    .then(response => response.json())
+    .then(data => {
+      var menuBox = document.querySelector('.menu_box');
+      data.forEach(page => {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.className = 'menu_item';
+        a.href = page.PAGE_URL;  
+        a.textContent = page.PAGE_NAME;  
+        li.appendChild(a);
+        menuBox.appendChild(li);
+        console.log('Appended item:', a);
+      });
+      console.log('Pages:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
 
 </script>
 
-
-
 <header>
-
   <div class="hamburger-menu">
     <input id="menu_toggle" type="checkbox" />
     <label class="menu_btn" onclick="handleMenuButtonClick()">
       <span></span>
     </label>
-
     <ul class="menu_box">
       <li><p class="menu_title"><b>Ambisound</b></p></li>
-      <li><a class="menu_item" href="#">Accueil</a></li>
-      <li><a class="menu_item" href="#">Informations</a></li>
-      <li><a class="menu_item" href="#">FAQ</a></li>
-      <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-      <li><a class="menu_item" href="#">Forum</a></li>
-      <li><a class="menu_item" href="#">Événements</a></li>
-      <li><a class="menu_item" href="#">Lieux</a></li>
-      <li><a class="menu_item" href="#">Billetterie</a></li>
-      <li><a class="menu_item" href="#">Playlists</a></li>
-      <li><a class="menu_item" href="#">Capteurs</a></li>
+
     </ul>
   </div>
 
@@ -56,82 +62,25 @@
     <div class="bouton2">
       <span><img class="prof-home" src="source/user(1).png"></span>
       <div class="menu-deroulant">
-        <a href="#">Se connecter</a>
-        <a href="#">S'inscrire</a>
-
+        <a href="login.php">Se connecter</a>
+        <a href="register.php">S'inscrire</a>
       </div>
     </div>
-
     <div class="bouton1">
       <span><img class="drap-home" src="source/united-kingdom.png"></span>
     </div>
   </div>
 </header>
 
-
 <div id="title" class="slide header">
   <h1>A M B I S O U N D</h1>
   <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
 </div>
 
-<div id="slide1" class="slide">
-  <div class="title">
-    <h1>Slide 1</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
 
-<div id="slide2" class="slide">
-  <div class="title">
-    <h1>Slide 2</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide3" class="slide">
-  <div class="title">
-    <h1>Slide 3</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide4" class="slide">
-  <div class="title">
-    <h1>Slide 3</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide5" class="slide">
-  <div class="title">
-    <h1>Slide 3</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide6" class="slide">
-  <div class="title">
-    <h1>Slide 3</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-
-<div id="slide7" class="slide">
-  <div class="title">
-    <h1>Slide 3</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-</div>
-
-<div id="slide8" class="slidee header">
-</div>
 
 <footer>
   <a class="CGU" href="cgu.html">CGU</a>
 </footer>
-
 </body>
-
-
 </html>

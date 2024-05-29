@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../src/models/meetings.php';
 require_once __DIR__ . '/../src/models/users.php';
+require_once __DIR__ . '/../src/models/pages.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
 require_once __DIR__ .'/../src/controllers/renewPasswordController.php';
@@ -14,7 +15,7 @@ require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
-
+require_once __DIR__ . '/../src/controllers/pageController.php';
 
 
 
@@ -127,6 +128,72 @@ switch($action) {
             });
         }
         break;
+        case 'getPages':
+            if ($method == 'GET') {
+                $logger->log('GET /getPages');
+                $router->get('/getPages', function() {
+                    $pageController = new pageController();
+                    $pageController->getPages();
+                });
+            }
+            break;
+        case 'addPage':
+            if ($method == 'POST') {
+                $logger->log('POST /addPage');
+                $router->post('/addPage', function() {
+                    $pageName = $_POST['page_name'];
+                    $pageUrl = $_POST['page_url'];
+                    $parentId = isset($_POST['parent_id']) ? (int)$_POST['parent_id'] : null;
+                    $accessLevel = isset($_POST['access_level']) ? (int)$_POST['access_level'] : 0;
+                    $pageController = new pageController();
+                    $pageController->addPage($pageName, $pageUrl, $parentId, $accessLevel);
+                });
+            }
+            break;
+        case 'updatePage':
+            if ($method == 'POST') {
+                $logger->log('POST /updatePage');
+                $router->post('/updatePage', function() {
+                    $pageId = $_POST['page_id'];
+                    $pageName = $_POST['page_name'];
+                    $pageUrl = $_POST['page_url'];
+                    $parentId = isset($_POST['parent_id']) ? (int)$_POST['parent_id'] : null;
+                    $accessLevel = isset($_POST['access_level']) ? (int)$_POST['access_level'] : 0;
+                    $pageController = new pageController();
+                    $pageController->updatePage($pageId, $pageName, $pageUrl, $parentId, $accessLevel);
+                });
+            }
+            break;
+        case 'deletePage':
+            if ($method == 'POST') {
+                $logger->log('POST /deletePage');
+                $router->post('/deletePage', function() {
+                    $pageId = $_POST['page_id'];
+                    $pageController = new pageController();
+                    $pageController->deletePage($pageId);
+                });
+            }
+            break;
+        case 'getPage':
+            if ($method == 'GET') {
+                $logger->log('GET /getPage');
+                $router->get('/getPage', function() {
+                    $pageId = $_GET['page_id'];
+                    $pageController = new pageController();
+                    $pageController->getPage($pageId);
+                });
+            }
+            break;
+        case 'getChildPages':
+            if ($method == 'GET') {
+                $logger->log('GET /getChildPages');
+                $router->get('/getChildPages', function() {
+                    $parentId = $_GET['parent_id'];
+                    $pageController = new pageController();
+                    $pageController->getChildPages($parentId);
+                });
+            }
+            break;
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
