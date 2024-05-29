@@ -30,6 +30,7 @@ class ForumController {
         // ToDo ajouter les donnes à la base de données
         // ToDo oublier pas le category
         $this->forum->createPost($idOrganizer, $data['title'], $data['description'], $forumURL, $category, $userName);
+        $this->logger->log('forum created');
     }
 }
 

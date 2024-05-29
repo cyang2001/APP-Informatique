@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("test forum js")
     const form = document.querySelector('form'); 
     if (!form) {
         console.error("Form element not found!");
