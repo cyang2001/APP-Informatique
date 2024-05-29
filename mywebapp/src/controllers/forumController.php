@@ -17,8 +17,9 @@ class ForumController {
         session_start();
         $this->logger->log('createPost called');
         $data = json_decode(file_get_contents('php://input'), true);
-        $idOrganizer = $_SESSION['user']['id'];
-        $userName = $_SESSION['user']['name'];
+        $idOrganizer = 1; //$_SESSION['user']['id'];
+        $userName = "test";
+         //$_SESSION['user']['name'];
         $category = NAN;
         $forumURL = '';
         // ToDo ajouter file
