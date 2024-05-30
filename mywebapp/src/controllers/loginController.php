@@ -19,6 +19,7 @@ class LoginController {
                 'id' => $response['user']['ID_USER'],
                 'email' => $userEmail,
                 'name' => $response['user']['NAME_USER'],
+                'access_level' => $response['user']['ID_ACCESS_LEVEL'],
             ];
             return;
         } else {

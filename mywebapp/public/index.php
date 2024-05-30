@@ -9,6 +9,8 @@ $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
+$userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
+
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
 require_once __DIR__ . '/../src/controllers/MeetingController.php';
@@ -131,9 +133,9 @@ switch($action) {
         case 'getPages':
             if ($method == 'GET') {
                 $logger->log('GET /getPages');
-                $router->get('/getPages', function() {
-                    $pageController = new pageController();
-                    $pageController->getPages();
+                $router->get('/getPages', function() use ($userAccessLevel) {
+                    $pageController = new PageController();
+                    $pageController->getPages($userAccessLevel);
                 });
             }
             break;

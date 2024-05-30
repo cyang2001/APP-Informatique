@@ -662,3 +662,19 @@
 [2024-05-29 13:32:18] - Pattern matched: ~^/getPages$~
 [2024-05-29 13:32:18] - Matches: [[["\/getPages",0]]]
 [2024-05-29 13:32:18] - Calling callback function
+[2024-05-30 11:00:26] - Register: POST /login
+[2024-05-30 11:00:26] - Dispatching request: POST
+[2024-05-30 11:00:26] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-30 11:00:26] - Handling URI: /login
+[2024-05-30 11:00:26] - Checking pattern: ~^/login$~
+[2024-05-30 11:00:26] - Pattern matched: ~^/login$~
+[2024-05-30 11:00:26] - Matches: [[["\/login",0]]]
+[2024-05-30 11:00:26] - Calling callback function
+[2024-05-30 11:00:28] - Register: GET /getPages
+[2024-05-30 11:00:28] - Dispatching request: GET
+[2024-05-30 11:00:28] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-30 11:00:28] - Handling URI: /getPages
+[2024-05-30 11:00:28] - Checking pattern: ~^/getPages$~
+[2024-05-30 11:00:28] - Pattern matched: ~^/getPages$~
+[2024-05-30 11:00:28] - Matches: [[["\/getPages",0]]]
+[2024-05-30 11:00:28] - Calling callback function

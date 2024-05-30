@@ -11,28 +11,28 @@
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;
   }
-  document.addEventListener('DOMContentLoaded', function() {
-  fetch('index.php?action=getPages')
-    .then(response => response.json())
-    .then(data => {
-      var menuBox = document.querySelector('.menu_box');
-      data.forEach(page => {
-        var li = document.createElement('li');
-        var a = document.createElement('a');
-        a.className = 'menu_item';
-        a.href = page.PAGE_URL;  
-        a.textContent = page.PAGE_NAME;  
-        li.appendChild(a);
-        menuBox.appendChild(li);
-        console.log('Appended item:', a);
-      });
-      console.log('Pages:', data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-});
 
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('index.php?action=getPages')
+      .then(response => response.json())
+      .then(data => {
+        var menuBox = document.querySelector('.menu_box');
+        data.forEach(page => {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.className = 'menu_item';
+          a.href = page.PAGE_URL;
+          a.textContent = page.PAGE_NAME;
+          li.appendChild(a);
+          menuBox.appendChild(li);
+          console.log('Appended item:', a);
+        });
+        console.log('Pages:', data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  });
 </script>
 
 <header>
@@ -43,7 +43,6 @@
     </label>
     <ul class="menu_box">
       <li><p class="menu_title"><b>Ambisound</b></p></li>
-
     </ul>
   </div>
 
@@ -76,8 +75,6 @@
   <h1>A M B I S O U N D</h1>
   <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
 </div>
-
-
 
 <footer>
   <a class="CGU" href="cgu.html">CGU</a>
