@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Données des Capteurs Sonores</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        canvas {
+            width: 100% !important;
+            max-width: 1000px;
+            height: 400px !important;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1>Données du Capteur Sonore</h1>
+
+<h2>Graphique du Niveau Sonore</h2>
+<canvas id="soundLevelChart"></canvas>
+
+<script>
+    // Récupérer les données depuis PHP et les stocker dans des tableaux JavaScript
+    var data = <?php echo json_encode($data); ?>;
+    var labels = data.map(function(e) {
+        return e.date_heure;
+    });
+    var niveaux_db = data.map(function(e) {
+        return e.niveau_sonore;
+    });
+
+    // Créer le graphique du niveau sonore
+    var ctxSound = document.getElementById('soundLevelChart').getContext('2d');
+    var soundLevelChart = new Chart(ctxSound, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Niveau Sonore (dB)',
+                data: niveaux_db,
+                borderColor: 'rgb(255, 99, 132)',
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'time',
+                    time: {
+                        unit: 'minute'
+                    }
+                },
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
