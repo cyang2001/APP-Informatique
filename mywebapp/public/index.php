@@ -16,6 +16,10 @@ require_once __DIR__ . '/../src/controllers/meetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
+
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/forumController.php';
+
 require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
 require_once __DIR__ . '/../src/controllers/addMusicController.php';
 
@@ -134,6 +138,17 @@ switch($action) {
         }
         break;
 
+
+    case 'forum':
+        if ($method == 'POST') {
+            $logger->log('POST /forum');
+            $router->post('/forum', function(){
+                $forumController = new ForumController();
+                $forumController->createPost();
+            });    
+        }
+        break;
+
     case 'createPlaylist':
         if ($method == 'POST') {
             $logger->log('POST /createPlaylist');
@@ -177,6 +192,7 @@ switch($action) {
             });
         }
         break;
+
 
     default:
         $logger->log('action not found: '.$action);

@@ -66,7 +66,4 @@
 [2024-05-06 12:00:30] - POST /addMeeting
 [2024-05-06 15:12:11] - GET /getUserInfo
 [2024-05-06 15:12:12] - GET /getUserInfo
-[2024-05-31 10:45:19] - GET /getUserInfo
-[2024-05-31 10:45:20] - GET /getUserInfo
-[2024-05-31 14:35:14] - GET /getUserInfo
-[2024-05-31 14:35:14] - GET /getUserInfo
+

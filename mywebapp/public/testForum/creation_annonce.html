@@ -44,39 +44,32 @@
 
     <div class="conteneur">
         <div class="titre">
-            <h2>Créer ton post</h2>
+            <h2>Création d'une annonce</h2>
         </div> 
         
         <form>
-            <div class="creation_de_post">
-                <div class="creation_de_post_titre">
+            <div class="creation_annonce">
+                <div class="creation_annonce_titre">
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" name="Titre" placeholder="Ajouter un titre" required>
                 </div>
 
-                <div class="creation_de_post_description">
+                <div class="creation_annonce_description">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description" cols="133" rows="10" placeholder="Ajouter une description" required></textarea>
+                    <textarea name="description" id="description" cols="133" rows="10" placeholder="Ajouter l'annonce" required></textarea>
                 </div>
 
-                <div class="creation_de_post_category">
+                <div class="creation_annonce_category">
                     <label for="category">Category</label>
                     <select name="category" id="category" >
-                        <option value="0"selected >Discussion Generale</option>
+                        <option value="0" selected>Discussion Generale</option>
                         <option value="1">Aide et Support</option>
                         <option value="2">Partage de projets</option>
                         <option value="3">Plainte</option>
-                       
                     </select>
                 </div>
-                
 
-                <div class="creation_de_post_fichier">
-                    <label for="Ajouter_un_fichier">Ajouter un fichier</label>
-                    <input type="file" name="Ajouter_un_fichier">
-                </div>
-
-                <div class="creation_de_post_submit_bouton">
+                <div class="creation_annonce_submit_bouton">
                     <input type="submit" value="Envoyer">
                 </div>
             </div> 
