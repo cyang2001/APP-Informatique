@@ -120,3 +120,30 @@
 [2024-05-31 09:47:15] - getUserInfo constructor initialized
 [2024-05-31 09:47:15] - User info retrieved
 [2024-05-31 09:47:15] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:48:58] - getUserInfo constructor initialized
+[2024-05-31 09:48:58] - User info retrieved
+[2024-05-31 09:48:58] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:49:07] - getUserInfo constructor initialized
+[2024-05-31 09:49:07] - User info retrieved
+[2024-05-31 09:49:07] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:49:30] - getUserInfo constructor initialized
+[2024-05-31 09:49:30] - User info retrieved
+[2024-05-31 09:49:30] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:49:31] - getUserInfo constructor initialized
+[2024-05-31 09:49:31] - User info retrieved
+[2024-05-31 09:49:31] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:49:32] - getUserInfo constructor initialized
+[2024-05-31 09:49:32] - User info retrieved
+[2024-05-31 09:49:32] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:49:51] - getUserInfo constructor initialized
+[2024-05-31 09:49:51] - User info retrieved
+[2024-05-31 09:49:51] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:50:04] - getUserInfo constructor initialized
+[2024-05-31 09:50:04] - User info retrieved
+[2024-05-31 09:50:04] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:50:05] - getUserInfo constructor initialized
+[2024-05-31 09:50:05] - User info retrieved
+[2024-05-31 09:50:05] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:50:05] - getUserInfo constructor initialized
+[2024-05-31 09:50:05] - User info retrieved
+[2024-05-31 09:50:05] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
