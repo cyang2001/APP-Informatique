@@ -594,3 +594,99 @@
 [2024-05-28 14:09:58] - Pattern matched: ~^/forum$~
 [2024-05-28 14:09:58] - Matches: [[["\/forum",0]]]
 [2024-05-28 14:09:58] - Calling callback function
+[2024-05-31 10:41:16] - Register: POST /register
+[2024-05-31 10:41:16] - Dispatching request: POST
+[2024-05-31 10:41:16] - Current URI: /APP-informatique/mywebapp/public/index.php?action=register
+[2024-05-31 10:41:16] - Handling URI: /register
+[2024-05-31 10:41:16] - Checking pattern: ~^/register$~
+[2024-05-31 10:41:16] - Pattern matched: ~^/register$~
+[2024-05-31 10:41:16] - Matches: [[["\/register",0]]]
+[2024-05-31 10:41:16] - Calling callback function
+[2024-05-31 10:41:18] - Register: POST /register
+[2024-05-31 10:41:18] - Dispatching request: POST
+[2024-05-31 10:41:18] - Current URI: /APP-informatique/mywebapp/public/index.php?action=register
+[2024-05-31 10:41:18] - Handling URI: /register
+[2024-05-31 10:41:18] - Checking pattern: ~^/register$~
+[2024-05-31 10:41:18] - Pattern matched: ~^/register$~
+[2024-05-31 10:41:18] - Matches: [[["\/register",0]]]
+[2024-05-31 10:41:18] - Calling callback function
+[2024-05-31 10:41:39] - Register: POST /login
+[2024-05-31 10:41:39] - Dispatching request: POST
+[2024-05-31 10:41:39] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:41:39] - Handling URI: /login
+[2024-05-31 10:41:39] - Checking pattern: ~^/login$~
+[2024-05-31 10:41:39] - Pattern matched: ~^/login$~
+[2024-05-31 10:41:39] - Matches: [[["\/login",0]]]
+[2024-05-31 10:41:39] - Calling callback function
+[2024-05-31 10:41:40] - Register: POST /login
+[2024-05-31 10:41:40] - Dispatching request: POST
+[2024-05-31 10:41:40] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:41:40] - Handling URI: /login
+[2024-05-31 10:41:40] - Checking pattern: ~^/login$~
+[2024-05-31 10:41:40] - Pattern matched: ~^/login$~
+[2024-05-31 10:41:40] - Matches: [[["\/login",0]]]
+[2024-05-31 10:41:40] - Calling callback function
+[2024-05-31 10:41:40] - Register: POST /login
+[2024-05-31 10:41:40] - Dispatching request: POST
+[2024-05-31 10:41:40] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:41:40] - Handling URI: /login
+[2024-05-31 10:41:40] - Checking pattern: ~^/login$~
+[2024-05-31 10:41:40] - Pattern matched: ~^/login$~
+[2024-05-31 10:41:40] - Matches: [[["\/login",0]]]
+[2024-05-31 10:41:40] - Calling callback function
+[2024-05-31 10:42:11] - Register: POST /login
+[2024-05-31 10:42:11] - Dispatching request: POST
+[2024-05-31 10:42:11] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:42:11] - Handling URI: /login
+[2024-05-31 10:42:11] - Checking pattern: ~^/login$~
+[2024-05-31 10:42:11] - Pattern matched: ~^/login$~
+[2024-05-31 10:42:11] - Matches: [[["\/login",0]]]
+[2024-05-31 10:42:11] - Calling callback function
+[2024-05-31 10:42:12] - Register: POST /login
+[2024-05-31 10:42:12] - Dispatching request: POST
+[2024-05-31 10:42:12] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:42:12] - Handling URI: /login
+[2024-05-31 10:42:12] - Checking pattern: ~^/login$~
+[2024-05-31 10:42:12] - Pattern matched: ~^/login$~
+[2024-05-31 10:42:12] - Matches: [[["\/login",0]]]
+[2024-05-31 10:42:12] - Calling callback function
+[2024-05-31 10:42:12] - Register: POST /login
+[2024-05-31 10:42:12] - Dispatching request: POST
+[2024-05-31 10:42:12] - Current URI: /APP-informatique/mywebapp/public/index.php?action=login
+[2024-05-31 10:42:12] - Handling URI: /login
+[2024-05-31 10:42:12] - Checking pattern: ~^/login$~
+[2024-05-31 10:42:12] - Pattern matched: ~^/login$~
+[2024-05-31 10:42:12] - Matches: [[["\/login",0]]]
+[2024-05-31 10:42:12] - Calling callback function
+[2024-05-31 10:43:05] - Register: POST /forum
+[2024-05-31 10:43:05] - Dispatching request: POST
+[2024-05-31 10:43:05] - Current URI: /APP-informatique/mywebapp/public/index.php?action=forum
+[2024-05-31 10:43:05] - Handling URI: /forum
+[2024-05-31 10:43:05] - Checking pattern: ~^/forum$~
+[2024-05-31 10:43:05] - Pattern matched: ~^/forum$~
+[2024-05-31 10:43:05] - Matches: [[["\/forum",0]]]
+[2024-05-31 10:43:05] - Calling callback function
+[2024-05-31 10:43:08] - Register: POST /forum
+[2024-05-31 10:43:08] - Dispatching request: POST
+[2024-05-31 10:43:08] - Current URI: /APP-informatique/mywebapp/public/index.php?action=forum
+[2024-05-31 10:43:08] - Handling URI: /forum
+[2024-05-31 10:43:08] - Checking pattern: ~^/forum$~
+[2024-05-31 10:43:08] - Pattern matched: ~^/forum$~
+[2024-05-31 10:43:08] - Matches: [[["\/forum",0]]]
+[2024-05-31 10:43:08] - Calling callback function
+[2024-05-31 10:43:08] - Register: POST /forum
+[2024-05-31 10:43:08] - Dispatching request: POST
+[2024-05-31 10:43:08] - Current URI: /APP-informatique/mywebapp/public/index.php?action=forum
+[2024-05-31 10:43:08] - Handling URI: /forum
+[2024-05-31 10:43:08] - Checking pattern: ~^/forum$~
+[2024-05-31 10:43:08] - Pattern matched: ~^/forum$~
+[2024-05-31 10:43:08] - Matches: [[["\/forum",0]]]
+[2024-05-31 10:43:08] - Calling callback function
+[2024-05-31 10:43:09] - Register: POST /forum
+[2024-05-31 10:43:09] - Dispatching request: POST
+[2024-05-31 10:43:09] - Current URI: /APP-informatique/mywebapp/public/index.php?action=forum
+[2024-05-31 10:43:09] - Handling URI: /forum
+[2024-05-31 10:43:09] - Checking pattern: ~^/forum$~
+[2024-05-31 10:43:09] - Pattern matched: ~^/forum$~
+[2024-05-31 10:43:09] - Matches: [[["\/forum",0]]]
+[2024-05-31 10:43:09] - Calling callback function
