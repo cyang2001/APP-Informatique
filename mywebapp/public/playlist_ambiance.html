@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Playlists Rock</title>
+        <link rel="stylesheet" type="text/css" href="css\playlist_all.css" />
+    </head>
+    <body>
+      <script>
+        function handleMenuButtonClick() {
+            var checkbox = document.getElementById('menu_toggle');
+            checkbox.checked = !checkbox.checked;
+        }
+    </script>
+    
+    
+    
+    <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" onclick="handleMenuButtonClick()">
+            <span></span>
+        </label>
+    
+        <ul class="menu_box">
+            <li><p class="menu_title"><b>Ambisound</b></p></li>
+            <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
+            <li><a class="menu_item" href="#">Informations</a></li>
+            <li><a class="menu_item" href="./faq.html">FAQ</a></li>
+            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+            <li><a class="menu_item" href="./forum.html">Forum</a></li>
+            <li><a class="menu_item" href="./evenement.html">Événements</a></li>
+            <li><a class="menu_item" href="#">Lieux</a></li>
+            <li><a class="menu_item" href="#">Billetterie</a></li>
+            <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
+            <li><a class="menu_item" href="#">Capteurs</a></li>
+        </ul>
+    </div>
+        <header >
+          <h1 class="page_title">
+            Playlists
+          </h1>
+            
+        </header>
+        <main>
+            <div class="main">
+          
+                <div class="section1">
+
+                <a href="playlist.html">
+                <img src="source/retour.png" width="50" height="50" class="retour">
+                </a>
+
+                <div class="type">
+                  <div class="song">
+                    <p class="name">Playlist Son d'ambiance</p>
+                    <p class="artist">Immergez-vous dans un univers sonore apaisant avec cette playlist d'ambiance. <br>
+                        Parfaite pour la méditation, la concentration ou simplement pour s'évader, chaque piste est une invitation à la tranquillité.</p>
+                  </div>
+                  <div class="albumcover">
+                    <img class="album" src="source/ambiancejpg.jpg" height="250" width="250">
+
+                  </div>
+                  
+                </div>
+
+                <div class="affichage">
+                  <div class="titreM">
+                  <div id="musicInfo">
+                    <p id="musicTitle">Titre de la musique</p>
+                    <p id="musicArtist">Nom de l'artiste</p>
+                  </div>
+                  </div>
+                  
+                    
+                  <audio id="audioPlayer" controls></audio>
+
+                  <img class="next" src="source/next.png" width="25" height="25">
+                
+                  <img class="ale" src="source/aleatoire.png" width="25" height="25" onclick="playRandomMusic()">
+
+                  
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique32.mp3', 'Awake', 'Emmetelle')">
+                    <div class="temps">
+                      <p>8:46</p>
+                    </div> 
+                    <div class="song">
+                      <p class="name">Awake</p>
+                      <p class="artist">Emmetelle</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">1</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+    
+                    </div>
+                   
+                </div>
+                
+
+                <div class="loader" onclick="playMusic('source/Musique33.mp3', 'Fragments', 'Nomyn')">
+                  <div class="temps">
+                    <p>3:46</p>
+                  </div> 
+                    <div class="song">
+                      <p class="name">Fragments</p>
+                      <p class="artist">Nomyn</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">2</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="loader" onclick="playMusic('source/Musique34.mp3', 'Changes', 'Meydän')">
+                  <div class="temps">
+                    <p>2:44</p>
+                  </div>
+                    <div class="song">
+                      <p class="name">Changes</p>
+                      <p class="artist">Meydän</p>
+                    </div>
+                    <div class="numero">
+                        <p class="num">3</p>
+                        <img src="source/play.png" class="hidden-img">
+                    </div>
+                    <div class="hidden-loading">
+                      <div class="loading">
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                        <div class="load"></div>
+                      </div>
+                      </div>
+                   
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique35.mp3', 'Now', 'Vexento')">
+                  <div class="temps">
+                    <p>5:50</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">Now</p>
+                    <p class="artist">Vexento</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">4</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique36.mp3', 'Beautiful Lies', 'Saurabh Alwadkar')">
+                  <div class="temps">
+                    <p>4:46</p>
+                  </div>
+                  <div class="song">
+                    <p class="name">Beautiful Lies</p>
+                    <p class="artist">Saurabh Alwadkar</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">5</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                    <div class="loading">
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                      <div class="load"></div>
+                    </div>
+                    </div>
+                 
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique37.mp3', 'Inspiring Journey', 'Leo Sokolovsky')">
+                  <div class="temps">
+                    <p>3:26</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Inspiring Journey</p>
+                    <p class="artist">Leo Sokolovsky</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">6</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique24.mp3', 'Clair Obscur', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>5:07</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Clair Obscur</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">7</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique25.mp3', 'Dance of the Sun', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>4:36</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Dance of the Sun</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">8</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique26.mp3', 'Tendresse', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>3:21</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Tendresse</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">9</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique27.mp3', 'Mineral', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>1:49</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Mineral</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">10</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique28.mp3', 'Forest', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>3:05</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Forest</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">11</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                <div class="loader" onclick="playMusic('source/Musique29.mp3', 'Genval', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>4:00</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Genval</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">12</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique30.mp3', 'Angello', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>3:04</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Angello</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">13</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+
+                <div class="loader" onclick="playMusic('source/Musique31.mp3', 'Rouge', 'Hicham Chahidi')">
+                  <div class="temps">
+                    <p>4:20</p>
+                  </div> 
+                  <div class="song">
+                    <p class="name">Rouge</p>
+                    <p class="artist">Hicham Chahidi</p>
+                  </div>
+                  <div class="numero">
+                      <p class="num">14</p>
+                      <img src="source/play.png" class="hidden-img">
+                  </div>
+                  <div class="hidden-loading">
+                  <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div>
+  
+                  </div>
+
+                </div>
+
+                  
+                
+              </div>
+              
+              </div>
+              <script src="js/playlist_ambiance.js"></script>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+
