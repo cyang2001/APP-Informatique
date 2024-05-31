@@ -14,8 +14,11 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     fetch('index.php?action=getPages')
-      .then(response => response.json())
+      .then(response => {response.json();
+        console.log('Response:', response);
+      })
       .then(data => {
+        console.log('Data:', data);
         var menuBox = document.querySelector('.menu_box');
         data.forEach(page => {
           var li = document.createElement('li');
@@ -61,8 +64,8 @@
     <div class="bouton2">
       <span><img class="prof-home" src="source/user(1).png"></span>
       <div class="menu-deroulant">
-        <a href="login.php">Se connecter</a>
-        <a href="register.php">S'inscrire</a>
+        <a href="login_fr.html">Se connecter</a>
+        <a href="register.html">S'inscrire</a>
       </div>
     </div>
     <div class="bouton1">

@@ -678,3 +678,75 @@
 [2024-05-30 11:00:28] - Pattern matched: ~^/getPages$~
 [2024-05-30 11:00:28] - Matches: [[["\/getPages",0]]]
 [2024-05-30 11:00:28] - Calling callback function
+[2024-05-31 09:37:56] - Register: GET /getPages
+[2024-05-31 09:37:56] - Dispatching request: GET
+[2024-05-31 09:37:56] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:37:56] - Handling URI: /getPages
+[2024-05-31 09:37:56] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:37:56] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:37:56] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:37:56] - Calling callback function
+[2024-05-31 09:38:38] - Register: POST /login
+[2024-05-31 09:38:38] - Dispatching request: POST
+[2024-05-31 09:38:38] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-31 09:38:38] - Handling URI: /login
+[2024-05-31 09:38:38] - Checking pattern: ~^/login$~
+[2024-05-31 09:38:38] - Pattern matched: ~^/login$~
+[2024-05-31 09:38:38] - Matches: [[["\/login",0]]]
+[2024-05-31 09:38:38] - Calling callback function
+[2024-05-31 09:38:46] - Register: POST /login
+[2024-05-31 09:38:46] - Dispatching request: POST
+[2024-05-31 09:38:46] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-31 09:38:46] - Handling URI: /login
+[2024-05-31 09:38:46] - Checking pattern: ~^/login$~
+[2024-05-31 09:38:46] - Pattern matched: ~^/login$~
+[2024-05-31 09:38:46] - Matches: [[["\/login",0]]]
+[2024-05-31 09:38:46] - Calling callback function
+[2024-05-31 09:38:48] - Register: GET /getPages
+[2024-05-31 09:38:48] - Dispatching request: GET
+[2024-05-31 09:38:48] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:38:48] - Handling URI: /getPages
+[2024-05-31 09:38:48] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:38:48] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:38:48] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:38:48] - Calling callback function
+[2024-05-31 09:38:54] - Register: GET /getPages
+[2024-05-31 09:38:54] - Dispatching request: GET
+[2024-05-31 09:38:54] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:38:54] - Handling URI: /getPages
+[2024-05-31 09:38:54] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:38:54] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:38:54] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:38:54] - Calling callback function
+[2024-05-31 09:39:28] - Register: GET /getPages
+[2024-05-31 09:39:28] - Dispatching request: GET
+[2024-05-31 09:39:28] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:39:28] - Handling URI: /getPages
+[2024-05-31 09:39:28] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:39:28] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:39:28] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:39:28] - Calling callback function
+[2024-05-31 09:39:41] - Register: GET /getPages
+[2024-05-31 09:39:41] - Dispatching request: GET
+[2024-05-31 09:39:41] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:39:41] - Handling URI: /getPages
+[2024-05-31 09:39:41] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:39:41] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:39:41] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:39:41] - Calling callback function
+[2024-05-31 09:39:50] - Register: POST /login
+[2024-05-31 09:39:50] - Dispatching request: POST
+[2024-05-31 09:39:50] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=login
+[2024-05-31 09:39:50] - Handling URI: /login
+[2024-05-31 09:39:50] - Checking pattern: ~^/login$~
+[2024-05-31 09:39:50] - Pattern matched: ~^/login$~
+[2024-05-31 09:39:50] - Matches: [[["\/login",0]]]
+[2024-05-31 09:39:50] - Calling callback function
+[2024-05-31 09:39:51] - Register: GET /getPages
+[2024-05-31 09:39:51] - Dispatching request: GET
+[2024-05-31 09:39:51] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:39:51] - Handling URI: /getPages
+[2024-05-31 09:39:51] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:39:51] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:39:51] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:39:51] - Calling callback function
