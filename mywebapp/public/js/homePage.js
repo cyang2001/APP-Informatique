@@ -16,8 +16,7 @@ window.onload = function() {
                 fetch('index.php?action=logout', {
                     method: 'GET'
                 })
-                .then(() => location.reload())
-                .catch(error => console.error('Error on logout:', error));
+                .then(() => location.reload());
             });
         } else {
             menu.innerHTML = '<a href="./login_fr.html">Se connecter</a><a href="./register_fr.html">S\'inscrire</a>';
@@ -26,13 +25,10 @@ window.onload = function() {
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
-};
+}
 
-
-document.addEventListener('scroll', function() {
-    const parallaxElement = document.querySelector('.banniere img');
-    const speed = 0.5;
-    var windowScroll = window.pageYOffset;
-    parallaxElement.style.transform = 'translateY(' + windowScroll * speed + 'px)';
+window.addEventListener('beforeunload', function(event) {
+    fetch('index.php?action=logout', {
+        method: 'GET'
+    }).catch(error => console.error('Error on logout:', error));
 });
-
