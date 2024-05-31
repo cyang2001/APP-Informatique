@@ -67,3 +67,15 @@
 [2024-05-06 15:12:11] - GET /getUserInfo
 [2024-05-06 15:12:12] - GET /getUserInfo
 
+[2024-05-31 14:41:32] - POST /login
+[2024-05-31 14:41:34] - GET /getUserInfo
+[2024-05-31 14:41:44] - POST /forum
+[2024-05-31 14:41:44] - POST /forum
+[2024-05-31 14:41:45] - POST /forum
+[2024-05-31 14:41:45] - POST /forum
+[2024-05-31 14:41:46] - POST /forum
+[2024-05-31 14:41:48] - POST /forum
+[2024-05-31 14:41:48] - POST /forum
+[2024-05-31 14:41:48] - POST /forum
+[2024-05-31 14:43:24] - POST /login
+[2024-05-31 14:43:26] - GET /getUserInfo

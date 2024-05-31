@@ -115,3 +115,9 @@
 [2024-05-31 14:35:14] - getUserInfo constructor initialized
 [2024-05-31 14:35:14] - User info retrieved
 [2024-05-31 14:35:14] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 14:41:34] - getUserInfo constructor initialized
+[2024-05-31 14:41:34] - User info retrieved
+[2024-05-31 14:41:34] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 14:43:26] - getUserInfo constructor initialized
+[2024-05-31 14:43:26] - User info retrieved
+[2024-05-31 14:43:26] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
