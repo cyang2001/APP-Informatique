@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*ligne de sépra*/
 .separator{
     height:2px;
     width:auto;
@@ -21,6 +21,10 @@ a{
     color:black;
     transition: color ease-out;
     transition-duration: 0.25s;
+}
+
+a:hover{
+    color: #c3d1d7;
 }
 
 .menu_item:hover {
