@@ -120,7 +120,22 @@ h2{
 
 
 
+.menu-deroulant {
+    left: 88%;
+    position: relative;
+    display: inline-block;
+}
 
+.menu-deroulant div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
+}
+.menu-deroulant:hover div {
+    display: block;
+}
 
 
 

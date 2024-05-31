@@ -798,3 +798,35 @@
 [2024-05-31 09:45:12] - Pattern matched: ~^/getUserInfo$~
 [2024-05-31 09:45:12] - Matches: [[["\/getUserInfo",0]]]
 [2024-05-31 09:45:12] - Calling callback function
+[2024-05-31 09:46:36] - Register: GET /getPages
+[2024-05-31 09:46:36] - Dispatching request: GET
+[2024-05-31 09:46:36] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:46:36] - Handling URI: /getPages
+[2024-05-31 09:46:36] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:46:36] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:46:36] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:46:36] - Calling callback function
+[2024-05-31 09:46:36] - Register: GET /getUserInfo
+[2024-05-31 09:46:36] - Dispatching request: GET
+[2024-05-31 09:46:36] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-31 09:46:36] - Handling URI: /getUserInfo
+[2024-05-31 09:46:36] - Checking pattern: ~^/getUserInfo$~
+[2024-05-31 09:46:36] - Pattern matched: ~^/getUserInfo$~
+[2024-05-31 09:46:36] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-31 09:46:36] - Calling callback function
+[2024-05-31 09:47:15] - Register: GET /getPages
+[2024-05-31 09:47:15] - Dispatching request: GET
+[2024-05-31 09:47:15] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getPages
+[2024-05-31 09:47:15] - Handling URI: /getPages
+[2024-05-31 09:47:15] - Checking pattern: ~^/getPages$~
+[2024-05-31 09:47:15] - Pattern matched: ~^/getPages$~
+[2024-05-31 09:47:15] - Matches: [[["\/getPages",0]]]
+[2024-05-31 09:47:15] - Calling callback function
+[2024-05-31 09:47:15] - Register: GET /getUserInfo
+[2024-05-31 09:47:15] - Dispatching request: GET
+[2024-05-31 09:47:15] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-05-31 09:47:15] - Handling URI: /getUserInfo
+[2024-05-31 09:47:15] - Checking pattern: ~^/getUserInfo$~
+[2024-05-31 09:47:15] - Pattern matched: ~^/getUserInfo$~
+[2024-05-31 09:47:15] - Matches: [[["\/getUserInfo",0]]]
+[2024-05-31 09:47:15] - Calling callback function

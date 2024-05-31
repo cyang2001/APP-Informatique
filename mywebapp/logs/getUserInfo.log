@@ -114,3 +114,9 @@
 [2024-05-31 09:45:12] - getUserInfo constructor initialized
 [2024-05-31 09:45:12] - User info retrieved
 [2024-05-31 09:45:12] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:46:36] - getUserInfo constructor initialized
+[2024-05-31 09:46:36] - User info retrieved
+[2024-05-31 09:46:36] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:47:15] - getUserInfo constructor initialized
+[2024-05-31 09:47:15] - User info retrieved
+[2024-05-31 09:47:15] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
