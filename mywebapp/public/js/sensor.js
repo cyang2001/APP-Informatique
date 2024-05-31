@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     fetch('index.php?action=getSensorData')
-        .then(response => response.json())
+        .then(response =>{response.json()
+            console.log(response)
+        } )
 
         .then(data => {
             var labels = data.map(function(e) {
