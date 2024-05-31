@@ -1,16 +1,17 @@
 <?php
-require_once __DIR__ . '/../models/SensorModel.php';
-require_once __DIR__ . '/../../public/sensor.html';
+require_once __DIR__ . '/../models/sensor.php';
+
 class SensorController {
-    private $sensorModel;
+    private $sensor;
 
     public function __construct() {
-        $this->sensorModel = new Sensor();
+        $this->sensor = new Sensor();
     }
 
     public function getAllSensorData() {
-        return $this->sensorModel->getAllSensorData();
+        $data = $this->sensor->getAllSensorData();
+        header('Content-Type: application/json');
+        echo json_encode($data);
     }
-
 }
 

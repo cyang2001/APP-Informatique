@@ -128,13 +128,14 @@ switch($action) {
         }
         break;
     case 'getSensorData':
-        if ($method == 'GET') {
-            $logger->log('GET /getSensorData');
-            $router->get('/getSensorData', function(){
-                $sensorController = new sensorController();
-                $sensorController->getAllSensorData();
-            });
-        }
+            if ($method == 'GET') {
+                $logger->log('GET /getSensorData');
+                $router->get('/getSensorData', function(){
+                    $sensorController = new SensorController();
+                    $sensorController->getAllSensorData();
+                });
+            }
+            break;
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);

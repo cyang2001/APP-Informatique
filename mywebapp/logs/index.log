@@ -99,3 +99,8 @@
 [2024-05-31 09:30:34] - action not found: getSensorData
 [2024-05-31 09:31:04] - GET /getSensorData
 [2024-05-31 09:31:04] - action not found: getSensorData
+[2024-05-31 11:34:21] - GET /getSensorData
+[2024-05-31 11:34:21] - action not found: getSensorData
+[2024-05-31 11:41:25] - GET /getSensorData
+[2024-05-31 11:58:42] - GET /getSensorData
+[2024-05-31 11:59:55] - GET /getSensorData
