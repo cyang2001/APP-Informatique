@@ -79,3 +79,12 @@
 [2024-05-31 14:41:48] - POST /forum
 [2024-05-31 14:43:24] - POST /login
 [2024-05-31 14:43:26] - GET /getUserInfo
+[2024-05-31 15:50:26] - GET /getUserInfo
+[2024-05-31 16:03:26] - GET /getUserInfo
+[2024-05-31 16:10:32] - GET /getUserInfo
+[2024-05-31 16:11:38] - GET /getUserInfo
+[2024-05-31 16:11:41] - GET /getUserInfo
+[2024-05-31 16:11:41] - GET /getUserInfo
+[2024-05-31 16:11:42] - GET /getUserInfo
+[2024-05-31 16:11:46] - action not found: 
+[2024-05-31 16:11:54] - GET /getUserInfo

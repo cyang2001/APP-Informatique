@@ -121,3 +121,27 @@
 [2024-05-31 14:43:26] - getUserInfo constructor initialized
 [2024-05-31 14:43:26] - User info retrieved
 [2024-05-31 14:43:26] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 15:50:26] - getUserInfo constructor initialized
+[2024-05-31 15:50:26] - User info retrieved
+[2024-05-31 15:50:26] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:03:26] - getUserInfo constructor initialized
+[2024-05-31 16:03:26] - User info retrieved
+[2024-05-31 16:03:26] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:10:32] - getUserInfo constructor initialized
+[2024-05-31 16:10:32] - User info retrieved
+[2024-05-31 16:10:32] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:11:38] - getUserInfo constructor initialized
+[2024-05-31 16:11:38] - User info retrieved
+[2024-05-31 16:11:38] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:11:41] - getUserInfo constructor initialized
+[2024-05-31 16:11:41] - User info retrieved
+[2024-05-31 16:11:41] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:11:41] - getUserInfo constructor initialized
+[2024-05-31 16:11:41] - User info retrieved
+[2024-05-31 16:11:41] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:11:42] - getUserInfo constructor initialized
+[2024-05-31 16:11:42] - User info retrieved
+[2024-05-31 16:11:42] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 16:11:54] - getUserInfo constructor initialized
+[2024-05-31 16:11:54] - User info retrieved
+[2024-05-31 16:11:54] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}

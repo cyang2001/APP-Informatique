@@ -317,6 +317,7 @@ p {
 #title {
     background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
 
+    
     z-index: 2;
 }
 
@@ -332,8 +333,7 @@ p {
 }
 
 #slide2 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
-    z-index:2;
+    background-image: url("file:///D:/XAMPP/htdocs/APP-Informatique/mywebapp/public/source/nuage.jpg");
 }
 
 #slide3:before {
