@@ -26,4 +26,13 @@ window.onload = function() {
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
+});
+
+
+document.addEventListener('scroll', function() {
+    const parallaxElement = document.querySelector('.banniere img');
+    const speed = 0.5;
+    var windowScroll = window.pageYOffset;
+    parallaxElement.style.transform = 'translateY(' + windowScroll * speed + 'px)';
+});
 };
