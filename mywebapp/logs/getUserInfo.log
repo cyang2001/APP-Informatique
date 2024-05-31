@@ -105,3 +105,12 @@
 [2024-05-06 15:12:11] - Unauthorized
 [2024-05-06 15:12:12] - getUserInfo constructor initialized
 [2024-05-06 15:12:12] - Unauthorized
+[2024-05-31 09:44:33] - getUserInfo constructor initialized
+[2024-05-31 09:44:33] - User info retrieved
+[2024-05-31 09:44:33] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:44:59] - getUserInfo constructor initialized
+[2024-05-31 09:44:59] - User info retrieved
+[2024-05-31 09:44:59] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:45:12] - getUserInfo constructor initialized
+[2024-05-31 09:45:12] - User info retrieved
+[2024-05-31 09:45:12] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}

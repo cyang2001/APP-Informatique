@@ -92,3 +92,9 @@
 [2024-05-31 09:39:41] - GET /getPages
 [2024-05-31 09:39:50] - POST /login
 [2024-05-31 09:39:51] - GET /getPages
+[2024-05-31 09:44:32] - GET /getPages
+[2024-05-31 09:44:33] - GET /getUserInfo
+[2024-05-31 09:44:59] - GET /getPages
+[2024-05-31 09:44:59] - GET /getUserInfo
+[2024-05-31 09:45:12] - GET /getPages
+[2024-05-31 09:45:12] - GET /getUserInfo
