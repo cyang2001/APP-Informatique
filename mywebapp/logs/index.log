@@ -161,3 +161,15 @@
 [2024-05-31 10:33:07] - GET /getUserInfo
 [2024-05-31 10:34:28] - GET /getUserInfo
 [2024-05-31 10:34:28] - GET /getPages
+[2024-05-31 10:35:00] - GET /logout
+[2024-05-31 10:35:00] - GET /getPages
+[2024-05-31 10:35:00] - GET /getUserInfo
+[2024-05-31 10:35:05] - GET /logout
+[2024-05-31 10:35:05] - GET /getPages
+[2024-05-31 10:35:05] - GET /getUserInfo
+[2024-05-31 10:35:12] - GET /logout
+[2024-05-31 10:35:12] - GET /getPages
+[2024-05-31 10:35:12] - GET /getUserInfo
+[2024-05-31 10:35:37] - GET /logout
+[2024-05-31 10:35:37] - GET /getPages
+[2024-05-31 10:35:37] - GET /getUserInfo
