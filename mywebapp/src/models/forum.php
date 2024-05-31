@@ -12,7 +12,7 @@ class Forum {
     //fonction pour créer les posts et les ajouter a la base de donnée
     public function createPost($idCreator, $title, $description, $fileURL, $category, $userName) {
         $idPost = UUIDGenerator::generate();
-        $sql = "INSERT INTO forum (ID_FORUM, ID_CREATOR, NAME_CATEGORY, FORUM_TITRE, FORUM_DISCRIPTION, FORUM_URL_FICHIER, CREATOR_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO forum (ID_FORUM, ID_CREATOR, NAME_CATEGORY, FORUM_TITRE, FORUM_DESCRIPTION, FORUM_URL_FICHIR, CREATOR_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$idPost, $idCreator, $category, $title, $description, $fileURL, $userName]);
         $this->logger->log ("Post added: {$idPost} - {$title} - {$description} - {$fileURL} - {$category} - {$userName}");
