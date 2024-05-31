@@ -226,7 +226,7 @@ div {
     padding:2px 0;
 }
 
-.post, .block-annonce ,.block-creation_de_post, .discussion_generale_post{
+.post, .block-annonce ,.block-creation_de_post, .discussion_generale_post,.block-creation_annonce{
     padding:2px 0;
     margin: 0px 0px; 
 }    
@@ -334,6 +334,7 @@ label{
     padding:5px;
     border-radius: 0%;
     border-bottom:solid  1px rgba(0,0,0,0.5);
+}
 .image-post {
     height: 300px;
     width: auto;
@@ -345,11 +346,9 @@ label{
     transform: translateX(-50%);
 }
 
-
-}
-
 .post-description{
     margin:5px;
     padding:5px;
     text-align: justify;
 }
+   
