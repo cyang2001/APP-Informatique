@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Données des Capteurs Sonores</title>
+    <link rel="stylesheet" href="css/sensor.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        canvas {
-            width: 100% !important;
-            max-width: 1000px;
-            height: 400px !important;
-            margin-bottom: 50px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Données du Capteur Sonore</h1>
-    <h2>Graphique du Niveau Sonore</h2>
-    <canvas id="soundLevelChart"></canvas>
+    <header>
+        <input type="checkbox" id="menu_toggle">
+        <label class="menu_btn" for="menu_toggle">
+            <span></span>
+        </label>
+        <ul class="menu_box">
+            <li><span class="menu_title">Menu</span></li>
+            <li><a class="menu_item" href="#">Accueil</a></li>
+            <li><a class="menu_item" href="#">Capteurs</a></li>
+            <li><a class="menu_item" href="#">Graphiques</a></li>
+            <li><a class="menu_item" href="#">Paramètres</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <h1>Données du Capteur Sonore</h1>
+        <h2>Graphique du Niveau Sonore</h2>
+        <canvas id="soundLevelChart"></canvas>
+    </div>
+    
     <script src="js/sensor.js"></script>
 </body>
 </html>
