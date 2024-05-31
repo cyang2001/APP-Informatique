@@ -37,7 +37,7 @@
 
 <script>
     // Récupérer les données depuis PHP et les stocker dans des tableaux JavaScript
-    var data = <?php echo json_encode($data); ?>;
+
     var labels = data.map(function(e) {
         return e.date_heure;
     });

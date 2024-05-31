@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../models/SensorModel.php';
-
+require_once __DIR__ . '/../../public/sensor.html';
 class SensorController {
     private $sensorModel;
 
@@ -13,7 +13,9 @@ class SensorController {
     }
     public function displaySensorData() {
         $data = $this->getAllSensorData();
-        include __DIR__ . '/../../public/sensor.html';
+        session_start();
+        $_SESSION['sensorData'] = $data;
+
     }
 }
-?>
+
