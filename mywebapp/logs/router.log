@@ -752,3 +752,35 @@
 [2024-05-31 12:23:21] - Pattern matched: ~^/getSensorData$~
 [2024-05-31 12:23:21] - Matches: [[["\/getSensorData",0]]]
 [2024-05-31 12:23:21] - Calling callback function
+[2024-05-31 12:43:21] - Register: GET /getSensorData
+[2024-05-31 12:43:21] - Dispatching request: GET
+[2024-05-31 12:43:21] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 12:43:21] - Handling URI: /getSensorData
+[2024-05-31 12:43:21] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 12:43:21] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 12:43:21] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 12:43:21] - Calling callback function
+[2024-05-31 12:43:40] - Register: GET /getSensorData
+[2024-05-31 12:43:40] - Dispatching request: GET
+[2024-05-31 12:43:40] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 12:43:40] - Handling URI: /getSensorData
+[2024-05-31 12:43:40] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 12:43:40] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 12:43:40] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 12:43:40] - Calling callback function
+[2024-05-31 12:43:56] - Register: GET /getSensorData
+[2024-05-31 12:43:56] - Dispatching request: GET
+[2024-05-31 12:43:56] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 12:43:56] - Handling URI: /getSensorData
+[2024-05-31 12:43:56] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 12:43:56] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 12:43:56] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 12:43:56] - Calling callback function
+[2024-05-31 12:44:15] - Register: GET /getSensorData
+[2024-05-31 12:44:15] - Dispatching request: GET
+[2024-05-31 12:44:15] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 12:44:15] - Handling URI: /getSensorData
+[2024-05-31 12:44:15] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 12:44:15] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 12:44:15] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 12:44:15] - Calling callback function
