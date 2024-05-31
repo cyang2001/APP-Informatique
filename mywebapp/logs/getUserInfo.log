@@ -147,3 +147,27 @@
 [2024-05-31 09:50:05] - getUserInfo constructor initialized
 [2024-05-31 09:50:05] - User info retrieved
 [2024-05-31 09:50:05] - {"id":20366324,"email":"cc@cc.com","name":"cc","access_level":0}
+[2024-05-31 09:56:55] - getUserInfo constructor initialized
+[2024-05-31 09:56:55] - Unauthorized
+[2024-05-31 09:56:56] - getUserInfo constructor initialized
+[2024-05-31 09:56:56] - Unauthorized
+[2024-05-31 09:59:30] - getUserInfo constructor initialized
+[2024-05-31 09:59:30] - Unauthorized
+[2024-05-31 09:59:38] - getUserInfo constructor initialized
+[2024-05-31 09:59:38] - Unauthorized
+[2024-05-31 10:01:38] - getUserInfo constructor initialized
+[2024-05-31 10:01:38] - Unauthorized
+[2024-05-31 10:03:14] - getUserInfo constructor initialized
+[2024-05-31 10:03:14] - Unauthorized
+[2024-05-31 10:03:36] - getUserInfo constructor initialized
+[2024-05-31 10:03:36] - Unauthorized
+[2024-05-31 10:06:46] - getUserInfo constructor initialized
+[2024-05-31 10:06:46] - Unauthorized
+[2024-05-31 10:08:25] - getUserInfo constructor initialized
+[2024-05-31 10:08:25] - Unauthorized
+[2024-05-31 10:08:53] - getUserInfo constructor initialized
+[2024-05-31 10:08:53] - Unauthorized
+[2024-05-31 10:10:51] - getUserInfo constructor initialized
+[2024-05-31 10:10:51] - Unauthorized
+[2024-05-31 10:12:13] - getUserInfo constructor initialized
+[2024-05-31 10:12:13] - Unauthorized

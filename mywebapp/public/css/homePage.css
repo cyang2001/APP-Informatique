@@ -1,390 +1,263 @@
-@font-face { font-family: Poppins; src: url('../source/Poppins-Light.ttf'); }
-
-html {
-    height: 100%;
-    overflow: hidden;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
 }
 
-*{
-    margin: 0;
+header {
+  background-color: #0D2C51;
+  opacity: 90%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
 }
 
 #menu_toggle {
-    opacity: 0;
+  opacity: 0;
 }
+
 #menu_toggle:checked + .menu_btn > span {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
 #menu_toggle:checked + .menu_btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
+  top: 0;
+  transform: rotate(0deg);
 }
+
 #menu_toggle:checked + .menu_btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
+  top: 0;
+  transform: rotate(90deg);
 }
+
 #menu_toggle:checked ~ .menu_box {
-    left: 0 !important;
+  left: 0 !important;
 }
+
 .menu_btn {
-    margin-top: 5px;
-    position: sticky;
-    top: 0;
-    left: 24px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 102;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 102;
+  display: flex;
+  align-items: center;
 }
+
 .menu_btn > span,
 .menu_btn > span::before,
 .menu_btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition-duration: .25s;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition-duration: .25s;
 }
+
 .menu_btn > span::before {
-    content: '';
-    top: -8px;
+  content: '';
+  top: -8px;
 }
+
 .menu_btn > span::after {
-    content: '';
-    top: 8px;
+  content: '';
+  top: 8px;
 }
+
 .menu_box {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100vh;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: #134074;
-    transition-duration: .25s;
-    z-index: 101;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #134074;
+  transition-duration: .25s;
+  z-index: 101;
 }
+
 .menu_item {
-    display: block;
-    padding: 12px 24px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
 }
+
 .menu_item:hover {
-    background-color: #CFD8DC;
-    color: black;
+  background-color: #CFD8DC;
+  color: black;
 }
 
-.menu_title{
-    color:white;
-    padding: 12px 24px;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 20px;
-    border-bottom: solid 1px #0D2C51;
+.barre-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hamburger-menu{
-    height: 0;
+.bouton-home {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
 }
 
-header{
-    opacity: 90%;
-    background-color: #0D2C51;
-    height: 80px;
-    top: 0;
-    position: sticky;
-    z-index: 100;
-    width: 100%;
+.bouton-home:hover {
+  color: lightblue;
 }
 
-
-
-
-
-h2{
-    padding-top: 10px;
-    font-size: 40px;
-    color: white;
-    text-align: center;
+.icones-home {
+  display: flex;
+  align-items: center;
 }
 
+.drap-home {
+  width: 45px;
+  margin-left: 20px;
+}
 
-
+.profil {
+  width: 45px;
+  margin-left: 20px;
+}
 
 .menu-deroulant {
-    right: 88%;
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .menu-deroulant div {
-    display: none; /* caché */
-    position: absolute;
-    background-color: #f9f9f9; /* gris pale */
-    min-width: 160px;
-    z-index: 1; /* en avant */
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
+
 .menu-deroulant:hover div {
-    display: block;
+  display: block;
 }
 
-
-
-
-.bouton2 {
-    position: relative;
-    margin-right: 20px;
-    float: right;
-    display: inline-block;
-    margin-top: -40px;
+.menu-deroulant div a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.bouton2 div {
-    display: none; /* caché */
-    position: absolute;
-    background-color: #f9f9f9; /* gris pale */
-    min-width: 160px;
-    z-index: 1; /* en avant */
-}
-
-.menu-deroulant{
-    left: -100px;
-}
-
-div div a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.bouton2:hover div {
-    display: block;
-}
-
-.prof-home{
-    width: 45px;
-}
-
-
-
-.drap-home{
-    width: 45px;
-}
-
-
-.bouton1 {
-    float: right;
-    position: relative;
-    display: inline-block;
-    margin-top: -40px;
-    margin-right: 25px;
-}
-
-.bouton1 div {
-    display: none; /* caché */
-    position: absolute;
-    background-color: #f9f9f9; /* gris pale */
-    min-width: 160px;
-    z-index: 1; /* en avant */
-}
-
-.bouton1:hover div {
-    display: block;
-}
-
-
-
-
-.bouton-home{
-    font-size: 20px;
-    font-family: Poppins;
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.barre-home{
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.bouton-home:hover{
-    color: lightblue;
-}
-
-.icones-home{
-    margin-top: -65px;
-    float: right;
-    margin-right: 20px;
-}
-
-.img-home {
-
-    padding-left: 20px;
-    width: 45px;
-}
-
-body {
-    background-color: black;
-    margin:0;
-    padding:0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: Poppins;
-}
-
-
-footer{
-    z-index: 9999;
-    height: 230px;
-    background-color: #0D2C51;
-}
-
-
-h1 {
-    font-size: 250%
-}
-
-p {
-    font-size: 140%;
-    line-height: 150%;
-    color: #333;
-}
-
-.slide {
-    position: relative;
-    padding: 25vh 10%;
-    min-height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-    transform-style: inherit;
-}
-
-.slidee {
-    position: relative;
-    padding: 25vh 10%;
-    min-height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    transform-style: inherit;
-}
-
-
-.slide:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
-.title {
-    margin-top: -80px;
-    width: 50%;
-    padding: 5%;
-    border-radius: 5px;
-    background: rgba(240,230,220, .7);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.slide, .slide:before {
-    background: 50% 50% / cover;
+.menu-deroulant div a:hover {
+  background-color: #f1f1f1;
 }
 
 .header {
-    text-align: center;
-    font-size: 175%;
-    color: #fff;
-    text-shadow: 0 2px 2px #000;
+  text-align: center;
+  padding: 25vh 10%;
+  background: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg") no-repeat center center/cover;
 }
 
-#title {
-    background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
+.header h1 {
+  font-size: 3em;
+}
 
-    z-index: 2;
+.header p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+footer {
+  height: 230px;
+  background-color: #0D2C51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .CGU {
+  text-decoration: none;
+  color: white;
+}
+
+footer .CGU:hover {
+  color: aqua;
+}
+#title {
+  background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
+
+  z-index: 2;
 }
 
 #title h1 {
-    transform: translateZ(.25px) scale(.75);
-    transform-origin: 50% 100%;
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 50% 100%;
 
 }
 
 #slide1:before {
-    background-image: url("https://i2-prod.mirror.co.uk/incoming/article6039288.ece/ALTERNATES/s1227b/Comic-con-2015.jpg");
-    transform: translateZ(-1px) scale(2);
+  background-image: url("https://i2-prod.mirror.co.uk/incoming/article6039288.ece/ALTERNATES/s1227b/Comic-con-2015.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
-    z-index:2;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
+  z-index:2;
 }
 
 #slide3:before {
-    background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
-    transform: translateZ(-1px) scale(2);
+  background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
-    z-index: 2;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
+  z-index: 2;
 }
 
 #slide5:before {
-    background-image: url("https://www.novelty-group.com/images/article/2016-10-Paris-Games-Week_Stand%20EA_3345.jpg");
-    transform: translateZ(-1px) scale(2);
+  background-image: url("https://www.novelty-group.com/images/article/2016-10-Paris-Games-Week_Stand%20EA_3345.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
 #slide6 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
-    z-index: 2;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
+  z-index: 2;
 }
 
 #slide7:before {
-    background-image: url("https://toutelaculture.com/wp-content/uploads/2013/08/173115589FD041_Japan_Expo_2.jpg");
-    transform: translateZ(-1px) scale(2);
+  background-image: url("https://toutelaculture.com/wp-content/uploads/2013/08/173115589FD041_Japan_Expo_2.jpg");
+  transform: translateZ(-1px) scale(2);
 }
 
 #slide8{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
-    z-index: 2;}
+  background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
+  z-index: 2;}
 
 
 .CGU{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .CG:hover{
-    color: aqua;
+  color: aqua;
 }

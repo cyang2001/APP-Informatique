@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <script>
+    function handleMenuButtonClick() {
+      var checkbox = document.getElementById('menu_toggle');
+      checkbox.checked = !checkbox.checked;
+    }
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('index.php?action=getPages')
+        .then(response => {response.json();
+          console.log('Response:', response);
+        })
+        .then(data => {
+          console.log('Data:', data);
+          var menuBox = document.querySelector('.menu_box');
+          data.forEach(page => {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.className = 'menu_item';
+            a.href = page.PAGE_URL;
+            a.textContent = page.PAGE_NAME;
+            li.appendChild(a);
+            menuBox.appendChild(li);
+            console.log('Appended item:', a);
+          });
+          console.log('Pages:', data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    });
+  </script>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/homePage.css">
-  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se connecter</title>
+  <link rel="stylesheet" type="text/css" href="css/homePage.css">
 </head>
+
 <body>
-<script>
-  function handleMenuButtonClick() {
-    var checkbox = document.getElementById('menu_toggle');
-    checkbox.checked = !checkbox.checked;
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    fetch('index.php?action=getPages')
-      .then(response => {response.json();
-        console.log('Response:', response);
-      })
-      .then(data => {
-        console.log('Data:', data);
-        var menuBox = document.querySelector('.menu_box');
-        data.forEach(page => {
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.className = 'menu_item';
-          a.href = page.PAGE_URL;
-          a.textContent = page.PAGE_NAME;
-          li.appendChild(a);
-          menuBox.appendChild(li);
-          console.log('Appended item:', a);
-        });
-        console.log('Pages:', data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  });
-</script>
-
 <header>
   <div class="hamburger-menu">
     <input id="menu_toggle" type="checkbox" />
-    <label class="menu_btn" onclick="handleMenuButtonClick()">
+    <label class="menu_btn" for="menu_toggle">
       <span></span>
     </label>
     <ul class="menu_box">
-      <li><p class="menu_title"><b>Ambisound</b></p></li>
+      <li><a href="#slide1" class="menu_item">Slide 1</a></li>
+      <li><a href="#slide2" class="menu_item">Slide 2</a></li>
+      <li><a href="#slide3" class="menu_item">Slide 3</a></li>
+      <li><a href="#slide4" class="menu_item">Slide 4</a></li>
+      <li><a href="#slide5" class="menu_item">Slide 5</a></li>
+      <li><a href="#slide6" class="menu_item">Slide 6</a></li>
+      <li><a href="#slide7" class="menu_item">Slide 7</a></li>
+      <li><a href="#slide8" class="menu_item">Slide 8</a></li>
     </ul>
   </div>
 
@@ -60,13 +68,11 @@
     <a class="bouton-home" href="#slide8">Slide 8</a>
   </div>
 
-  <div>
-      <div class="menu-deroulant">
-        <span><img class="profil" src="source/profil-removebg-preview.png"></span>
-        <div>
-          
-        </div>
-      </div>
+  <div class="icones-home">
+    <div class="menu-deroulant">
+      <span><img class="profil" src="source/profil-removebg-preview.png"></span>
+      <div></div>
+    </div>
     <div class="bouton1">
       <span><img class="drap-home" src="source/united-kingdom.png"></span>
     </div>
@@ -74,12 +80,13 @@
 </header>
 
 <div id="title" class="slide header">
-  <h1>A M B I S O U N D</h1>
+  <h1>AMBISOUND</h1>
   <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
 </div>
-<script src="js/homePage.js"></script>
 <footer>
   <a class="CGU" href="cgu.html">CGU</a>
 </footer>
+<script src="js/homePage.js"></script>
+<script src="js/dropdownMenu.js"></script>
 </body>
 </html>
