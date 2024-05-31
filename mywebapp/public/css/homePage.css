@@ -202,62 +202,62 @@ footer .CGU:hover {
   color: aqua;
 }
 #title {
-  background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
+    background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
 
-  z-index: 2;
+    z-index: 2;
 }
 
 #title h1 {
-  transform: translateZ(.25px) scale(.75);
-  transform-origin: 50% 100%;
+    transform: translateZ(.25px) scale(.75);
+    transform-origin: 50% 100%;
 
 }
 
 #slide1:before {
-  background-image: url("https://i2-prod.mirror.co.uk/incoming/article6039288.ece/ALTERNATES/s1227b/Comic-con-2015.jpg");
-  transform: translateZ(-1px) scale(2);
+    background-image: url("https://i2-prod.mirror.co.uk/incoming/article6039288.ece/ALTERNATES/s1227b/Comic-con-2015.jpg");
+    transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
-  z-index:2;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
+    z-index:2;
 }
 
 #slide3:before {
-  background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
-  transform: translateZ(-1px) scale(2);
+    background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
+    transform: translateZ(-1px) scale(2);
 }
 
 #slide4 {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
-  z-index: 2;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
+    z-index: 2;
 }
 
 #slide5:before {
-  background-image: url("https://www.novelty-group.com/images/article/2016-10-Paris-Games-Week_Stand%20EA_3345.jpg");
-  transform: translateZ(-1px) scale(2);
+    background-image: url("https://www.novelty-group.com/images/article/2016-10-Paris-Games-Week_Stand%20EA_3345.jpg");
+    transform: translateZ(-1px) scale(2);
 }
 
 #slide6 {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
-  z-index: 2;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
+    z-index: 2;
 }
 
 #slide7:before {
-  background-image: url("https://toutelaculture.com/wp-content/uploads/2013/08/173115589FD041_Japan_Expo_2.jpg");
-  transform: translateZ(-1px) scale(2);
+    background-image: url("https://toutelaculture.com/wp-content/uploads/2013/08/173115589FD041_Japan_Expo_2.jpg");
+    transform: translateZ(-1px) scale(2);
 }
 
 #slide8{
-  background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
-  z-index: 2;}
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
+    z-index: 2;}
 
 
 .CGU{
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .CG:hover{
-  color: aqua;
+    color: aqua;
 }
