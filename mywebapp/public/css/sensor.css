@@ -37,6 +37,11 @@ header {
     align-items: center;
 }
 
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
 #menu_toggle {
     opacity: 0;
 }
@@ -61,8 +66,7 @@ header {
 
 .menu_btn {
     margin-top: 5px;
-    position: sticky;
-    top: 0;
+    position: relative;
     left: 24px;
     width: 26px;
     height: 26px;
@@ -195,6 +199,9 @@ div div a {
     color: white;
     background-color: black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1, h2 {
@@ -211,8 +218,8 @@ h2 {
 }
 
 canvas {
-    display: block;
-    margin: 0 auto;
-    max-width: 1800px;
-    max-height: 1400px;
+    width: 100% !important;
+    height: 70vh !important;
+    max-width: 1200px;
+    max-height: 800px;
 }
