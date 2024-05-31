@@ -9,8 +9,9 @@ class Sensor {
     }
 
     public function getAllSensorData() {
-        $sql = "SELECT date_heure, niveau_sonore FROM donnees_capteurs_sonore";
-        $stmt = $this->pdo->query($sql);
+        $sql = "SELECT date_heure, niveau_db FROM sensor";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }

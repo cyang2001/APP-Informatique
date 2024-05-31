@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('index.php?action=getSen')
+    fetch('index.php?action=getSensorData')
         .then(response => response.json())
+
         .then(data => {
             var labels = data.map(function(e) {
                 return e.date_heure;

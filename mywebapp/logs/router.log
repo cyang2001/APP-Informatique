@@ -526,3 +526,45 @@
 [2024-05-06 12:00:30] - Pattern matched: ~^/addMeeting$~
 [2024-05-06 12:00:30] - Matches: [[["\/addMeeting",0]]]
 [2024-05-06 12:00:30] - Calling callback function
+[2024-05-31 11:12:19] - Dispatching request: GET
+[2024-05-31 11:12:19] - No routes registered for method: GET
+[2024-05-31 11:14:19] - Register: GET /getSensorData
+[2024-05-31 11:14:19] - Dispatching request: GET
+[2024-05-31 11:14:19] - Current URI: /app-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 11:14:19] - Handling URI: /getSensorData
+[2024-05-31 11:14:19] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 11:14:19] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 11:14:19] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 11:14:19] - Calling callback function
+[2024-05-31 11:17:03] - Register: GET /getSensorData
+[2024-05-31 11:17:03] - Dispatching request: GET
+[2024-05-31 11:17:03] - Current URI: /app-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 11:17:03] - Handling URI: /getSensorData
+[2024-05-31 11:17:03] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 11:17:03] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 11:17:03] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 11:17:03] - Calling callback function
+[2024-05-31 11:18:38] - Register: GET /getSensorData
+[2024-05-31 11:18:38] - Dispatching request: GET
+[2024-05-31 11:18:38] - Current URI: /app-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 11:18:38] - Handling URI: /getSensorData
+[2024-05-31 11:18:38] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 11:18:38] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 11:18:38] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 11:18:38] - Calling callback function
+[2024-05-31 11:20:52] - Register: GET /getSensorData
+[2024-05-31 11:20:52] - Dispatching request: GET
+[2024-05-31 11:20:52] - Current URI: /app-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 11:20:52] - Handling URI: /getSensorData
+[2024-05-31 11:20:52] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 11:20:52] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 11:20:52] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 11:20:52] - Calling callback function
+[2024-05-31 11:21:06] - Register: GET /getSensorData
+[2024-05-31 11:21:06] - Dispatching request: GET
+[2024-05-31 11:21:06] - Current URI: /app-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-05-31 11:21:06] - Handling URI: /getSensorData
+[2024-05-31 11:21:06] - Checking pattern: ~^/getSensorData$~
+[2024-05-31 11:21:06] - Pattern matched: ~^/getSensorData$~
+[2024-05-31 11:21:06] - Matches: [[["\/getSensorData",0]]]
+[2024-05-31 11:21:06] - Calling callback function

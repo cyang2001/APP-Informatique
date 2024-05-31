@@ -64,3 +64,14 @@
 [2024-05-06 11:59:41] - POST /login
 [2024-05-06 11:59:44] - GET /getUserInfo
 [2024-05-06 12:00:30] - POST /addMeeting
+[2024-05-31 11:12:19] - action not found: getSen
+[2024-05-31 11:14:19] - GET /getSensorData
+[2024-05-31 11:14:19] - action not found: getSensorData
+[2024-05-31 11:17:03] - GET /getSensorData
+[2024-05-31 11:17:03] - action not found: getSensorData
+[2024-05-31 11:18:38] - GET /getSensorData
+[2024-05-31 11:18:38] - action not found: getSensorData
+[2024-05-31 11:20:52] - GET /getSensorData
+[2024-05-31 11:20:52] - action not found: getSensorData
+[2024-05-31 11:21:06] - GET /getSensorData
+[2024-05-31 11:21:06] - action not found: getSensorData
