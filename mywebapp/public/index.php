@@ -14,7 +14,7 @@ require_once __DIR__ . '/../src/controllers/MeetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
-
+require_once __DIR__ . '/../src/controllers/sensorController.php';
 
 
 
@@ -127,6 +127,14 @@ switch($action) {
             });
         }
         break;
+    case 'getSensorData':
+        if ($method == 'GET') {
+            $logger->log('GET /getSensorData');
+            $router->get('/getSensorData', function(){
+                $sensorController = new sensorController();
+                $sensorController->getAllSensorData();
+            });
+        }
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
