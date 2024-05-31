@@ -109,3 +109,9 @@
 [2024-05-31 10:45:19] - Unauthorized
 [2024-05-31 10:45:20] - getUserInfo constructor initialized
 [2024-05-31 10:45:20] - Unauthorized
+[2024-05-31 14:35:14] - getUserInfo constructor initialized
+[2024-05-31 14:35:14] - User info retrieved
+[2024-05-31 14:35:14] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-05-31 14:35:14] - getUserInfo constructor initialized
+[2024-05-31 14:35:14] - User info retrieved
+[2024-05-31 14:35:14] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
