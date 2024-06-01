@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             document.getElementById('usernameDisplay').innerText = data.name;
             document.getElementById('emailDisplay').innerText = data.email;
-            document.getElementById('avatarDisplay').src = data.avatarPath + '?' + new Date().getTime();
+            document.getElementById('avatarDisplay').src = data.avatarPath + '?t=' + new Date().getTime();
             document.getElementById('usernameValue').innerText = data.name;
             document.getElementById('emailValue').innerText = data.email;
         })
@@ -68,6 +68,7 @@ function startEditAvatar() {
             alert('Invalid file format. Only jpg and png are allowed.');
         }
     });
+    
 }
 
 function showCropModal(file) {
@@ -97,10 +98,12 @@ function cropAndSaveAvatar() {
         .then(data => {
             if (data.success) {
                 alert('Avatar updated successfully!');
-                document.getElementById('avatarDisplay').src = data.avatarPath + '?' + new Date().getTime(); // 加上时间戳以防缓存
-                closeCropModal();
+                document.getElementById('avatarDisplay').src = data.avatarPath + '?t=' + new Date().getTime();
+                closeCropModal(); 
+                closeModal();
             } else {
                 alert('Failed to update avatar.');
+                console.error('Failed to update avatar:', data.message);
             }
         })
         .catch(error => {

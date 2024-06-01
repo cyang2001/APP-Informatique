@@ -1521,3 +1521,131 @@
 [2024-06-01 18:08:06] - Pattern matched: ~^/getUserInfo$~
 [2024-06-01 18:08:06] - Matches: [[["\/getUserInfo",0]]]
 [2024-06-01 18:08:06] - Calling callback function
+[2024-06-01 18:10:13] - Register: GET /getUserInfo
+[2024-06-01 18:10:13] - Dispatching request: GET
+[2024-06-01 18:10:13] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:10:13] - Handling URI: /getUserInfo
+[2024-06-01 18:10:13] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:10:13] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:10:13] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:10:13] - Calling callback function
+[2024-06-01 18:10:22] - Register: POST /uploadAvatar
+[2024-06-01 18:10:22] - Dispatching request: POST
+[2024-06-01 18:10:22] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:10:22] - Handling URI: /uploadAvatar
+[2024-06-01 18:10:22] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:10:22] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:10:22] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:10:22] - Calling callback function
+[2024-06-01 18:15:20] - Register: GET /getUserInfo
+[2024-06-01 18:15:20] - Dispatching request: GET
+[2024-06-01 18:15:20] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:15:20] - Handling URI: /getUserInfo
+[2024-06-01 18:15:20] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:15:20] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:15:20] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:15:20] - Calling callback function
+[2024-06-01 18:15:21] - Register: POST /uploadAvatar
+[2024-06-01 18:15:21] - Dispatching request: POST
+[2024-06-01 18:15:21] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:15:21] - Handling URI: /uploadAvatar
+[2024-06-01 18:15:21] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:15:21] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:15:21] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:15:21] - Calling callback function
+[2024-06-01 18:15:28] - Register: POST /uploadAvatar
+[2024-06-01 18:15:28] - Dispatching request: POST
+[2024-06-01 18:15:28] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:15:28] - Handling URI: /uploadAvatar
+[2024-06-01 18:15:28] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:15:28] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:15:28] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:15:28] - Calling callback function
+[2024-06-01 18:15:30] - Register: POST /uploadAvatar
+[2024-06-01 18:15:30] - Dispatching request: POST
+[2024-06-01 18:15:30] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:15:30] - Handling URI: /uploadAvatar
+[2024-06-01 18:15:30] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:15:30] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:15:30] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:15:30] - Calling callback function
+[2024-06-01 18:15:31] - Register: GET /getUserInfo
+[2024-06-01 18:15:31] - Dispatching request: GET
+[2024-06-01 18:15:31] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:15:31] - Handling URI: /getUserInfo
+[2024-06-01 18:15:31] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:15:31] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:15:31] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:15:31] - Calling callback function
+[2024-06-01 18:15:45] - Register: POST /uploadAvatar
+[2024-06-01 18:15:45] - Dispatching request: POST
+[2024-06-01 18:15:45] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:15:45] - Handling URI: /uploadAvatar
+[2024-06-01 18:15:45] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:15:45] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:15:45] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:15:45] - Calling callback function
+[2024-06-01 18:16:30] - Register: POST /uploadAvatar
+[2024-06-01 18:16:30] - Dispatching request: POST
+[2024-06-01 18:16:30] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:16:30] - Handling URI: /uploadAvatar
+[2024-06-01 18:16:30] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:16:30] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:16:30] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:16:30] - Calling callback function
+[2024-06-01 18:18:14] - Register: GET /getUserInfo
+[2024-06-01 18:18:14] - Dispatching request: GET
+[2024-06-01 18:18:14] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:18:14] - Handling URI: /getUserInfo
+[2024-06-01 18:18:14] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:18:14] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:18:14] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:18:14] - Calling callback function
+[2024-06-01 18:18:20] - Register: POST /uploadAvatar
+[2024-06-01 18:18:20] - Dispatching request: POST
+[2024-06-01 18:18:20] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:18:20] - Handling URI: /uploadAvatar
+[2024-06-01 18:18:20] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:18:20] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:18:20] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:18:20] - Calling callback function
+[2024-06-01 18:18:42] - Register: GET /getUserInfo
+[2024-06-01 18:18:42] - Dispatching request: GET
+[2024-06-01 18:18:42] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:18:42] - Handling URI: /getUserInfo
+[2024-06-01 18:18:42] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:18:42] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:18:42] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:18:42] - Calling callback function
+[2024-06-01 18:18:49] - Register: POST /uploadAvatar
+[2024-06-01 18:18:49] - Dispatching request: POST
+[2024-06-01 18:18:49] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:18:49] - Handling URI: /uploadAvatar
+[2024-06-01 18:18:49] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:18:49] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:18:49] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:18:49] - Calling callback function
+[2024-06-01 18:20:19] - Register: GET /getUserInfo
+[2024-06-01 18:20:19] - Dispatching request: GET
+[2024-06-01 18:20:19] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:20:19] - Handling URI: /getUserInfo
+[2024-06-01 18:20:19] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:20:19] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:20:19] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:20:19] - Calling callback function
+[2024-06-01 18:20:45] - Register: GET /getUserInfo
+[2024-06-01 18:20:45] - Dispatching request: GET
+[2024-06-01 18:20:45] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:20:45] - Handling URI: /getUserInfo
+[2024-06-01 18:20:45] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:20:45] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:20:45] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:20:45] - Calling callback function
+[2024-06-01 18:20:51] - Register: POST /uploadAvatar
+[2024-06-01 18:20:51] - Dispatching request: POST
+[2024-06-01 18:20:51] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=uploadAvatar
+[2024-06-01 18:20:51] - Handling URI: /uploadAvatar
+[2024-06-01 18:20:51] - Checking pattern: ~^/uploadAvatar$~
+[2024-06-01 18:20:51] - Pattern matched: ~^/uploadAvatar$~
+[2024-06-01 18:20:51] - Matches: [[["\/uploadAvatar",0]]]
+[2024-06-01 18:20:51] - Calling callback function

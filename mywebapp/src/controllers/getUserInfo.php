@@ -25,9 +25,9 @@ class getUserInfo {
             if ($userInfo) {
                 $avatarPathJpg = 'source/avatars/' . $userId . '.jpg';
                 $avatarPathPng = 'source/avatars/' . $userId . '.png';
-                if (file_exists(__DIR__ . '/../public/' . $avatarPathJpg)) {
+                if (file_exists(__DIR__ . '/../../public/' . $avatarPathJpg)) {
                     $avatarPath = $avatarPathJpg;
-                } elseif (file_exists(__DIR__ . '/../public/' . $avatarPathPng)) {
+                } elseif (file_exists(__DIR__ . '/../../public/' . $avatarPathPng)) {
                     $avatarPath = $avatarPathPng;
                 } else {
                     $avatarPath = 'source/avatars/default.jpg';
@@ -45,16 +45,17 @@ class getUserInfo {
                 $_SESSION['user']['avatarPath'] = $avatarPath;
     
                 echo json_encode($response);
-                $this->logger->log('User info sent');
+                $this->logger->log("User info retrieved: " . json_encode($response));
             } else {
                 echo json_encode(['message' => 'User not found']);
                 $this->logger->log('User not found');
             }
         } else {
             echo json_encode(['message' => 'Unauthorized']);
-            $this->logger->log('Unauthorized');
+            $this->logger->log('Unauthorized access attempt');
         }
     }
+    
     
 }
 

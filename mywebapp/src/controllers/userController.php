@@ -34,7 +34,7 @@ class UserController {
         echo json_encode(['success' => true]);
     }
     public function uploadAvatar($userId, $file) {
-        $targetDir = __DIR__ . "/../public/source/avatars/"; 
+        $targetDir = __DIR__ . "/../../public/source/avatars/"; 
         if (!is_dir($targetDir)) {
             mkdir($targetDir, 0777, true);
         }
@@ -48,10 +48,19 @@ class UserController {
             return;
         }
     
-
         $targetFile = $targetDir . $userId . '.' . $fileExtension;
+    
 
+        $this->logger->log("Attempting to move uploaded file to: " . $targetFile);
         if (move_uploaded_file($file["tmp_name"], $targetFile)) {
+
+            if (!file_exists($targetFile)) {
+                $this->logger->log("File was not successfully moved to the target directory.");
+                header('Content-Type: application/json');
+                echo json_encode(['success' => false, 'message' => 'File not found after upload']);
+                return;
+            }
+    
 
             $avatarPath = "source/avatars/" . $userId . '.' . $fileExtension;
             $this->userModel->updateUserAvatar($userId, $avatarPath);
@@ -73,14 +82,17 @@ class UserController {
             $_SESSION['user']['avatarPath'] = $avatarPath;
     
 
-            $this->logger->log("Avatar uploaded: " . $avatarPath);
+            $this->logger->log("Avatar uploaded successfully. Path: " . $avatarPath);
             header('Content-Type: application/json');
             echo json_encode(['success' => true, 'avatarPath' => $avatarPath]);
         } else {
+
+            $this->logger->log("Failed to move uploaded file to target directory.");
             header('Content-Type: application/json');
             echo json_encode(['success' => false, 'message' => 'Failed to upload file']);
         }
     }
+    
     
     
     
