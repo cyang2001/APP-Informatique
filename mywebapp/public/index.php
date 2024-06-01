@@ -6,27 +6,21 @@ require_once __DIR__ . '/../src/models/users.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
 require_once __DIR__ .'/../src/controllers/renewPasswordController.php';
-$logger = new Logger('../logs/index.log');
-$router = new Router();
-$action = $_GET['action'] ?? '';
-$method = $_SERVER['REQUEST_METHOD'];
 require_once __DIR__ . '/../src/controllers/registerController.php';
 require_once __DIR__ . '/../src/controllers/loginController.php';
 require_once __DIR__ . '/../src/controllers/meetingController.php';
 require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
 require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/logout.php';
-
-require_once __DIR__ . '/../src/controllers/getUserInfo.php';
 require_once __DIR__ . '/../src/controllers/forumController.php';
-
 require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
 require_once __DIR__ . '/../src/controllers/addMusicController.php';
+require_once __DIR__ . '/../src/controllers/userController.php'; 
 
-
-
-
-
+$logger = new Logger('../logs/index.log');
+$router = new Router();
+$action = $_GET['action'] ?? '';
+$method = $_SERVER['REQUEST_METHOD'];
 
 switch($action) {
     case 'register':
@@ -95,6 +89,7 @@ switch($action) {
                 $renewPasswordController->verification();
             });
         }
+        break;
     case 'renewPassword2':
         if ($method == 'GET') {
             $logger->log('GET /renewPassword2');
@@ -138,7 +133,6 @@ switch($action) {
         }
         break;
 
-
     case 'forum':
         if ($method == 'POST') {
             $logger->log('POST /forum');
@@ -148,7 +142,6 @@ switch($action) {
             });    
         }
         break;
-
     case 'createPlaylist':
         if ($method == 'POST') {
             $logger->log('POST /createPlaylist');
@@ -158,7 +151,6 @@ switch($action) {
             });
         }
         break;
-
     case 'deletePlaylist':
         if ($method == 'DELETE') {
             $logger->log('DELETE /deletePlaylist');
@@ -170,7 +162,6 @@ switch($action) {
             });
         }
         break;
-    
     case 'addMusic':
         if ($method == 'POST') {
             $logger->log('POST /addMusic');
@@ -180,7 +171,6 @@ switch($action) {
             });
         }
         break;
-
     case 'deleteMusic':
         if ($method == 'DELETE') {
             $logger->log('DELETE /deleteMusic');
@@ -192,11 +182,48 @@ switch($action) {
             });
         }
         break;
+    
 
-
+    case 'updateProfile':
+        if ($method == 'POST') {
+            $logger->log('POST /updateProfile');
+            $router->post('/updateProfile', function() {
+                session_start();
+                $userId = $_SESSION['user']['id'];
+                $userName = $_POST['username'] ?? null;
+                $email = $_POST['email'] ?? null;
+                $userController = new UserController();
+                $userController->updateProfile($userId, $userName, $email);
+            });
+        }
+        break;
+    case 'uploadAvatar':
+        if ($method == 'POST') {
+            $logger->log('POST /uploadAvatar');
+            $router->post('/uploadAvatar', function() {
+                session_start();
+                $userId = $_SESSION['user']['id'];
+                $file = $_FILES['avatar'];
+                $userController = new UserController();
+                $userController->uploadAvatar($userId, $file);
+            });
+        }
+        break;
+    case 'deleteUser':
+        if ($method == 'POST') {
+            $logger->log('POST /deleteUser');
+            $router->post('/deleteUser', function() {
+                session_start();
+                $userId = $_SESSION['user']['id'];
+                $userController = new UserController();
+                $userController->deleteUser($userId);
+            });
+        }
+        break;
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
         break;
 }
 $router->dispatch();
+

@@ -35,4 +35,3 @@ document.addEventListener('scroll', function() {
     var windowScroll = window.pageYOffset;
     parallaxElement.style.transform = 'translateY(' + windowScroll * speed + 'px)';
 });
-

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img id="avatarDisplay" src="default_avatar.png" alt="User Avatar" class="avatar">
+                <div class="user-info">
+                    <h2 id="usernameDisplay">Username</h2>
+                    <p id="emailDisplay">email@example.com</p>
+                </div>
+                <button id="editAvatarBtn" class="edit-btn">Change Avatar</button>
+            </div>
+            <div class="profile-body">
+                <div class="profile-item">
+                    <label>Username:</label>
+                    <span id="usernameValue">Username</span>
+                    <button id="editUsernameBtn" class="edit-btn">Edit</button>
+                </div>
+                <div class="profile-item">
+                    <label>Email:</label>
+                    <span id="emailValue">email@example.com</span>
+                    <button id="editEmailBtn" class="edit-btn">Edit</button>
+                </div>
+                <div class="profile-item">
+                    <label>Password:</label>
+                    <input type="password" id="passwordDisplay" value="********" disabled>
+                    <span class="password-eye" onclick="togglePasswordVisibility()">👁️</span>
+                    <button id="editPasswordBtn" class="edit-btn">Change Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <form id="editForm">
+                <label id="editLabel">Edit:</label>
+                <input type="text" id="editInput" name="editInput">
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
