@@ -3,9 +3,11 @@ require_once __DIR__ . '/../models/users.php';
 
 class UserController {
     private $userModel;
+    private $logger;
 
     public function __construct() {
         $this->userModel = new User();
+        $this->logger = new Logger('../logs/user.log');
     }
 
     public function updateProfile($userId, $userName, $email) {
@@ -31,43 +33,47 @@ class UserController {
         header('Content-Type: application/json');
         echo json_encode(['success' => true]);
     }
-
     public function uploadAvatar($userId, $file) {
-        $targetDir = __DIR__ . "/../source/avatars/"; 
+        $targetDir = __DIR__ . "/../public/source/avatars/"; 
         if (!is_dir($targetDir)) {
             mkdir($targetDir, 0777, true);
         }
-
+    
         $fileExtension = pathinfo($file["name"], PATHINFO_EXTENSION);
         $allowedExtensions = ['jpg', 'jpeg', 'png'];
-
+    
         if (!in_array($fileExtension, $allowedExtensions)) {
             header('Content-Type: application/json');
             echo json_encode(['success' => false, 'message' => 'Invalid file format. Only jpg and png are allowed.']);
             return;
         }
+    
 
-        // 删除旧头像
-        $oldAvatarJpg = $targetDir . $userId . '.jpg';
-        $oldAvatarPng = $targetDir . $userId . '.png';
-        if (file_exists($oldAvatarJpg)) {
-            unlink($oldAvatarJpg);
-        }
-        if (file_exists($oldAvatarPng)) {
-            unlink($oldAvatarPng);
-        }
-
-        // 保存新头像
         $targetFile = $targetDir . $userId . '.' . $fileExtension;
+
         if (move_uploaded_file($file["tmp_name"], $targetFile)) {
+
             $avatarPath = "source/avatars/" . $userId . '.' . $fileExtension;
             $this->userModel->updateUserAvatar($userId, $avatarPath);
+    
+
+            $oldAvatarJpg = $targetDir . $userId . '.jpg';
+            $oldAvatarPng = $targetDir . $userId . '.png';
+            if (file_exists($oldAvatarJpg) && $oldAvatarJpg != $targetFile) {
+                unlink($oldAvatarJpg);
+            }
+            if (file_exists($oldAvatarPng) && $oldAvatarPng != $targetFile) {
+                unlink($oldAvatarPng);
+            }
+    
 
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
             $_SESSION['user']['avatarPath'] = $avatarPath;
+    
 
+            $this->logger->log("Avatar uploaded: " . $avatarPath);
             header('Content-Type: application/json');
             echo json_encode(['success' => true, 'avatarPath' => $avatarPath]);
         } else {
@@ -75,6 +81,9 @@ class UserController {
             echo json_encode(['success' => false, 'message' => 'Failed to upload file']);
         }
     }
+    
+    
+    
 
     public function deleteUser($userId) {
         $this->userModel->deleteUser($userId);

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             document.getElementById('usernameDisplay').innerText = data.name;
             document.getElementById('emailDisplay').innerText = data.email;
-            document.getElementById('avatarDisplay').src = data.avatarPath;
+            document.getElementById('avatarDisplay').src = data.avatarPath + '?' + new Date().getTime();
             document.getElementById('usernameValue').innerText = data.name;
             document.getElementById('emailValue').innerText = data.email;
         })
@@ -97,7 +97,8 @@ function cropAndSaveAvatar() {
         .then(data => {
             if (data.success) {
                 alert('Avatar updated successfully!');
-                location.reload();
+                document.getElementById('avatarDisplay').src = data.avatarPath + '?' + new Date().getTime(); // 加上时间戳以防缓存
+                closeCropModal();
             } else {
                 alert('Failed to update avatar.');
             }
