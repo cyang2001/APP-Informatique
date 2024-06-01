@@ -753,3 +753,35 @@
 [2024-06-01 13:38:17] - Pattern matched: ~^/getUserInfo$~
 [2024-06-01 13:38:17] - Matches: [[["\/getUserInfo",0]]]
 [2024-06-01 13:38:17] - Calling callback function
+[2024-06-01 13:44:11] - Register: GET /getUserInfo
+[2024-06-01 13:44:11] - Dispatching request: GET
+[2024-06-01 13:44:11] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 13:44:11] - Handling URI: /getUserInfo
+[2024-06-01 13:44:11] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 13:44:11] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 13:44:11] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 13:44:11] - Calling callback function
+[2024-06-01 13:46:15] - Register: GET /getUserInfo
+[2024-06-01 13:46:15] - Dispatching request: GET
+[2024-06-01 13:46:15] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 13:46:15] - Handling URI: /getUserInfo
+[2024-06-01 13:46:15] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 13:46:15] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 13:46:15] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 13:46:15] - Calling callback function
+[2024-06-01 13:48:30] - Register: GET /getUserInfo
+[2024-06-01 13:48:30] - Dispatching request: GET
+[2024-06-01 13:48:30] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 13:48:30] - Handling URI: /getUserInfo
+[2024-06-01 13:48:30] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 13:48:30] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 13:48:30] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 13:48:30] - Calling callback function
+[2024-06-01 13:52:46] - Register: GET /getUserInfo
+[2024-06-01 13:52:46] - Dispatching request: GET
+[2024-06-01 13:52:46] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 13:52:46] - Handling URI: /getUserInfo
+[2024-06-01 13:52:46] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 13:52:46] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 13:52:46] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 13:52:46] - Calling callback function
