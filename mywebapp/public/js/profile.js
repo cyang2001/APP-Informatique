@@ -34,7 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('closeModal').addEventListener('click', closeModal);
+    document.getElementById('closeCropModal').addEventListener('click', closeCropModal);
+
+    document.getElementById('cropSaveBtn').addEventListener('click', function() {
+        cropAndSaveAvatar();
+    });
 });
+
+let cropper;
+let cropImageElement;
 
 function startEdit(field, label, value) {
     document.getElementById('editModal').style.display = 'block';
@@ -48,10 +56,56 @@ function startEditAvatar() {
     document.getElementById('editModal').style.display = 'block';
     const form = document.getElementById('editForm');
     form.innerHTML = `
-        <label for="editAvatar">Change Avatar:</label>
-        <input type="file" id="editAvatar" name="avatar" accept="image/*">
+        <label for="editAvatar">Change Avatar (only jpg or png):</label>
+        <input type="file" id="editAvatar" name="avatar" accept="image/jpeg, image/png">
         <button type="submit" class="save-btn">Save</button>
     `;
+    document.getElementById('editAvatar').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file && (file.type === 'image/jpeg' || file.type === 'image/png')) {
+            showCropModal(file);
+        } else {
+            alert('Invalid file format. Only jpg and png are allowed.');
+        }
+    });
+}
+
+function showCropModal(file) {
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        document.getElementById('cropModal').style.display = 'block';
+        cropImageElement = document.getElementById('cropImage');
+        cropImageElement.src = event.target.result;
+        cropper = new Cropper(cropImageElement, {
+            aspectRatio: 1,
+            viewMode: 1
+        });
+    };
+    reader.readAsDataURL(file);
+}
+
+function cropAndSaveAvatar() {
+    const canvas = cropper.getCroppedCanvas();
+    canvas.toBlob(function(blob) {
+        const formData = new FormData();
+        formData.append('avatar', blob, 'avatar.jpg');
+        fetch('index.php?action=uploadAvatar', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Avatar updated successfully!');
+                location.reload();
+            } else {
+                alert('Failed to update avatar.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }, 'image/jpeg');
 }
 
 function saveEdit() {
@@ -78,4 +132,12 @@ function saveEdit() {
 
 function closeModal() {
     document.getElementById('editModal').style.display = 'none';
+}
+
+function closeCropModal() {
+    document.getElementById('cropModal').style.display = 'none';
+    if (cropper) {
+        cropper.destroy();
+        cropper = null;
+    }
 }

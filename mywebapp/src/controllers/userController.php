@@ -37,10 +37,30 @@ class UserController {
         if (!is_dir($targetDir)) {
             mkdir($targetDir, 0777, true);
         }
-        $fileName = basename($file["name"]);
-        $targetFile = $targetDir . $fileName;
+
+        $fileExtension = pathinfo($file["name"], PATHINFO_EXTENSION);
+        $allowedExtensions = ['jpg', 'jpeg', 'png'];
+
+        if (!in_array($fileExtension, $allowedExtensions)) {
+            header('Content-Type: application/json');
+            echo json_encode(['success' => false, 'message' => 'Invalid file format. Only jpg and png are allowed.']);
+            return;
+        }
+
+        // 删除旧头像
+        $oldAvatarJpg = $targetDir . $userId . '.jpg';
+        $oldAvatarPng = $targetDir . $userId . '.png';
+        if (file_exists($oldAvatarJpg)) {
+            unlink($oldAvatarJpg);
+        }
+        if (file_exists($oldAvatarPng)) {
+            unlink($oldAvatarPng);
+        }
+
+        // 保存新头像
+        $targetFile = $targetDir . $userId . '.' . $fileExtension;
         if (move_uploaded_file($file["tmp_name"], $targetFile)) {
-            $avatarPath = "source/avatars/" . $fileName; 
+            $avatarPath = "source/avatars/" . $userId . '.' . $fileExtension;
             $this->userModel->updateUserAvatar($userId, $avatarPath);
 
             if (session_status() == PHP_SESSION_NONE) {
@@ -66,4 +86,3 @@ class UserController {
         echo json_encode(['success' => true]);
     }
 }
-?>

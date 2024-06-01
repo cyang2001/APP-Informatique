@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
 </head>
 <body>
     <div class="container">
@@ -48,6 +49,17 @@
         </div>
     </div>
 
+    <div class="modal" id="cropModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeCropModal">&times;</span>
+            <div class="crop-container">
+                <img id="cropImage" src="" alt="Image to crop">
+            </div>
+            <button id="cropSaveBtn" class="save-btn">Crop and Save</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <script src="js/profile.js"></script>
 </body>
 </html>

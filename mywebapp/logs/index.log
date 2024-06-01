@@ -151,3 +151,10 @@
 [2024-06-01 17:31:47] - POST /login
 [2024-06-01 17:31:49] - GET /getUserInfo
 [2024-06-01 17:31:51] - GET /getUserInfo
+[2024-06-01 17:37:03] - GET /getUserInfo
+[2024-06-01 17:37:05] - GET /getUserInfo
+[2024-06-01 17:37:16] - POST /uploadAvatar
+[2024-06-01 17:37:17] - GET /getUserInfo
+[2024-06-01 17:46:49] - GET /getUserInfo
+[2024-06-01 17:47:00] - POST /uploadAvatar
+[2024-06-01 17:47:01] - GET /getUserInfo

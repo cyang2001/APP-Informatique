@@ -1,4 +1,3 @@
-/* profile.css */
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -84,11 +83,6 @@ body {
     margin-right: 10px;
 }
 
-.password-eye {
-    cursor: pointer;
-    margin-left: 10px;
-}
-
 .modal {
     display: none;
     position: fixed;
@@ -140,4 +134,17 @@ body {
 
 .save-btn:hover {
     background: #a777e3;
+}
+
+.crop-container {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#cropImage {
+    max-width: 100%;
+    height: auto;
 }

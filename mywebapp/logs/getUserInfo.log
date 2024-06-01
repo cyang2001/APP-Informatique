@@ -224,3 +224,18 @@
 [2024-06-01 17:31:51] - getUserInfo constructor initialized
 [2024-06-01 17:31:51] - User info retrieved
 [2024-06-01 17:31:51] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:03] - getUserInfo constructor initialized
+[2024-06-01 17:37:03] - User info retrieved
+[2024-06-01 17:37:03] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:05] - getUserInfo constructor initialized
+[2024-06-01 17:37:05] - User info retrieved
+[2024-06-01 17:37:05] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:17] - getUserInfo constructor initialized
+[2024-06-01 17:37:17] - User info retrieved
+[2024-06-01 17:37:17] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/003ville-dissy-les-moulineaux-e1556030461772-scaled.jpg"}
+[2024-06-01 17:46:49] - getUserInfo constructor initialized
+[2024-06-01 17:46:49] - User info retrieved
+[2024-06-01 17:46:49] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:47:01] - getUserInfo constructor initialized
+[2024-06-01 17:47:01] - User info retrieved
+[2024-06-01 17:47:01] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}

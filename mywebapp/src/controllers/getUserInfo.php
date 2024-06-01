@@ -23,16 +23,26 @@ class getUserInfo {
             $userInfo = $this->userModel->getUser($userId);
 
             if ($userInfo) {
+                $avatarPathJpg = 'source/avatars/' . $userId . '.jpg';
+                $avatarPathPng = 'source/avatars/' . $userId . '.png';
+                if (file_exists($avatarPathJpg)) {
+                    $avatarPath = $avatarPathJpg;
+                } elseif (file_exists($avatarPathPng)) {
+                    $avatarPath = $avatarPathPng;
+                } else {
+                    $avatarPath = 'source/avatars/default.jpg';
+                }
+
                 $response = [
                     'id' => $userInfo['ID_USER'],
                     'name' => $userInfo['NAME_USER'],
                     'email' => $userInfo['EMAIL'],
-                    'avatarPath' => $userInfo['AVATAR_PATH'] ?? 'source/avatars/default.jpg'
+                    'avatarPath' => $avatarPath
                 ];
 
                 $_SESSION['user']['name'] = $userInfo['NAME_USER'];
                 $_SESSION['user']['email'] = $userInfo['EMAIL'];
-                $_SESSION['user']['avatarPath'] = $userInfo['AVATAR_PATH'] ?? 'source/avatars/default.jpg';
+                $_SESSION['user']['avatarPath'] = $avatarPath;
 
                 echo json_encode($response);
                 $this->logger->log('User info retrieved');
