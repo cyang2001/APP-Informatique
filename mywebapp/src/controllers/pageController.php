@@ -3,18 +3,17 @@ require_once __DIR__ . '/../models/pages.php';
 
 class PageController {
     private $pageModel;
-
+    private $logger;
     public function __construct() {
         $this->pageModel = new Page();
+        $this->logger = new Logger('../logs/page.log');
     }
 
     public function getPages($userAccessLevel) {
-        $pages = $this->pageModel->getAllPages();
-        $filteredPages = array_filter($pages, function($page) use ($userAccessLevel) {
-            return $userAccessLevel >= $page['ID_ACCESS_LEVEL'];
-        });
+        $pages = $this->pageModel->getAllPages($userAccessLevel);
+        $this->logger->log("User access level: {$userAccessLevel}");
         header('Content-Type: application/json');
-        echo json_encode(array_values($filteredPages));
+        echo json_encode($pages);
     }
 
     public function addPage($pageName, $pageUrl, $parentId = null, $accessLevel = null) {

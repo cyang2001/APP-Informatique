@@ -2,10 +2,11 @@
 class LoginController {
     private $users;
     private $pdo;
-    
+    private $logger;
     public function __construct() {
         $this->pdo = Database::getInstance()->getConnection();
         $this->users = new User();
+        $this->logger = new Logger('../logs/login.log');
     }
 
     function login() {
@@ -21,6 +22,7 @@ class LoginController {
                 'name' => $response['user']['NAME_USER'],
                 'access_level' => $response['user']['ID_ACCESS_LEVEL'],
             ];
+            $this->logger->log("User {$userEmail} logged in User Access Level: {$_SESSION['user']['access_level']}");
             return;
         } else {
             http_response_code(400);

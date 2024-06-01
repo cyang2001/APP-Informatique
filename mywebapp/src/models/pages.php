@@ -12,12 +12,13 @@ class Page {
         $this->logger = new Logger('../logs/page.log');
     }
 
-    public function getAllPages() {
+    public function getAllPages($userAccessLevel) {
         $sql = "SELECT PAGES.*, PAGE_ACCESS.ID_ACCESS_LEVEL 
                 FROM PAGES
-                LEFT JOIN PAGE_ACCESS ON PAGES.ID_PAGE = PAGE_ACCESS.ID_PAGE";
+                LEFT JOIN PAGE_ACCESS ON PAGES.ID_PAGE = PAGE_ACCESS.ID_PAGE
+                WHERE PAGE_ACCESS.ID_ACCESS_LEVEL <= ?";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
+        $stmt->execute([$userAccessLevel]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 

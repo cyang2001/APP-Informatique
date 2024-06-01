@@ -9,7 +9,7 @@ $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
-$userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
+
 
 require_once __DIR__ . '/../src/controllers/RegisterController.php';
 require_once __DIR__ . '/../src/controllers/LoginController.php';
@@ -114,11 +114,9 @@ switch($action) {
         break;
     case 'getUserInfo':
         if ($method == 'GET') {
-            $logger->log('GET /getUserInfo');
-            $router->get('/getUserInfo', function(){
-                $getUserInfo = new getUserInfo();
-                $getUserInfo->getUserInfo();
-            });
+            $userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
+            echo json_encode(['access_level' => $userAccessLevel]);
+            exit();
         }
         break;
     case 'logout':
@@ -132,7 +130,9 @@ switch($action) {
         break;
         case 'getPages':
             if ($method == 'GET') {
+                $userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
                 $logger->log('GET /getPages');
+                $logger->log('User access level: '.$userAccessLevel);
                 $router->get('/getPages', function() use ($userAccessLevel) {
                     $pageController = new PageController();
                     $pageController->getPages($userAccessLevel);

@@ -1,40 +1,14 @@
 
-
-<body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se connecter</title>
+  <link rel="stylesheet" type="text/css" href="css/homePage.css">
+</head>
 <script>
-  function handleMenuButtonClick() {
-    var checkbox = document.getElementById('menu_toggle');
-    checkbox.checked = !checkbox.checked;
-  }
-  function handleMenuButtonClick() {
-      var checkbox = document.getElementById('menu_toggle');
-      checkbox.checked = !checkbox.checked;
-    }
   
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('index.php?action=getPages')
-        .then(response => {response.json();
-          console.log('Response:', response);
-        })
-        .then(data => {
-          console.log('Data:', data);
-          var menuBox = document.querySelector('.menu_box');
-          data.forEach(page => {
-            var li = document.createElement('li');
-            var a = document.createElement('a');
-            a.className = 'menu_item';
-            a.href = page.PAGE_URL;
-            a.textContent = page.PAGE_NAME;
-            li.appendChild(a);
-            menuBox.appendChild(li);
-            console.log('Appended item:', a);
-          });
-          console.log('Pages:', data);
-        })
-        .catch(error => {
-          console.error('Error:', error);
-        });
-    });
 </script>
 
 
@@ -48,17 +22,7 @@
     </label>
 
     <ul class="menu_box">
-      <li><p class="menu_title"><b>Ambisound</b></p></li>
-      <li><a class="menu_item" href="#">Accueil</a></li>
-      <li><a class="menu_item" href="#">Informations</a></li>
-      <li><a class="menu_item" href="#">FAQ</a></li>
-      <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-      <li><a class="menu_item" href="./testForum/creation_de_post.html">Forum</a></li>
-      <li><a class="menu_item" href="#">Événements</a></li>
-      <li><a class="menu_item" href="#">Lieux</a></li>
-      <li><a class="menu_item" href="#">Billetterie</a></li>
-      <li><a class="menu_item" href="#">Playlists</a></li>
-      <li><a class="menu_item" href="#">Capteurs</a></li>
+
     </ul>
   </div>
   <!-- Liste slide -->

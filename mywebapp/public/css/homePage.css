@@ -1,209 +1,317 @@
 @font-face { font-family: Poppins; src: url('../source/Poppins-Light.ttf'); }
 
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
+html {
+    height: 100%;
+    overflow: hidden;
 }
 
-header {
-  background-color: #0D2C51;
-  opacity: 90%;
-  height: 80px;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.hamburger-menu {
-  display: flex;
-  align-items: center;
+*{
+    margin: 0;
 }
 
 #menu_toggle {
-  opacity: 0;
+    opacity: 0;
 }
-
 #menu_toggle:checked + .menu_btn > span {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-
 #menu_toggle:checked + .menu_btn > span::before {
-  top: 0;
-  transform: rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
 }
-
 #menu_toggle:checked + .menu_btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
+    top: 0;
+    transform: rotate(90deg);
 }
-
 #menu_toggle:checked ~ .menu_box {
-  left: 0 !important;
+    left: 0 !important;
 }
-
 .menu_btn {
-  position: relative;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 102;
-  display: flex;
-  align-items: center;
+    margin-top: 5px;
+    position: sticky;
+    top: 0;
+    left: 24px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 102;
+    display: flex;
+    align-items: center;
 }
-
 .menu_btn > span,
 .menu_btn > span::before,
 .menu_btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  transition-duration: .25s;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
 }
-
 .menu_btn > span::before {
-  content: '';
-  top: -8px;
+    content: '';
+    top: -8px;
 }
-
 .menu_btn > span::after {
-  content: '';
-  top: 8px;
+    content: '';
+    top: 8px;
 }
-
 .menu_box {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100vh;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #134074;
-  transition-duration: .25s;
-  z-index: 101;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #134074;
+    transition-duration: .25s;
+    z-index: 101;
 }
-
 .menu_item {
-  display: block;
-  padding: 12px 24px;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
 }
-
 .menu_item:hover {
-  background-color: #CFD8DC;
-  color: black;
+    background-color: #CFD8DC;
+    color: black;
 }
 
-.barre-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu_title{
+    color:white;
+    padding: 12px 24px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    border-bottom: solid 1px #0D2C51;
 }
 
-.bouton-home {
-  font-size: 20px;
-  margin: 0 10px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
+.hamburger-menu{
+    height: 0;
 }
 
-.bouton-home:hover {
-  color: lightblue;
+header{
+    opacity: 90%;
+    background-color: #0D2C51;
+    height: 80px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    width: 100%;
 }
 
-.icones-home {
-  display: flex;
-  align-items: center;
+
+
+
+h2{
+    padding-top: 10px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
 }
 
-.drap-home {
-  width: 45px;
-  margin-left: 20px;
+
+
+
+
+
+
+
+
+.bouton2 {
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: -40px;
 }
 
-.profil {
-  width: 45px;
-  margin-left: 20px;
+.bouton2 div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
 }
 
-.menu-deroulant {
-  position: relative;
-  display: inline-block;
+.menu-deroulant{
+    left: -100px;
 }
 
-.menu-deroulant div {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+div div a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.menu-deroulant:hover div {
-  display: block;
+.bouton2:hover div {
+    display: block;
 }
 
-.menu-deroulant div a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.prof-home{
+    width: 45px;
 }
 
-.menu-deroulant div a:hover {
-  background-color: #f1f1f1;
+
+
+.drap-home{
+    width: 45px;
+}
+
+
+.bouton1 {
+    float: right;
+    position: relative;
+    display: inline-block;
+    margin-top: -40px;
+    margin-right: 25px;
+}
+
+.bouton1 div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
+}
+
+.bouton1:hover div {
+    display: block;
+}
+
+
+
+
+.bouton-home{
+    font-size: 20px;
+    font-family: Poppins;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.barre-home{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-home:hover{
+    color: lightblue;
+}
+
+.icones-home{
+    margin-top: -65px;
+    float: right;
+    margin-right: 20px;
+}
+
+.img-home {
+
+    padding-left: 20px;
+    width: 45px;
+}
+
+body {
+    background-color: black;
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: Poppins;
+}
+
+
+footer{
+    z-index: 9999;
+    height: 230px;
+    background-color: #0D2C51;
+}
+
+
+h1 {
+    font-size: 250%
+}
+
+p {
+    font-size: 140%;
+    line-height: 150%;
+    color: #333;
+}
+
+.slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    transform-style: inherit;
+}
+
+.slidee {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: inherit;
+}
+
+
+.slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+    margin-top: -80px;
+    width: 50%;
+    padding: 5%;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.slide, .slide:before {
+    background: 50% 50% / cover;
 }
 
 .header {
-  text-align: center;
-  padding: 25vh 10%;
-  background: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg") no-repeat center center/cover;
+    text-align: center;
+    font-size: 175%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
 }
 
-.header h1 {
-  font-size: 3em;
-}
-
-.header p {
-  font-size: 1.2em;
-  line-height: 1.5;
-}
-
-footer {
-  height: 230px;
-  background-color: #0D2C51;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .CGU {
-  text-decoration: none;
-  color: white;
-}
-
-footer .CGU:hover {
-  color: aqua;
-}
 #title {
     background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
 
