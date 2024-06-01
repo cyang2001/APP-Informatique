@@ -7,10 +7,12 @@ window.onload = function() {
         console.log(data);  
         const menu = document.querySelector('.menu-deroulant div');
         menu.innerHTML = ''; 
-        
 
         if (data.email) {
-            menu.innerHTML = '<a href="#" id="logout">Se déconnecter</a>';
+            menu.innerHTML = `
+                <a href="./profile.html">Profile</a>
+                <a href="#" id="logout">Se déconnecter</a>
+            `;
             document.getElementById('logout').addEventListener('click', function(event) {
                 event.preventDefault();
                 fetch('index.php?action=logout', {
@@ -20,14 +22,19 @@ window.onload = function() {
                 .catch(error => console.error('Error on logout:', error));
             });
         } else {
-            menu.innerHTML = '<a href="./login_fr.html">Se connecter</a><a href="./register_fr.html">S\'inscrire</a>';
+            menu.innerHTML = `
+                <a href="./login_fr.html">Se connecter</a>
+                <a href="./register_fr.html">S'inscrire</a>
+            `;
+        }
+        if (data.avatarPath) {
+            document.getElementById('avatarDisplay').src = data.avatarPath + '?t=' + new Date().getTime();
         }
     })
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
-});
-
+};
 
 document.addEventListener('scroll', function() {
     const parallaxElement = document.querySelector('.banniere img');
@@ -35,4 +42,3 @@ document.addEventListener('scroll', function() {
     var windowScroll = window.pageYOffset;
     parallaxElement.style.transform = 'translateY(' + windowScroll * speed + 'px)';
 });
-};
