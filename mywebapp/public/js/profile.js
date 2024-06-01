@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('editPasswordBtn').addEventListener('click', function() {
-        startEdit('password', 'Password', '');
+        window.location.href = 'renewPassword_fr_1.html';
     });
 
     document.getElementById('editForm').addEventListener('submit', function(event) {
