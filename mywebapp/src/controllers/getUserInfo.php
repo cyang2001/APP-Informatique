@@ -13,7 +13,9 @@ class getUserInfo {
     }
 
     public function getUserInfo() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         header('Content-Type: application/json');
 
         if(isset($_SESSION['user'])) {
@@ -27,6 +29,11 @@ class getUserInfo {
                     'email' => $userInfo['EMAIL'],
                     'avatarPath' => $userInfo['AVATAR_PATH'] ?? 'source/avatars/default.jpg'
                 ];
+
+                $_SESSION['user']['name'] = $userInfo['NAME_USER'];
+                $_SESSION['user']['email'] = $userInfo['EMAIL'];
+                $_SESSION['user']['avatarPath'] = $userInfo['AVATAR_PATH'] ?? 'source/avatars/default.jpg';
+
                 echo json_encode($response);
                 $this->logger->log('User info retrieved');
                 $this->logger->log(json_encode($response));

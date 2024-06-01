@@ -188,7 +188,9 @@ switch($action) {
         if ($method == 'POST') {
             $logger->log('POST /updateProfile');
             $router->post('/updateProfile', function() {
+                if (session_status() == PHP_SESSION_NONE) {
                 session_start();
+                }
                 $userId = $_SESSION['user']['id'];
                 $userName = $_POST['username'] ?? null;
                 $email = $_POST['email'] ?? null;
@@ -201,7 +203,9 @@ switch($action) {
         if ($method == 'POST') {
             $logger->log('POST /uploadAvatar');
             $router->post('/uploadAvatar', function() {
-                session_start();
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
                 $userId = $_SESSION['user']['id'];
                 $file = $_FILES['avatar'];
                 $userController = new UserController();
@@ -213,7 +217,9 @@ switch($action) {
         if ($method == 'POST') {
             $logger->log('POST /deleteUser');
             $router->post('/deleteUser', function() {
-                session_start();
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
                 $userId = $_SESSION['user']['id'];
                 $userController = new UserController();
                 $userController->deleteUser($userId);

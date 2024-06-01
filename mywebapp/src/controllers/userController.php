@@ -9,8 +9,25 @@ class UserController {
     }
 
     public function updateProfile($userId, $userName, $email) {
+        $currentUser = $this->userModel->getUser($userId);
+        if (!$currentUser) {
+            header('Content-Type: application/json');
+            echo json_encode(['success' => false, 'message' => 'User not found']);
+            return;
+        }
+
+        $userName = $userName ?? $currentUser['NAME_USER'];
+        $email = $email ?? $currentUser['EMAIL'];
+
         $this->userModel->updateUserName($userId, $userName);
         $this->userModel->updateUserEmail($userId, $email);
+
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        $_SESSION['user']['name'] = $userName;
+        $_SESSION['user']['email'] = $email;
+
         header('Content-Type: application/json');
         echo json_encode(['success' => true]);
     }
@@ -25,6 +42,12 @@ class UserController {
         if (move_uploaded_file($file["tmp_name"], $targetFile)) {
             $avatarPath = "source/avatars/" . $fileName; 
             $this->userModel->updateUserAvatar($userId, $avatarPath);
+
+            if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+            }
+            $_SESSION['user']['avatarPath'] = $avatarPath;
+
             header('Content-Type: application/json');
             echo json_encode(['success' => true, 'avatarPath' => $avatarPath]);
         } else {
@@ -35,7 +58,9 @@ class UserController {
 
     public function deleteUser($userId) {
         $this->userModel->deleteUser($userId);
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         session_destroy(); 
         header('Content-Type: application/json');
         echo json_encode(['success' => true]);

@@ -102,3 +102,30 @@
 [2024-06-01 13:56:23] - GET /getUserInfo
 [2024-06-01 13:56:49] - POST /register
 [2024-06-01 13:56:49] - calling
+[2024-06-01 14:03:17] - POST /login
+[2024-06-01 14:03:21] - GET /getUserInfo
+[2024-06-01 14:04:02] - GET /getUserInfo
+[2024-06-01 14:04:05] - GET /getUserInfo
+[2024-06-01 14:07:44] - GET /getUserInfo
+[2024-06-01 14:07:45] - GET /getUserInfo
+[2024-06-01 14:07:46] - GET /getUserInfo
+[2024-06-01 14:08:22] - GET /getUserInfo
+[2024-06-01 14:11:58] - GET /getUserInfo
+[2024-06-01 14:31:04] - GET /getUserInfo
+[2024-06-01 14:45:20] - POST /updateProfile
+[2024-06-01 14:45:21] - GET /getUserInfo
+[2024-06-01 17:19:17] - GET /getUserInfo
+[2024-06-01 17:21:14] - POST /login
+[2024-06-01 17:21:34] - GET /getUserInfo
+[2024-06-01 17:22:09] - POST /register
+[2024-06-01 17:22:09] - calling
+[2024-06-01 17:22:18] - POST /login
+[2024-06-01 17:22:22] - GET /getUserInfo
+[2024-06-01 17:22:24] - GET /getUserInfo
+[2024-06-01 17:22:30] - POST /updateProfile
+[2024-06-01 17:22:33] - POST /updateProfile
+[2024-06-01 17:22:33] - POST /updateProfile
+[2024-06-01 17:22:34] - POST /updateProfile
+[2024-06-01 17:22:36] - POST /updateProfile
+[2024-06-01 17:22:36] - POST /updateProfile
+[2024-06-01 17:22:36] - POST /updateProfile
