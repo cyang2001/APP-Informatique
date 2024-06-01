@@ -145,3 +145,197 @@
 [2024-05-31 16:11:54] - getUserInfo constructor initialized
 [2024-05-31 16:11:54] - User info retrieved
 [2024-05-31 16:11:54] - {"id":42694746,"email":"r@gmail.com","name":"Romain"}
+[2024-06-01 12:01:17] - getUserInfo constructor initialized
+[2024-06-01 12:01:17] - Unauthorized
+[2024-06-01 13:56:23] - getUserInfo constructor initialized
+[2024-06-01 13:56:23] - Unauthorized access attempt
+[2024-06-01 14:03:21] - getUserInfo constructor initialized
+[2024-06-01 14:03:21] - User info retrieved
+[2024-06-01 14:03:21] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:04:02] - getUserInfo constructor initialized
+[2024-06-01 14:04:02] - User info retrieved
+[2024-06-01 14:04:02] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:04:05] - getUserInfo constructor initialized
+[2024-06-01 14:04:05] - User info retrieved
+[2024-06-01 14:04:05] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:07:44] - getUserInfo constructor initialized
+[2024-06-01 14:07:44] - User info retrieved
+[2024-06-01 14:07:44] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:07:45] - getUserInfo constructor initialized
+[2024-06-01 14:07:45] - User info retrieved
+[2024-06-01 14:07:45] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:07:46] - getUserInfo constructor initialized
+[2024-06-01 14:07:46] - User info retrieved
+[2024-06-01 14:07:46] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:08:22] - getUserInfo constructor initialized
+[2024-06-01 14:08:22] - User info retrieved
+[2024-06-01 14:08:22] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:11:58] - getUserInfo constructor initialized
+[2024-06-01 14:11:58] - User info retrieved
+[2024-06-01 14:11:58] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:31:04] - getUserInfo constructor initialized
+[2024-06-01 14:31:04] - User info retrieved
+[2024-06-01 14:31:04] - {"id":68876064,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 14:45:21] - getUserInfo constructor initialized
+[2024-06-01 14:45:21] - User info retrieved
+[2024-06-01 14:45:21] - {"id":68876064,"name":"cyang123","email":null,"avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:19:17] - getUserInfo constructor initialized
+[2024-06-01 17:19:17] - User info retrieved
+[2024-06-01 17:19:17] - {"id":68876064,"name":"cyang123","email":null,"avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:21:34] - getUserInfo constructor initialized
+[2024-06-01 17:21:34] - User info retrieved
+[2024-06-01 17:21:34] - {"id":68876064,"name":"cyang123","email":null,"avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:22:22] - getUserInfo constructor initialized
+[2024-06-01 17:22:22] - User info retrieved
+[2024-06-01 17:22:22] - {"id":94559364,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:22:24] - getUserInfo constructor initialized
+[2024-06-01 17:22:24] - User info retrieved
+[2024-06-01 17:22:24] - {"id":94559364,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:24:58] - getUserInfo constructor initialized
+[2024-06-01 17:24:58] - User info retrieved
+[2024-06-01 17:24:58] - {"id":94559364,"name":"cyang123","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:25:07] - getUserInfo constructor initialized
+[2024-06-01 17:25:07] - User info retrieved
+[2024-06-01 17:25:07] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:25:24] - getUserInfo constructor initialized
+[2024-06-01 17:25:24] - User info retrieved
+[2024-06-01 17:25:24] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:25:29] - getUserInfo constructor initialized
+[2024-06-01 17:25:29] - Unauthorized access attempt
+[2024-06-01 17:26:25] - getUserInfo constructor initialized
+[2024-06-01 17:26:25] - Unauthorized access attempt
+[2024-06-01 17:27:50] - getUserInfo constructor initialized
+[2024-06-01 17:27:50] - User info retrieved
+[2024-06-01 17:27:50] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:31:25] - getUserInfo constructor initialized
+[2024-06-01 17:31:25] - User info retrieved
+[2024-06-01 17:31:25] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:31:28] - getUserInfo constructor initialized
+[2024-06-01 17:31:28] - User info retrieved
+[2024-06-01 17:31:28] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:31:35] - getUserInfo constructor initialized
+[2024-06-01 17:31:35] - User info retrieved
+[2024-06-01 17:31:35] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:31:38] - getUserInfo constructor initialized
+[2024-06-01 17:31:38] - Unauthorized access attempt
+[2024-06-01 17:31:49] - getUserInfo constructor initialized
+[2024-06-01 17:31:49] - User info retrieved
+[2024-06-01 17:31:49] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:31:51] - getUserInfo constructor initialized
+[2024-06-01 17:31:51] - User info retrieved
+[2024-06-01 17:31:51] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:03] - getUserInfo constructor initialized
+[2024-06-01 17:37:03] - User info retrieved
+[2024-06-01 17:37:03] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:05] - getUserInfo constructor initialized
+[2024-06-01 17:37:05] - User info retrieved
+[2024-06-01 17:37:05] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:37:17] - getUserInfo constructor initialized
+[2024-06-01 17:37:17] - User info retrieved
+[2024-06-01 17:37:17] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/003ville-dissy-les-moulineaux-e1556030461772-scaled.jpg"}
+[2024-06-01 17:46:49] - getUserInfo constructor initialized
+[2024-06-01 17:46:49] - User info retrieved
+[2024-06-01 17:46:49] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:47:01] - getUserInfo constructor initialized
+[2024-06-01 17:47:01] - User info retrieved
+[2024-06-01 17:47:01] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:03] - getUserInfo constructor initialized
+[2024-06-01 17:50:03] - User info retrieved
+[2024-06-01 17:50:03] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:03] - getUserInfo constructor initialized
+[2024-06-01 17:50:03] - User info retrieved
+[2024-06-01 17:50:03] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:04] - getUserInfo constructor initialized
+[2024-06-01 17:50:04] - User info retrieved
+[2024-06-01 17:50:04] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:04] - getUserInfo constructor initialized
+[2024-06-01 17:50:04] - User info retrieved
+[2024-06-01 17:50:04] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:24] - getUserInfo constructor initialized
+[2024-06-01 17:50:24] - User info retrieved
+[2024-06-01 17:50:24] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:24] - getUserInfo constructor initialized
+[2024-06-01 17:50:24] - User info retrieved
+[2024-06-01 17:50:24] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:25] - getUserInfo constructor initialized
+[2024-06-01 17:50:25] - User info retrieved
+[2024-06-01 17:50:25] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:25] - getUserInfo constructor initialized
+[2024-06-01 17:50:25] - User info retrieved
+[2024-06-01 17:50:25] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:25] - getUserInfo constructor initialized
+[2024-06-01 17:50:25] - User info retrieved
+[2024-06-01 17:50:25] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:27] - getUserInfo constructor initialized
+[2024-06-01 17:50:27] - User info retrieved
+[2024-06-01 17:50:27] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:27] - getUserInfo constructor initialized
+[2024-06-01 17:50:27] - User info retrieved
+[2024-06-01 17:50:27] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:28] - getUserInfo constructor initialized
+[2024-06-01 17:50:28] - User info retrieved
+[2024-06-01 17:50:28] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:28] - getUserInfo constructor initialized
+[2024-06-01 17:50:28] - User info retrieved
+[2024-06-01 17:50:28] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:28] - getUserInfo constructor initialized
+[2024-06-01 17:50:28] - User info retrieved
+[2024-06-01 17:50:28] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:29] - getUserInfo constructor initialized
+[2024-06-01 17:50:29] - User info retrieved
+[2024-06-01 17:50:29] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:50:29] - getUserInfo constructor initialized
+[2024-06-01 17:50:29] - User info retrieved
+[2024-06-01 17:50:29] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:59:17] - getUserInfo constructor initialized
+[2024-06-01 17:59:17] - User info retrieved
+[2024-06-01 17:59:17] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 17:59:36] - getUserInfo constructor initialized
+[2024-06-01 17:59:36] - User info retrieved
+[2024-06-01 17:59:36] - {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 18:03:23] - getUserInfo constructor initialized
+[2024-06-01 18:03:23] - User info sent
+[2024-06-01 18:03:59] - getUserInfo constructor initialized
+[2024-06-01 18:03:59] - User info sent
+[2024-06-01 18:07:22] - getUserInfo constructor initialized
+[2024-06-01 18:07:22] - User info sent
+[2024-06-01 18:07:27] - getUserInfo constructor initialized
+[2024-06-01 18:07:27] - User info sent
+[2024-06-01 18:07:27] - getUserInfo constructor initialized
+[2024-06-01 18:07:27] - User info sent
+[2024-06-01 18:07:45] - getUserInfo constructor initialized
+[2024-06-01 18:07:45] - User info sent
+[2024-06-01 18:08:06] - getUserInfo constructor initialized
+[2024-06-01 18:08:06] - User info sent
+[2024-06-01 18:10:13] - getUserInfo constructor initialized
+[2024-06-01 18:10:13] - User info sent
+[2024-06-01 18:15:20] - getUserInfo constructor initialized
+[2024-06-01 18:15:20] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-01 18:15:31] - getUserInfo constructor initialized
+[2024-06-01 18:15:31] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:18:14] - getUserInfo constructor initialized
+[2024-06-01 18:18:14] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:18:42] - getUserInfo constructor initialized
+[2024-06-01 18:18:42] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:20:19] - getUserInfo constructor initialized
+[2024-06-01 18:20:19] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:20:45] - getUserInfo constructor initialized
+[2024-06-01 18:20:45] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:23:02] - getUserInfo constructor initialized
+[2024-06-01 18:23:02] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:26:31] - getUserInfo constructor initialized
+[2024-06-01 18:26:31] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:27:32] - getUserInfo constructor initialized
+[2024-06-01 18:27:32] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:28:03] - getUserInfo constructor initialized
+[2024-06-01 18:28:03] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:29:35] - getUserInfo constructor initialized
+[2024-06-01 18:29:35] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:29:55] - getUserInfo constructor initialized
+[2024-06-01 18:29:55] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:29:56] - getUserInfo constructor initialized
+[2024-06-01 18:29:56] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:29:56] - getUserInfo constructor initialized
+[2024-06-01 18:29:56] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-01 18:29:57] - getUserInfo constructor initialized
+[2024-06-01 18:29:57] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}

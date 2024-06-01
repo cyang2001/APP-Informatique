@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../models/users.php'; 
 require_once __DIR__ .'/../config/logger.php';
 header('Content-Type: application/json');
+
 class RegisterController {
     private $users;
     private $logger;
@@ -31,7 +32,9 @@ class RegisterController {
             return; 
         }
 
-        $registrationResult = $this->users->register($userName, $userPassword, $userEmail);
+        $defaultAvatarPath = 'source/avatars/default.jpg'; 
+
+        $registrationResult = $this->users->register($userName, $userPassword, $userEmail, $defaultAvatarPath);
         if ($registrationResult['success']) {
             http_response_code(200);
             $this->logger->log("User registered: {$userEmail} - {$userName}");
@@ -49,5 +52,3 @@ class RegisterController {
         }
     }
 }
-
-

@@ -332,9 +332,9 @@ p {
     transform: translateZ(-1px) scale(2);
 }
 
-#slide2 {
+/*#slide2 {
     background-image: url("file:///D:/XAMPP/htdocs/APP-Informatique/mywebapp/public/source/nuage.jpg");
-}
+}*/
 
 #slide3:before {
     background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
