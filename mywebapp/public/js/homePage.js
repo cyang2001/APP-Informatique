@@ -27,6 +27,9 @@ window.onload = function() {
                 <a href="./register_fr.html">S'inscrire</a>
             `;
         }
+        if (data.avatarPath) {
+            document.getElementById('avatarDisplay').src = data.avatarPath + '?t=' + new Date().getTime();
+        }
     })
     .catch(error => {
         console.error('Error fetching user info:', error);

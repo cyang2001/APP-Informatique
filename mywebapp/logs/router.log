@@ -1649,3 +1649,75 @@
 [2024-06-01 18:20:51] - Pattern matched: ~^/uploadAvatar$~
 [2024-06-01 18:20:51] - Matches: [[["\/uploadAvatar",0]]]
 [2024-06-01 18:20:51] - Calling callback function
+[2024-06-01 18:23:02] - Register: GET /getUserInfo
+[2024-06-01 18:23:02] - Dispatching request: GET
+[2024-06-01 18:23:02] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:23:02] - Handling URI: /getUserInfo
+[2024-06-01 18:23:02] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:23:02] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:23:02] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:23:02] - Calling callback function
+[2024-06-01 18:26:31] - Register: GET /getUserInfo
+[2024-06-01 18:26:31] - Dispatching request: GET
+[2024-06-01 18:26:31] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:26:31] - Handling URI: /getUserInfo
+[2024-06-01 18:26:31] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:26:31] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:26:31] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:26:31] - Calling callback function
+[2024-06-01 18:27:32] - Register: GET /getUserInfo
+[2024-06-01 18:27:32] - Dispatching request: GET
+[2024-06-01 18:27:32] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:27:32] - Handling URI: /getUserInfo
+[2024-06-01 18:27:32] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:27:32] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:27:32] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:27:32] - Calling callback function
+[2024-06-01 18:28:03] - Register: GET /getUserInfo
+[2024-06-01 18:28:03] - Dispatching request: GET
+[2024-06-01 18:28:03] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:28:03] - Handling URI: /getUserInfo
+[2024-06-01 18:28:03] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:28:03] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:28:03] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:28:03] - Calling callback function
+[2024-06-01 18:29:35] - Register: GET /getUserInfo
+[2024-06-01 18:29:35] - Dispatching request: GET
+[2024-06-01 18:29:35] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:29:35] - Handling URI: /getUserInfo
+[2024-06-01 18:29:35] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:29:35] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:29:35] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:29:35] - Calling callback function
+[2024-06-01 18:29:55] - Register: GET /getUserInfo
+[2024-06-01 18:29:55] - Dispatching request: GET
+[2024-06-01 18:29:55] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:29:55] - Handling URI: /getUserInfo
+[2024-06-01 18:29:55] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:29:55] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:29:55] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:29:55] - Calling callback function
+[2024-06-01 18:29:56] - Register: GET /getUserInfo
+[2024-06-01 18:29:56] - Dispatching request: GET
+[2024-06-01 18:29:56] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:29:56] - Handling URI: /getUserInfo
+[2024-06-01 18:29:56] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:29:56] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:29:56] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:29:56] - Calling callback function
+[2024-06-01 18:29:56] - Register: GET /getUserInfo
+[2024-06-01 18:29:56] - Dispatching request: GET
+[2024-06-01 18:29:56] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:29:56] - Handling URI: /getUserInfo
+[2024-06-01 18:29:56] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:29:56] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:29:56] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:29:56] - Calling callback function
+[2024-06-01 18:29:57] - Register: GET /getUserInfo
+[2024-06-01 18:29:57] - Dispatching request: GET
+[2024-06-01 18:29:57] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getUserInfo
+[2024-06-01 18:29:57] - Handling URI: /getUserInfo
+[2024-06-01 18:29:57] - Checking pattern: ~^/getUserInfo$~
+[2024-06-01 18:29:57] - Pattern matched: ~^/getUserInfo$~
+[2024-06-01 18:29:57] - Matches: [[["\/getUserInfo",0]]]
+[2024-06-01 18:29:57] - Calling callback function
