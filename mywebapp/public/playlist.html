@@ -8,33 +8,85 @@
     <body>
       <script>
         function handleMenuButtonClick() {
-            var checkbox = document.getElementById('menu_toggle');
-            checkbox.checked = !checkbox.checked;
+          var checkbox = document.getElementById('menu_toggle');
+          checkbox.checked = !checkbox.checked;
         }
-    </script>
+      
+        function handleUserMenuClick() {
+          var userMenu = document.querySelector('.user-menu-box');
+          userMenu.classList.toggle('show');
+        }
+      
+        const translations = {
+          title: "A M B I S O U N D   E N   A N G L A I S",
+          headerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.",
+          slides: [
+            {
+              title: "Slide 1",
+              content: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim."
+            },
+            // Ajoutez les autres traductions de slides ici
+          ],
+          footerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in."
+        };
+      
+        function translateToEnglish() {
+          document.querySelector("#title h1").textContent = translations.title;
+          document.querySelector("#title p").textContent = translations.headerText;
+      
+          const slides = document.querySelectorAll(".slide .title");
+          translations.slides.forEach((slide, index) => {
+            if (slides[index]) {
+              slides[index].querySelector("h1").textContent = slide.title;
+              slides[index].querySelector("p").textContent = slide.content;
+            }
+          });
+      
+          document.querySelector("footer").textContent = translations.footerText;
+        }
+      
+      
+      </script>
     
     
-    <div class="hamburger-menu">
-        <input id="menu_toggle" type="checkbox" />
-        <label class="menu_btn" onclick="handleMenuButtonClick()">
-            <span></span>
-        </label>
     
-        <ul class="menu_box">
-            <li><p class="menu_title"><b>Ambisound</b></p></li>
-            <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
-            <li><a class="menu_item" href="#">Informations</a></li>
-            <li><a class="menu_item" href="./faq.html">FAQ</a></li>
-            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-            <li><a class="menu_item" href="./forum.html">Forum</a></li>
-            <li><a class="menu_item" href="./evenement.html">Événements</a></li>
-            <li><a class="menu_item" href="#">Lieux</a></li>
-            <li><a class="menu_item" href="#">Billetterie</a></li>
-            <li><a class="menu_item" href="#">Playlists</a></li>
-            <li><a class="menu_item" href="#">Capteurs</a></li>
-        </ul>
-    </div>
         <header >
+          <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" onclick="handleMenuButtonClick()">
+              <span></span>
+            </label>
+        
+            <ul class="menu_box">
+              <li><p class="menu_title"><b>Ambisound</b></p></li>
+              <li><a class="menu_item" href="#">Accueil</a></li>
+              <li><a class="menu_item" href="#">Informations</a></li>
+              <li><a class="menu_item" href="#">FAQ</a></li>
+              <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+              <li><a class="menu_item" href="#">Forum</a></li>
+              <li><a class="menu_item" href="#">Événements</a></li>
+              <li><a class="menu_item" href="#">Lieux</a></li>
+              <li><a class="menu_item" href="#">Billetterie</a></li>
+              <li><a class="menu_item" href="#">Playlists</a></li>
+              <li><a class="menu_item" href="#">Capteurs</a></li>
+            </ul>
+          </div>
+        
+          <div>
+            <div class="bouton2">
+              <span><img class="prof-home" src="source/user(1).png"></span>
+              <div class="menu-deroulant">
+                <a href="#">Se connecter</a>
+                <a href="#">S'inscrire</a>
+              </div>
+            </div>
+        
+            <div class="bouton1">
+              <span><img class="drap-home" src="source/united-kingdom.png"></span>
+            </div>
+          </div>
+        
+        
           <h1 class="page_title">
             Playlists
           </h1>
@@ -94,7 +146,9 @@
 
                 <div class="loader">
                   <div class="fleche">
+                    <a href="playlist_ambiance.html">
                     <img class="f" src="source/fleche.png" height="50" width="50">
+                    </a>
                   </div>
                   <div class="song">
                     <p class="name">Son d'ambiance</p>
@@ -140,14 +194,55 @@
                   
                 </div>
               </div>
-            
-            
 
-        
+              <script src="js/playlist.js"></script>
 
         </main>
-        <footer>
-
-        </footer>
+        
+        <footer class="site-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                      <h6>À propos</h6>
+                      <p class="text-justify">Ambisound</p>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                      <h6>Catégories</h6>
+                      <ul class="footer-links">
+                          <li><a href="#">Rock</a></li>
+                          <li><a href="#">Pop</a></li>
+                          <li><a href="#">Classique</a></li>
+                          <li><a href="#">Jazz</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-6 col-md-3">
+                      <h6>Liens rapides</h6>
+                      <ul class="footer-links">
+                          <li><a href="#">Accueil</a></li>
+                          <li><a href="#">Informations</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Contactez-nous</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <hr>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-sm-6 col-xs-12">
+                      <p class="copyright-text">Copyright &copy; 2024 Tous droits réservés par 
+                          <a href="#">Ambisound</a>
+                      </p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                      <ul class="social-icons">
+                          <li><a href="#"><img src="source/facebook.png" alt="Facebook" class="social-icon"></a></li>
+                          <li><a href="#"><img src="source/twitter.png" alt="Twitter" class="social-icon"></a></li>
+                          <li><a href="#"><img src="source/instagram.png" alt="Instagram" class="social-icon"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        
     </body>
 </html>

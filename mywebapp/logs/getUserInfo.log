@@ -101,3 +101,7 @@
 [2024-05-06 11:59:44] - getUserInfo constructor initialized
 [2024-05-06 11:59:44] - User info retrieved
 [2024-05-06 11:59:44] - {"id":33367110,"email":"cc@cc.com","name":"cc"}
+[2024-05-06 15:12:11] - getUserInfo constructor initialized
+[2024-05-06 15:12:11] - Unauthorized
+[2024-05-06 15:12:12] - getUserInfo constructor initialized
+[2024-05-06 15:12:12] - Unauthorized

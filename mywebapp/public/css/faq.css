@@ -1,3 +1,4 @@
+@font-face { font-family: Poppins; src: url('../source/Poppins-Light.ttf'); }
 *{
     margin: 0;
 }
@@ -8,7 +9,7 @@
 }
 
 body{
-    font-family:"Raleway", sans-serif;
+    font-family:"Poppins";
     
 }
 h1 {
@@ -199,6 +200,7 @@ footer {
     height: 80px;
     background-color: #0D2C51;
     margin-top: auto;
+    z-index: 999;
 }
 
 
