@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Récupérer les paramètres de l'URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var total = urlParams.get('total');
+
+    // Mettre à jour l'élément HTML pour afficher le total à payer
+    var totalElement = document.querySelector(".total-price");
+    if (totalElement) {
+        totalElement.textContent = total + " €"; // Modifier le texte pour afficher le montant total
+    }
+
     var cards = [{
         nome: "mastercard",
         colore: "#1ab7ff",
