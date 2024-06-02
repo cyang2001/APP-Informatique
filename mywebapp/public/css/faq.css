@@ -50,6 +50,7 @@ img {
     border-radius: 10px;
     position: relative;
     z-index: 99;
+    box-shadow: -2px 0 4px hsl(0 8% 15% / 10%);
 }
 .visible-pannel h2{
     margin-left: 10px;
