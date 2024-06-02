@@ -192,6 +192,8 @@ header{
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    
 }
 .product-title{
     font-size: 1.1rem;

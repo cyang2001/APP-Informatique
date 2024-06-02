@@ -57,7 +57,9 @@ function buyButtonClicked() {
     updatetotal();
 
     // Redirection vers la page de paiement
-    window.location.href = '/testForum/pagepaiement.html';
+    window.location.href = 'file:///C:/Users/teofilovic/Documents/siteweb/APP-Informatique/mywebapp/public/testForum/pagepaiement.html';
+
+
 }
 }
 // Remove Itmes from cart
@@ -139,7 +141,7 @@ function updatetotal(){
         // If price Contain some cents value
         total = Math.round(total * 100)/ 100;
 
-        document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+        document.getElementsByClassName('total-price')[0].innerText = '€' + total;
     
 }
 // Fonction pour rediriger vers la page de paiement
