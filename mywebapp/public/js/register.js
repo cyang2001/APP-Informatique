@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         unique: document.getElementById('rule-unique')
     };
     const togglePasswordButton = document.getElementById('toggle-password-visibility');
+    const cguAccepted = document.getElementById('cgu-box');
 
     const updateUI = (rulesStatus) => {
         const statusClasses = {
@@ -49,6 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (password !== confirmPassword) {
             alert("Les mots de passe ne correspondent pas.");
+            return false;
+        }
+
+        if (!cguAccepted.checked) {
+            alert("Vous devez accepter les conditions générales d'utilisation.");
+            event.preventDefault();
             return false;
         }
 
