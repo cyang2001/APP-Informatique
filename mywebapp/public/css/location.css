@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face { font-family: Poppins; src: url('../source/Poppins-Light.ttf'); }
 
 .poppins-regular {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     margin: 0;
     padding: 0;
     scroll-padding-top: 2rem;
@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 :root {
-    --main-color:#fd4646;
+    --main-color:#8a5cf4;
     --text-color: #171427;
     --bg-color:#fff;
 
@@ -192,7 +192,7 @@ header{
 }
 .product-box:hover{
     padding: 10px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--main-color);
     transition: 0.4s;
 }
 .product-img{
