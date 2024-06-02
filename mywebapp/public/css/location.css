@@ -14,7 +14,6 @@
     --main-color:#8a5cf4;
     --text-color: #171427;
     --bg-color:#fff;
-
 }
 img{
     width: 100%;
@@ -29,9 +28,7 @@ body{
 }
 section{
     padding: 4rem 0 3rem;
-
 }
-
 header{
     position:fixed;
     top: 0;
@@ -40,18 +37,20 @@ header{
     background: var(--bg-color);
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
     z-index: 100;
-
 }
 .nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding: 20px 0;
+    text-align: center;
 }
 .logo{
-    font-size: 1.1rem;
+    font-size: 2.1rem; /* Double la taille */
     color: var(--text-color);
     font-weight: 400;
+    text-align: center;
+    margin: auto;
 }
 #cart-icon{
     font-size: 1.8rem;
@@ -71,7 +70,6 @@ header{
 }
 .cart.active{
     right: 0;
-
 }
 .cart-title{
     text-align: center;
@@ -167,25 +165,20 @@ header{
     font-size: 2rem;
     color: var(--text-color);
     cursor: pointer;
-
-
 }
 .section-title{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.8rem; /* Double la taille */
+    font-weight: 400; /* Retirer le gras */
     text-align: center;
     margin-bottom: 1.5rem;
 }
-
 .shop{
     margin-top: 2rem;
 }
-  
 .shop-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px, auto));
     gap: 1.5rem;
-
 }
 .product-box{
     position: relative;
@@ -217,7 +210,6 @@ header{
     color: var(--bg-color);
     padding: 10px;
     cursor: pointer;
-
 }
 .add-cart:hover{
     background: hsl(249, 32%, 17%);
@@ -247,7 +239,6 @@ header{
     }
     .cart{
         width: 320px;
-
     }
 }
 @media (max-width:360){
@@ -258,8 +249,5 @@ header{
         width : 280px;
     }
 }
-
-
-
 
    

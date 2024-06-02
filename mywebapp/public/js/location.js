@@ -56,11 +56,10 @@ function buyButtonClicked(){
         cartContent.removeChild(cartContent.firstChild);
     }
     updatetotal();
-
-
+    
+    // Redirection vers la page de paiement
+    window.location.href = 'pagepaiement.html'; // Remplacez 'lien_vers_la_page_de_paiement.html' par le lien réel vers votre page de paiement
 }
-
-
 
 
 // Remove Itmes from cart
