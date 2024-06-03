@@ -339,3 +339,25 @@
 [2024-06-01 18:29:56] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
 [2024-06-01 18:29:57] - getUserInfo constructor initialized
 [2024-06-01 18:29:57] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-03 11:03:24] - getUserInfo constructor initialized
+[2024-06-03 11:03:24] - Unauthorized access attempt
+[2024-06-03 11:04:03] - getUserInfo constructor initialized
+[2024-06-03 11:04:03] - Unauthorized access attempt
+[2024-06-03 11:04:14] - getUserInfo constructor initialized
+[2024-06-03 11:04:14] - Unauthorized access attempt
+[2024-06-03 11:06:17] - getUserInfo constructor initialized
+[2024-06-03 11:06:17] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-03 11:06:32] - getUserInfo constructor initialized
+[2024-06-03 11:06:32] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-03 11:06:41] - getUserInfo constructor initialized
+[2024-06-03 11:06:41] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-03 11:06:55] - getUserInfo constructor initialized
+[2024-06-03 11:06:55] - User info retrieved: {"id":94559364,"name":"cyang1234","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/94559364.jpg"}
+[2024-06-03 11:08:47] - getUserInfo constructor initialized
+[2024-06-03 11:08:47] - Unauthorized access attempt
+[2024-06-03 11:09:21] - getUserInfo constructor initialized
+[2024-06-03 11:09:21] - Unauthorized access attempt
+[2024-06-03 11:09:38] - getUserInfo constructor initialized
+[2024-06-03 11:09:38] - Unauthorized access attempt
+[2024-06-03 11:10:16] - getUserInfo constructor initialized
+[2024-06-03 11:10:16] - User info retrieved: {"id":95382479,"name":"cyangTest","email":"chya63280@eleve.isep.fr","avatarPath":"source\/avatars\/default.jpg"}
