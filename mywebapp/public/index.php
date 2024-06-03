@@ -16,7 +16,7 @@ require_once __DIR__ . '/../src/controllers/forumController.php';
 require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
 require_once __DIR__ . '/../src/controllers/addMusicController.php';
 require_once __DIR__ . '/../src/controllers/userController.php'; 
-
+require_once __DIR__ . '/../src/controllers/pageController.php';
 $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
@@ -228,7 +228,11 @@ switch($action) {
         break;
         case 'getPages':
             if ($method == 'GET') {
-                $userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
+
+                $userAccessLevel = $_SESSION['user']['accessLevel'] ?? 0;
                 $logger->log('GET /getPages');
                 $logger->log('User access level: '.$userAccessLevel);
                 $router->get('/getPages', function() use ($userAccessLevel) {
@@ -244,7 +248,7 @@ switch($action) {
                     $pageName = $_POST['page_name'];
                     $pageUrl = $_POST['page_url'];
                     $parentId = isset($_POST['parent_id']) ? (int)$_POST['parent_id'] : null;
-                    $accessLevel = isset($_POST['access_level']) ? (int)$_POST['access_level'] : 0;
+                    $accessLevel = isset($_POST['accessLevel']) ? (int)$_POST['accessLevel'] : 0;
                     $pageController = new pageController();
                     $pageController->addPage($pageName, $pageUrl, $parentId, $accessLevel);
                 });

@@ -37,13 +37,13 @@ class getUserInfo {
                     'id' => $userInfo['ID_USER'],
                     'name' => $userInfo['NAME_USER'],
                     'email' => $userInfo['EMAIL'],
-                    'avatarPath' => $avatarPath
+                    'avatarPath' => $avatarPath,
+                    'accessLevel' => $_SESSION['user']['accessLevel']
                 ];
     
                 $_SESSION['user']['name'] = $userInfo['NAME_USER'];
                 $_SESSION['user']['email'] = $userInfo['EMAIL'];
                 $_SESSION['user']['avatarPath'] = $avatarPath;
-    
                 echo json_encode($response);
                 $this->logger->log("User info retrieved: " . json_encode($response));
             } else {

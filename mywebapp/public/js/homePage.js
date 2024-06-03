@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('User info:', data);
 
-            const userAccessLevel = data.access_level !== undefined ? data.access_level : 0;
+            const userAccessLevel = data.accessLevel !== undefined ? data.accessLevel : 0;
             console.log(userAccessLevel)
             loadMenu(userAccessLevel);
         })

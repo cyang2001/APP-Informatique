@@ -47,7 +47,7 @@ class PageController {
     }
 
     public function checkAccessLevel($requiredLevel) {
-        if (!isset($_SESSION['user']['access_level']) || $_SESSION['user']['access_level'] < $requiredLevel) {
+        if (!isset($_SESSION['user']['accessLevel']) || $_SESSION['user']['accessLevel'] < $requiredLevel) {
             header('HTTP/1.1 403 Forbidden');
             echo "Access denied. You do not have permission to access this page.";
             exit();
