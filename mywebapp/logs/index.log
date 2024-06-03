@@ -237,3 +237,11 @@
 [2024-06-03 11:10:05] - calling
 [2024-06-03 11:10:15] - POST /login
 [2024-06-03 11:10:16] - GET /getUserInfo
+[2024-06-03 11:36:38] - GET /logout
+[2024-06-03 11:36:38] - GET /getUserInfo
+[2024-06-03 11:36:38] - action not found: getPages
+[2024-06-03 11:36:41] - GET /getUserInfo
+[2024-06-03 11:37:31] - GET /logout
+[2024-06-03 11:37:31] - GET /getUserInfo
+[2024-06-03 11:37:31] - action not found: getPages
+[2024-06-03 11:37:32] - GET /getUserInfo

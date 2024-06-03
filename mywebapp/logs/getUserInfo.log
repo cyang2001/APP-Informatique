@@ -361,3 +361,11 @@
 [2024-06-03 11:09:38] - Unauthorized access attempt
 [2024-06-03 11:10:16] - getUserInfo constructor initialized
 [2024-06-03 11:10:16] - User info retrieved: {"id":95382479,"name":"cyangTest","email":"chya63280@eleve.isep.fr","avatarPath":"source\/avatars\/default.jpg"}
+[2024-06-03 11:36:38] - getUserInfo constructor initialized
+[2024-06-03 11:36:38] - Unauthorized access attempt
+[2024-06-03 11:36:41] - getUserInfo constructor initialized
+[2024-06-03 11:36:41] - Unauthorized access attempt
+[2024-06-03 11:37:31] - getUserInfo constructor initialized
+[2024-06-03 11:37:31] - Unauthorized access attempt
+[2024-06-03 11:37:32] - getUserInfo constructor initialized
+[2024-06-03 11:37:32] - Unauthorized access attempt
