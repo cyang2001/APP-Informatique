@@ -2669,3 +2669,11 @@
 [2024-06-03 12:09:46] - Pattern matched: ~^/getUserInfo$~
 [2024-06-03 12:09:46] - Matches: [[["\/getUserInfo",0]]]
 [2024-06-03 12:09:46] - Calling callback function
+[2024-06-03 12:17:46] - Register: GET /logout
+[2024-06-03 12:17:46] - Dispatching request: GET
+[2024-06-03 12:17:46] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=logout
+[2024-06-03 12:17:46] - Handling URI: /logout
+[2024-06-03 12:17:46] - Checking pattern: ~^/logout$~
+[2024-06-03 12:17:46] - Pattern matched: ~^/logout$~
+[2024-06-03 12:17:46] - Matches: [[["\/logout",0]]]
+[2024-06-03 12:17:46] - Calling callback function
