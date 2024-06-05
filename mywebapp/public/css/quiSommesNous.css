@@ -48,7 +48,7 @@
 }
 
 .circle {
-  background-color: rgba(190, 217, 226, 0.523);
+  background-color: rgba(190, 217, 226, 0.888);
   border-radius: 50%;
   width: 150px; /* Adjust this value to change the size of the circle */
   height: 150px; /* Adjust this value to change the size of the circle */
