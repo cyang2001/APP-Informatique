@@ -553,3 +553,83 @@
 [2024-06-05 12:15:53] - GET /getPages
 [2024-06-05 12:15:53] - User access level: 0
 [2024-06-05 12:15:54] - GET /getUserInfo
+[2024-06-05 19:21:08] - GET /getUserInfo
+[2024-06-05 19:21:08] - GET /getUserInfo
+[2024-06-05 19:21:08] - GET /getPages
+[2024-06-05 19:21:08] - User access level: 1
+[2024-06-05 19:21:15] - GET /logout
+[2024-06-05 19:21:15] - GET /getUserInfo
+[2024-06-05 19:21:15] - GET /getUserInfo
+[2024-06-05 19:21:15] - GET /getPages
+[2024-06-05 19:21:15] - User access level: 0
+[2024-06-05 19:22:11] - POST /login
+[2024-06-05 19:22:13] - GET /getUserInfo
+[2024-06-05 19:22:13] - GET /getUserInfo
+[2024-06-05 19:22:13] - GET /getPages
+[2024-06-05 19:22:13] - User access level: 1
+[2024-06-05 19:22:23] - GET /getUserInfo
+[2024-06-05 19:22:23] - GET /getUserInfo
+[2024-06-05 19:22:23] - GET /getPages
+[2024-06-05 19:22:23] - User access level: 1
+[2024-06-05 19:22:30] - GET /getUserInfo
+[2024-06-05 19:22:30] - GET /getUserInfo
+[2024-06-05 19:22:30] - GET /getPages
+[2024-06-05 19:22:30] - User access level: 1
+[2024-06-05 20:07:07] - GET /getUserInfo
+[2024-06-05 20:07:07] - GET /getUserInfo
+[2024-06-05 20:07:07] - GET /getPages
+[2024-06-05 20:07:07] - User access level: 1
+[2024-06-05 21:16:45] - GET /getUserInfo
+[2024-06-05 21:16:46] - GET /getUserInfo
+[2024-06-05 21:16:46] - GET /getPages
+[2024-06-05 21:16:46] - User access level: 1
+[2024-06-05 21:16:50] - GET /getUserInfo
+[2024-06-05 21:16:50] - GET /getUserInfo
+[2024-06-05 21:16:50] - GET /getPages
+[2024-06-05 21:16:50] - User access level: 1
+[2024-06-05 21:17:13] - POST /createPlaylist
+[2024-06-05 21:28:04] - POST /addPlaylistAndMusic
+[2024-06-05 22:12:37] - POST /addPlaylistAndMusic
+[2024-06-05 22:13:47] - POST /addPlaylistAndMusic
+[2024-06-05 22:13:49] - GET /getUserInfo
+[2024-06-05 22:13:49] - GET /getUserInfo
+[2024-06-05 22:13:49] - GET /getPages
+[2024-06-05 22:13:49] - User access level: 1
+[2024-06-05 22:40:51] - GET /getUserInfo
+[2024-06-05 22:40:51] - GET /getUserInfo
+[2024-06-05 22:40:51] - GET /getPages
+[2024-06-05 22:40:51] - User access level: 1
+[2024-06-05 22:41:20] - POST /addPlaylistAndMusic
+[2024-06-05 22:41:22] - GET /getUserInfo
+[2024-06-05 22:41:22] - GET /getUserInfo
+[2024-06-05 22:41:22] - GET /getPages
+[2024-06-05 22:41:22] - User access level: 1
+[2024-06-05 22:41:31] - GET /getUserInfo
+[2024-06-05 22:41:31] - GET /getUserInfo
+[2024-06-05 22:41:31] - GET /getPages
+[2024-06-05 22:41:31] - User access level: 1
+[2024-06-05 22:46:09] - GET /getUserInfo
+[2024-06-05 22:46:09] - GET /getUserInfo
+[2024-06-05 22:46:09] - GET /getPages
+[2024-06-05 22:46:09] - User access level: 1
+[2024-06-05 22:46:41] - GET /getUserInfo
+[2024-06-05 22:46:41] - GET /getPages
+[2024-06-05 22:46:41] - User access level: 0
+[2024-06-05 22:46:44] - GET /getUserInfo
+[2024-06-05 22:46:44] - GET /logout
+[2024-06-05 22:46:53] - POST /login
+[2024-06-05 22:46:57] - GET /getUserInfo
+[2024-06-05 22:46:57] - GET /getUserInfo
+[2024-06-05 22:46:57] - GET /getPages
+[2024-06-05 22:46:57] - User access level: 1
+[2024-06-05 22:47:01] - GET /logout
+[2024-06-05 22:47:01] - GET /getUserInfo
+[2024-06-05 22:47:01] - GET /getPlaylists
+[2024-06-05 22:47:01] - GET /getUserInfo
+[2024-06-05 22:47:01] - GET /getPages
+[2024-06-05 22:47:01] - User access level: 0
+[2024-06-05 22:47:53] - GET /getUserInfo
+[2024-06-05 22:47:53] - GET /getPlaylists
+[2024-06-05 22:47:53] - GET /getUserInfo
+[2024-06-05 22:47:53] - GET /getPages
+[2024-06-05 22:47:53] - User access level: 0

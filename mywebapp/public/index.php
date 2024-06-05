@@ -145,12 +145,12 @@ switch($action) {
             });    
         }
         break;
-    case 'createPlaylist':
+    case 'addPlaylistAndMusic':
         if ($method == 'POST') {
-            $logger->log('POST /createPlaylist');
-            $router->post('/createPlaylist', function() {
+            $logger->log('POST /addPlaylistAndMusic');
+            $router->post('/addPlaylistAndMusic', function() {
                 $createPlaylistController = new CreatePlaylistController();
-                $createPlaylistController->ajouterPlaylist();
+                $createPlaylistController->addPlaylistAndMusic();
             });
         }
         break;
@@ -323,6 +323,17 @@ switch($action) {
                 });
             }
             break;
+            case 'getPlaylists':
+                if ($method == 'GET') {
+                    $logger->log('GET /getPlaylists');
+                    $router->get('/getPlaylists', function() {
+                        require_once '../src/controllers/playlistController.php';
+                        $playlistController = new PlaylistController();
+                        $playlistController->getPlaylists();
+                    });
+                }
+                break;
+            
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
