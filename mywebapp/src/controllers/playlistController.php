@@ -19,4 +19,3 @@ class PlaylistController {
         echo json_encode($playlists);
     }
 }
-?>
