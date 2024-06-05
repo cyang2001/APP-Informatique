@@ -12,6 +12,9 @@ class PageController {
     public function getPages($userAccessLevel) {
         $pages = $this->pageModel->getAllPages($userAccessLevel);
         $this->logger->log("User access level: {$userAccessLevel}");
+        //$pages = array_filter($pages, function($page) {
+        //    return $page['loginId'] != 73105760;
+        //});
         header('Content-Type: application/json');
         echo json_encode($pages);
     }
@@ -54,4 +57,4 @@ class PageController {
         }
     }
 }
-?>
+

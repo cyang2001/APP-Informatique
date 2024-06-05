@@ -67,12 +67,12 @@ document.getElementById('playlistForm').addEventListener('submit', function(even
         localStorage.setItem('newPlaylistData', JSON.stringify(playlistData));
 
          // Redirection vers la page de playlist
-         window.location.href = 'playlist.html';
+        window.location.href = 'playlist.html';
     })
     .catch(error => {
         console.error('Erreur:', error);
     });
 
       // Réinitialiser le formulaire après l'ajout
-      document.getElementById('playlistForm').reset();
+        document.getElementById('playlistForm').reset();
 });

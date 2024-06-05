@@ -8,7 +8,6 @@ window.onload = function() {
         const menu = document.querySelector('.menu-deroulant div');
         menu.innerHTML = ''; 
         
-
         if (data.email) {
             menu.innerHTML = '<a href="#" id="logout">Se déconnecter</a>';
             document.getElementById('logout').addEventListener('click', function(event) {
