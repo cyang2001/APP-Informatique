@@ -8,18 +8,40 @@
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/events.css"> <!-- Ajout du lien vers le fichier CSS des événements -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 <body>
+    <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" onclick="handleMenuButtonClick()">
+            <span></span>
+        </label>
+
+    <ul class="menu_box">
+        <li><p class="menu_title"><b>Ambisound</b></p></li>
+        <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
+        <li><a class="menu_item" href="#">Informations</a></li>
+        <li><a class="menu_item" href="./faq.html">FAQ</a></li>
+        <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+        <li><a class="menu_item" href="./forum.html">Forum</a></li>
+        <li><a class="menu_item" href="#">Événements</a></li>
+        <li><a class="menu_item" href="#">Lieux</a></li>
+        <li><a class="menu_item" href="#">Billetterie</a></li>
+        <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
+        <li><a class="menu_item" href="#">Capteurs</a></li>
+    </ul>
+</div>
 
 <header>
+    <h1 class="page_title">
+        Location
+    </h1>
     <div class="nav container">
-        <a href="#" class="logo">Louez nos matériaux de musique</a>
         <i class='bx bx-shopping-bag' id="cart-icon"></i>
         <!--Cart-->
         <div class="cart">
           <h2 class="cart-title">Ta carte</h2>
           <!--Content-->
-          <div class="cart-content">
-          </div>
+          <div class="cart-content"></div>
           <!--Total-->
           <div class="total">
             <div class="total-title">Total</div>
@@ -27,13 +49,12 @@
           </div>
           <!--Buy button-->
           <button type="button" class="btn-buy">Acheter</button>
-          
-
           <!--Cart Close-->
           <i class='bx bx-x' id="close-cart"></i>
         </div>
     </div>
 </header>
+
 
 <section class="shop container">
     <h2 class="section-title">Location à la journée</h2>
@@ -96,58 +117,8 @@
         </div>
     </div>
 </section>
-<div class="hamburger-menu">
-    <input id="menu_toggle" type="checkbox" />
-    <label class="menu_btn" onclick="handleMenuButtonClick()">
-        <span></span>
-    </label>
-
-    <ul class="menu_box">
-        <li><p class="menu_title"><b>Ambisound</b></p></li>
-        <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
-        <li><a class="menu_item" href="#">Informations</a></li>
-        <li><a class="menu_item" href="./faq.html">FAQ</a></li>
-        <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-        <li><a class="menu_item" href="./forum.html">Forum</a></li>
-        <li><a class="menu_item" href="#">Événements</a></li>
-        <li><a class="menu_item" href="#">Lieux</a></li>
-        <li><a class="menu_item" href="#">Billetterie</a></li>
-        <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
-        <li><a class="menu_item" href="#">Capteurs</a></li>
-    </ul>
-</div>
-
-<header>
-    <h1 class="page_title">
-        Événements
-    </h1>
-</header>
-
-<main>
-    <div class="grid-container" id="gridContainer" ID_MEETING="0">
-        <!-- Grille vide pour afficher les éléments ajoutés -->
-        <button class="grid-item add-button" onclick="toggleFormulaire();"> <b>+</b></button>
-    </div>
-    <div class="dropdown">
-        <div class="dropdown-content" id="myDropdown" >
-            <form id="myForm">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom"><br><br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date"><br><br>
-                <label for="heure">Heure:</label>
-                <input type="time" id="heure" name="heure"><br><br>
-                <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse"><br><br>
-                <label for="description">Description:</label>
-                <input type="text" id="description" name="description"><br><br>
-                <label for="illustration">Illustration</label><br>
-                <input type="file" id="illustration" name="illustration"><br><br>
-                <button type="button" onclick="ajouterElement();cacherFormulaire();">OK</button>
-            </form>
-        </div>
-    </div>
 </main>
+
 
 <footer>
 </footer>
