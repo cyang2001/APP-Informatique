@@ -1,25 +1,36 @@
 <?php
+require_once __DIR__ . '/../src/models/music.php';
+require_once __DIR__ . '/../src/models/playlist.php';
 require_once __DIR__ . '/../src/models/meetings.php';
 require_once __DIR__ . '/../src/models/users.php';
-require_once __DIR__ . '/../src/models/pages.php';
 require_once __DIR__ .'/./router/router.php';
 require_once __DIR__ .'/../src/config/logger.php';
 require_once __DIR__ .'/../src/controllers/renewPasswordController.php';
+require_once __DIR__ . '/../src/controllers/registerController.php';
+require_once __DIR__ . '/../src/controllers/loginController.php';
+require_once __DIR__ . '/../src/controllers/meetingController.php';
+require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/logout.php';
+require_once __DIR__ . '/../src/controllers/forumController.php';
+require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
+require_once __DIR__ . '/../src/controllers/addMusicController.php';
+require_once __DIR__ . '/../src/controllers/userController.php'; 
+require_once __DIR__ . '/../src/controllers/pageController.php';
+require_once __DIR__ . '/../src/controllers/abonnementController.php';
 $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 
-
-require_once __DIR__ . '/../src/controllers/RegisterController.php';
-require_once __DIR__ . '/../src/controllers/LoginController.php';
-require_once __DIR__ . '/../src/controllers/MeetingController.php';
-require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
-require_once __DIR__ . '/../src/controllers/getUserInfo.php';
-require_once __DIR__ . '/../src/controllers/logout.php';
-require_once __DIR__ . '/../src/controllers/pageController.php';
+require_once __DIR__ . '/../src/controllers/sensorController.php';
 
 
+
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 switch($action) {
     case 'register':
@@ -88,6 +99,7 @@ switch($action) {
                 $renewPasswordController->verification();
             });
         }
+        break;
     case 'renewPassword2':
         if ($method == 'GET') {
             $logger->log('GET /renewPassword2');
@@ -114,9 +126,11 @@ switch($action) {
         break;
     case 'getUserInfo':
         if ($method == 'GET') {
-            $userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
-            echo json_encode(['access_level' => $userAccessLevel]);
-            exit();
+            $logger->log('GET /getUserInfo');
+            $router->get('/getUserInfo', function(){
+                $getUserInfo = new getUserInfo();
+                $getUserInfo->getUserInfo();
+            });
         }
         break;
     case 'logout':
@@ -128,9 +142,116 @@ switch($action) {
             });
         }
         break;
+    case 'getSensorData':
+            if ($method == 'GET') {
+                $logger->log('GET /getSensorData');
+                $router->get('/getSensorData', function(){
+                    $sensorController = new SensorController();
+                    $sensorController->getAllSensorData();
+                });
+            }
+            break;
+
+    case 'forum':
+        if ($method == 'POST') {
+            $logger->log('POST /forum');
+            $router->post('/forum', function(){
+                $forumController = new ForumController();
+                $forumController->createPost();
+            });    
+        }
+        break;
+    case 'addPlaylistAndMusic':
+        if ($method == 'POST') {
+            $logger->log('POST /addPlaylistAndMusic');
+            $router->post('/addPlaylistAndMusic', function() {
+                $createPlaylistController = new CreatePlaylistController();
+                $createPlaylistController->addPlaylistAndMusic();
+            });
+        }
+        break;
+    case 'deletePlaylist':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /deletePlaylist');
+            $router->delete('/deletePlaylist', function() {
+                $deletePlaylistController = new DeletePlaylistController();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idPlaylist = $data['idPlaylist'];
+                $deletePlaylistController->supprimerPlaylist($idPlaylist);
+            });
+        }
+        break;
+    case 'addMusic':
+        if ($method == 'POST') {
+            $logger->log('POST /addMusic');
+            $router->post('/addMusic', function() {
+                $addMusicController = new AddMusicController();
+                $addMusicController->ajouterMusic();
+            });
+        }
+        break;
+    case 'deleteMusic':
+        if ($method == 'DELETE') {
+            $logger->log('DELETE /deleteMusic');
+            $router->delete('/deleteMusic', function() {
+                $deleteMusicController = new DeleteMusicController();
+                $data = json_decode(file_get_contents('php://input'), true);
+                $idMusic = $data['idMusic'];
+                $deleteMusicController->supprimerMusic($idMusic);
+            });
+        }
+        break;
+    
+
+    case 'updateProfile':
+        if ($method == 'POST') {
+            $logger->log('POST /updateProfile');
+            $router->post('/updateProfile', function() {
+                if (session_status() == PHP_SESSION_NONE) {
+                session_start();
+                }
+                $userId = $_SESSION['user']['id'];
+                $userName = $_POST['username'] ?? null;
+                $email = $_POST['email'] ?? null;
+                $userController = new UserController();
+                $userController->updateProfile($userId, $userName, $email);
+            });
+        }
+        break;
+    case 'uploadAvatar':
+        if ($method == 'POST') {
+            $logger->log('POST /uploadAvatar');
+            $router->post('/uploadAvatar', function() {
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
+                $userId = $_SESSION['user']['id'];
+                $file = $_FILES['avatar'];
+                $userController = new UserController();
+                $userController->uploadAvatar($userId, $file);
+            });
+        }
+        break;
+    case 'deleteUser':
+        if ($method == 'POST') {
+            $logger->log('POST /deleteUser');
+            $router->post('/deleteUser', function() {
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
+                $userId = $_SESSION['user']['id'];
+                $userController = new UserController();
+                $userController->deleteUser($userId);
+            });
+        }
+        break;
         case 'getPages':
             if ($method == 'GET') {
-                $userAccessLevel = $_SESSION['user']['access_level'] ?? 0;
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
+
+                $userAccessLevel = $_SESSION['user']['accessLevel'] ?? 0;
                 $logger->log('GET /getPages');
                 $logger->log('User access level: '.$userAccessLevel);
                 $router->get('/getPages', function() use ($userAccessLevel) {
@@ -146,7 +267,7 @@ switch($action) {
                     $pageName = $_POST['page_name'];
                     $pageUrl = $_POST['page_url'];
                     $parentId = isset($_POST['parent_id']) ? (int)$_POST['parent_id'] : null;
-                    $accessLevel = isset($_POST['access_level']) ? (int)$_POST['access_level'] : 0;
+                    $accessLevel = isset($_POST['accessLevel']) ? (int)$_POST['accessLevel'] : 0;
                     $pageController = new pageController();
                     $pageController->addPage($pageName, $pageUrl, $parentId, $accessLevel);
                 });
@@ -196,9 +317,43 @@ switch($action) {
                 });
             }
             break;
+        case 'updateMember':
+            if ($method == 'POST') {
+                $logger->log('POST /updateMember');
+                $router->post('/updateMember', function() {
+                    $accessLevel = 1; //member
+                    $userId = $_SESSION['user']['id'];
+                    $abonnementController = new AbonnementController();
+                    $abonnementController->updateAccessLevel($userId, $accessLevel);
+                });
+            }
+            break;
+        case 'updateOrga':
+            if ($method == 'POST') {
+                $logger->log('POST /updateOrga');
+                $router->post('/updateOrga', function() {
+                    $accessLevel = 2; //Orga
+                    $userId = $_SESSION['user']['id'];
+                    $abonnementController = new AbonnementController();
+                    $abonnementController->updateAccessLevel($userId, $accessLevel);
+                });
+            }
+            break;
+            case 'getPlaylists':
+                if ($method == 'GET') {
+                    $logger->log('GET /getPlaylists');
+                    $router->get('/getPlaylists', function() {
+                        require_once '../src/controllers/playlistController.php';
+                        $playlistController = new PlaylistController();
+                        $playlistController->getPlaylists();
+                    });
+                }
+                break;
+            
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);
         break;
 }
 $router->dispatch();
+

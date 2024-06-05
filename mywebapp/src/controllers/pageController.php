@@ -12,6 +12,9 @@ class PageController {
     public function getPages($userAccessLevel) {
         $pages = $this->pageModel->getAllPages($userAccessLevel);
         $this->logger->log("User access level: {$userAccessLevel}");
+        //$pages = array_filter($pages, function($page) {
+        //    return $page['loginId'] != 73105760;
+        //});
         header('Content-Type: application/json');
         echo json_encode($pages);
     }
@@ -47,11 +50,11 @@ class PageController {
     }
 
     public function checkAccessLevel($requiredLevel) {
-        if (!isset($_SESSION['user']['access_level']) || $_SESSION['user']['access_level'] < $requiredLevel) {
+        if (!isset($_SESSION['user']['accessLevel']) || $_SESSION['user']['accessLevel'] < $requiredLevel) {
             header('HTTP/1.1 403 Forbidden');
             echo "Access denied. You do not have permission to access this page.";
             exit();
         }
     }
 }
-?>
+

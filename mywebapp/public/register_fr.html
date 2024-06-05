@@ -1,29 +1,43 @@
+</html>
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S'inscrire</title>
     <link rel="stylesheet" type="text/css" href="css/register.css">
-  </head>
-  <body>
+</head>
+<body>
     <h1>S'inscrire</h1>
     <img src="./source/ambisound.png" alt="logo" class="logo">
     <div class="form-container">
-      <form id="register-form">
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-        <br>
-        <input type="text" id="name" name="name" placeholder="Nom d'utilisateur" required>
-        <br>
-        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
-        <br>
-        <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirmer le mot de passe" required>
-        <br>
-        <button class="btn" type="submit">S'inscrire</button>
-      </form>
+        <form id="register-form">
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Nom d'utilisateur" required>
+            <br>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                <button type="button" id="toggle-password-visibility">👁️</button>
+            </div>
+            <div id="password-requirements">
+                <ul>
+                    <li id="rule-length">Doit contenir entre 8 et 20 caractères</li>
+                    <li id="rule-complexity">Doit contenir à la fois des lettres majuscules et minuscules, des chiffres et des symboles spéciaux</li>
+                    <li id="rule-identical">Ne peut pas contenir la partie avant le suffixe de l'email de l'utilisateur</li>
+                    <li id="rule-unique">Ne peut pas être trop commun</li>
+                    <li id="cgu"><input id="cgu-box" type="checkbox">Accepter les <a href="cgu.html">CGU</a></li>
+
+                </ul>
+            </div>
+            <br>
+            <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirmer le mot de passe" required>
+            <br>
+            <button class="btn" type="submit">S'inscrire</button>
+        </form>
     </div>
     <p>Vous avez déjà un compte? <a href="login_fr.html">Se connecter</a></p>
     <br>
     <script src="./js/register.js"></script>
-  </body>
+</body>
 </html>

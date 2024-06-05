@@ -5,7 +5,7 @@ class Database {
 
     private function __construct() {
         $host = '127.0.0.1';
-        $db   = 'APP';
+        $db   = 'app';
         $user = 'root';
         $pass = '123456';
         $charset = 'utf8mb4';

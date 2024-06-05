@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/abonnement.css">
+    <title>Abonnement</title>
+</head>
+
+<body>
+<script>
+    function handleMenuButtonClick() {
+        var checkbox = document.getElementById('menu_toggle');
+        checkbox.checked = !checkbox.checked;
+    }
+</script>
+
+<header>
+    <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" onclick="handleMenuButtonClick()">
+            <span></span>
+        </label>
+        <ul class="menu_box">
+            <li><p class="menu_title"><b>Ambisound</b></p></li>
+            <li><a class="menu_item" href="#">Accueil</a></li>
+            <li><a class="menu_item" href="#">Informations</a></li>
+            <li><a class="menu_item" href="#">FAQ</a></li>
+            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
+            <li><a class="menu_item" href="#">Forum</a></li>
+            <li><a class="menu_item" href="#">Événements</a></li>
+            <li><a class="menu_item" href="#">Lieux</a></li>
+            <li><a class="menu_item" href="#">Billetterie</a></li>
+            <li><a class="menu_item" href="#">Playlists</a></li>
+            <li><a class="menu_item" href="#">Capteurs</a></li>
+        </ul>
+    </div>
+    <div class="abo-titre"><b>Abonnement</b></div>
+    <div>
+        <div class="bouton1">
+            <span><img class="drap-home" src="source/united-kingdom.png"></span>
+        </div>
+    </div>
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+<div id="generic_price_table">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--PRICE HEADING START-->
+                    <div class="price-heading clearfix">
+                    </div>
+                    <!--//PRICE HEADING END-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--BLOCK ROW START-->
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <!--PRICE CONTENT START-->
+                    <div class="generic_content active clearfix">
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                                <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Membre</span>
+                                </div>
+                                <!--//HEAD END-->
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">€</span>
+                                    <span class="currency">0</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MOIS</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                            <ul>
+                                <li><span>Accès</span> Événements</li>
+                                <li><span>Accès</span> Forum</li>
+                                <li><span>Alerte</span> Sonore</li>
+                                <li><span>Location</span> Matériel</li>
+                                <li><span>Support</span> Réactif</li>
+
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                            <a class="" href="paiementMembre.html">Choisir</a>
+                        </div>
+                        <!--//BUTTON END-->
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                </div>
+
+                <div class="col-md-4">
+                    <!--PRICE CONTENT START-->
+                    <div class="generic_content active clearfix">
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                                <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Organisateur</span>
+                                </div>
+                                <!--//HEAD END-->
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">€</span>
+                                    <span class="currency">4</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MOIS</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                            <ul>
+                                <li><span>Fonctionnalités</span> Membre </li>
+                                <li><span>Création</span> Événements</li>
+                                <li><span>Ajout</span> Playlists</li>
+                                <li><span>Location</span> Solution Ambisound</li>
+                                <li><span>Support</span> 24/7</li>
+
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                            <a class="" href="paiementOrga.html">Choisir</a>
+                        </div>
+                        <!--//BUTTON END-->
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                </div>
+
+            </div>
+            <!--//BLOCK ROW END-->
+        </div>
+    </section>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <a class="CGU" href="cgu.html">CGU</a>
+</footer>
+
+</body>
+</html>

@@ -154,7 +154,7 @@ div div a {
     float: right;
     position: relative;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: -55px;
     margin-right: 25px;
 }
 
@@ -236,4 +236,10 @@ footer{
 
 .CG:hover{
     color: aqua;
+}
+
+.cgu-titre{
+    font-family: "Century Gothic";
+    color: white;
+    text-align: center;
 }

@@ -8,7 +8,6 @@ window.onload = function() {
         const menu = document.querySelector('.menu-deroulant div');
         menu.innerHTML = ''; 
         
-
         if (data.email) {
             menu.innerHTML = '<a href="#" id="logout">Se déconnecter</a>';
             document.getElementById('logout').addEventListener('click', function(event) {
@@ -25,7 +24,9 @@ window.onload = function() {
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
-}
+
+};
+
 
 window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {
@@ -39,13 +40,14 @@ function handleMenuButtonClick() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+
     fetch('index.php?action=getUserInfo')
         .then(response => response.json())
         .then(data => {
             console.log('User info:', data);
 
-
-            const userAccessLevel = data.access_level !== undefined ? data.access_level : 0;
+            const userAccessLevel = data.accessLevel !== undefined ? data.accessLevel : 0;
+            console.log(userAccessLevel)
             loadMenu(userAccessLevel);
         })
         .catch(error => {
@@ -80,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 });
+

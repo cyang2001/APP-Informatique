@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS USER (
     EMAIL VARCHAR(255),
     PASSWORD_HASH VARCHAR(255),
     ID_ACCESS_LEVEL INT,
-    TICKET INT
+    TICKET INT,
+    AVATAR_PATH VARCHAR(255)
 );
 
 
@@ -73,11 +74,27 @@ CREATE TABLE IF NOT EXISTS USER_MEETINGS (
 );
 
 
-CREATE TABLE IF NOT EXISTS SENSOR (
-    ID_SENSOR INT PRIMARY KEY,
-    OWNER_ID INT,
-    FOREIGN KEY (OWNER_ID) REFERENCES USER(ID_USER)
+CREATE TABLE IF NOT EXISTS `sensor` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `date_heure` DATETIME NOT NULL,
+    `niveau_db` FLOAT NOT NULL
 );
+INSERT INTO sensor (date_heure, niveau_db) VALUES
+                                               ('2023-01-01 12:00:00', 55.2),
+                                               ('2023-01-01 12:01:00', 56.7),
+                                               ('2023-01-01 12:02:00', 54.3),
+                                               ('2023-01-01 12:03:00', 57.8),
+                                               ('2023-01-01 12:04:00', 58.6),
+                                               ('2023-01-01 12:05:00', 55.2),
+                                               ('2023-01-01 12:06:00', 56.7),
+                                               ('2023-01-01 12:07:00', 54.3),
+                                               ('2023-01-01 12:08:00', 57.8),
+                                               ('2023-01-01 12:09:00', 58.6),
+                                               ('2023-01-01 12:11:00', 55.2),
+                                               ('2023-01-01 12:11:00', 56.7),
+                                               ('2023-01-01 12:12:00', 54.3),
+                                               ('2023-01-01 12:13:00', 57.8),
+                                               ('2023-01-01 12:14:00', 58.6)
 
 
 CREATE TABLE IF NOT EXISTS PLAY_LIST (
@@ -94,7 +111,33 @@ CREATE TABLE IF NOT EXISTS MUSIC_TRACKS (
     ID_TRACK INT PRIMARY KEY,
     TITLE VARCHAR(255),
     ARTIST VARCHAR(255),
-    DURATION TIME
+    GENRE VARCHAR(255),
+    ID_ORGANIZER INT,
+    MUSIC_URL VARCHAR(255),
+    DURATION TIME,
+    FOREIGN KEY (ID_ORGANIZER) REFERENCES USER(ID_USER)
+);
+
+CREATE TABLE IF NOT EXISTS FORUM (
+    ID_FORUM INT PRIMARY KEY,
+    ID_CREATOR INT,
+    NAME_CATEGORY VARCHAR(255),
+    FORUM_TITRE VARCHAR(255),
+    FORUM_DESCRIPTION VARCHAR(255),
+    FORUM_URL_FICHIR VARCHAR(255),
+    CREATOR_NAME VARCHAR(255),
+    FOREIGN KEY (ID_CREATOR) REFERENCES USER(ID_USER)
+);
+
+CREATE TABLE IF NOT EXISTS FORUM (
+    ID_FORUM INT PRIMARY KEY,
+    ID_CREATOR INT,
+    NAME_CATEGORY VARCHAR(255),
+    FORUM_TITRE VARCHAR(255),
+    FORUM_DESCRIPTION VARCHAR(255),
+    FORUM_URL_FICHIR VARCHAR(255),
+    CREATOR_NAME VARCHAR(255),
+    FOREIGN KEY (ID_CREATOR) REFERENCES USER(ID_USER)
 );
 
 

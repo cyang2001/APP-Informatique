@@ -1,14 +1,19 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Se connecter</title>
-  <link rel="stylesheet" type="text/css" href="css/homePage.css">
+  <link rel="stylesheet" href="css/homePage.css">
+  <title></title>
 </head>
+
+
+<body>
 <script>
-  
+  function handleMenuButtonClick() {
+    var checkbox = document.getElementById('menu_toggle');
+    checkbox.checked = !checkbox.checked;
+  }
+
 </script>
 
 
@@ -22,11 +27,11 @@
     </label>
 
     <ul class="menu_box">
-
+      <li><p class="menu_title"><b>Ambisound</b></p></li>
     </ul>
   </div>
   <!-- Liste slide -->
-  <div class="barre-home">
+  <div id="barre-home" class="barre-home">
     <a class="bouton-home" href="#slide1">Objectif</a>
     <a class="bouton-home" href="#slide2">Technologies</a>
     <a class="bouton-home" href="#slide3">Avantages</a>
@@ -39,7 +44,7 @@
   
   <div>
     <div class="bouton2">
-      <span><img class="prof-home" src="source/user(1).png"></span>
+      <span><img id="avatarDisplay" class="prof-home" src="source/user(1).png"></span>
       <div class="menu-deroulant">
         <div>
 
@@ -54,9 +59,9 @@
 </header>
 
 
-<div id="title" class="slide_header">
-  <h1>A M B I S O U N D</h1>
-  <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+<div id="title" class="slide">
+  <h1 class="amb-title">A M B I S O U N D</h1>
+  <p class="title-text">Ambisound est le nom de notre nouvelle solution de captation sonore pour les salons événementiels. Ambisound est un système qui catpure le son ambiant et permet à l'organisateur de l'événement de récupérer ces données, afin de déterminer quelle est la bonne musique à diffuser.
 </div>
 
 <div id="slide1" class="slide">
@@ -109,7 +114,7 @@
   </div>
 </div>
 
-<div id="slide8" class="slidee header">
+<div id="slide8" class="slide">
   <div class="title">
     <h1>Blog</h1>
     <p>Bienvenue sur notre blog. Découvrez les dernières tendances, conseils et actualités dans le domaine de l'audio et de l'événementiel. Notre blog est votre ressource ultime pour rester informé et inspiré.</p>

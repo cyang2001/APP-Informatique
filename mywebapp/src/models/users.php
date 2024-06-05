@@ -10,7 +10,7 @@ class User {
         $this->logger = new Logger('../logs/user.log');
     }
 
-    public function register($name, $password, $email) {
+    public function register($name, $password, $email, $avatarPath = 'source/avatars/default.jpg') {
         // Check if email already exists
         $passwordHashed = password_hash($password, PASSWORD_DEFAULT);
         $idAccessLevel = 0;
@@ -23,9 +23,9 @@ class User {
             return ['success' => false, 'message' => 'Email already exists'];
         }
         // register new user
-        $sql = "INSERT INTO USER (ID_USER, NAME_USER, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO USER (ID_USER, NAME_USER, PASSWORD_HASH, EMAIL, ID_ACCESS_LEVEL, AVATAR_PATH) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$idUser, $name, $passwordHashed, $email, $idAccessLevel]);
+        $stmt->execute([$idUser, $name, $passwordHashed, $email, $idAccessLevel, $avatarPath]);
         $this->logger->log("User registered: {$email} - {$name} - {$idUser}");
         return ['success' => true, 'userId' => $idUser];
     }
@@ -65,23 +65,7 @@ class User {
         $sql = "SELECT * FROM USER WHERE ID_USER = ?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$userId]);
-        return $stmt->fetch();
-    }
-
-    public function getUsers() {
-        $sql = "SELECT * FROM USER";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll();
-    }
-    
-    public function deleteUser($userId) {
-        $sql = "DELETE FROM USER WHERE ID_USER = ?";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$userId]);
-        $userName = $this->getUser($userId)['NAME_USER'];
-        $this->logger->log("User deleted: {$userId} - {$userName}");
-        return ['success' => true];
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function updateUserName($userId, $userName) {
@@ -99,4 +83,28 @@ class User {
         $this->logger->log("User email updated: {$userId} - {$email}");
         return ['success' => true];
     }
+
+    public function updateUserAvatar($userId, $avatarPath) {
+        $sql = "UPDATE USER SET AVATAR_PATH = ? WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$avatarPath, $userId]);
+        $this->logger->log("User avatar updated: {$userId} - {$avatarPath}");
+        return ['success' => true];
+    }
+    public function updateUserAccessLevel($userId, $accessLevel) {
+        $sql = "UPDATE USER SET ID_ACCESS_LEVEL = ? WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$accessLevel, $userId]);
+        $this->logger->log("User access level updated: {$userId} - {$accessLevel}");
+        return ['success' => true];
+    }
+    public function deleteUser($userId) {
+        $sql = "DELETE FROM USER WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$userId]);
+        $userName = $this->getUser($userId)['NAME_USER'];
+        $this->logger->log("User deleted: {$userId} - {$userName}");
+        return ['success' => true];
+    }
+    
 }
