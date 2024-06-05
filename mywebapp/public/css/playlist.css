@@ -271,6 +271,7 @@ font-size: 16px;
   }
 
   .site-footer {
+    position: relative;
     background-color: #0D2C51;
     color: white;
     padding: 45px 0 20px;
@@ -375,4 +376,19 @@ font-size: 16px;
         margin-left: 5px;
         margin-right: 5px;
     }
+}
+
+
+
+.cgu-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 5px; 
+}
+
+.cgu-link a:hover {
+  color: #3366cc;
+  text-decoration: underline;
 }
