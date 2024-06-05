@@ -17,11 +17,14 @@ require_once __DIR__ . '/../src/controllers/createPlaylistController.php';
 require_once __DIR__ . '/../src/controllers/addMusicController.php';
 require_once __DIR__ . '/../src/controllers/userController.php'; 
 require_once __DIR__ . '/../src/controllers/pageController.php';
+require_once __DIR__ . '/../src/controllers/abonnementController.php';
 $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 switch($action) {
     case 'register':
         if ($method == 'GET') {
@@ -295,6 +298,28 @@ switch($action) {
                     $parentId = $_GET['parent_id'];
                     $pageController = new pageController();
                     $pageController->getChildPages($parentId);
+                });
+            }
+            break;
+        case 'updateMember':
+            if ($method == 'POST') {
+                $logger->log('POST /updateMember');
+                $router->post('/updateMember', function() {
+                    $accessLevel = 1; //member
+                    $userId = $_SESSION['user']['id'];
+                    $abonnementController = new AbonnementController();
+                    $abonnementController->updateAccessLevel($userId, $accessLevel);
+                });
+            }
+            break;
+        case 'updateOrga':
+            if ($method == 'POST') {
+                $logger->log('POST /updateOrga');
+                $router->post('/updateOrga', function() {
+                    $accessLevel = 2; //Orga
+                    $userId = $_SESSION['user']['id'];
+                    $abonnementController = new AbonnementController();
+                    $abonnementController->updateAccessLevel($userId, $accessLevel);
                 });
             }
             break;

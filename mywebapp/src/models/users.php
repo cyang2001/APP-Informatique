@@ -91,7 +91,13 @@ class User {
         $this->logger->log("User avatar updated: {$userId} - {$avatarPath}");
         return ['success' => true];
     }
-
+    public function updateUserAccessLevel($userId, $accessLevel) {
+        $sql = "UPDATE USER SET ID_ACCESS_LEVEL = ? WHERE ID_USER = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$accessLevel, $userId]);
+        $this->logger->log("User access level updated: {$userId} - {$accessLevel}");
+        return ['success' => true];
+    }
     public function deleteUser($userId) {
         $sql = "DELETE FROM USER WHERE ID_USER = ?";
         $stmt = $this->pdo->prepare($sql);

@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data.success) {
                 alert('Inscription réussie!');
-                window.location.href = 'login_fr.html';
+                window.location.href = 'abonnement.html';
                 // redirect to login page or home page
             } else {
                 alert('Erreur: ' + data.message);
