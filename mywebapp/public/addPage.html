@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add New Page</title>
+</head>
+<body>
+<h1>Add New Page</h1>
+<form id="page-form">
+    <label for="page_name">Page Name:</label>
+    <input type="text" id="page_name" name="page_name" required><br>
+    
+    <label for="page_url">Page URL:</label>
+    <input type="text" id="page_url" name="page_url" required><br>
+    
+    <label for="parent_id">Parent Page ID (optional):</label>
+    <input type="number" id="parent_id" name="parent_id"><br>
+    <label for="access_level">Access level:</label>
+    <select id="access_level" name="access_level">
+        <option value="0">Guest</option>
+        <option value="1">Member</option>
+        <option value="2">Admin</option>
+    </select><br>
+    <button type="submit">Add Page</button>
+</form>
+<script src="js/addPage.js"></script>
+</body>
+</html>
