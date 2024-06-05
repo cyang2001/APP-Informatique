@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Récupérer les paramètres de l'URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var total = urlParams.get('total');
+    // Récupérer le montant total depuis le stockage local
+    var total = localStorage.getItem('totalAmount');
 
-    // Mettre à jour l'élément HTML pour afficher le total à payer
-    var totalElement = document.querySelector(".total-price");
-    if (totalElement) {
-        totalElement.textContent = total + " €"; // Modifier le texte pour afficher le montant total
+    // Mettre à jour le contenu de l'élément span avec le montant total
+    var totalAmountElement = document.getElementById('totalAmount');
+    if (totalAmountElement) {
+        totalAmountElement.textContent = total; // Afficher le montant total récupéré du stockage local
     }
-
     var cards = [{
         nome: "mastercard",
         colore: "#1ab7ff",

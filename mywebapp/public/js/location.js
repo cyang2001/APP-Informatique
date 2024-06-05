@@ -56,10 +56,14 @@ function buyButtonClicked() {
     }
     updatetotal();
 
+    // Récupérer le total
+    var total = document.getElementsByClassName('total-price')[0].innerText;
+
+    // Stocker le total dans le stockage local
+    localStorage.setItem('totalAmount', total);
+
     // Redirection vers la page de paiement
     window.location.href = 'file:///C:/Users/teofilovic/Documents/siteweb/APP-Informatique/mywebapp/public/testForum/pagepaiement.html';
-
-
 }
 }
 // Remove Itmes from cart
