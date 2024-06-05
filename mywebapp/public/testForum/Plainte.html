@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Plainte</title>
+        <title>Partage des projets</title>
         <link rel="stylesheet" href="../css/forum.css">
     </head>
 
@@ -25,15 +25,17 @@
           
             <ul class="menu_box">
               <li><p class="menu_title"><b>Ambisound</b></p></li>
-              <li><a class="menu_item" href="#">Accueil</a></li>
+
+              <li><a class="menu_item" href="../homePage.html">Accueil</a></li>
               <li><a class="menu_item" href="#">Informations</a></li>
-              <li><a class="menu_item" href="#">FAQ</a></li>
+              <li><a class="menu_item" href="../faq.html">FAQ</a></li>
               <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-              <li><a class="menu_item" href="#">Forum</a></li>
+              <li><a class="menu_item" href="../forum.html">Forum</a></li>
               <li><a class="menu_item" href="#">Événements</a></li>
               <li><a class="menu_item" href="#">Lieux</a></li>
               <li><a class="menu_item" href="#">Billetterie</a></li>
-              <li><a class="menu_item" href="#">Playlists</a></li>
+              <li><a class="menu_item" href="../playlist.html">Playlists</a></li>
+
               <li><a class="menu_item" href="#">Capteurs</a></li>
             </ul>
         </div>
@@ -47,15 +49,65 @@
         </header>
 
         <div class="conteneur">
-            <div class="sous-titre">
+
+
+            <div class="titre">
                 <h2>Plainte</h2>
-            </div>   
-
-            <div class="">
-
-                
+            </div>  
+            
+            <!--  Block 2 -->
+            <div class="block-annonce">
+                <div class="block" id="annonce1"><a href="./annonce1.html">annonce 1</a></div>
+                <div class="block" id="annonce2"><a href="./annonce2.html">annonce 2</a></div>
+                <div class="block" id="annonce3"><a href="./annonce3.html">annonce 3</a></div>
             </div>
-        </div>
+
+            <!--  ligne de séparation -->
+            <div class="separator"></div>
+
+            <!--  Block 3 -->
+            <div class="discussion_generale_post">
+
+                <!-- Block_post 1  -->
+                <div class="block" id="block-post1">
+
+                    <!-- Photo de profil user qui a écrit le post 1 -->
+                    <div class="post-left">
+                        <img class="image-block" src="../source/user_1.jpeg" alt="Photo_de_profil_utilisateur_1">
+                    </div>
+
+                    <!-- titre_post 1  -->
+                    <div class="post-right">
+                            <a href="./post1.html">Titre 1</a>    
+                    </div>                    
+                </div> 
+
+                <!-- Block_post 2  -->
+                <div class="block" id="block-post2"> 
+
+                    <!-- Photo de profil user qui a écrit le post 2-->
+                    <div class="post-left">
+                        <img class="image-block" src="../source/user_1.jpeg" alt="Photo_de_profil_utilisateur_2">
+                    </div>
+
+                    <!-- titre_post 2  -->
+                    <div class="post-right">
+                        <a href="./post2.html">Titre 2</a>    
+                    </div>                    
+                </div> 
+                
+                <!-- Block_post 3  -->
+                <div class="block" id="block-post3">  
+                    <div class="post-left">
+                        <img class="image-block" src="../source/user_1.jpeg" alt="Photo_de_profil_utilisateur_3">
+                    </div>
+                    <div class="post-right">
+                        <a href="./post3.html">Titre 3</a>    
+                    </div>                   
+                </div> 
+
+            </div>
+        </div> 
 
         <footer class="footer">
 

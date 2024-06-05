@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - shopping Cart</title>
+    <link rel="stylesheet" href="css/location.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
+<header>
+    <div class="nav container">
+        <a href="#" class="logo">Location</a>
+        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+        <!--Cart-->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!--Content-->
+          <div class="cart-content">
+          </div>
+          <!--Total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0$</div>
+          </div>
+          <!--Buy button-->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!--Cart Close-->
+          <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </div>
+</header>
+
+<section class="shop container">
+    <h2 class="section-title">Shop Product</h2>
+    <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+            <img src="img/product1.png" alt="" class="product-img">
+            <h2 class="product-title">Location podium</h2>
+            <span class="price">23$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="product-box">
+            <img src="img/product2.png" alt="" class="product-img">
+            <h2 class="product-title">Pack son et Lumière</h2>
+            <span class="price">30$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="product-box">
+            <img src="img/product3.png" alt="" class="product-img">
+            <h2 class="product-title">Micro sans fil</h2>
+            <span class="price">15$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="product-box">
+            <img src="img/product4.png" alt="" class="product-img">
+            <h2 class="product-title">Machine à fumer</h2>
+            <span class="price">25$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 5 -->
+        <div class="product-box">
+            <img src="img/product5.png" alt="" class="product-img">
+            <h2 class="product-title">Paire d'enceintes</h2>
+            <span class="price">15$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 6 -->
+        <div class="product-box">
+            <img src="img/product6.png" alt="" class="product-img">
+            <h2 class="product-title">pieds d'enceinte</h2>
+            <span class="price">12$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 7 -->
+        <div class="product-box">
+            <img src="img/product7.png" alt="" class="product-img">
+            <h2 class="product-title">Pack de lyres</h2>
+            <span class="price">30$ /jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!-- Box 8 -->
+        <div class="product-box">
+            <img src="img/product8.png" alt="" class="product-img">
+            <h2 class="product-title">Pack son et lumière</h2>
+            <span class="price">22,90$ unitaire/jour</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+    </div>
+</section>
+<script src="js/location.js"></script>
+
 </body>
 </html>
+

@@ -11,7 +11,7 @@
     
 
     <body>
-
+        <!-- animation JS -->   
         <script>
             function handleMenuButtonClick() {
               var checkbox = document.getElementById('menu_toggle');
@@ -19,7 +19,7 @@
             }
         </script>
           
-          
+        <!-- menu hamburger -->   
         <div class="hamburger-menu">
             <input id="menu_toggle" type="checkbox" />
             <label class="menu_btn" onclick="handleMenuButtonClick()">
@@ -28,15 +28,15 @@
           
             <ul class="menu_box">
               <li><p class="menu_title"><b>Ambisound</b></p></li>
-              <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
+              <li><a class="menu_item" href="../homePage.html">Accueil</a></li>
               <li><a class="menu_item" href="#">Informations</a></li>
-              <li><a class="menu_item" href="./faq.html">FAQ</a></li>
+              <li><a class="menu_item" href="../faq.html">FAQ</a></li>
               <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-              <li><a class="menu_item" href="./forum.html">Forum</a></li>
-              <li><a class="menu_item" href="./evenement.html">Événements</a></li>
+              <li><a class="menu_item" href="../forum.html">Forum</a></li>
+              <li><a class="menu_item" href="../evenement.html">Événements</a></li>
               <li><a class="menu_item" href="#">Lieux</a></li>
               <li><a class="menu_item" href="#">Billetterie</a></li>
-              <li><a class="menu_item" href="./playlist.html">Playlists</a></li>
+              <li><a class="menu_item" href="../playlist.html">Playlists</a></li>
               <li><a class="menu_item" href="#">Capteurs</a></li>
             </ul>
 
@@ -51,12 +51,36 @@
         </header>
 
         <div class="conteneur">
-            
+                        
             <div class="forum">
 
-                <div class="sous-titre">
+                <div class="titre">
                     <h2>Nos Forum</h2>
                 </div>
+
+            <!--  Block creation de post -->
+            <div class="block-creation_de_post">
+                <div class="block">
+                    <a href="testForum/creation_de_post.html">
+                        <p>Créer ton post</p>
+                    </a>
+                </div>
+            </div>
+
+            <!--  ligne de séparation -->
+            <div class="separator"></div>
+
+            <!--  Block creation annonce/ acces Admin -->
+            <div class="block-creation_annonce">
+                <div class="block">
+                    <a href="testForum/creation_annonce.html">
+                        <p>Création d'une annnonce</p>
+                    </a>
+                </div>
+            </div>
+
+            <!--  ligne de séparation -->
+            <div class="separator"></div>
 
                 <div class="section-post">
                     <div class="block" id="one"><a href="./testForum/Discussion_generale.html">Discussion générale</a></div>

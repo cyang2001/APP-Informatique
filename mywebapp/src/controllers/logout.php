@@ -6,7 +6,9 @@ class logoutController {
         $this->logger->log('logoutController constructor initialized');
     }
     function logout() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         $_SESSION = array();
         header('Content-Type: application/json');
         echo json_encode(array('message' => 'Logged out successfully'));

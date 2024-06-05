@@ -3,3 +3,4 @@
 ./mywebapp/createDatabase.sql
 ./mywebapp/public/testForum
 ./mywebapp/logs/*
+./mywebapp/src/controllers/loginController.php
