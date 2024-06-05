@@ -1,5 +1,7 @@
 @font-face { font-family: Poppins; src: url('../source/Poppins-Light.ttf'); }
 
+
+
 html {
     height: 100%;
     overflow: hidden;
@@ -243,7 +245,16 @@ footer{
 
 
 h1 {
-    font-size: 250%
+    font-size: 250%;
+    color: black;
+}
+
+.amb-title{
+    color: white;
+}
+
+.title-text{
+    color: white;
 }
 
 p {
@@ -315,9 +326,8 @@ p {
 }
 
 #title {
-    background-image: url("https://files.123freevectors.com/wp-content/original/130895-abstract-blue-triangle-geometric-background-vector.jpg");
-
-    
+    /*https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnQyNGNvODZmYzZreWtybTh4azg5OGN2cThrbnp3M2Q1cnhwM3lnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5kFbMBOEdWjg1nItoG/giphy.gif*/
+    background-image: url("https://wallpapercave.com/wp/wp3507989.jpg");
     z-index: 2;
 }
 
@@ -328,13 +338,14 @@ p {
 }
 
 #slide1:before {
-    background-image: url("https://i2-prod.mirror.co.uk/incoming/article6039288.ece/ALTERNATES/s1227b/Comic-con-2015.jpg");
+    background-image: url("https://images.hdqwalls.com/download/1/blue-light-buildings-architecture-8k-dv.jpg");
     transform: translateZ(-1px) scale(2);
 }
 
-/*#slide2 {
-    background-image: url("file:///D:/XAMPP/htdocs/APP-Informatique/mywebapp/public/source/nuage.jpg");
-}*/
+#slide2 {
+    background-image: url("https://media-rd.s3.amazonaws.com/embedded_image/2019/01/sound%20wave.jpg");
+    z-index: 2;
+}
 
 #slide3:before {
     background-image: url("https://media.wired.com/photos/5a99b8baafa4b44b413e558f/191:100/pass/20130611-E3-SHOW-FLOOR-0241.jpg");
@@ -342,7 +353,8 @@ p {
 }
 
 #slide4 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/007/100/608/non_2x/abstract-geometric-white-and-gray-on-light-silver-gradient-background-modern-banner-design-illustration-free-vector.jpg");
+    background-image: url("https://img.lemde.fr/2017/06/07/588/0/3500/1750/1600/800/60/0/7180566_6738-pjewx.oey4s7cik9.jpg");
+    filter: saturate(70%);
     z-index: 2;
 }
 
@@ -352,7 +364,7 @@ p {
 }
 
 #slide6 {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/002/395/537/original/abstract-blue-and-white-geometric-background-free-vector.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp2987144.jpg");
     z-index: 2;
 }
 
@@ -373,4 +385,11 @@ p {
 
 .CG:hover{
     color: aqua;
+}
+
+@media (max-width: 767px) {
+    .bouton-home{
+        margin-left:3px;
+        margin-right:3px;
+    }
 }
