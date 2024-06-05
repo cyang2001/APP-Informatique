@@ -11,76 +11,44 @@
           var checkbox = document.getElementById('menu_toggle');
           checkbox.checked = !checkbox.checked;
         }
-      
-        function handleUserMenuClick() {
-          var userMenu = document.querySelector('.user-menu-box');
-          userMenu.classList.toggle('show');
-        }
-      
-        const translations = {
-          title: "A M B I S O U N D   E N   A N G L A I S",
-          headerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.",
-          slides: [
-            {
-              title: "Slide 1",
-              content: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim."
-            },
-            // Ajoutez les autres traductions de slides ici
-          ],
-          footerText: "Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in."
-        };
-      
-        function translateToEnglish() {
-          document.querySelector("#title h1").textContent = translations.title;
-          document.querySelector("#title p").textContent = translations.headerText;
-      
-          const slides = document.querySelectorAll(".slide .title");
-          translations.slides.forEach((slide, index) => {
-            if (slides[index]) {
-              slides[index].querySelector("h1").textContent = slide.title;
-              slides[index].querySelector("p").textContent = slide.content;
-            }
-          });
-      
-          document.querySelector("footer").textContent = translations.footerText;
-        }
-      
-      
+
       </script>
-    
-    
-    
-        <header >
+
+
+
+      <header>
+
           <div class="hamburger-menu">
-            <input id="menu_toggle" type="checkbox" />
-            <label class="menu_btn" onclick="handleMenuButtonClick()">
-              <span></span>
-            </label>
-        
-            <ul class="menu_box">
-            </ul>
+              <input id="menu_toggle" type="checkbox" />
+              <label class="menu_btn" onclick="handleMenuButtonClick()">
+                  <span></span>
+              </label>
+
+              <ul class="menu_box">
+                  <li><p class="menu_title"><b>Ambisound</b></p></li>
+              </ul>
           </div>
-        
-          <div>
-            <div class="bouton2">
-              <span><img id="avatarDisplay" class="prof-home" src="source/user(1).png"></span>
-              <div class="menu-deroulant">
-                <div>
-        
-                </div>
+
+
+          <div class="boutons">
+              <div class="bouton2">
+                  <span><img id="avatarDisplay" class="prof-home" src="source/user(1).png"></span>
+                  <div class="menu-deroulant">
+                      <div>
+
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="bouton1">
-              <span><img class="drap-home" src="source/united-kingdom.png"></span>
-            </div>
-        </div>
-        
-        
-          <h1 class="page_title">
-            Playlists
-          </h1>
-            
-        </header>
+              <div class="bouton1">
+                  <span><img class="drap-home" src="source/united-kingdom.png"></span>
+              </div>
+          </div>
+
+      </header>
+
+
+
+
         <main>
 
             <div class="main">
