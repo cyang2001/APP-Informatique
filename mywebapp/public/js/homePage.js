@@ -27,7 +27,6 @@ window.onload = function() {
 
 };
 
-}
 
 window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {

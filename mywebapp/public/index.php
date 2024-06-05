@@ -23,12 +23,6 @@ $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 
-require_once __DIR__ . '/../src/controllers/RegisterController.php';
-require_once __DIR__ . '/../src/controllers/LoginController.php';
-require_once __DIR__ . '/../src/controllers/MeetingController.php';
-require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
-require_once __DIR__ . '/../src/controllers/getUserInfo.php';
-require_once __DIR__ . '/../src/controllers/logout.php';
 require_once __DIR__ . '/../src/controllers/sensorController.php';
 
 
