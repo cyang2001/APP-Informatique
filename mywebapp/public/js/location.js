@@ -40,29 +40,32 @@ function ready() {
         input.addEventListener("change", dateChanged);
     });
     // Add to cart
-    var addCart = document.getElementsByClassName("add-cart");
-    for (var i = 0; i < addCart.length; i++){
-        var button = addCart[i];
-        button.addEventListener("click", addCartClicked);
-    }
-    // buy button work
-    document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
+var addCart = document.getElementsByClassName("add-cart");
+for (var i = 0; i < addCart.length; i++){
+    var button = addCart[i];
+    button.addEventListener("click", addCartClicked);
 }
+// buy button work
+document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
+
 // Buy button
-function buyButtonClicked(){
-    alert("Your order is placed");
+function buyButtonClicked() {
     var cartContent = document.getElementsByClassName("cart-content")[0];
-    while (cartContent.hasChildNodes()){
+    while (cartContent.hasChildNodes()) {
         cartContent.removeChild(cartContent.firstChild);
     }
     updatetotal();
 
+    // Récupérer le total
+    var total = document.getElementsByClassName('total-price')[0].innerText;
 
+    // Stocker le total dans le stockage local
+    localStorage.setItem('totalAmount', total);
+
+    // Redirection vers la page de paiement
+    window.location.href = 'file:///C:/Users/teofilovic/Documents/siteweb/APP-Informatique/mywebapp/public/testForum/pagepaiement.html';
 }
-
-
-
-
+}
 // Remove Itmes from cart
 function removeCartItem(event){
     var buttonClicked = event.target;
@@ -77,6 +80,7 @@ function quantityChanged(event){
     }
     updatetotal();
 }
+
 // Date changes
 function dateChanged(event) {
     updatetotal();
@@ -98,7 +102,7 @@ function addProductToCart(title, price, productImg){
     var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
     for (var i = 0; i < cartItemsNames.length; i++){
         if (cartItemsNames[i].innerText == title){
-            alert("You have already add this item to cart");
+            alert("Vous avez déjà mis cet artile dans votre panier");
             return;
 
         }
@@ -141,6 +145,14 @@ function updatetotal(){
         // If price Contain some cents value
         total = Math.round(total * 100)/ 100;
 
-        document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+        document.getElementsByClassName('total-price')[0].innerText = '€' + total;
     
+}
+// Fonction pour rediriger vers la page de paiement
+function redirectToPayment() {
+    // Récupérer le total à payer
+    var total = 0.99; // Remplacez cela par la logique pour obtenir le total réel
+
+    // Rediriger vers la page de paiement avec le total en tant que paramètre dans l'URL
+    window.location.href = "pagepaiement.html?total=" + total;
 }
