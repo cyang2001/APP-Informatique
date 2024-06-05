@@ -56,3 +56,46 @@ p {
   color: #999;
   opacity: 1; 
 }
+
+
+
+#password-requirements ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: Didot, serif;
+  font-size: 16px;
+}
+
+#password-requirements li {
+  padding: 5px 0;
+}
+
+#password-requirements li.success {
+  color: green;
+}
+
+#password-requirements li.error {
+  color: red;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input[type="password"] {
+  width: calc(100% - 40px); /* Adjust the width to accommodate the button */
+}
+
+.password-container button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input.error-border {
+  border-color: red;
+}

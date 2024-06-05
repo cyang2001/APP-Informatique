@@ -7,21 +7,36 @@
   <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-  <h1>Se connecter</h1>
-  <img src="source/ambisound.png" alt="logo" class="logo">
-  <div class="form-container">
-    <form id="login-form" >
-      <input type="email" id="email" name="email" placeholder="E-mail" required>
-      <br>
-      <input type="password" id="password" name="password" placeholder="Mot de passe" required>
-      <br>
-      <button class="btn" type="submit">Se connecter</button>
-    </form>
+  <header>
 
+  </header>
+  <div class="hero">
+    <img src="./source/test.jpg" alt="Background Image" class="background-image">
+    <div class="form-container">
+      <img src="./source/ambisound.png" alt="logo" class="logo">
+      <form id="login-form">
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button class="btn" type="submit">GET STARTED</button>
+      </form>
+      <div class="form-footer">
+        <label><input type="checkbox" name="keep-logged-in"> Keep Logged In</label>
+        <a href="renewPassword_fr_1.html" class="forgot-password">Forgot Password?</a>
+        <div class="additional-links">
+          <a href="register_fr.html">CREATE ACCOUNT</a>
+          <a href="#">NEED HELP?</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <p><a href="renewPassword_fr_1.html">Mot de passe oublié</a></p>
-  <p>Vous n'avez pas de compte? <a href="register_fr.html">S'inscrire</a></p>
-  <br>
+  <footer>
+    <ul class="footer-links">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+    <p>&copy; 2019 Key. All Rights Reserved | Design By W3layouts</p>
+  </footer>
   <script src="js/login.js"></script>
 </body>
 </html>

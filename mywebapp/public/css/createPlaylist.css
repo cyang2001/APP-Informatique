@@ -1,0 +1,118 @@
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playlistContainer {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#playlistList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playlistList li {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+}
+
+
+/* Enhance focus visibility for accessibility */
+input[type="text"],
+textarea,
+input[type="file"],
+button {
+    outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus,
+button:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 0 3px rgba(92, 184, 92, 0.5);
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Basic Responsive Design */
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+    }
+
+    form,
+    input[type="text"],
+    textarea,
+    input[type="file"] {
+        padding: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    #playlistContainer {
+        padding: 10px;
+    }
+}
+
+/* Transitions for smoother visual effects */
+input[type="text"],
+textarea,
+input[type="file"],
+button {
+    transition: all 0.3s ease;
+}
+
+

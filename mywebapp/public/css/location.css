@@ -1,0 +1,496 @@
+@font-face { 
+    font-family: Poppins; 
+    src: url('../source/Poppins-Light.ttf'); 
+}
+
+.poppins-regular {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --main-color:#8a5cf4;
+    --text-color: #171427;
+    --bg-color:#fff;
+}
+img{
+    width: 100%;
+}
+body{
+    color:var(--text-color);
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+section{
+    padding: 4rem 0 3rem;
+}
+/* Assurez-vous que le header a suffisamment de hauteur pour contenir tout le contenu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre le titre et l'icône */
+    padding: 0 20px; /* Ajoutez du padding pour espacer le contenu */
+}
+
+.page_title {
+    color: white;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+    flex-grow: 1; /* Pour que le titre occupe l'espace disponible */
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Positionne l'icône à droite */
+    width: auto;
+}
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white; /* Change la couleur de l'icône en blanc */
+    margin-right: 40px;
+}
+
+/* Styles pour le reste du contenu de la cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 334px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.cart-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.cart-date label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.cart-date input {
+    border: 1px solid var(--text-color);
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--text-color);
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+.section-title {
+    font-size: 1.8rem; /* Double la taille */
+    font-weight: 400; /* Retirer le gras */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.shop {
+    margin-top: 2rem;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box:hover {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    box-shadow: -2px 0 4px hsl(0 8% 10% / 10%);
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: hsl(249, 32%, 17%);
+}
+
+/* Breakpoints / making responsive */
+@media (max-width: 1080px) {
+    .nav {
+        padding: 15px;
+    }
+
+    section {
+        padding: 3rem 0 2rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .shop {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav {
+        padding: 11px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cart {
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .shop {
+        margin-top: 2rem !important;
+    }
+
+    .cart {
+        width: 280px;
+    }
+}
+
+* {
+    margin: 0;
+}
+
+#menu_toggle {
+    opacity: 0;
+}
+
+#menu_toggle:checked + .menu_btn > span {
+    transform: rotate(45deg);
+}
+
+#menu_toggle:checked + .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu_toggle:checked + .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu_toggle:checked ~ .menu_box {
+    left: 0 !important;
+}
+
+.menu_btn {
+    position: fixed;
+    top: 27px;
+    left: 27px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: 0.25s;
+}
+
+.menu_btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu_btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu_box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #134074;
+    transition-duration: 0.25s;
+    z-index: 101;
+}
+
+.menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+.menu_item:hover {
+    background-color: #CFD8DC;
+}
+
+.menu_title {
+    color: white;
+    padding: 12px 24px;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20px;
+    border-bottom: solid 1px dimgrey;
+}
+
+.hamburger-menu {
+    height: 0;
+}
+
+.page_title {
+    color: white;
+    padding-top: 20px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+}
+
+main {
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.text2 {
+    background-color: wheat;
+}
+
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    font-family: Calibri, sans-serif;
+    color: #242b33;
+    font-size: 17px;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center bottom;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.event-text {
+    margin-top: 200px;
+}
+
+.grid-item.add-button {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 120px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    border: transparent;
+    background-color: lightblue;
+    color: cadetblue;
+    order: 9999;
+}
+
+.grid-item.add-button:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.delete-button {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 40px;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: darkred;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    font-size: 15px;
+    font-family: "Century Gothic", sans-serif;
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+footer {
+    height: 80px;
+    background-color: #0D2C51;
+}

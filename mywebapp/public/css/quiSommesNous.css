@@ -1,0 +1,147 @@
+@font-face { 
+    font-family: Poppins; 
+    src: url('../source/Poppins-Light.ttf'); 
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    height: 100%;
+  }
+  
+  /* Style de ma page */
+  
+  .about-us {
+    height: 50vh; /* 50% of the viewport height */
+    background: linear-gradient(to bottom, #4682b4, #87cefa, #add8e6, white); /* Gradient from dark blue to white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .missions {
+    background-color: white; /* White background for the new section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0; /* Padding for spacing */
+  }
+  .team {
+    position: relative;
+    height: 25vh; /* 25% of the viewport height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .background {
+    max-width: 40%; /* Increase this value to make the image wider */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: -1; /* Ensure the background image stays behind the text */
+}
+
+.circle {
+  background-color: rgba(190, 217, 226, 0.888);
+  border-radius: 50%;
+  width: 150px; /* Adjust this value to change the size of the circle */
+  height: 150px; /* Adjust this value to change the size of the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 248px; /* Adjust this value to position the circle relative to the image */
+  top: 50%; /* Adjust this value to vertically center the circle */
+  transform: translateY(-50%);
+  font-size: 14px; /* Adjust this value to change the font size */
+}
+
+
+  
+  
+  
+  .content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .about-us .text {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 150px; /* Adjust this value to move the text to the right */
+  }
+  
+  .about-us .text h1 {
+    margin: 0;
+    font-size: 1.5em; /* Reduced the size of the title to 0.5em */
+    display: flex;
+    align-items: center;
+    color: rgba(46, 46, 173, 0.744);
+  }
+  
+  .about-us .text h1 .logo {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the title */
+  }
+  
+  .missions .text {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 150px; /* Adjust this value to move the text to the right */
+  }
+  
+  .missions .text h1 {
+    margin: 0;
+    font-size: 0.5em; /* Reduced the size of the title to 0.5em */
+    display: flex;
+    align-items: center;
+    color:#333; /* Color for the title in the white background section */
+  }
+  
+  .missions .text h1 .logo {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the title */
+  }
+  
+  .about-us .text p {
+    font-size: 0.4em; /* Reduced the size of the text to 0.4em */
+    color:rgba(46, 46, 173, 0.744);
+    margin-top: 20px;
+  }
+  
+  .missions .text p {
+    font-size: 0.4em; /* Reduced the size of the text to 0.4em */
+    color: #333; /* Color for the text in the white background section */
+    margin-top: 20px;
+  }
+  
+  .about-us .image, .missions .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-us .image img {
+    width: 50%; /* Reduce the image size to 50% of its original size */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .missions .image img.imgtech {
+    width: 50%; /* Increase the image size to 150% of its original size */
+    height: auto;
+    border-radius: 10px;
+  }
+  

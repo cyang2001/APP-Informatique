@@ -1,153 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Choix des playlists</title>
-        <link rel="stylesheet" type="text/css" href="css\playlist.css" />
-    </head>
-    <body>
-      <script>
-        function handleMenuButtonClick() {
-            var checkbox = document.getElementById('menu_toggle');
-            checkbox.checked = !checkbox.checked;
-        }
-    </script>
-    
-    
-    <div class="hamburger-menu">
-        <input id="menu_toggle" type="checkbox" />
-        <label class="menu_btn" onclick="handleMenuButtonClick()">
-            <span></span>
-        </label>
-    
-        <ul class="menu_box">
-            <li><p class="menu_title"><b>Ambisound</b></p></li>
-            <li><a class="menu_item" href="./homePage.html">Accueil</a></li>
-            <li><a class="menu_item" href="#">Informations</a></li>
-            <li><a class="menu_item" href="./faq.html">FAQ</a></li>
-            <li><a class="menu_item" href="#">Qui sommes-nous ?</a></li>
-            <li><a class="menu_item" href="./forum.html">Forum</a></li>
-            <li><a class="menu_item" href="./evenement.html">Événements</a></li>
-            <li><a class="menu_item" href="#">Lieux</a></li>
-            <li><a class="menu_item" href="#">Billetterie</a></li>
-            <li><a class="menu_item" href="#">Playlists</a></li>
-            <li><a class="menu_item" href="#">Capteurs</a></li>
-        </ul>
-    </div>
-        <header >
-          <h1 class="page_title">
-            Playlists
-          </h1>
-            
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <title>Choix des playlists</title>
+    <link rel="stylesheet" type="text/css" href="css/playlist.css" />
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" onclick="handleMenuButtonClick()">
+                <span></span>
+            </label>
 
-            <div class="main">
-                <div class="loader">
-                  <div class="fleche">
+            <ul class="menu_box">
+                <li><p class="menu_title"><b>Ambisound</b></p></li>
+            </ul>
+        </div>
+
+        <div class="boutons">
+            <div class="bouton2">
+                <span><img id="avatarDisplay" class="prof-home" src="source/user(1).png"></span>
+                <div class="menu-deroulant">
+                    <div></div>
+                </div>
+            </div>
+            <div class="bouton1">
+                <span><img class="drap-home" src="source/united-kingdom.png"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="loader">
+                <div class="fleche">
                     <a href="playlist_rock.html">
-                    <img class="f" src="source/fleche.png" height="50" width="50">
+                        <img class="f" src="source/fleche.png" height="50" width="50">
                     </a>
-                  </div>
-                  <div class="song">
+                </div>
+                <div class="song">
                     <p class="name">Rock</p>
                     <p class="artist">Embarquez pour un voyage électrique avec cette playlist rock explosive !</p>
                     <p>Riffs légendaires et énergie brute vous attendent pour réveiller le rebelle en vous. À fond les décibels !</p>
-                  </div>
-                  <div class="albumcover">
+                </div>
+                <div class="albumcover">
                     <img class="album" src="source/rock.jpg" height="100" width="100">
-
-                  </div>
-                  
                 </div>
-                <div class="loader">
-                  <div class="fleche">
+            </div>
+            <div class="loader">
+                <div class="fleche">
                     <a href="playlist_pop.html">
-                    <img class="f" src="source/fleche.png" height="50" width="50">
-                    </a> 
-                </div>
-                  <div class="song">
-                    <p class="name">Pop</p>
-                    <p class="artist">Vibrez au rythme de cette playlist pop, où hits actuels et classiques intemporels se rencontrent pour colorer votre journée de mélodies irrésistibles. <br>
-                      Parfait pour dynamiser n'importe quel moment !</p>
-                  </div>
-                  <div class="albumcover">
-                    <img class="album" src="source/pop.png" height="100" width="100">
-                  </div>
-                 
-                </div>
-                <div class="loader">
-                  <div class="fleche">
-                    <a href="playlist_classique.html">
-                    <img class="f" src="source/fleche.png" height="50" width="50">
+                        <img class="f" src="source/fleche.png" height="50" width="50">
                     </a>
-                  </div>
-                  <div class="song">
+                </div>
+                <div class="song">
+                    <p class="name">Pop</p>
+                    <p class="artist">Vibrez au rythme de cette playlist pop, où hits actuels et classiques intemporels se rencontrent pour colorer votre journée de mélodies irrésistibles. <br>Parfait pour dynamiser n'importe quel moment !</p>
+                </div>
+                <div class="albumcover">
+                    <img class="album" src="source/pop.png" height="100" width="100">
+                </div>
+            </div>
+            <div class="loader">
+                <div class="fleche">
+                    <a href="playlist_classique.html">
+                        <img class="f" src="source/fleche.png" height="50" width="50">
+                    </a>
+                </div>
+                <div class="song">
                     <p class="name">Classique</p>
-                    <p class="artist">Évadez-vous avec cette playlist classique, un voyage sublime à travers les chefs-d'œuvre les plus émouvants de la musique. <br>
-                      Parfait pour un moment de paix et d'inspiration.</p>
-                  </div>
-                  <div class="albumcover">
+                    <p class="artist">Évadez-vous avec cette playlist classique, un voyage sublime à travers les chefs-d'œuvre les plus émouvants de la musique. <br>Parfait pour un moment de paix et d'inspiration.</p>
+                </div>
+                <div class="albumcover">
                     <img class="album" src="source/classique.jpg" height="100" width="100">
-                  </div>
                 </div>
-
-                <div class="loader">
-                  <div class="fleche">
-                    <img class="f" src="source/fleche.png" height="50" width="50">
-                  </div>
-                  <div class="song">
+            </div>
+            <div class="loader">
+                <div class="fleche">
+                    <a href="playlist_ambiance.html">
+                        <img class="f" src="source/fleche.png" height="50" width="50">
+                    </a>
+                </div>
+                <div class="song">
                     <p class="name">Son d'ambiance</p>
-                    <p class="artist">Immergez-vous dans un univers sonore apaisant avec cette playlist d'ambiance. <br>
-                       Parfaite pour la méditation, la concentration ou simplement pour s'évader, chaque piste est une invitation à la tranquillité.</p>
-                  </div>
-                  <div class="albumcover">
-                    <img class="album" src="source/ambiancejpg.jpg" height="100" width="100">
-
-                  </div>
-                
+                    <p class="artist">Immergez-vous dans un univers sonore apaisant avec cette playlist d'ambiance. <br>Parfaite pour la méditation, la concentration ou simplement pour s'évader, chaque piste est une invitation à la tranquillité.</p>
                 </div>
-
-                <div class="loader">
-                  <div class="fleche">
+                <div class="albumcover">
+                    <img class="album" src="source/ambiancejpg.jpg" height="100" width="100">
+                </div>
+            </div>
+            <div class="loader">
+                <div class="fleche">
                     <img class="f" src="source/fleche.png" height="50" width="50">
-                  </div>
-                  <div class="song">
+                </div>
+                <div class="song">
                     <p class="name">Jazz</p>
                     <p class="artist">Embarquez pour un voyage électrique avec cette playlist rock explosive !</p>
                     <p>Riffs légendaires et énergie brute vous attendent pour réveiller le rebelle en vous. À fond les décibels !</p>
-                  </div>
-                  <div class="albumcover">
+                </div>
+                <div class="albumcover">
                     <img class="album" src="source/jazz.png" height="100" width="100">
-
-                  </div>
-                  
                 </div>
-
-                <div class="loader">
-                  <div class="fleche">
-                    <img class="f" src="source/fleche.png" height="50" width="50">
-                  </div>
-                  <div class="song">
+            </div>
+            <div class="loader">
+                <div class="fleche">
+                    <a href="createPlaylist.html">
+                        <img class="f" src="source/fleche.png" height="50" width="50">
+                    </a>
+                </div>
+                <div class="song">
                     <p class="name">Crée une playlist</p>
-                    <p class="artist">Façonnez votre ambiance musicale idéale : <br>
-                      Ajoutez vos morceaux favoris à cette playlist et créez l'atmosphère parfaite pour chaque instant.</p>
-                  </div>
-                  <div class="albumcover">
-                    <img class="album" src="source/plus.jpg" height="100" width="100">
-
-                  </div>
-                  
+                    <p class="artist">Façonnez votre ambiance musicale idéale : <br>Ajoutez vos morceaux favoris à cette playlist et créez l'atmosphère parfaite pour chaque instant.</p>
                 </div>
-              </div>
-            
-            
-
-        
-
-        </main>
-        <footer>
-
-        </footer>
-    </body>
+                <div class="albumcover">
+                    <img class="album" src="source/plus.jpg" height="100" width="100">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>À propos</h6>
+                    <p class="text-justify">Ambisound</p>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>On ne sait pas encore</h6>
+                    <ul class="footer-links"></ul>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Navigation</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Informations</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2024 Tous droits réservés par 
+                        <a href="#">Ambisound</a>
+                    </p>
+                    <p class="cgu-link"><a href="cgu.html">CGU</a></p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="source/facebook.png" alt="Facebook" class="social-icon"></a></li>
+                        <li><a href="#"><img src="source/twitter.png" alt="Twitter" class="social-icon"></a></li>
+                        <li><a href="#"><img src="source/instagram.png" alt="Instagram" class="social-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/playlist.js"></script>
+</body>
 </html>

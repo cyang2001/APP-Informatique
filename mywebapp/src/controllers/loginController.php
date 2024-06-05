@@ -9,7 +9,9 @@ class LoginController {
     }
 
     function login() {
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         $userEmail = $_POST['email'];
         $userPassword = $_POST['password'];
         $response = $this->users->login($userEmail, $userPassword);
@@ -19,6 +21,7 @@ class LoginController {
                 'id' => $response['user']['ID_USER'],
                 'email' => $userEmail,
                 'name' => $response['user']['NAME_USER'],
+                'accessLevel' => $response['user']['ID_ACCESS_LEVEL']
             ];
             return;
         } else {
