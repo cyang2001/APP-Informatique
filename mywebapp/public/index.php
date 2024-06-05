@@ -22,9 +22,22 @@ $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
+
+require_once __DIR__ . '/../src/controllers/RegisterController.php';
+require_once __DIR__ . '/../src/controllers/LoginController.php';
+require_once __DIR__ . '/../src/controllers/MeetingController.php';
+require_once __DIR__ . '/../src/controllers/showDatabaseController.php';
+require_once __DIR__ . '/../src/controllers/getUserInfo.php';
+require_once __DIR__ . '/../src/controllers/logout.php';
+require_once __DIR__ . '/../src/controllers/sensorController.php';
+
+
+
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+
 switch($action) {
     case 'register':
         if ($method == 'GET') {
@@ -135,6 +148,15 @@ switch($action) {
             });
         }
         break;
+    case 'getSensorData':
+            if ($method == 'GET') {
+                $logger->log('GET /getSensorData');
+                $router->get('/getSensorData', function(){
+                    $sensorController = new SensorController();
+                    $sensorController->getAllSensorData();
+                });
+            }
+            break;
 
     case 'forum':
         if ($method == 'POST') {
