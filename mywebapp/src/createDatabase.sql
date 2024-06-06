@@ -117,3 +117,36 @@ CREATE TABLE IF NOT EXISTS PLAY_LIST_TRACKS (
     FOREIGN KEY (ID_PLAY_LIST) REFERENCES PLAY_LIST(ID_PLAY_LIST),
     FOREIGN KEY (ID_TRACK) REFERENCES MUSIC_TRACKS(ID_TRACK)
 );
+
+
+INSERT INTO access_levels (ID_ACCESS_LEVEL, LEVEL_NAME) VALUES
+(0, 'Guest'),
+(1, 'Member'),
+(2, 'Orga'),
+(3, 'Admin');
+
+INSERT INTO pages (ID_PAGE, PAGE_NAME, PAGE_URL, PARENT_ID) VALUES
+(940294, 'Création Événements', './evenement.html', 66414185),
+(18263643, 'Playlist', './playlist.html', 66414185),
+(27223172, 'Qui sommes nous', './quiSommesNous.html', 66414185),
+(32512499, 'Dashboard', './dashboard.html', 66414185),
+(37668352, 'Location', './location.html', 66414185),
+(52635194, 'Forum', './forum.html', 66414185),
+(66212886, 'CGU', './cgu.html', 66414185),
+(66414185, 'homePage', './homePage.html', 0),
+(71125654, 'Sensor', './sensor.html', 66414185),
+(73105760, 'loginPage', './login_fr.html', 0),
+(74982744, 'FAQ', './faq.html', 66414185);
+
+INSERT INTO page_access_levels (ID_ACCESS_LEVEL, ID_PAGE) VALUES
+(2, 940294),
+(2, 18263643),
+(0, 27223172),
+(1, 32512499),
+(1, 37668352),
+(1, 52635194),
+(0, 66212886),
+(0, 66414185),
+(2, 71125654),
+(0, 73105760),
+(0, 74982744);
