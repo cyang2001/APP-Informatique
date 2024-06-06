@@ -9,14 +9,18 @@ window.onload = function() {
         menu.innerHTML = ''; 
         
         if (data.email) {
-            menu.innerHTML = '<a href="#" id="logout">Se déconnecter</a>';
-            document.getElementById('logout').addEventListener('click', function(event) {
-                event.preventDefault();
-                fetch('index.php?action=logout', {
-                    method: 'GET'
-                })
-                .then(() => location.reload());
-            });
+            menu.innerHTML = `
+            <a href="./profile.html">Profile</a>
+            <a href="#" id="logout">Se déconnecter</a>
+        `;
+        document.getElementById('logout').addEventListener('click', function(event) {
+            event.preventDefault();
+            fetch('index.php?action=logout', {
+                method: 'GET'
+            })
+            .then(() => location.reload())
+            .catch(error => console.error('Error on logout:', error));
+        });
         } else {
             menu.innerHTML = '<a href="./login_fr.html">Se connecter</a><a href="./register_fr.html">S\'inscrire</a>';
         }

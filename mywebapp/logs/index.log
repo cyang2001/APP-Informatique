@@ -399,3 +399,54 @@
 [2024-06-06 09:44:34] - GET /logout
 [2024-06-06 09:45:02] - GET /logout
 [2024-06-06 09:46:37] - POST /renewPassword1
+[2024-06-06 09:48:47] - GET /getUserInfo
+[2024-06-06 09:48:47] - GET /getPages
+[2024-06-06 09:48:47] - User access level: 0
+[2024-06-06 09:48:47] - GET /getUserInfo
+[2024-06-06 09:48:49] - GET /logout
+[2024-06-06 09:48:56] - POST /login
+[2024-06-06 09:48:57] - GET /getUserInfo
+[2024-06-06 09:48:57] - GET /getPages
+[2024-06-06 09:48:57] - User access level: 1
+[2024-06-06 09:48:57] - GET /getUserInfo
+[2024-06-06 09:49:14] - GET /logout
+[2024-06-06 09:49:14] - GET /getUserInfo
+[2024-06-06 09:49:14] - GET /getUserInfo
+[2024-06-06 09:49:14] - GET /getPages
+[2024-06-06 09:49:14] - User access level: 0
+[2024-06-06 09:49:24] - GET /logout
+[2024-06-06 09:49:28] - GET /logout
+[2024-06-06 09:49:39] - GET /getUserInfo
+[2024-06-06 09:49:39] - GET /getPages
+[2024-06-06 09:49:39] - User access level: 0
+[2024-06-06 09:49:39] - GET /getUserInfo
+[2024-06-06 09:50:42] - GET /logout
+[2024-06-06 09:50:57] - POST /register
+[2024-06-06 09:50:57] - calling
+[2024-06-06 09:51:32] - POST /updateOrga
+[2024-06-06 09:51:32] - GET /getUserInfo
+[2024-06-06 09:51:32] - GET /getUserInfo
+[2024-06-06 09:51:33] - GET /getPages
+[2024-06-06 09:51:33] - User access level: 2
+[2024-06-06 09:54:43] - GET /logout
+[2024-06-06 09:54:43] - GET /getUserInfo
+[2024-06-06 09:54:43] - GET /getPages
+[2024-06-06 09:54:43] - User access level: 0
+[2024-06-06 09:54:43] - GET /getUserInfo
+[2024-06-06 09:54:44] - GET /logout
+[2024-06-06 09:54:52] - POST /login
+[2024-06-06 09:54:55] - GET /getUserInfo
+[2024-06-06 09:54:55] - GET /getPages
+[2024-06-06 09:54:55] - User access level: 1
+[2024-06-06 09:54:55] - GET /getUserInfo
+[2024-06-06 09:55:16] - GET /logout
+[2024-06-06 09:55:19] - GET /getUserInfo
+[2024-06-06 09:55:19] - GET /getUserInfo
+[2024-06-06 09:55:20] - GET /getPages
+[2024-06-06 09:55:20] - User access level: 0
+[2024-06-06 09:55:21] - GET /logout
+[2024-06-06 09:55:23] - POST /login
+[2024-06-06 09:55:25] - GET /getUserInfo
+[2024-06-06 09:55:25] - GET /getUserInfo
+[2024-06-06 09:55:25] - GET /getPages
+[2024-06-06 09:55:25] - User access level: 3
