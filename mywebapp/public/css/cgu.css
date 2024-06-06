@@ -108,11 +108,15 @@ header{
 }
 
 
-
+.cgu-titre{
+    text-align: center;
+    color:white;
+    margin-top: -5px;
+}
 
 h2{
     padding-top: 10px;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
 }
 
@@ -154,7 +158,7 @@ div div a {
     float: right;
     position: relative;
     display: inline-block;
-    margin-top: -55px;
+    margin-top: -65px;
     margin-right: 25px;
 }
 
@@ -206,7 +210,7 @@ div div a {
 }
 
 body {
-    font-size: 30px;
+    font-size: 24px;
     margin:0;
     padding:0;
     perspective: 1px;
@@ -223,23 +227,126 @@ body {
     text-align: justify;
 }
 
-footer{
-    z-index: 9999;
-    height: 230px;
+
+.site-footer {
+    position: relative;
     background-color: #0D2C51;
+    color: white;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
 }
 
-.CGU{
+.site-footer a {
+    color: white;
     text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.site-footer h6 {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.site-footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: space-between;
+    align-items: flex-start; /* Assurer l'alignement en haut des colonnes */
+}
+
+.site-footer .col-sm-12,
+.site-footer .col-md-6,
+.site-footer .col-xs-6,
+.site-footer .col-md-3 {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+.site-footer .footer-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-footer .footer-links li {
+    display: block;
+}
+
+.site-footer .footer-links a {
     color: white;
 }
 
-.CG:hover{
-    color: aqua;
+.site-footer .footer-links a:hover {
+    color: #3366cc;
 }
 
-.cgu-titre{
-    font-family: "Century Gothic";
+.site-footer .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-footer .social-icons li {
+    margin-left: 10px;
+}
+
+.site-footer .social-icons .social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.site-footer .social-icons .social-icon:hover {
+    transform: scale(1.2);
+}
+
+.copyright-text {
+    margin: 0;
     color: white;
-    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .site-footer .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .site-footer .social-icons li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+
+.cgu-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.cgu-link a:hover {
+    color: #3366cc;
+    text-decoration: underline;
 }
