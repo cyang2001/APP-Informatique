@@ -468,31 +468,48 @@ p {
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
 @media (max-width: 320px) {
+    #generic_price_table .col-md-3, #generic_price_table .col-md-4{
+        margin: 20px 60px 40px 60px;
+        float: left;
+        width: 50%;
+    }
 }
 
 @media (max-width: 767px) {
-    #generic_price_table .generic_content{
-        margin-bottom:75px;
+    #generic_price_table .col-md-3, #generic_price_table .col-md-4{
+        margin: 20px 60px 40px 60px;
+        float: left;
+        width: 50%;
+        
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    #generic_price_table .col-md-3{
+    #generic_price_table .col-md-3, #generic_price_table .col-md-4{
+        margin: 20px 0px 40px 0px;
         float:left;
         width:50%;
     }
 
-    #generic_price_table .col-md-4{
-        float:left;
-        width:50%;
-    }
 
-    #generic_price_table .generic_content{
-        margin-bottom:75px;
-    }
 }
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
+    #generic_price_table .col-md-3, #generic_price_table .col-md-4{
+        margin: 20px 0px 40px 0px;
+        float:left;
+        width:50%;
+    }
+
 }
+
 @media (min-width: 1200px) {
+    #generic_price_table .col-md-3, #generic_price_table .col-md-4{
+        margin: 20px 0px 40px 0px;
+        float:left;
+        width:50%;
+    }
+
 }
 
 /* Conteneur flex pour garder les blocs sur la même ligne */

@@ -153,11 +153,11 @@ window.onload = function() {
 };
 
 
-window.addEventListener('beforeunload', function(event) {
+/*window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {
         method: 'GET'
     }).catch(error => console.error('Error on logout:', error));
-});
+});*/
 function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;

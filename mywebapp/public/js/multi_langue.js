@@ -12,21 +12,20 @@ async function getResponse(url, options, target_lang, elements, k) {
     }
 }
 
-document.getElementById('fr').addEventListener('click', function() { //ToDo changer le elementId 'fr' par l'id du bouton de traduction
-    const target_lang = 'fr'; // ToDo changer la target langue en fonction des besoins
+document.getElementById('lang-toggle').addEventListener('click', function() { 
+    const target_lang = 'en'; 
     let elementsToTranslate = [];
 
-    // Gather all elements that need translation
     const allElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, label, span');
     allElements.forEach(element => {
-        // Check if the element has text content that needs translation
+
         if (element.innerText.trim().length > 0) {
             elementsToTranslate.push(element);
         }
     });
 
     console.log('Clicked');
-    console.log(document.getElementById("welcome_message").innerText);
+    //console.log(document.getElementById("welcome_message").innerText);
 
     const url = 'https://google-api31.p.rapidapi.com/gtranslate';
     for (let k = 0; k < elementsToTranslate.length; k++) {

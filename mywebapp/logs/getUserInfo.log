@@ -86,3 +86,193 @@
 [2024-06-06 00:05:25] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
 [2024-06-06 00:05:25] - getUserInfo constructor initialized
 [2024-06-06 00:05:25] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
+[2024-06-06 09:02:55] - getUserInfo constructor initialized
+[2024-06-06 09:02:55] - Unauthorized access attempt
+[2024-06-06 09:02:55] - getUserInfo constructor initialized
+[2024-06-06 09:02:55] - Unauthorized access attempt
+[2024-06-06 09:04:03] - getUserInfo constructor initialized
+[2024-06-06 09:04:03] - Unauthorized access attempt
+[2024-06-06 09:04:03] - getUserInfo constructor initialized
+[2024-06-06 09:04:03] - Unauthorized access attempt
+[2024-06-06 09:04:07] - getUserInfo constructor initialized
+[2024-06-06 09:04:07] - Unauthorized access attempt
+[2024-06-06 09:04:07] - getUserInfo constructor initialized
+[2024-06-06 09:04:07] - Unauthorized access attempt
+[2024-06-06 09:04:09] - getUserInfo constructor initialized
+[2024-06-06 09:04:09] - Unauthorized access attempt
+[2024-06-06 09:04:09] - getUserInfo constructor initialized
+[2024-06-06 09:04:09] - Unauthorized access attempt
+[2024-06-06 09:04:15] - getUserInfo constructor initialized
+[2024-06-06 09:04:15] - Unauthorized access attempt
+[2024-06-06 09:04:15] - getUserInfo constructor initialized
+[2024-06-06 09:04:15] - Unauthorized access attempt
+[2024-06-06 09:05:35] - getUserInfo constructor initialized
+[2024-06-06 09:05:35] - Unauthorized access attempt
+[2024-06-06 09:05:35] - getUserInfo constructor initialized
+[2024-06-06 09:05:35] - Unauthorized access attempt
+[2024-06-06 09:05:43] - getUserInfo constructor initialized
+[2024-06-06 09:05:43] - Unauthorized access attempt
+[2024-06-06 09:05:43] - getUserInfo constructor initialized
+[2024-06-06 09:05:43] - Unauthorized access attempt
+[2024-06-06 09:06:16] - getUserInfo constructor initialized
+[2024-06-06 09:06:16] - Unauthorized access attempt
+[2024-06-06 09:06:16] - getUserInfo constructor initialized
+[2024-06-06 09:06:16] - Unauthorized access attempt
+[2024-06-06 09:06:21] - getUserInfo constructor initialized
+[2024-06-06 09:06:21] - Unauthorized access attempt
+[2024-06-06 09:06:21] - getUserInfo constructor initialized
+[2024-06-06 09:06:21] - Unauthorized access attempt
+[2024-06-06 09:06:29] - getUserInfo constructor initialized
+[2024-06-06 09:06:29] - Unauthorized access attempt
+[2024-06-06 09:06:29] - getUserInfo constructor initialized
+[2024-06-06 09:06:29] - Unauthorized access attempt
+[2024-06-06 09:06:32] - getUserInfo constructor initialized
+[2024-06-06 09:06:32] - Unauthorized access attempt
+[2024-06-06 09:06:32] - getUserInfo constructor initialized
+[2024-06-06 09:06:32] - Unauthorized access attempt
+[2024-06-06 09:07:38] - getUserInfo constructor initialized
+[2024-06-06 09:07:38] - User info retrieved: {"id":85771569,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":0}
+[2024-06-06 09:07:38] - getUserInfo constructor initialized
+[2024-06-06 09:07:38] - Unauthorized access attempt
+[2024-06-06 09:07:39] - getUserInfo constructor initialized
+[2024-06-06 09:07:39] - Unauthorized access attempt
+[2024-06-06 09:07:39] - getUserInfo constructor initialized
+[2024-06-06 09:07:39] - Unauthorized access attempt
+[2024-06-06 09:15:21] - getUserInfo constructor initialized
+[2024-06-06 09:15:21] - Unauthorized access attempt
+[2024-06-06 09:15:21] - getUserInfo constructor initialized
+[2024-06-06 09:15:21] - Unauthorized access attempt
+[2024-06-06 09:19:41] - getUserInfo constructor initialized
+[2024-06-06 09:19:41] - Unauthorized access attempt
+[2024-06-06 09:19:41] - getUserInfo constructor initialized
+[2024-06-06 09:19:41] - Unauthorized access attempt
+[2024-06-06 09:20:13] - getUserInfo constructor initialized
+[2024-06-06 09:20:13] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:20:13] - getUserInfo constructor initialized
+[2024-06-06 09:20:13] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:21:36] - getUserInfo constructor initialized
+[2024-06-06 09:21:36] - Unauthorized access attempt
+[2024-06-06 09:21:36] - getUserInfo constructor initialized
+[2024-06-06 09:21:36] - Unauthorized access attempt
+[2024-06-06 09:22:32] - getUserInfo constructor initialized
+[2024-06-06 09:22:32] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:22:32] - getUserInfo constructor initialized
+[2024-06-06 09:22:32] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:23:58] - getUserInfo constructor initialized
+[2024-06-06 09:23:58] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:23:58] - getUserInfo constructor initialized
+[2024-06-06 09:23:58] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:25:00] - getUserInfo constructor initialized
+[2024-06-06 09:25:00] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
+[2024-06-06 09:25:00] - getUserInfo constructor initialized
+[2024-06-06 09:25:00] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
+[2024-06-06 09:25:23] - getUserInfo constructor initialized
+[2024-06-06 09:25:23] - Unauthorized access attempt
+[2024-06-06 09:25:23] - getUserInfo constructor initialized
+[2024-06-06 09:25:23] - Unauthorized access attempt
+[2024-06-06 09:25:40] - getUserInfo constructor initialized
+[2024-06-06 09:25:40] - Unauthorized access attempt
+[2024-06-06 09:25:40] - getUserInfo constructor initialized
+[2024-06-06 09:25:40] - Unauthorized access attempt
+[2024-06-06 09:25:40] - getUserInfo constructor initialized
+[2024-06-06 09:25:40] - Unauthorized access attempt
+[2024-06-06 09:25:50] - getUserInfo constructor initialized
+[2024-06-06 09:25:50] - Unauthorized access attempt
+[2024-06-06 09:25:50] - getUserInfo constructor initialized
+[2024-06-06 09:25:50] - Unauthorized access attempt
+[2024-06-06 09:25:52] - getUserInfo constructor initialized
+[2024-06-06 09:25:52] - Unauthorized access attempt
+[2024-06-06 09:25:52] - getUserInfo constructor initialized
+[2024-06-06 09:25:52] - Unauthorized access attempt
+[2024-06-06 09:25:52] - getUserInfo constructor initialized
+[2024-06-06 09:25:52] - Unauthorized access attempt
+[2024-06-06 09:25:53] - getUserInfo constructor initialized
+[2024-06-06 09:25:53] - Unauthorized access attempt
+[2024-06-06 09:25:53] - getUserInfo constructor initialized
+[2024-06-06 09:25:53] - Unauthorized access attempt
+[2024-06-06 09:29:41] - getUserInfo constructor initialized
+[2024-06-06 09:29:41] - Unauthorized access attempt
+[2024-06-06 09:29:41] - getUserInfo constructor initialized
+[2024-06-06 09:29:41] - Unauthorized access attempt
+[2024-06-06 09:29:57] - getUserInfo constructor initialized
+[2024-06-06 09:29:57] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:29:58] - getUserInfo constructor initialized
+[2024-06-06 09:29:58] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:30:02] - getUserInfo constructor initialized
+[2024-06-06 09:30:02] - Unauthorized access attempt
+[2024-06-06 09:30:02] - getUserInfo constructor initialized
+[2024-06-06 09:30:02] - Unauthorized access attempt
+[2024-06-06 09:30:02] - getUserInfo constructor initialized
+[2024-06-06 09:30:02] - Unauthorized access attempt
+[2024-06-06 09:31:12] - getUserInfo constructor initialized
+[2024-06-06 09:31:12] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:31:12] - getUserInfo constructor initialized
+[2024-06-06 09:31:12] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:31:15] - getUserInfo constructor initialized
+[2024-06-06 09:31:15] - Unauthorized access attempt
+[2024-06-06 09:31:15] - getUserInfo constructor initialized
+[2024-06-06 09:31:15] - Unauthorized access attempt
+[2024-06-06 09:31:15] - getUserInfo constructor initialized
+[2024-06-06 09:31:15] - Unauthorized access attempt
+[2024-06-06 09:31:42] - getUserInfo constructor initialized
+[2024-06-06 09:31:42] - Unauthorized access attempt
+[2024-06-06 09:31:42] - getUserInfo constructor initialized
+[2024-06-06 09:31:42] - Unauthorized access attempt
+[2024-06-06 09:31:42] - getUserInfo constructor initialized
+[2024-06-06 09:31:42] - Unauthorized access attempt
+[2024-06-06 09:32:07] - getUserInfo constructor initialized
+[2024-06-06 09:32:07] - Unauthorized access attempt
+[2024-06-06 09:32:07] - getUserInfo constructor initialized
+[2024-06-06 09:32:07] - Unauthorized access attempt
+[2024-06-06 09:32:44] - getUserInfo constructor initialized
+[2024-06-06 09:32:44] - Unauthorized access attempt
+[2024-06-06 09:32:44] - getUserInfo constructor initialized
+[2024-06-06 09:32:44] - Unauthorized access attempt
+[2024-06-06 09:33:27] - getUserInfo constructor initialized
+[2024-06-06 09:33:27] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:33:27] - getUserInfo constructor initialized
+[2024-06-06 09:33:27] - User info retrieved: {"id":58698444,"name":"cyang","email":"gregyoungforever4@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":2}
+[2024-06-06 09:34:19] - getUserInfo constructor initialized
+[2024-06-06 09:34:19] - Unauthorized access attempt
+[2024-06-06 09:34:24] - getUserInfo constructor initialized
+[2024-06-06 09:34:24] - Unauthorized access attempt
+[2024-06-06 09:34:32] - getUserInfo constructor initialized
+[2024-06-06 09:34:32] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:34:34] - getUserInfo constructor initialized
+[2024-06-06 09:34:34] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:36:22] - getUserInfo constructor initialized
+[2024-06-06 09:36:22] - Unauthorized access attempt
+[2024-06-06 09:36:22] - getUserInfo constructor initialized
+[2024-06-06 09:36:22] - Unauthorized access attempt
+[2024-06-06 09:39:43] - getUserInfo constructor initialized
+[2024-06-06 09:39:43] - Unauthorized access attempt
+[2024-06-06 09:39:44] - getUserInfo constructor initialized
+[2024-06-06 09:39:44] - Unauthorized access attempt
+[2024-06-06 09:41:09] - getUserInfo constructor initialized
+[2024-06-06 09:41:09] - Unauthorized access attempt
+[2024-06-06 09:41:09] - getUserInfo constructor initialized
+[2024-06-06 09:41:09] - Unauthorized access attempt
+[2024-06-06 09:41:14] - getUserInfo constructor initialized
+[2024-06-06 09:41:14] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
+[2024-06-06 09:41:14] - getUserInfo constructor initialized
+[2024-06-06 09:41:14] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":3}
+[2024-06-06 09:41:16] - getUserInfo constructor initialized
+[2024-06-06 09:41:16] - Unauthorized access attempt
+[2024-06-06 09:41:16] - getUserInfo constructor initialized
+[2024-06-06 09:41:16] - Unauthorized access attempt
+[2024-06-06 09:41:26] - getUserInfo constructor initialized
+[2024-06-06 09:41:26] - Unauthorized access attempt
+[2024-06-06 09:41:26] - getUserInfo constructor initialized
+[2024-06-06 09:41:26] - Unauthorized access attempt
+[2024-06-06 09:42:46] - getUserInfo constructor initialized
+[2024-06-06 09:42:46] - Unauthorized access attempt
+[2024-06-06 09:42:46] - getUserInfo constructor initialized
+[2024-06-06 09:42:46] - Unauthorized access attempt
+[2024-06-06 09:43:16] - getUserInfo constructor initialized
+[2024-06-06 09:43:16] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:43:16] - getUserInfo constructor initialized
+[2024-06-06 09:43:16] - User info retrieved: {"id":44216614,"name":"cyang","email":"gregyoungforever@gmail.com","avatarPath":"source\/avatars\/default.jpg","accessLevel":1}
+[2024-06-06 09:44:34] - getUserInfo constructor initialized
+[2024-06-06 09:44:34] - Unauthorized access attempt
+[2024-06-06 09:44:34] - getUserInfo constructor initialized
+[2024-06-06 09:44:34] - Unauthorized access attempt
