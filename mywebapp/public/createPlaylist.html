@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Playlist</title>
-        <link rel="stylesheet" type="text/css" href="css\createPlaylist.css" />
-    </head>
-    <body>
-    
-        <header >
-            
-        </header>
-        <main>
-            <div class="main">
-
-                <form id="playlistForm">
-                    <div>
-                        <label for="name">Nom de la playlist:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="description">Description:</label>
-                        <textarea id="description" name="description" required></textarea>
-                    </div>
-                    <div>
-                        <label for="cover">Photo de couverture:</label>
-                        <input type="file" id="cover" name="cover" accept="image/*" required>
-                    </div>
-
-                    <div>
-                        <h3>Ajouter une musique</h3>
-                        <div>
-                            <label for="title">Titre de la musique:</label>
-                            <input type="text" id="title" name="title" required>
-                        </div>
-                        <div>
-                            <label for="artist">Artiste:</label>
-                            <input type="text" id="artist" name="artist" required>
-                        </div>
-                        <div>
-                            <label for="genre">Genre:</label>
-                            <input type="text" id="genre" name="genre" required>
-                        </div>
-                        <div>
-                            <label for="music">Musique :</label>
-                            <input type="file" id="music" name="music" required>
-                        </div>
-                    </div>
-                    <button type="submit">Créer Playlist</button>
-                </form>
-
-                <div id="playlistContainer">
-                    <h2>Playlists Créées</h2>
-                    <ul id="playlistList"></ul>
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist</title>
+    <link rel="stylesheet" type="text/css" href="css/createPlaylist.css" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="main">
+            <form id="playlistForm">
+                <div>
+                    <label for="name">Nom de la playlist:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div>
+                    <label for="cover">Photo de couverture:</label>
+                    <input type="file" id="cover" name="cover" accept="image/*" required>
                 </div>
 
-                <div id="musicContainer">
-                    <h2>Musiques Ajoutées</h2>
-                    <ul id="musicList"></ul>
+                <div>
+                    <h3>Ajouter une musique</h3>
+                    <div>
+                        <label for="title">Titre de la musique:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div>
+                        <label for="artist">Artiste:</label>
+                        <input type="text" id="artist" name="artist" required>
+                    </div>
+                    <div>
+                        <label for="genre">Genre:</label>
+                        <input type="text" id="genre" name="genre" required>
+                    </div>
+                    <div>
+                        <label for="music">Musique :</label>
+                        <input type="file" id="music" name="music" required>
+                    </div>
                 </div>
-                
+                <button type="submit">Créer Playlist</button>
+            </form>
+
+            <div id="playlistContainer">
+                <h2>Playlists Créées</h2>
+                <ul id="playlistList"></ul>
             </div>
-            
-        </main>
-        <footer>
 
-        </footer>
-        <script src="js/createPlaylist.js"></script>
-    </body>
+            <div id="musicContainer">
+                <h2>Musiques Ajoutées</h2>
+                <ul id="musicList"></ul>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/createPlaylist.js"></script>
+</body>
 </html>

@@ -11,7 +11,7 @@ class MeetingController {
     }
 
     public function ajouterEvenement() {
-        session_start();
+
         $this->logger->log('ajouterEvenement called');
         $data = json_decode(file_get_contents('php://input'), true);
         $idOrganizer = $_SESSION['user']['id'];

@@ -22,9 +22,16 @@ $logger = new Logger('../logs/index.log');
 $router = new Router();
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
+
+require_once __DIR__ . '/../src/controllers/sensorController.php';
+
+
+
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+
 switch($action) {
     case 'register':
         if ($method == 'GET') {
@@ -135,6 +142,15 @@ switch($action) {
             });
         }
         break;
+    case 'getSensorData':
+            if ($method == 'GET') {
+                $logger->log('GET /getSensorData');
+                $router->get('/getSensorData', function(){
+                    $sensorController = new SensorController();
+                    $sensorController->getAllSensorData();
+                });
+            }
+            break;
 
     case 'forum':
         if ($method == 'POST') {
@@ -145,12 +161,12 @@ switch($action) {
             });    
         }
         break;
-    case 'createPlaylist':
+    case 'addPlaylistAndMusic':
         if ($method == 'POST') {
-            $logger->log('POST /createPlaylist');
-            $router->post('/createPlaylist', function() {
+            $logger->log('POST /addPlaylistAndMusic');
+            $router->post('/addPlaylistAndMusic', function() {
                 $createPlaylistController = new CreatePlaylistController();
-                $createPlaylistController->ajouterPlaylist();
+                $createPlaylistController->addPlaylistAndMusic();
             });
         }
         break;
@@ -323,6 +339,17 @@ switch($action) {
                 });
             }
             break;
+            case 'getPlaylists':
+                if ($method == 'GET') {
+                    $logger->log('GET /getPlaylists');
+                    $router->get('/getPlaylists', function() {
+                        require_once '../src/controllers/playlistController.php';
+                        $playlistController = new PlaylistController();
+                        $playlistController->getPlaylists();
+                    });
+                }
+                break;
+            
     default:
         $logger->log('action not found: '.$action);
         echo json_encode(["message" => "404", "status" => "error"]);

@@ -24,7 +24,9 @@ window.onload = function() {
     .catch(error => {
         console.error('Error fetching user info:', error);
     });
-}
+
+};
+
 
 window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {
@@ -37,6 +39,7 @@ function handleMenuButtonClick() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
 
     fetch('index.php?action=getUserInfo')
         .then(response => response.json())
@@ -79,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 });
+

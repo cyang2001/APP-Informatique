@@ -74,11 +74,27 @@ CREATE TABLE IF NOT EXISTS USER_MEETINGS (
 );
 
 
-CREATE TABLE IF NOT EXISTS SENSOR (
-    ID_SENSOR INT PRIMARY KEY,
-    OWNER_ID INT,
-    FOREIGN KEY (OWNER_ID) REFERENCES USER(ID_USER)
+CREATE TABLE IF NOT EXISTS `sensor` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `date_heure` DATETIME NOT NULL,
+    `niveau_db` FLOAT NOT NULL
 );
+INSERT INTO sensor (date_heure, niveau_db) VALUES
+                                               ('2023-01-01 12:00:00', 55.2),
+                                               ('2023-01-01 12:01:00', 56.7),
+                                               ('2023-01-01 12:02:00', 54.3),
+                                               ('2023-01-01 12:03:00', 57.8),
+                                               ('2023-01-01 12:04:00', 58.6),
+                                               ('2023-01-01 12:05:00', 55.2),
+                                               ('2023-01-01 12:06:00', 56.7),
+                                               ('2023-01-01 12:07:00', 54.3),
+                                               ('2023-01-01 12:08:00', 57.8),
+                                               ('2023-01-01 12:09:00', 58.6),
+                                               ('2023-01-01 12:11:00', 55.2),
+                                               ('2023-01-01 12:11:00', 56.7),
+                                               ('2023-01-01 12:12:00', 54.3),
+                                               ('2023-01-01 12:13:00', 57.8),
+                                               ('2023-01-01 12:14:00', 58.6)
 
 
 CREATE TABLE IF NOT EXISTS PLAY_LIST (
@@ -132,3 +148,7 @@ CREATE TABLE IF NOT EXISTS PLAY_LIST_TRACKS (
     FOREIGN KEY (ID_PLAY_LIST) REFERENCES PLAY_LIST(ID_PLAY_LIST),
     FOREIGN KEY (ID_TRACK) REFERENCES MUSIC_TRACKS(ID_TRACK)
 );
+
+INSERT INTO access_levels (ID_ACCESS_LEVEL, LEVEL_NAME) VALUES (0, 'Guest');
+INSERT INTO access_levels (ID_ACCESS_LEVEL, LEVEL_NAME) VALUES (1, 'Member');
+INSERT INTO access_levels (ID_ACCESS_LEVEL, LEVEL_NAME) VALUES (2, 'Admin');
