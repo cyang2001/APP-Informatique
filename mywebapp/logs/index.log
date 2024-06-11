@@ -450,3 +450,306 @@
 [2024-06-06 09:55:25] - GET /getUserInfo
 [2024-06-06 09:55:25] - GET /getPages
 [2024-06-06 09:55:25] - User access level: 3
+[2024-06-06 09:56:04] - GET /logout
+[2024-06-06 09:56:04] - GET /getUserInfo
+[2024-06-06 09:56:04] - GET /getPages
+[2024-06-06 09:56:04] - User access level: 0
+[2024-06-06 09:56:05] - GET /getUserInfo
+[2024-06-06 09:56:17] - POST /login
+[2024-06-06 09:56:19] - GET /getUserInfo
+[2024-06-06 09:56:19] - GET /getUserInfo
+[2024-06-06 09:56:19] - GET /getPages
+[2024-06-06 09:56:19] - User access level: 3
+[2024-06-06 09:56:20] - GET /getUserInfo
+[2024-06-06 09:56:20] - GET /getUserInfo
+[2024-06-06 09:56:20] - GET /getUserInfo
+[2024-06-06 09:56:20] - GET /getPages
+[2024-06-06 09:56:20] - User access level: 3
+[2024-06-06 09:58:57] - GET /getUserInfo
+[2024-06-06 09:58:57] - GET /getPages
+[2024-06-06 09:58:57] - User access level: 0
+[2024-06-06 09:58:57] - GET /getUserInfo
+[2024-06-06 09:59:44] - GET /logout
+[2024-06-06 09:59:44] - GET /getUserInfo
+[2024-06-06 09:59:44] - GET /getPages
+[2024-06-06 09:59:44] - User access level: 0
+[2024-06-06 09:59:48] - GET /getUserInfo
+[2024-06-06 10:00:08] - GET /logout
+[2024-06-06 10:00:16] - POST /login
+[2024-06-06 10:00:17] - GET /getUserInfo
+[2024-06-06 10:00:17] - GET /getPages
+[2024-06-06 10:00:17] - User access level: 1
+[2024-06-06 10:00:18] - GET /getUserInfo
+[2024-06-06 10:00:19] - GET /logout
+[2024-06-06 10:00:19] - GET /getUserInfo
+[2024-06-06 10:01:21] - GET /getUserInfo
+[2024-06-06 10:01:21] - GET /getUserInfo
+[2024-06-06 10:01:25] - GET /getUserInfo
+[2024-06-06 10:01:25] - GET /getUserInfo
+[2024-06-06 10:02:01] - GET /getUserInfo
+[2024-06-06 10:02:01] - GET /getPages
+[2024-06-06 10:02:01] - User access level: 0
+[2024-06-06 10:02:02] - GET /getUserInfo
+[2024-06-06 10:02:05] - GET /logout
+[2024-06-06 10:02:12] - POST /login
+[2024-06-06 10:02:14] - GET /getUserInfo
+[2024-06-06 10:02:14] - GET /getPages
+[2024-06-06 10:02:14] - User access level: 1
+[2024-06-06 10:02:14] - GET /getUserInfo
+[2024-06-06 10:02:16] - GET /logout
+[2024-06-06 10:02:16] - GET /getUserInfo
+[2024-06-06 10:03:25] - GET /getUserInfo
+[2024-06-06 10:03:28] - GET /getUserInfo
+[2024-06-06 10:03:28] - GET /getPages
+[2024-06-06 10:03:28] - User access level: 0
+[2024-06-06 10:03:28] - GET /getUserInfo
+[2024-06-06 10:03:35] - GET /logout
+[2024-06-06 10:03:41] - POST /login
+[2024-06-06 10:03:43] - GET /getUserInfo
+[2024-06-06 10:03:43] - GET /getPages
+[2024-06-06 10:03:43] - User access level: 1
+[2024-06-06 10:03:43] - GET /getUserInfo
+[2024-06-06 10:03:47] - GET /logout
+[2024-06-06 10:03:47] - GET /getUserInfo
+[2024-06-06 10:03:47] - GET /getPages
+[2024-06-06 10:03:47] - User access level: 0
+[2024-06-06 10:03:47] - GET /getUserInfo
+[2024-06-06 10:04:05] - GET /getUserInfo
+[2024-06-06 10:04:05] - GET /logout
+[2024-06-06 10:04:05] - GET /getUserInfo
+[2024-06-06 10:04:05] - GET /getPages
+[2024-06-06 10:04:05] - User access level: 0
+[2024-06-06 10:04:05] - GET /logout
+[2024-06-06 10:04:05] - GET /getUserInfo
+[2024-06-06 10:04:05] - GET /getUserInfo
+[2024-06-06 10:04:05] - GET /getPages
+[2024-06-06 10:04:05] - User access level: 0
+[2024-06-06 10:04:07] - GET /logout
+[2024-06-06 10:04:13] - POST /login
+[2024-06-06 10:04:14] - GET /getUserInfo
+[2024-06-06 10:04:14] - GET /getPages
+[2024-06-06 10:04:14] - User access level: 1
+[2024-06-06 10:04:14] - GET /getUserInfo
+[2024-06-06 10:04:53] - GET /logout
+[2024-06-06 10:04:53] - GET /getUserInfo
+[2024-06-06 10:04:53] - GET /getPages
+[2024-06-06 10:04:53] - User access level: 0
+[2024-06-06 10:04:54] - GET /getUserInfo
+[2024-06-06 10:05:01] - POST /login
+[2024-06-06 10:05:03] - GET /getUserInfo
+[2024-06-06 10:05:03] - GET /getPages
+[2024-06-06 10:05:03] - User access level: 1
+[2024-06-06 10:05:05] - GET /getUserInfo
+[2024-06-06 10:05:06] - GET /getUserInfo
+[2024-06-06 10:05:59] - GET /getUserInfo
+[2024-06-06 10:05:59] - GET /getPages
+[2024-06-06 10:05:59] - User access level: 1
+[2024-06-06 10:05:59] - GET /getUserInfo
+[2024-06-06 10:06:01] - GET /getUserInfo
+[2024-06-06 10:06:11] - POST /uploadAvatar
+[2024-06-06 10:06:17] - GET /getUserInfo
+[2024-06-06 10:06:17] - GET /getUserInfo
+[2024-06-06 10:06:17] - GET /getPages
+[2024-06-06 10:06:17] - User access level: 1
+[2024-06-06 10:06:19] - GET /getUserInfo
+[2024-06-06 10:07:39] - GET /getUserInfo
+[2024-06-06 10:07:39] - GET /getPages
+[2024-06-06 10:07:39] - User access level: 1
+[2024-06-06 10:07:39] - GET /getUserInfo
+[2024-06-06 10:51:32] - GET /logout
+[2024-06-06 10:51:32] - GET /getUserInfo
+[2024-06-06 10:51:32] - GET /getPages
+[2024-06-06 10:51:32] - User access level: 0
+[2024-06-06 10:51:32] - GET /getUserInfo
+[2024-06-06 10:51:36] - GET /getUserInfo
+[2024-06-06 10:51:36] - GET /getPages
+[2024-06-06 10:51:36] - User access level: 0
+[2024-06-06 10:51:36] - GET /getUserInfo
+[2024-06-06 11:10:37] - GET /getUserInfo
+[2024-06-06 11:10:37] - GET /getPages
+[2024-06-06 11:10:37] - User access level: 0
+[2024-06-06 11:10:37] - GET /getUserInfo
+[2024-06-06 11:10:48] - POST /register
+[2024-06-06 11:10:48] - calling
+[2024-06-06 11:11:27] - POST /updateOrga
+[2024-06-06 11:11:27] - GET /getUserInfo
+[2024-06-06 11:11:27] - GET /getPages
+[2024-06-06 11:11:27] - User access level: 2
+[2024-06-06 11:11:27] - GET /getUserInfo
+[2024-06-06 11:11:39] - GET /getUserInfo
+[2024-06-06 11:11:48] - POST /uploadAvatar
+[2024-06-06 11:12:01] - GET /getUserInfo
+[2024-06-06 11:12:01] - GET /getPlaylists
+[2024-06-06 11:12:01] - GET /getUserInfo
+[2024-06-06 11:12:01] - GET /getPages
+[2024-06-06 11:12:01] - User access level: 2
+[2024-06-06 11:12:06] - GET /getUserInfo
+[2024-06-06 11:12:06] - GET /getUserInfo
+[2024-06-06 11:12:06] - GET /getPages
+[2024-06-06 11:12:06] - User access level: 2
+[2024-06-06 11:12:06] - GET /getUserInfo
+[2024-06-06 11:12:06] - GET /getPages
+[2024-06-06 11:12:06] - User access level: 2
+[2024-06-06 11:12:18] - GET /getPlaylists
+[2024-06-06 11:12:18] - GET /getUserInfo
+[2024-06-06 11:12:18] - GET /getUserInfo
+[2024-06-06 11:12:18] - GET /getPages
+[2024-06-06 11:12:18] - User access level: 2
+[2024-06-06 11:13:20] - POST /addPlaylistAndMusic
+[2024-06-06 11:13:22] - GET /getUserInfo
+[2024-06-06 11:13:22] - GET /getPlaylists
+[2024-06-06 11:13:22] - GET /getUserInfo
+[2024-06-06 11:13:22] - GET /getPages
+[2024-06-06 11:13:22] - User access level: 2
+[2024-06-06 11:13:30] - GET /getSensorData
+[2024-06-06 11:13:30] - GET /getUserInfo
+[2024-06-06 11:13:30] - GET /getUserInfo
+[2024-06-06 11:13:30] - GET /getPages
+[2024-06-06 11:13:30] - User access level: 2
+[2024-06-06 11:13:30] - GET /getUserInfo
+[2024-06-06 11:13:30] - GET /getPages
+[2024-06-06 11:13:30] - User access level: 2
+[2024-06-06 11:14:03] - GET /logout
+[2024-06-06 11:14:03] - GET /getUserInfo
+[2024-06-06 11:14:03] - GET /getUserInfo
+[2024-06-06 11:14:03] - GET /getPages
+[2024-06-06 11:14:03] - User access level: 0
+[2024-06-06 11:14:07] - GET /getUserInfo
+[2024-06-06 11:14:07] - GET /getUserInfo
+[2024-06-06 11:14:07] - GET /getPages
+[2024-06-06 11:14:07] - User access level: 0
+[2024-06-06 11:14:09] - GET /getUserInfo
+[2024-06-06 11:14:09] - GET /getPages
+[2024-06-06 11:14:09] - User access level: 0
+[2024-06-06 11:14:09] - GET /getUserInfo
+[2024-06-06 11:14:12] - GET /getUserInfo
+[2024-06-06 11:14:12] - GET /getUserInfo
+[2024-06-06 11:14:12] - GET /getPages
+[2024-06-06 11:14:12] - User access level: 0
+[2024-06-06 11:14:14] - GET /getUserInfo
+[2024-06-06 11:14:14] - GET /getUserInfo
+[2024-06-06 11:14:14] - GET /getPages
+[2024-06-06 11:14:14] - User access level: 0
+[2024-06-06 11:14:27] - GET /getUserInfo
+[2024-06-06 11:14:27] - GET /getSensorData
+[2024-06-06 11:14:27] - GET /getPages
+[2024-06-06 11:14:27] - User access level: 0
+[2024-06-06 11:14:27] - GET /getUserInfo
+[2024-06-06 11:14:27] - GET /getUserInfo
+[2024-06-06 11:14:27] - GET /getPages
+[2024-06-06 11:14:27] - User access level: 0
+[2024-06-06 11:14:30] - GET /logout
+[2024-06-06 11:14:40] - POST /login
+[2024-06-06 11:14:42] - GET /getUserInfo
+[2024-06-06 11:14:42] - GET /getPages
+[2024-06-06 11:14:42] - User access level: 2
+[2024-06-06 11:14:42] - GET /getUserInfo
+[2024-06-06 11:14:49] - GET /getUserInfo
+[2024-06-06 11:14:49] - GET /getUserInfo
+[2024-06-06 11:14:49] - GET /getPages
+[2024-06-06 11:14:49] - User access level: 2
+[2024-06-06 11:14:49] - GET /getPages
+[2024-06-06 11:14:49] - User access level: 2
+[2024-06-06 11:14:49] - GET /getUserInfo
+[2024-06-06 11:15:39] - GET /getUserInfo
+[2024-06-06 11:15:39] - GET /getPages
+[2024-06-06 11:15:39] - User access level: 2
+[2024-06-06 11:15:39] - GET /getUserInfo
+[2024-06-06 11:15:58] - POST /addMeeting
+[2024-06-06 11:16:17] - GET /getUserInfo
+[2024-06-06 11:16:17] - GET /getUserInfo
+[2024-06-06 11:16:17] - GET /getPages
+[2024-06-06 11:16:17] - User access level: 2
+[2024-06-06 11:16:30] - GET /logout
+[2024-06-06 11:16:30] - GET /getUserInfo
+[2024-06-06 11:16:30] - GET /getPages
+[2024-06-06 11:16:30] - User access level: 0
+[2024-06-06 11:16:30] - GET /getUserInfo
+[2024-06-06 11:16:44] - GET /getUserInfo
+[2024-06-06 11:16:44] - GET /getUserInfo
+[2024-06-06 11:16:44] - GET /getPages
+[2024-06-06 11:16:44] - User access level: 0
+[2024-06-06 11:16:47] - GET /logout
+[2024-06-06 11:16:47] - GET /getUserInfo
+[2024-06-06 11:16:47] - GET /getPages
+[2024-06-06 11:16:47] - User access level: 0
+[2024-06-06 11:16:47] - GET /getUserInfo
+[2024-06-06 11:16:57] - POST /login
+[2024-06-06 11:16:59] - GET /getUserInfo
+[2024-06-06 11:16:59] - GET /getPages
+[2024-06-06 11:16:59] - User access level: 2
+[2024-06-06 11:16:59] - GET /getUserInfo
+[2024-06-06 11:17:22] - GET /getUserInfo
+[2024-06-06 11:17:22] - GET /getPages
+[2024-06-06 11:17:22] - User access level: 2
+[2024-06-06 11:17:22] - GET /getUserInfo
+[2024-06-06 11:17:26] - GET /getUserInfo
+[2024-06-06 11:17:26] - GET /getUserInfo
+[2024-06-06 11:17:26] - GET /getPages
+[2024-06-06 11:17:26] - User access level: 2
+[2024-06-06 11:30:33] - GET /logout
+[2024-06-06 11:30:33] - GET /getUserInfo
+[2024-06-06 11:30:33] - GET /getPages
+[2024-06-06 11:30:33] - User access level: 0
+[2024-06-06 11:30:33] - GET /getUserInfo
+[2024-06-06 11:32:47] - POST /register
+[2024-06-06 11:32:47] - calling
+[2024-06-06 11:39:00] - POST /updateOrga
+[2024-06-06 11:39:00] - GET /getUserInfo
+[2024-06-06 11:39:00] - GET /getUserInfo
+[2024-06-06 11:39:00] - GET /getPages
+[2024-06-06 11:39:00] - User access level: 2
+[2024-06-06 11:39:04] - GET /getUserInfo
+[2024-06-06 11:39:04] - GET /getPages
+[2024-06-06 11:39:04] - User access level: 2
+[2024-06-06 11:39:04] - GET /getUserInfo
+[2024-06-06 11:39:05] - GET /getUserInfo
+[2024-06-06 11:39:05] - GET /getUserInfo
+[2024-06-06 11:39:05] - GET /getPages
+[2024-06-06 11:39:05] - User access level: 2
+[2024-06-06 11:39:11] - GET /getUserInfo
+[2024-06-06 11:39:11] - GET /getPages
+[2024-06-06 11:39:11] - User access level: 2
+[2024-06-06 11:39:11] - GET /getUserInfo
+[2024-06-06 11:40:18] - GET /getUserInfo
+[2024-06-06 11:40:18] - GET /getPages
+[2024-06-06 11:40:18] - User access level: 2
+[2024-06-06 11:40:18] - GET /getUserInfo
+[2024-06-06 11:40:48] - GET /getUserInfo
+[2024-06-06 11:40:48] - GET /getUserInfo
+[2024-06-06 11:40:48] - GET /getPages
+[2024-06-06 11:40:48] - User access level: 2
+[2024-06-06 11:41:27] - POST /forum
+[2024-06-06 11:41:29] - POST /forum
+[2024-06-06 11:41:30] - POST /forum
+[2024-06-06 11:41:32] - POST /forum
+[2024-06-06 11:41:32] - POST /forum
+[2024-06-06 11:43:04] - GET /getUserInfo
+[2024-06-06 11:43:04] - GET /getUserInfo
+[2024-06-06 11:43:04] - GET /getPages
+[2024-06-06 11:43:04] - User access level: 2
+[2024-06-06 11:43:11] - GET /getUserInfo
+[2024-06-06 11:43:11] - GET /getUserInfo
+[2024-06-06 11:43:11] - GET /getPages
+[2024-06-06 11:43:11] - User access level: 2
+[2024-06-06 11:43:19] - POST /forum
+[2024-06-06 11:43:21] - GET /getUserInfo
+[2024-06-06 11:43:21] - GET /getUserInfo
+[2024-06-06 11:43:21] - GET /getPages
+[2024-06-06 11:43:21] - User access level: 2
+[2024-06-06 11:45:07] - GET /getUserInfo
+[2024-06-06 11:45:07] - GET /getUserInfo
+[2024-06-06 11:45:07] - GET /getPages
+[2024-06-06 11:45:07] - User access level: 2
+[2024-06-06 11:45:26] - GET /logout
+[2024-06-06 11:45:26] - GET /getUserInfo
+[2024-06-06 11:45:26] - GET /getPages
+[2024-06-06 11:45:26] - User access level: 0
+[2024-06-06 11:45:26] - GET /getUserInfo
+[2024-06-06 11:45:56] - POST /login
+[2024-06-06 11:45:59] - GET /getUserInfo
+[2024-06-06 11:45:59] - GET /getPages
+[2024-06-06 11:45:59] - User access level: 2
+[2024-06-06 11:45:59] - GET /getUserInfo
+[2024-06-06 11:46:05] - GET /getUserInfo
+[2024-06-06 11:46:47] - GET /getUserInfo

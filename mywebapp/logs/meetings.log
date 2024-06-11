@@ -35,3 +35,6 @@
 [2024-05-06 12:00:30] - MeetingController initialized
 [2024-05-06 12:00:30] - ajouterEvenement called
 [2024-05-06 12:00:30] - Meeting added: 96463446-ccc - 2024-05-08 - 15:01 - ccc - ccccc
+[2024-06-06 11:15:58] - MeetingController initialized
+[2024-06-06 11:15:58] - ajouterEvenement called
+[2024-06-06 11:15:58] - Meeting added: 66765014-test - 2024-06-07 - 14:16 - test - test

@@ -146,7 +146,7 @@ function closeCropModal() {
     }
 }
 
-window.onload = function() {
+/*window.onload = function() {
     fetch('index.php?action=getUserInfo', {
         method: 'GET'
     })
@@ -173,20 +173,20 @@ window.onload = function() {
         console.error('Error fetching user info:', error);
     });
 
-};
+};*/
 
 
 /*window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {
         method: 'GET'
     }).catch(error => console.error('Error on logout:', error));
-});*/
+});
 function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;
-}
+}*/
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
 
 
     fetch('index.php?action=getUserInfo')
@@ -229,5 +229,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('An error occurred while loading pages. Please try again later.');
             });
     }
-});
+});*/
 

@@ -24,6 +24,9 @@ window.onload = function() {
         } else {
             menu.innerHTML = '<a href="./login_fr.html">Se connecter</a><a href="./register_fr.html">S\'inscrire</a>';
         }
+        if (data.avatarPath) {
+            document.getElementById('avatarDisplay').src = data.avatarPath + '?t=' + new Date().getTime();
+        }
     })
     .catch(error => {
         console.error('Error fetching user info:', error);
@@ -32,11 +35,11 @@ window.onload = function() {
 };
 
 
-window.addEventListener('beforeunload', function(event) {
+/*window.addEventListener('beforeunload', function(event) {
     fetch('index.php?action=logout', {
         method: 'GET'
     }).catch(error => console.error('Error on logout:', error));
-});
+});*/
 function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;

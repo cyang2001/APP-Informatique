@@ -30,7 +30,7 @@ class getUserInfo {
                 } elseif (file_exists(__DIR__ . '/../../public/' . $avatarPathPng)) {
                     $avatarPath = $avatarPathPng;
                 } else {
-                    $avatarPath = 'source/avatars/default.jpg';
+                    $avatarPath = 'source/avatars/default.png';
                 }
     
                 $response = [
