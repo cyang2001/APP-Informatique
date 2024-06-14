@@ -8,9 +8,11 @@ class Forum {
     public function __construct() {
         $this->pdo = Database::getInstance()->getConnection();
         $this->logger = new Logger('../logs/forum.log');
+        $this->logger->log('Forum initialized');
     }
     //fonction pour créer les posts et les ajouter a la base de donnée
     public function createPost($idCreator, $title, $description, $fileURL, $category, $userName) {
+        $this->logger->log('createPost called');
         $idPost = UUIDGenerator::generate();
         $sql = "INSERT INTO forum (ID_FORUM, ID_CREATOR, NAME_CATEGORY, FORUM_TITRE, FORUM_DESCRIPTION, FORUM_URL_FICHIR, CREATOR_NAME) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);

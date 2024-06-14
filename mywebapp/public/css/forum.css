@@ -351,4 +351,89 @@ label{
     padding:5px;
     text-align: justify;
 }
-   
+
+.bouton2 {
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: -40px;
+}
+
+.bouton2 div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
+}
+
+.bouton2:hover div {
+    display: block;
+}
+
+.prof-home{
+    width: 45px;
+}
+
+
+
+.drap-home{
+    width: 45px;
+}
+
+
+.bouton1 {
+    float: right;
+    position: relative;
+    display: inline-block;
+    margin-top: -40px;
+    margin-right: 25px;
+}
+
+.bouton1 div {
+    display: none; /* caché */
+    position: absolute;
+    background-color: #f9f9f9; /* gris pale */
+    min-width: 160px;
+    z-index: 1; /* en avant */
+}
+
+.bouton1:hover div {
+    display: block;
+}
+
+
+
+
+.bouton-home{
+    font-size: 20px;
+    font-family: Poppins;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.barre-home{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-home:hover{
+    color: lightblue;
+}
+
+.icones-home{
+    margin-top: -65px;
+    float: right;
+    margin-right: 20px;
+}
+
+.img-home {
+
+    padding-left: 20px;
+    width: 45px;
+}
