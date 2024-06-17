@@ -1,62 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('index.php?action=getSensorData')
-        .then(response => response.json())
-        .then(data => {
-            if (data.length > 0) {
-
-                var labels = data.map(function(e) {
-                    return new Date(e.date_heure);
-                });
-                var niveaux_db = data.map(function(e) {
-                    return e.niveau_db;
-                });
-
-                var ctxSound = document.getElementById('soundLevelChart').getContext('2d');
-                var soundLevelChart = new Chart(ctxSound, {
-                    type: 'line',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: 'Niveau Sonore (dB)',
-                            data: niveaux_db,
-                            borderColor: 'rgb(255, 99, 132)',
-                            fill: false,
-                            pointRadius: 5,
-                            pointHoverRadius: 7
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        scales: {
-                            x: {
-                                type: 'time',
-                                time: {
-                                    unit: 'minute'
-                                }
-                            },
-                            y: {
-                                beginAtZero: true
-                            }
-                        },
-                        plugins: {
-                            tooltip: {
-                                enabled: true,
-                                callbacks: {
-                                    label: function(context) {
-                                        return context.dataset.label + ': ' + context.raw + ' dB';
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-            } else {
-                console.error('No data received');
-            }
-        })
-        .catch(error => console.error('Error fetching data:', error));
-});
 
 
 
@@ -222,49 +163,87 @@ function handleMenuButtonClick() {
     var checkbox = document.getElementById('menu_toggle');
     checkbox.checked = !checkbox.checked;
 }
-
 document.addEventListener('DOMContentLoaded', function() {
+    var soundLevelChart = null;
 
-
-    fetch('index.php?action=getUserInfo')
-        .then(response => response.json())
-        .then(data => {
-            console.log('User info:', data);
-
-            const userAccessLevel = data.accessLevel !== undefined ? data.accessLevel : 0;
-            console.log(userAccessLevel)
-            loadMenu(userAccessLevel);
-        })
-        .catch(error => {
-            console.error('Error fetching user info:', error);
-            alert('An error occurred while fetching user info. Please try again later.');
-        });
-
-
-    function loadMenu(userAccessLevel) {
-        fetch('index.php?action=getPages')
+    const fetchData = () => {
+        fetch('index.php?action=getSensorData')
             .then(response => response.json())
             .then(data => {
-                console.log('Pages:', data);
-                const menuBox = document.querySelector('.menu_box');
-                menuBox.innerHTML = ''; 
-                data.forEach(page => {
-                    if (userAccessLevel >= page.ID_ACCESS_LEVEL) {
-                        const li = document.createElement('li');
-                        const a = document.createElement('a');
-                        a.className = 'menu_item';
-                        a.href = page.PAGE_URL;
-                        a.textContent = page.PAGE_NAME;
-                        li.appendChild(a);
-                        menuBox.appendChild(li);
-                        console.log('Appended item:', a);
+                if (data.length > 0) {
+                    console.log('Data received:', data);
+                    var labels = data.map(function(e) {
+                        return moment(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`).format('YYYY-MM-DD HH:mm:ss');
+                    });
+
+
+                    // var now = new Date();
+                    // labels = labels.filter(date => (now - date) < 24 * 60 * 60 * 1000); 
+
+                    var niveaux_db = data.map(function(e) {
+                        return parseInt(e.VAL, 16);  
+                    });
+                    console.log('Labels:', labels);
+                    var ctxSound = document.getElementById('soundLevelChart').getContext('2d');
+                    if (soundLevelChart !== null) {
+                        soundLevelChart.destroy();
+                        soundLevelChart = null; 
                     }
-                });
+
+
+                    soundLevelChart = new Chart(ctxSound, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Niveau Sonore (dB)',
+                                data: niveaux_db,
+                                borderColor: 'rgb(255, 99, 132)',
+                                fill: false,
+                                pointRadius: 5,
+                                pointHoverRadius: 7,
+                                hitRadius: 10,
+                                hoverRadius: 7
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                                x: {
+                                    type: 'time',
+                                    time: {
+                                        unit: 'minute'
+                                    }
+                                },
+                                y: {
+                                    beginAtZero: true
+                                }
+                            },
+                            plugins: {
+                                tooltip: {
+                                    enabled: true,
+                                    callbacks: {
+                                        label: function(context) {
+                                            return context.dataset.label + ': ' + context.raw + ' dB';
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    console.error('No data received');
+                }
             })
-            .catch(error => {
-                console.error('Error loading pages:', error);
-                alert('An error occurred while loading pages. Please try again later.');
-            });
-    }
+            .catch(error => console.error('Error fetching data:', error));
+    };
+
+
+    setInterval(fetchData, 5000);
+    fetchData(); 
 });
+
+
+
 
