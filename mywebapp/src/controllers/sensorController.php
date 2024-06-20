@@ -35,21 +35,21 @@ private function parseTrame($trame) {
 }
 
 public function sendDataToEnergia() {
-    // 解析接收到的 JSON 数据
     $postData = json_decode(file_get_contents('php://input'), true);
     $trame = $postData['trame'];
 
-    // 构建 URL，注意 TRAME 参数
     $url = "http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=G10C&TRAME=" . urlencode($trame);
-
-    // 初始化 cURL
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
-        curl_close($ch);
 
-        // 输出响应
+    if (curl_errno($ch)) {
+        echo 'Error:' . curl_error($ch);
+    } else {
         echo $response;
+    }
+
+    curl_close($ch);
 }
 }
