@@ -938,3 +938,23 @@
 [2024-06-20 15:20:38] - Unauthorized access attempt
 [2024-06-20 15:20:38] - getUserInfo constructor initialized
 [2024-06-20 15:20:38] - Unauthorized access attempt
+[2024-06-20 15:22:58] - getUserInfo constructor initialized
+[2024-06-20 15:22:58] - Unauthorized access attempt
+[2024-06-20 15:22:58] - getUserInfo constructor initialized
+[2024-06-20 15:22:58] - Unauthorized access attempt
+[2024-06-20 15:23:08] - getUserInfo constructor initialized
+[2024-06-20 15:23:08] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:23:08] - getUserInfo constructor initialized
+[2024-06-20 15:23:08] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:23:10] - getUserInfo constructor initialized
+[2024-06-20 15:23:10] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:23:10] - getUserInfo constructor initialized
+[2024-06-20 15:23:10] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:23:12] - getUserInfo constructor initialized
+[2024-06-20 15:23:12] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:23:12] - getUserInfo constructor initialized
+[2024-06-20 15:23:12] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 15:32:19] - getUserInfo constructor initialized
+[2024-06-20 15:32:19] - Unauthorized access attempt
+[2024-06-20 15:32:24] - getUserInfo constructor initialized
+[2024-06-20 15:32:24] - Unauthorized access attempt

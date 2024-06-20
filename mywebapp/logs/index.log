@@ -3063,3 +3063,47 @@
 [2024-06-20 15:20:51] - POST /sendDataToEnergia
 [2024-06-20 15:20:56] - GET /getSensorData
 [2024-06-20 15:21:01] - POST /sendDataToEnergia
+[2024-06-20 15:21:06] - POST /sendDataToEnergia
+[2024-06-20 15:21:11] - POST /sendDataToEnergia
+[2024-06-20 15:21:16] - POST /sendDataToEnergia
+[2024-06-20 15:21:21] - GET /getSensorData
+[2024-06-20 15:22:58] - GET /getUserInfo
+[2024-06-20 15:22:58] - GET /getPages
+[2024-06-20 15:22:58] - User access level: 0
+[2024-06-20 15:22:58] - GET /getUserInfo
+[2024-06-20 15:23:07] - POST /login
+[2024-06-20 15:23:08] - GET /getUserInfo
+[2024-06-20 15:23:08] - GET /getPages
+[2024-06-20 15:23:08] - User access level: 3
+[2024-06-20 15:23:08] - GET /getUserInfo
+[2024-06-20 15:23:10] - GET /getPlaylists
+[2024-06-20 15:23:10] - GET /getUserInfo
+[2024-06-20 15:23:10] - GET /getUserInfo
+[2024-06-20 15:23:10] - GET /getPages
+[2024-06-20 15:23:10] - User access level: 3
+[2024-06-20 15:23:12] - GET /getUserInfo
+[2024-06-20 15:23:12] - GET /getUserInfo
+[2024-06-20 15:23:12] - GET /getSensorData
+[2024-06-20 15:23:17] - GET /getPages
+[2024-06-20 15:23:17] - User access level: 3
+[2024-06-20 15:23:17] - GET /getSensorData
+[2024-06-20 15:23:22] - GET /logout
+[2024-06-20 15:32:14] - GET /getSensorData
+[2024-06-20 15:32:19] - GET /getUserInfo
+[2024-06-20 15:32:19] - GET /getSensorData
+[2024-06-20 15:32:24] - GET /getUserInfo
+[2024-06-20 15:32:24] - GET /getPages
+[2024-06-20 15:32:24] - User access level: 0
+[2024-06-20 15:32:24] - POST /sendDataToEnergia
+[2024-06-20 15:32:30] - GET /getSensorData
+[2024-06-20 15:32:35] - GET /getSensorData
+[2024-06-20 15:32:40] - POST /sendDataToEnergia
+[2024-06-20 15:32:45] - GET /getSensorData
+[2024-06-20 15:32:50] - GET /getSensorData
+[2024-06-20 15:32:55] - GET /getSensorData
+[2024-06-20 15:33:00] - GET /getSensorData
+[2024-06-20 15:33:05] - GET /getSensorData
+[2024-06-20 15:33:10] - POST /sendDataToEnergia
+[2024-06-20 15:33:15] - GET /getSensorData
+[2024-06-20 15:33:20] - GET /getSensorData
+[2024-06-20 15:33:25] - GET /getSensorData
