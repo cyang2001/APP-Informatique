@@ -277,11 +277,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const trame = constructTrame({
             TRA: '1',
             OBJ: 'G10C',
-            REQ: '2',
-            TYP: '9',
+            REQ: '1',
+            TYP: '6',
             NUM: '01',
             VAL: '0001',  
-            TIM: '0001',  
+            TIM: 'FAFB',  
             CHK: '67'
         });
 
