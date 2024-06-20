@@ -38,12 +38,12 @@ public function sendDataToEnergia() {
     $postData = json_decode(file_get_contents('php://input'), true);
     $trame = $postData['trame'];
 
+    $url = "http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=G10C&TRAME=" . urlencode($trame);
+
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService?ACTION=POSTLOG&TEAM=G10C");
+    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(['trame' => $trame]));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     $response = curl_exec($ch);
     curl_close($ch);
 
