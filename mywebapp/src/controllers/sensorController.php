@@ -23,20 +23,10 @@ class SensorController {
         header('Content-Type: application/json');
         echo json_encode($parsed_data);
     }
-    public function stockAllSensorData() {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=G10C");
-        curl_setopt($ch, CURLOPT_HEADER, FALSE);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        $data = curl_exec($ch);
-        curl_close($ch);
 
-        $data_tab = str_split($data, 33);
-        
-    }
     private function parseTrame($trame) {
         $parsed = [];
+        $parsed['TYP'] = substr($trame, 6, 1);
         $parsed['YEAR'] = substr($trame, 19, 4);
         $parsed['MONTH'] = substr($trame, 23, 2);
         $parsed['DAY'] = substr($trame, 25, 2);

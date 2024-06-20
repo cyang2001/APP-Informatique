@@ -870,3 +870,27 @@
 [2024-06-20 12:16:42] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
 [2024-06-20 12:16:42] - getUserInfo constructor initialized
 [2024-06-20 12:16:42] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 12:24:49] - getUserInfo constructor initialized
+[2024-06-20 12:24:49] - Unauthorized access attempt
+[2024-06-20 12:24:49] - getUserInfo constructor initialized
+[2024-06-20 12:24:49] - Unauthorized access attempt
+[2024-06-20 12:24:49] - getUserInfo constructor initialized
+[2024-06-20 12:24:49] - Unauthorized access attempt
+[2024-06-20 12:24:54] - getUserInfo constructor initialized
+[2024-06-20 12:24:54] - Unauthorized access attempt
+[2024-06-20 12:24:54] - getUserInfo constructor initialized
+[2024-06-20 12:24:54] - Unauthorized access attempt
+[2024-06-20 12:24:54] - getUserInfo constructor initialized
+[2024-06-20 12:24:54] - Unauthorized access attempt
+[2024-06-20 12:25:09] - getUserInfo constructor initialized
+[2024-06-20 12:25:09] - Unauthorized access attempt
+[2024-06-20 12:25:09] - getUserInfo constructor initialized
+[2024-06-20 12:25:09] - Unauthorized access attempt
+[2024-06-20 12:25:23] - getUserInfo constructor initialized
+[2024-06-20 12:25:23] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 12:25:23] - getUserInfo constructor initialized
+[2024-06-20 12:25:23] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 12:25:29] - getUserInfo constructor initialized
+[2024-06-20 12:25:29] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}
+[2024-06-20 12:25:34] - getUserInfo constructor initialized
+[2024-06-20 12:25:34] - User info retrieved: {"id":91364544,"name":"cyang","email":"gregyoungforever1@gmail.com","avatarPath":"source\/avatars\/default.png","accessLevel":3}

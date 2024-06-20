@@ -175,10 +175,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.length > 0) {
                     var labelsAndDates = data.map(function(e) {
                         return {
+                            type: e.TYP,
                             label: moment(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`).format('YYYY-MM-DD HH:mm:ss'),
                             date: new Date(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`),
                             temperature: parseInt(e.VAL, 16) / 100,  
-                            niveau_db: e.niveau_db ? parseInt(e.niveau_db, 16) : null  // ToDo 
+                            niveau_db: parseInt(e.VAL, 16) / 100  // ToDo 
                         };
                     });
 
@@ -192,7 +193,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     var dataType = document.getElementById('dataTypeSelector').value;
                     var labels = latestData.map(item => item.label);
-                    var dataToDisplay = latestData.map(item => item[dataType]);
+                    var dataToDisplay = latestData.filter(item => item.type === (dataType === 'temperature' ? '3' : '9'))
+                                                  .map(item => dataType === 'temperature' ? item.temperature : item.niveau_db);
 
                     console.log('Filtered Labels:', labels);
                     console.log('Data to Display:', dataToDisplay);
@@ -271,4 +273,3 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(fetchData, 5000);
     fetchData();  
 });
-
