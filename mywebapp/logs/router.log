@@ -19526,3 +19526,11 @@
 [2024-06-20 14:14:08] - Pattern matched: ~^/getSensorData$~
 [2024-06-20 14:14:08] - Matches: [[["\/getSensorData",0]]]
 [2024-06-20 14:14:08] - Calling callback function
+[2024-06-20 14:14:13] - Register: GET /getSensorData
+[2024-06-20 14:14:13] - Dispatching request: GET
+[2024-06-20 14:14:13] - Current URI: /APP-Informatique/mywebapp/public/index.php?action=getSensorData
+[2024-06-20 14:14:13] - Handling URI: /getSensorData
+[2024-06-20 14:14:13] - Checking pattern: ~^/getSensorData$~
+[2024-06-20 14:14:13] - Pattern matched: ~^/getSensorData$~
+[2024-06-20 14:14:13] - Matches: [[["\/getSensorData",0]]]
+[2024-06-20 14:14:13] - Calling callback function
