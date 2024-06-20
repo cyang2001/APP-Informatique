@@ -170,34 +170,47 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('index.php?action=getSensorData')
             .then(response => response.json())
             .then(data => {
+                console.log('Data received:', data);
+
                 if (data.length > 0) {
-                    console.log('Data received:', data);
-                    var labels = data.map(function(e) {
-                        return moment(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`).format('YYYY-MM-DD HH:mm:ss');
+                    var labelsAndDates = data.map(function(e) {
+                        return {
+                            label: moment(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`).format('YYYY-MM-DD HH:mm:ss'),
+                            date: new Date(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`),
+                            temperature: parseInt(e.VAL, 16) / 100,  
+                            niveau_db: e.niveau_db ? parseInt(e.niveau_db, 16) : null  // ToDo 
+                        };
                     });
 
+                    console.log('Labels and Dates:', labelsAndDates);
 
-                    // var now = new Date();
-                    // labels = labels.filter(date => (now - date) < 24 * 60 * 60 * 1000); 
+                    var now = new Date();
+                    var filteredData = labelsAndDates.filter(item => (now - item.date) < 3 * 60 * 1000);
 
-                    var niveaux_db = data.map(function(e) {
-                        return parseInt(e.VAL, 16);  
-                    });
-                    console.log('Labels:', labels);
+                    filteredData.sort((a, b) => a.date - b.date);
+                    var latestData = filteredData.slice(-20);
+
+                    var dataType = document.getElementById('dataTypeSelector').value;
+                    var labels = latestData.map(item => item.label);
+                    var dataToDisplay = latestData.map(item => item[dataType]);
+
+                    console.log('Filtered Labels:', labels);
+                    console.log('Data to Display:', dataToDisplay);
+
                     var ctxSound = document.getElementById('soundLevelChart').getContext('2d');
+
                     if (soundLevelChart !== null) {
                         soundLevelChart.destroy();
-                        soundLevelChart = null; 
+                        soundLevelChart = null;
                     }
-
 
                     soundLevelChart = new Chart(ctxSound, {
                         type: 'line',
                         data: {
                             labels: labels,
                             datasets: [{
-                                label: 'Niveau Sonore (dB)',
-                                data: niveaux_db,
+                                label: dataType === 'temperature' ? 'Température (°C)' : 'Niveau Sonore (dB)',
+                                data: dataToDisplay,
                                 borderColor: 'rgb(255, 99, 132)',
                                 fill: false,
                                 pointRadius: 5,
@@ -213,11 +226,23 @@ document.addEventListener('DOMContentLoaded', function() {
                                 x: {
                                     type: 'time',
                                     time: {
-                                        unit: 'minute'
+                                        unit: 'minute',
+                                        tooltipFormat: 'YYYY-MM-DD HH:mm:ss',
+                                        displayFormats: {
+                                            minute: 'YYYY-MM-DD HH:mm:ss'
+                                        }
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Time'
                                     }
                                 },
                                 y: {
-                                    beginAtZero: true
+                                    beginAtZero: true,
+                                    title: {
+                                        display: true,
+                                        text: dataType === 'temperature' ? 'Température (°C)' : 'Niveau Sonore (dB)'
+                                    }
                                 }
                             },
                             plugins: {
@@ -225,13 +250,15 @@ document.addEventListener('DOMContentLoaded', function() {
                                     enabled: true,
                                     callbacks: {
                                         label: function(context) {
-                                            return context.dataset.label + ': ' + context.raw + ' dB';
+                                            return context.dataset.label + ': ' + context.raw + (dataType === 'temperature' ? ' °C' : ' dB');
                                         }
                                     }
                                 }
                             }
                         }
                     });
+
+                    console.log('Chart created');
                 } else {
                     console.error('No data received');
                 }
@@ -239,11 +266,9 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error fetching data:', error));
     };
 
+    document.getElementById('dataTypeSelector').addEventListener('change', fetchData);
 
     setInterval(fetchData, 5000);
-    fetchData(); 
+    fetchData();  
 });
-
-
-
 
