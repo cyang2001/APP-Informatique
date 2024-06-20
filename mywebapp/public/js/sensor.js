@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     var filteredData = labelsAndDates.filter(item => (now - item.date) < 3 * 60 * 1000);
 
                     filteredData.sort((a, b) => a.date - b.date);
-                    var latestData = filteredData.slice(-20);
+                    var latestData = filteredData.slice(-40);
 
                     var dataType = document.getElementById('dataTypeSelector').value;
                     var labels = latestData.map(item => item.label);

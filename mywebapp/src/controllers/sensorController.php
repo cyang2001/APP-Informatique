@@ -39,11 +39,22 @@ public function sendDataToEnergia() {
     $trame = $postData['trame'];
 
     $url = "http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=G10C&TRAME=" . urlencode($trame);
-    
+
+
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
+    /*curl_setopt($ch, CURLOPT_URL,
+        "http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=G10C&TRAME=1G10C21010001000167cyang"
+    );*/
+    curl_setopt($ch, CURLOPT_URL,
+        $url);
+    curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+
+    //var_dump($ch);
+
     $response = curl_exec($ch);
+    //var_dump($response);
 
     if (curl_errno($ch)) {
         echo 'Error:' . curl_error($ch);
@@ -53,5 +64,6 @@ public function sendDataToEnergia() {
     }
 
     curl_close($ch);
+
 }
 }
