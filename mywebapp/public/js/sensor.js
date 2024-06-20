@@ -280,10 +280,10 @@ document.addEventListener('DOMContentLoaded', function() {
             REQ: '2',
             TYP: '1',  
             NUM: '01',
-            VAL: '0001',  
+            ANS: '0001',  
             TIM: '0001',  
             CHK: '67',  
-            Timestamp:'2024/06/20 16:45:16'
+            Origine:'cyang'
 
         });
 
@@ -302,6 +302,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function constructTrame(data) {
-        return `${data.TRA}${data.OBJ}${data.REQ}${data.TYP}${data.NUM}${data.VAL}${data.TIM}${data.CHK}${data.Timestamp}`;
+        return `${data.TRA}${data.OBJ}${data.REQ}${data.TYP}${data.NUM}${data.ANS}${data.TIM}${data.CHK}${data.Origine}`;
     }
 });
