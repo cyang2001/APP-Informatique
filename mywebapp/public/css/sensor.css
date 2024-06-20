@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: white;
     margin: 0;
     padding: 0;
     perspective: 1px;
@@ -196,8 +196,8 @@ div div a {
 
 .content {
     padding: 20px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -205,7 +205,7 @@ div div a {
 }
 
 h1, h2 {
-    color: white;
+    color: black;
 }
 
 h1 {

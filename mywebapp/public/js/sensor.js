@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             label: moment(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`).format('YYYY-MM-DD HH:mm:ss'),
                             date: new Date(`${e.YEAR}-${e.MONTH}-${e.DAY}T${e.HOUR}:${e.MIN}:${e.SEC}Z`),
                             temperature: parseInt(e.VAL, 16) / 100,  
-                            niveau_db: parseInt(e.VAL, 16) / 100  // ToDo 
+                            niveau_db: parseInt(e.VAL, 16) / 100  // ToDo
                         };
                     });
 
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     var filteredData = labelsAndDates.filter(item => (now - item.date) < 3 * 60 * 1000);
 
                     filteredData.sort((a, b) => a.date - b.date);
-                    var latestData = filteredData.slice(-20);
+                    var latestData = filteredData.slice(-60);
 
                     var dataType = document.getElementById('dataTypeSelector').value;
                     var labels = latestData.map(item => item.label);
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 pointRadius: 5,
                                 pointHoverRadius: 7,
                                 hitRadius: 10,
-                                hoverRadius: 7
+                                hoverRadius: 7,
                             }]
                         },
                         options: {
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     beginAtZero: true,
                                     title: {
                                         display: true,
-                                        text: dataType === 'temperature' ? 'Température (°C)' : 'Niveau Sonore (dB)'
+                                        text: dataType === 'temperature' ? 'Température (°C)' : 'Niveau Sonore (dBm)'
                                     }
                                 }
                             },
@@ -273,3 +273,4 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(fetchData, 5000);
     fetchData();  
 });
+
