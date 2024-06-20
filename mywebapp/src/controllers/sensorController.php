@@ -39,6 +39,7 @@ public function sendDataToEnergia() {
     $trame = $postData['trame'];
 
     $url = "http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=G10C&TRAME=" . urlencode($trame);
+    error_log("Sending request to URL: $url");
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

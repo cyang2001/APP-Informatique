@@ -297,6 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())  // If the server returns text
         .then(responseData => {
             console.log('Response from Energia:', responseData);
+            console.log(responseData.head)
         })
         .catch(error => console.error('Error sending data to Energia:', error));
     });
