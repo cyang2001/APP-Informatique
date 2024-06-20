@@ -277,12 +277,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const trame = constructTrame({
             TRA: '1',
             OBJ: 'G10C',
-            REQ: '1',
-            TYP: '6',
+            REQ: '2',
+            TYP: '1',  
             NUM: '01',
             VAL: '0001',  
-            TIM: 'FAFB',  
-            CHK: '67'
+            TIM: '0001',  
+            CHK: '67',  
+            Timestamp:'2024/06/20 16:45:16'
+
         });
 
         fetch('index.php?action=sendDataToEnergia', {
@@ -292,19 +294,14 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             body: JSON.stringify({ trame })
         })
-        .then(response => {
-            if (response.ok) {
-                console.log('Data sent successfully to Energia');
-            } else {
-                console.error('Error sending data to Energia');
-            }
+        .then(response => response.text())  // If the server returns text
+        .then(responseData => {
+            console.log('Response from Energia:', responseData);
         })
         .catch(error => console.error('Error sending data to Energia:', error));
     });
 
     function constructTrame(data) {
-        return `${data.TRA}${data.OBJ}${data.REQ}${data.TYP}${data.NUM}${data.VAL}${data.TIM}${data.CHK}`;
+        return `${data.TRA}${data.OBJ}${data.REQ}${data.TYP}${data.NUM}${data.VAL}${data.TIM}${data.CHK}${data.Timestamp}`;
     }
 });
-
-
