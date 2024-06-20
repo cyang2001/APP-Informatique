@@ -349,6 +349,15 @@ switch($action) {
                     });
                 }
                 break;
+        case 'sendDataToEnergia':
+            if ($method == 'POST') {
+                $logger->log('POST /sendDataToEnergia');
+                $router->post('/sendDataToEnergia', function() {
+                    $sensorController = new SensorController();
+                    $sensorController->sendDataToEnergia();
+                });
+            }
+            break;
             
     default:
         $logger->log('action not found: '.$action);
